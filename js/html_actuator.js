@@ -54,19 +54,6 @@ HTMLActuator.prototype.addTile = function (tile) {
   inner.classList.add("tile-inner");
   inner.textContent = tile.value;
 
-  // Find tile value by rounding down to the nearest power of two.
-  var tileValue = tile.value;
-  var newValue = 2;
-  while(tileValue >= 2){
-    newValue = tileValue;
-    tileValue = tileValue & (tileValue - 1);
-  }
-  classes.push("tile-" + newValue);
-  
-  classes.push(positionClass);
-  
-  if (tile.value > 590295810358705700000) classes.push("tile-super");
-  
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
     window.requestAnimationFrame(function () {
@@ -85,6 +72,13 @@ HTMLActuator.prototype.addTile = function (tile) {
     classes.push("tile-new");
     this.applyClasses(wrapper, classes);
   }
+
+  // Add the inner part of the tile to the wrapper
+  wrapper.appendChild(inner);
+
+  // Put the tile on the board
+  this.tileContainer.appendChild(wrapper);
+};
 
 HTMLActuator.prototype.applyClasses = function (element, classes) {
   element.setAttribute("class", classes.join(" "));
