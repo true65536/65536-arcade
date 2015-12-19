@@ -10,7 +10,11 @@ Check Gabriele Cirulli's official 2048 on the [Play Store](https://play.google.c
   <img src="http://cdn2.sbnation.com/assets/4127853/threes-infographic_960.png" alt="Screenshot"/>
 </p>
 
-Man, the highest record in Threes is 832K, by the way. I never reached 6144 :smile:
+Man, the highest record in Threes is 832K, by the way. I never reached 6144 :sigh:
+Plus 144 is a Fibonacci number.
+832040 too.
+Git rekt littorally
+Kiddin' m8. :smile:
 
 ## Disclaimer
 2147483648 was originally created by CyberZHG, and was forked by mdehghani and then again forked by me. I made four different 2048 games - each with different sizes - and different goals. They're easier to achieve. That's why I shifted the goals to a higher number.
