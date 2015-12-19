@@ -26,5 +26,5 @@ I made this in my spare time, and it's hosted on GitHub!
 Enjoy the game!
 
 <p align="center">
-  <img src="http://cdn2.sbnation.com/assets/4127853/threes-infographic_960.png" alt="Screenshot"/>
+  <img src="https://cloud.githubusercontent.com/assets/12881091/11912455/27ceeff0-a678-11e5-87ff-1bc36831fcc9.jpg" alt="Screenshot"/>
 </p>
