@@ -24,3 +24,7 @@ You can find and follow me on Github [right here.](https://github.com/theastrono
 I made this in my spare time, and it's hosted on GitHub!
 
 Enjoy the game!
+
+<p align="center">
+  <img src="http://cdn2.sbnation.com/assets/4127853/threes-infographic_960.png" alt="Screenshot"/>
+</p>
