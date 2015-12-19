@@ -1,4 +1,4 @@
-#### 2147483648
+# 2147483648
 A small clone of 2048, originally by Gabriele Cirulli, which is conceptually similar to Threes! by Asher Vollmer.
 [Play the original game here!](http://gabrielecirulli.github.io/2048/)
 
