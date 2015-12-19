@@ -15,7 +15,7 @@ I made this in my spare time, and it's hosted on GitHub!
 
 Enjoy the game!
 
-##### EXTRA INFO: ABOUT THREES 
+## EXTRA INFO: ABOUT THREES 
 ### Threes Tiny Stats
 
 <p align="center">
