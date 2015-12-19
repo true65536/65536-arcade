@@ -10,7 +10,8 @@ Check Gabriele Cirulli's official 2048 on the [Play Store](https://play.google.c
   <img src="http://cdn2.sbnation.com/assets/4127853/threes-infographic_960.png" alt="Screenshot"/>
 </p>
 
-Man, the highest record in Threes is 832K, by the way. I never reached 6144
+Man, the highest record in Threes is 832K, by the way. I never reached 6144.
+
 Plus 144 is a Fibonacci number. :smile:
 
 ## Disclaimer
