@@ -31,7 +31,7 @@
     </div>
 
     <div class="above-game">
-      <p class="game-intro">Join the numbers and get to the <strong>137438953472 tile!</strong></p>
+      <p class="game-intro">Join the numbers and get the <strong>highest score</strong> in this page!</p>
       <a class="restart-button">Play again</a>
     </div>
 
@@ -360,7 +360,7 @@
   <script src="js_2048/local_storage_manager.js"></script>
   <script src="js_2048/game_manager.js"></script>
   <script>
-  var Goal = 137438953472
+  var Goal = 0.5
   window.requestAnimationFrame(function () {
   new GameManager(8, KeyboardInputManager, HTMLActuator, LocalStorageManager);
   });
