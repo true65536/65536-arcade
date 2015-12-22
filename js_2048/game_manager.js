@@ -130,7 +130,7 @@ GameManager.prototype.addRandomTile = function () {
       check(0, -1, 0, -1);
       check(0, 1, 0, 1);
 
-      if (bvalue == 2147483647) {bvalue = 2;}
+      if (bvalue == 2147483647) {bvalue = 1;}
     }
 
     var tile = new Tile(bcell, bvalue);
