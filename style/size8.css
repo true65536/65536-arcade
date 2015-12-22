@@ -6283,11 +6283,11 @@ hr {
   .tile.tile-65536 .tile-inner {
     color: #f9f6f2;
     background: #b32db3;
-    box-shadow: 0 0 30px 10px rgba(179, 45, 139, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333); }
+    box-shadow: 0 0 30px 10px rgba(179, 45, 179, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333); }
   .tile.tile-2147483648 .tile-inner {
     color: #f9f6f2;
     background: #ed1c24;
-    box-shadow: 0 0 10px 5px rgba(237, 28, 36, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333); }
+    box-shadow: 0 0 10px 10px rgba(237, 28, 36, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333); }
   .tile.tile-3 .tile-inner {
     background: #ede0c8;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
