@@ -18,6 +18,12 @@ GameManager.prototype.restart = function () {
   this.setup();
 };
 
+// Keep playing after winning (allows playing after goal)
+GameManager.prototype.keepPlaying = function () {
+  this.keepPlaying = true;
+  this.actuator.continueGame(); // Clear the game won/lost message
+};
+
 // Set up the game
 GameManager.prototype.setup = function () {
   this.grid         = new Grid(this.size);
