@@ -72,16 +72,6 @@ GameManager.prototype.actuate = function () {
     this.storageManager.setBestScore(this.score);
   }
 
-  this.actuator.actuate(this.grid, {
-    score:      this.score,
-    over:       this.over,
-    won:        this.won,
-    bestScore:  this.scoreManager.get(),
-    terminated: this.isGameTerminated()
-  });
-
-};
-
 // Save all tile positions and remove merger info
 GameManager.prototype.prepareTiles = function () {
   this.grid.eachCell(function (x, y, tile) {
