@@ -6114,7 +6114,7 @@ hr {
     color: #f9f6f2;
     background: #2d2db3;
     box-shadow: 0 0 30px 10px rgba(45, 45, 179, 0.99999), inset 0 0 0 1px rgba(255, 255, 255, 0.33333); }
-  .tile.tile-65536  {
+   .tile.tile-65536  {
     color: #f9f6f2;
     background: #b32db3;
     box-shadow: 0 0 30px 10px rgba(179, 45, 179, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333); }
@@ -6125,7 +6125,7 @@ hr {
    .tile.tile-1048576  {
     color: #f9f6f2;
     background: #bc9410;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333); }
+    box-shadow: 0 0 30px 10px rgba(188, 148, 16, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333); }
   .tile.tile-2147483648  {
     color: #f9f6f2;
     background: #ed1c24;
