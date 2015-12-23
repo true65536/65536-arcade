@@ -6121,7 +6121,7 @@ hr {
    .tile.tile-4194304  {
     color: #f9f6f2;
     background: #ebb914;
-    box-shadow: 0 0 30px 10px rgba(235, 185, 20, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(235, 185, 20, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333); }
    .tile.tile-8388608  {
     color: #f9f6f2;
     background: #d3a612;
