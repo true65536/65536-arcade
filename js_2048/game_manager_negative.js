@@ -28,11 +28,7 @@ GameManager.prototype.keepPlaying = function () {
 
 // Return true if the game is lost, or has won and the user hasn't kept playing
 GameManager.prototype.isGameTerminated = function () {
-  if (this.over || (this.won && !this.keepPlaying)) {
-    return true;
-  } else {
-    return false;
-  }
+  return this.over || (this.won && !this.keepPlaying);
 };
 
 // Set up the game
@@ -40,7 +36,7 @@ GameManager.prototype.setup = function () {
   var previousState = this.storageManager.getGameState();
 
   // Reload the game from a previous game if present
-  if (previousState && (this.size === previousState.size)) {
+  if (previousState) {
     this.grid        = new Grid(previousState.grid.size,
                                 previousState.grid.cells); // Reload grid
     this.score       = previousState.score;
@@ -78,7 +74,6 @@ GameManager.prototype.addRandomTile = function () {
     this.grid.insertTile(tile);
   }
 };
-
 
 // Sends the updated grid to the actuator
 GameManager.prototype.actuate = function () {
@@ -159,7 +154,7 @@ GameManager.prototype.move = function (direction) {
 
         // Only one merger per row traversal?
         if (next && next.value === tile.value && !next.mergedFrom) {
-          var merged = new Tile(positions.next, Goal);
+          var merged = new Tile(positions.next, tile.value * 2);
           merged.mergedFrom = [tile, next];
 
           self.grid.insertTile(merged);
@@ -172,7 +167,7 @@ GameManager.prototype.move = function (direction) {
           self.score += merged.value;
 
           // The mighty 2048 tile
-          if (merged.value === Goal) self.won = true;
+          if (merged.value === 2048) self.won = true;
         } else {
           self.moveTile(tile, positions.farthest);
         }
