@@ -122,23 +122,6 @@ GameManager.prototype.addRandomTile = function () {
   }
 };
 
-// Tiles larger than 3 will merge together with themselves to form larger number, while 1 and 2 merge together to form 3
-GameManager.test = function (value) {
-  var test = 3;
-  while (true)
-  {
-    if (test > value)
-    {
-      return false;
-    }
-    if (test === value)
-    {
-      return true;
-    }
-    var test = test*2;
-  }
-};
-
 // Sends the updated grid to the actuator
 GameManager.prototype.actuate = function () {
   if (this.scoreManager.get() < this.score) {
