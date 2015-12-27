@@ -18,12 +18,6 @@ GameManager.prototype.restart = function () {
   this.setup();
 };
 
-// Keep playing after winning (allows playing after goal)
-GameManager.prototype.keepPlaying = function () {
-  this.keepPlaying = true;
-  this.actuator.continueGame(); // Clear the game won/lost message
-};
-
 // Set up the game
 GameManager.prototype.setup = function () {
   //window.localStorage.clear();
@@ -47,7 +41,6 @@ GameManager.prototype.setup = function () {
   // Add the initial tiles
   this.addStartTiles();
 }
-
   // Update the actuator
   this.actuate();
 };
@@ -75,6 +68,14 @@ GameManager.prototype.actuate = function () {
     this.scoreManager.set(this.score);
   }
 
+  // Clear the state when the game is over (game over only, not win)
+  if (this.over) {
+    this.scoreManager.clearGameState();
+  } else {
+    this.scoreManager.setGameState(this.serialize());
+    //console.log(JSON.stringify(this.serialize()));
+  }
+
   this.actuator.actuate(this.grid, {
     score:     this.score,
     over:      this.over,
@@ -82,6 +83,17 @@ GameManager.prototype.actuate = function () {
     bestScore: this.scoreManager.get()
   });
 
+};
+
+// Represent the current game as an object
+GameManager.prototype.serialize = function () {
+  return {
+    grid:        this.grid.serialize(),
+    score:       this.score,
+    over:        this.over,
+    won:         this.won,
+    keepPlaying: this.keepPlaying
+  };
 };
 
 // Save all tile positions and remove merger info
@@ -142,7 +154,7 @@ GameManager.prototype.move = function (direction) {
           self.score += merged.value;
 
           // The mighty 2048 tile
-          if (merged.value === 2048) self.won = true;
+          if (merged.value === 4096) self.won = true;
         } else {
           self.moveTile(tile, positions.farthest);
         }
