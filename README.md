@@ -12,6 +12,8 @@ Play 2147483648 [right here.](theastronomer.github.io/2147483648/)
 
 You can find and follow me on Github [right here.](https://github.com/theastronomer)
 
+NEW: I added another clone of 2147483648 [right here](theastronomer.github.io/2147483648-32x32/) so that it can support grid sizes up to 32x32!
+
 ## Project work?
 I made this in my spare time, and it's hosted on GitHub!
 
