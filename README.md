@@ -6,7 +6,9 @@ Check Gabriele Cirulli's official 2048 on the [Play Store](https://play.google.c
 
 ## Disclaimer
 2147483648 was originally created by CyberZHG, and was forked by mdehghani and then again forked by me. I made four different 2048 games - each with different sizes - and different goals. They're easier to achieve. That's why I shifted the goals to a higher number.
-One more is coming soon. Those extra repos are part of the 2147483648 repo. What I edited was the HTML and CSS file for higher grid 
+One more is coming soon. Those extra repos are part of the 2147483648 repo. What I edited was the HTML and CSS file for higher grid sizes.
+
+Play 2147483648 [right here.](theastronomer.github.io/2147483648/)
 
 You can find and follow me on Github [right here.](https://github.com/theastronomer)
 
