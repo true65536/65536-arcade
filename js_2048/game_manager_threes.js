@@ -9,6 +9,14 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
   this.inputManager.on("move", this.move.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
   this.inputManager.on("keepPlaying", this.keepPlaying.bind(this));
+  if (this.size < 4)
+  {
+    var lasttileclass = Math.pow(2, (this.size * (this.size + 1))/2)
+  }
+  else
+  {
+    var lasttileclass = Math.pow(2, (this.size * (this.size + 1))/2 + 1)
+  }
 
   this.setup();
 }
@@ -209,8 +217,8 @@ GameManager.prototype.move = function (direction) {
         var next      = self.grid.cellContent(positions.next);
 
         // Only one merger per row traversal?
-        if (next && GameManager.test(tile.value + next.value) && !next.mergedFrom) {
-          var merged = new Tile(positions.next, tile.value + next.value);
+        if (next && next.value === tile.value && !next.mergedFrom) {
+          var merged = new Tile(positions.next, tile.value * 2);
           merged.mergedFrom = [tile, next];
 
           self.grid.insertTile(merged);
@@ -312,7 +320,7 @@ GameManager.prototype.tileMatchesAvailable = function () {
 
           var other  = self.grid.cellContent(cell);
 
-          if (other && GameManager.test(tile.value + other.value)) {
+          if (other && other.value === tile.value) {
             return true; // These two tiles can be merged
           }
         }
