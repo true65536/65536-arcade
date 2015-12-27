@@ -206,6 +206,22 @@ GameManager.prototype.move = function (direction) {
   // Save the current tile positions and remove merger information
   this.prepareTiles();
 
+// Move tiles on the grid in the specified direction
+GameManager.prototype.move = function (direction) {
+  // 0: up, 1: right, 2: down, 3: left
+  var self = this;
+
+  if (this.isGameTerminated()) return; // Don't do anything if the game's over
+
+  var cell, tile;
+
+  var vector     = this.getVector(direction);
+  var traversals = this.buildTraversals(vector);
+  var moved      = false;
+
+  // Save the current tile positions and remove merger information
+  this.prepareTiles();
+
   // Traverse the grid in the right direction and move tiles
   traversals.x.forEach(function (x) {
     traversals.y.forEach(function (y) {
@@ -228,13 +244,7 @@ GameManager.prototype.move = function (direction) {
           tile.updatePosition(positions.next);
 
           // Update the score
-          self.score += (merged.value + (int)(Math.random() * ((max - min) + 1)) + min);
-          
-		      for (int i = 0; i < 10; i++) {
-			    System.out.println(getRandomNumberInRange(16, 20));
-		       }
-
-	         }
+          self.score += merged.value + Math.random(1,2048);
 
           // The mighty 2048 tile
           if (merged.value === Goal) self.won = true;
