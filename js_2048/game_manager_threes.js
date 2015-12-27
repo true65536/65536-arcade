@@ -44,7 +44,7 @@ GameManager.prototype.setup = function () {
   var previousState = this.storageManager.getGameState();
 
   // Reload the game from a previous game if present
-  if (previousState) {
+  if (previousState && (this.size === previousState.size)) {
     this.grid        = new Grid(previousState.grid.size,
                                 previousState.grid.cells); // Reload grid
     this.score       = previousState.score;
@@ -61,6 +61,10 @@ GameManager.prototype.setup = function () {
     // Add the initial tiles
     this.addStartTiles();
   }
+
+  // Update the actuator
+  this.actuate();
+};
 
 // Set up the initial tiles to start the game with
 GameManager.prototype.addStartTiles = function () {
