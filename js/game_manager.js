@@ -26,6 +26,18 @@ GameManager.prototype.keepPlaying = function () {
 
 // Set up the game
 GameManager.prototype.setup = function () {
+  //window.localStorage.clear();
+  var previousState = this.scoreManager.getGameState();
+  // Reload the game from a previous game if present
+  if (previousState) {
+    console.log(JSON.stringify(previousState.grid));
+    this.grid        = new Grid(previousState.grid.size,
+                                previousState.grid.cells); // Reload grid
+    this.score       = previousState.score;
+    this.over        = previousState.over;
+    this.won         = previousState.won;
+    this.keepPlaying = previousState.keepPlaying;
+  } else {
   this.grid         = new Grid(this.size);
 
   this.score        = 0;
@@ -34,6 +46,7 @@ GameManager.prototype.setup = function () {
 
   // Add the initial tiles
   this.addStartTiles();
+}
 
   // Update the actuator
   this.actuate();
