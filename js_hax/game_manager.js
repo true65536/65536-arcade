@@ -40,7 +40,7 @@ GameManager.prototype.setup = function () {
   var previousState = this.storageManager.getGameState();
 
   // Reload the game from a previous game if present
-  if (1>2) {
+  if (previousState) {
     this.grid        = new Grid(previousState.grid.size,
                                 previousState.grid.cells); // Reload grid
     this.score       = previousState.score;
@@ -97,8 +97,8 @@ GameManager.prototype.addEasyTile = function () {
 
 // Adds a tile in a random position
 GameManager.prototype.addRandomTile = function () {
-  var start = document.getElementById('start').value;
   if (this.grid.cellsAvailable()) {
+    var start = document.getElementById('start').value;
     var self = this;
     var bvalue = 2147483647;
     var bcell = this.grid.randomAvailableCell();
@@ -228,7 +228,7 @@ GameManager.prototype.move = function (direction) {
           self.score += merged.value;
 
           // The mighty 2048 tile
-          if (merged.value === 0) self.won = true;
+          if (merged.value === 2048) self.won = true;
         } else {
           self.moveTile(tile, positions.farthest);
         }
