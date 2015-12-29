@@ -39,16 +39,36 @@ HTMLActuator.prototype.clearContainer = function (container) {
   }
 };
 
+// Continues the game (both restart and keep playing)
+HTMLActuator.prototype.continue = function () {
+  this.clearMessage();
+};
+
+HTMLActuator.prototype.clearContainer = function (container) {
+  while (container.firstChild) {
+    container.removeChild(container.firstChild);
+  }
+};
+
 HTMLActuator.prototype.addTile = function (tile) {
   var self = this;
 
   var wrapper   = document.createElement("div");
   var inner     = document.createElement("div");
   var position  = tile.previousPosition || { x: tile.x, y: tile.y };
-  positionClass = this.positionClass(position);
+  var positionClass = this.positionClass(position);
+
+  var neg = "";
+  var closest2Power = Math.pow(2, Math.floor(Math.log(Math.abs(tile.value)) / Math.log(2)));
+  if( tile.value === 0 ) {
+    closest2Power = 0
+  }
 
   // We can't use classlist because it somehow glitches when replacing classes
-  var classes = ["tile", "tile-" + tile.value, positionClass];
+  var classes = ["tile", "tile-" + neg + closest2Power, positionClass];
+
+  if (tile.value > 2048) classes.push("tile-super");
+
   this.applyClasses(wrapper, classes);
 
   inner.classList.add("tile-inner");
