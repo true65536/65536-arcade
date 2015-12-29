@@ -9,14 +9,6 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
   this.inputManager.on("move", this.move.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
   this.inputManager.on("keepPlaying", this.keepPlaying.bind(this));
-  if (this.size < 4)
-  {
-    var lasttileclass = Math.pow(2, (this.size * (this.size + 1))/2)
-  }
-  else
-  {
-    var lasttileclass = Math.pow(2, (this.size * (this.size + 1))/2 + 1)
-  }
 
   this.setup();
 }
@@ -43,6 +35,33 @@ GameManager.prototype.isGameTerminated = function () {
   }
 };
 
+// Set up the game
+GameManager.prototype.setup = function () {
+  var previousState = this.storageManager.getGameState();
+
+  // Reload the game from a previous game if present
+  if (previousState) {
+    this.grid        = new Grid(previousState.grid.size,
+                                previousState.grid.cells); // Reload grid
+    this.score       = previousState.score;
+    this.over        = previousState.over;
+    this.won         = previousState.won;
+    this.keepPlaying = previousState.keepPlaying;
+  } else {
+    this.grid        = new Grid(this.size);
+    this.score       = 0;
+    this.over        = false;
+    this.won         = false;
+    this.keepPlaying = false;
+
+    // Add the initial tiles
+    this.addStartTiles();
+  }
+
+  // Update the actuator
+  this.actuate();
+};
+
 // Set up the initial tiles to start the game with
 GameManager.prototype.addStartTiles = function () {
   for (var i = 0; i < this.startTiles; i++) {
@@ -50,68 +69,12 @@ GameManager.prototype.addStartTiles = function () {
   }
 };
 
-// Adds a well-tempered tile in a random position
-GameManager.prototype.addEasyTile = function () {
-  if (this.grid.cellsAvailable()) {
-    var cell = this.grid.randomAvailableCell();
-
-    // Find good value
-    var values = this.grid.cellValues([
-      { x: cell.x - 1, y: cell.y },
-      { x: cell.x, y: cell.y - 1 },
-      { x: cell.x + 1, y: cell.y },
-      { x: cell.x, y: cell.y + 1 }]);
-    if (values.length == 0) {
-      values = this.grid.cellValues([
-        { x: cell.x - 1, y: cell.y - 1 },
-        { x: cell.x - 1, y: cell.y + 1 },
-        { x: cell.x + 1, y: cell.y - 1 },
-        { x: cell.x + 1, y: cell.y + 1 }]);
-    }
-    values.push(2);
-    value = values[Math.floor(Math.random() * values.length)];
-
-    var tile = new Tile(cell, value);
-    this.grid.insertTile(tile);
-  }
-};
-
 // Adds a tile in a random position
 GameManager.prototype.addRandomTile = function () {
   if (this.grid.cellsAvailable()) {
     var start = document.getElementById('start').value;
-    var self = this;
-    var bvalue = 2147483647;
-    var bcell = this.grid.randomAvailableCell();
-
-    for (var i = 0; i < 8; i++) {
-      var cell = this.grid.randomAvailableCell();
-
-      function check(x, y, dx, dy) {
-        if (x < 0 || y < 0 || x >= self.grid.size || y >= self.grid.size) return;
-
-        if (
-          !!self.grid.cells[cell.x + x]
-          &&
-          !!self.grid.cells[cell.x + x][cell.y + y]
-        ) {
-          var tocheck = self.grid.cells[cell.x + x][cell.y + y];
-          if (Math.random() < 0.8 && tocheck.value < bvalue) {
-            bcell = cell;
-            bvalue = tocheck.value;
-          }
-        } else check(x + dx, y + dy, dx, dy);
-      }
-
-      check(-1, 0, -1, 0);
-      check(1, 0, 1, 0);
-      check(0, -1, 0, -1);
-      check(0, 1, 0, 1);
-
-      if (bvalue == 2147483647) {bvalue = start;}
-    }
-
-    var tile = new Tile(bcell, bvalue);
+    var value = Math.random() < 0.9 ? start : start*2;
+    var tile = new Tile(this.grid.randomAvailableCell(), value);
 
     this.grid.insertTile(tile);
   }
