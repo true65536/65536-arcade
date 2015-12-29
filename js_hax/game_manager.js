@@ -15,15 +15,23 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
 
 // Restart the game
 GameManager.prototype.restart = function () {
-  this.storageManager.clearGameState();
-  this.actuator.continueGame(); // Clear the game won/lost message
+  this.actuator.restart();
   this.setup();
 };
 
-// Keep playing after winning (allows going over 2048)
-GameManager.prototype.keepPlaying = function () {
-  this.keepPlaying = true;
-  this.actuator.continueGame(); // Clear the game won/lost message
+// Set up the game
+GameManager.prototype.setup = function () {
+  this.grid         = new Grid(this.size);
+
+  this.score        = 0;
+  this.over         = false;
+  this.won          = false;
+
+  // Add the initial tiles
+  this.addStartTiles();
+
+  // Update the actuator
+  this.actuate();
 };
 
 // Return true if the game is lost, or has won and the user hasn't kept playing
