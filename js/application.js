@@ -214,7 +214,7 @@ function changeRule(add, merge, win) {
 }
 
 function normalAdd() {
-  return Math.random() < 0.9 ? 2 : 4;
+  return Math.random() < 0.9 ? 1 : 2;
 }
 
 function normalMerge(a, b) {
@@ -232,7 +232,7 @@ function normal() {
 }
 
 function alwaysTwo() {
-  changeRule(function() { return 2; }, normalMerge, normalWin);
+  changeRule(function() { return 1; }, normalMerge, normalWin);
 }
 
 function fibonacci() {
