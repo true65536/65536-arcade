@@ -265,7 +265,7 @@ function threes() {
 }
 
 function mergeAny() {
-  changeRule(function() { return Math.round(Math.random() * 2147483648); },
+  changeRule(function() { return 1; },
     function(a, b) { return true; }, 
     function(merged) { return false; });
 }
