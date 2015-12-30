@@ -214,41 +214,7 @@ function changeRule(add, merge, win) {
 }
 
 function normalAdd() {
-  if (this.grid.cellsAvailable()) {
-    var self = this;
-    var bvalue = 2147483647;
-    var bcell = this.grid.randomAvailableCell();
-
-    for (var i = 0; i < 8; i++) {
-      var cell = this.grid.randomAvailableCell();
-
-      function check(x, y, dx, dy) {
-        if (x < 0 || y < 0 || x >= self.grid.size || y >= self.grid.size) return;
-
-        if (
-          !!self.grid.cells[cell.x + x]
-          &&
-          !!self.grid.cells[cell.x + x][cell.y + y]
-        ) {
-          var tocheck = self.grid.cells[cell.x + x][cell.y + y];
-          if (Math.random() < 0.8 && tocheck.value < bvalue) {
-            bcell = cell;
-            bvalue = tocheck.value;
-          }
-        } else check(x + dx, y + dy, dx, dy);
-      }
-
-      check(-1, 0, -1, 0);
-      check(1, 0, 1, 0);
-      check(0, -1, 0, -1);
-      check(0, 1, 0, 1);
-
-      if (bvalue == 2147483647) {bvalue = 1;}
-    }
-
-    var tile = new Tile(bcell, bvalue);
-
-    this.grid.insertTile(tile);
+  return Math.random() < 0.9 ? 2 : 4;
 }
 
 function normalMerge(a, b) {
@@ -256,7 +222,7 @@ function normalMerge(a, b) {
 }
 
 function normalWin(merged) {
-  return merged === 4096;
+  return merged === 0.5;
 }
 
 function normal() {
@@ -358,7 +324,7 @@ function timeRush(sec) {
       cnt = 0;
     }
     var item = document.getElementById('game-intro');
-    item.innerText = "Remaining Time: " + cnt;
+    item.innerText = cnt + "seconds left.";
     if (cnt == 0) {
       game.over = true;
       game.actuate();
