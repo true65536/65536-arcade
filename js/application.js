@@ -265,7 +265,7 @@ function threes() {
 }
 
 function mergeAny() {
-  changeRule(function() { return 1; },
+  changeRule(function() { return Math.random() < 0.5 ? 1 : 2; },
     function(a, b) { return true; }, 
     function(merged) { return false; });
 }
@@ -324,7 +324,7 @@ function timeRush(sec) {
       cnt = 0;
     }
     var item = document.getElementById('game-intro');
-    item.innerText = cnt + "seconds left.";
+    item.innerText = "Time remaining: " + cnt + " seconds";
     if (cnt == 0) {
       game.over = true;
       game.actuate();
