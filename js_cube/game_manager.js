@@ -139,16 +139,16 @@ GameManager.prototype.addRandomTile = function () {
 
 // Add bonus tile
 GameManager.prototype.addBonus = function () {
-  if (Math.random() > 0 * this.grid.availableCells().length / Math.pow(this.size, 3)) {
+  if (Math.random() > 0.2 * this.grid.availableCells().length / Math.pow(this.size, 3)) {
     return;
   }
   var maxBonus = 0;
-  var values = [0];
+  var values = [4, 64, 256];
   var value = values[Math.floor(Math.random() * values.length)];
   if (this.bonus[value] === undefined) {
     this.bonus[value] = 0;
   }
-  if (this.bonus[value] == 0) {
+  if (this.bonus[value] == 2) {
     return;
   }
   for (var num in this.bonus) {
