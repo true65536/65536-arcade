@@ -214,7 +214,7 @@ function changeRule(add, merge, win) {
 }
 
 function normalAdd() {
-  return if (this.grid.cellsAvailable()) {
+  if (this.grid.cellsAvailable()) {
     var self = this;
     var bvalue = 2147483647;
     var bcell = this.grid.randomAvailableCell();
