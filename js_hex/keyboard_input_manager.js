@@ -13,13 +13,11 @@ KeyboardInputManager.prototype.on = function (event, callback) {
 
 KeyboardInputManager.prototype.emit = function (event, data) {
   var callbacks = this.events[event];
-  var result;
   if (callbacks) {
     callbacks.forEach(function (callback) {
-      result = callback(data);
+      callback(data);
     });
   }
-  return result;
 };
 
 KeyboardInputManager.prototype.listen = function () {
@@ -50,38 +48,74 @@ KeyboardInputManager.prototype.listen = function () {
     83: 5  // S
   };
 
-  var lastLRDereiction = 0;
+  var holdingKeys = {};
 
   document.addEventListener("keydown", function (event) {
-    if (verticalMap[event.which] || horizontalMap[event.which]) {
-      event.preventDefault();
+    var modifiers = event.altKey || event.ctrlKey || event.metaKey ||
+                    event.shiftKey;
+    var mapped = verticalMap[event.which] || horizontalMap[event.which];
+    if (!modifiers) {
+      if (mapped !== undefined) {
+        holdingKeys[event.which] = true;
+        event.preventDefault();
+      }
+      if (event.which === 32) self.restart.bind(self)(event);
     }
   });
   document.addEventListener("keyup", function (event) {
     var modifiers = event.altKey || event.ctrlKey || event.metaKey ||
                     event.shiftKey;
-    var hMapped = horizontalMap[event.which];
-    var vMapped = verticalMap[event.which];
+    var mapped    = moveMap[event.which];
     if (!modifiers) {
-      if (hMapped !== undefined) {
+      if (holdingKeys[event.which]) {
+        holdingKeys[event.which] = false;
+      }
+
+      if (mapped !== undefined) {
         event.preventDefault();
-        if (self.emit("move", hMapped)) {
-          lastLRDereiction = hMapped;
+        self.emit("move", mapped);
+      } else {
+        var i = 0, j = 0, key, t;
+        for (t in holdingKeys) {
+          if (holdingKeys[t] == true) {
+            i++;
+            key = t;
+          }
+          j++;
+        }
+        if (i == 0) {
+          if (j == 1 && horizontalMap[event.which] !== undefined) {
+            self.emit("move", horizontalMap[event.which]);
+          }
+          if (j > 0) {
+            for (t in holdingKeys) {
+              delete holdingKeys[t];
+            }
+          }
+        } else if (i == 1) {
+          if ((verticalMap[key] !== undefined && horizontalMap[event.which] !== undefined)
+            || (horizontalMap[key] !== undefined && verticalMap[event.which] !== undefined)
+          ) {
+            direction = detectDirection(key, event.which);
+            event.preventDefault();
+            self.emit("move", direction);
+          }
         }
       }
-      if (vMapped !== undefined) {
-        switch (vMapped) {
-          case 2:
-            vMapped = (1 - lastLRDereiction) * 2 + vMapped;
-            break;
-          case 5:
-            vMapped = vMapped - (1 - lastLRDereiction) * 2;
-            break;
-        }
-        event.preventDefault();
-        self.emit("move", vMapped);
+    }
+
+    function detectDirection(key1, key2) {
+      var mapped1 = verticalMap[key1] || horizontalMap[key1];
+      var mapped2 = verticalMap[key2] || horizontalMap[key2];
+      if (mapped1 > mapped2) {
+        mapped1 = mapped2 + mapped1 - (mapped2 = mapped1);
       }
-      if (event.which === 32) self.restart.bind(self)(event);
+      switch (mapped2) {
+        case 2:
+          return mapped1 * 2 + mapped2;
+        case 5:
+          return mapped2 - mapped1 * 2;
+      }
     }
   });
 
@@ -117,15 +151,24 @@ KeyboardInputManager.prototype.listen = function () {
 
     var dy = event.changedTouches[0].clientY - touchStartClientY;
     var absDy = Math.abs(dy);
+    var tan = dy / dx;
+    var angle = Math.atan(dy / dx) / Math.PI * 180;
+    var delta = 20;
+    var direction
 
-    if (Math.max(absDx, absDy) > 10) {
-      if (absDx > absDy) {
-        if (self.emit("move", dx > 0 ? 1 : 0)) {
-          lastLRDereiction = dx > 0 ? 1 : 0;
-        }
-      } else {
-        self.emit("move", dy < 0 ? 4 - lastLRDereiction * 2 : 3 + lastLRDereiction * 2);
-      }
+    switch (true) {
+      case angle < 0 + delta && angle > 0 - delta:
+        direction = dx > 0 ? 1 : 0;
+        break;
+      case angle < 60 + delta && angle > 60 - delta:
+        direction = dx > 0 ? 3 : 2;
+        break;
+      case angle < -60 + delta && angle > -60 - delta:
+        direction = dx > 0 ? 4 : 5;
+        break;
+    }
+    if (direction !== undefined) {
+      self.emit("move", direction);
     }
   });
 };
