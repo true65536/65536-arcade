@@ -63,7 +63,7 @@ GameManager.prototype.addStartTiles = function() {
 
 // Adds a well-tempered tile in a random position
 GameManager.prototype.addEasyTile = function () {
-  if (this.grid.cellsAvailable()) {
+  if (this.grid[i].cellsAvailable()) { {
     var cell = this.grid.randomAvailableCell();
 
     // Find good value
@@ -83,16 +83,46 @@ GameManager.prototype.addEasyTile = function () {
     value = values[Math.floor(Math.random() * values.length)];
 
     var tile = new Tile(cell, value);
-    this.grid.insertTile(tile);
+    this.grid[i].insertTile(tile);
   }
 };
 
 // Adds a tile in a random position
 GameManager.prototype.addRandomTile = function(i) {
-  if (this.grid[i].cellsAvailable()) {
-    var value = Math.random() < 0.9 ? 1 : 2;
-    var cell = this.grid[i].randomAvailableCell();
-    var tile = new Tile(cell, value);
+    var self = this;
+    var bvalue = 2147483647;
+    var bcell = this.grid.randomAvailableCell();
+
+    for (var i = 0; i < 8; i++) {
+      var cell = this.grid.randomAvailableCell();
+
+      function check(x, y, dx, dy) {
+        if (x < 0 || y < 0 || x >= self.grid.size || y >= self.grid.size) return;
+
+        if (
+          !!self.grid.cells[cell.x + x]
+          &&
+          !!self.grid.cells[cell.x + x][cell.y + y]
+        ) {
+          var tocheck = self.grid.cells[cell.x + x][cell.y + y];
+          if (Math.random() < 0.8 && tocheck.value < bvalue) {
+            bcell = cell;
+            bvalue = tocheck.value;
+          }
+        } else check(x + dx, y + dy, dx, dy);
+      }
+
+      check(-1, 0, -1, 0);
+      check(1, 0, 1, 0);
+      check(0, -1, 0, -1);
+      check(0, 1, 0, 1);
+
+      if (bvalue == 2147483647) {bvalue = 1;}
+    }
+
+    var tile = new Tile(bcell, bvalue);
+
+    this.grid[i].insertTile(tile); }
     if (!this.tileInCrossOccupied(cell, i)) {
       this.grid[i].insertTile(tile);
     }
