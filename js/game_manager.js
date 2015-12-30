@@ -40,6 +40,34 @@ GameManager.prototype.addStartTiles = function () {
   }
 };
 
+// Adds a well-tempered tile in a random position
+GameManager.prototype.addEasyTile = function () {
+  if (this.grid.cellsAvailable()) {
+    var cell = this.grid.randomAvailableCell();
+
+    // Find good value
+    var values = this.grid.cellValues([
+      { x: cell.x - 1, y: cell.y },
+      { x: cell.x, y: cell.y - 1 },
+      { x: cell.x + 1, y: cell.y },
+      { x: cell.x, y: cell.y + 1 }]);
+    if (values.length == 0) {
+      values = this.grid.cellValues([
+        { x: cell.x - 1, y: cell.y - 1 },
+        { x: cell.x - 1, y: cell.y + 1 },
+        { x: cell.x + 1, y: cell.y - 1 },
+        { x: cell.x + 1, y: cell.y + 1 }]);
+    }
+    values.push(2);
+    value = values[Math.floor(Math.random() * values.length)];
+
+    var tile = new Tile(cell, value);
+    this.grid.insertTile(tile);
+  }
+};
+
+// Adds a tile in a random position
+GameManager.prototype.addRandomTile = function () {
   if (this.grid.cellsAvailable()) {
     var self = this;
     var bvalue = 2147483647;
@@ -75,6 +103,8 @@ GameManager.prototype.addStartTiles = function () {
     var tile = new Tile(bcell, bvalue);
 
     this.grid.insertTile(tile);
+  }
+};
 
 // Sends the updated grid to the actuator
 GameManager.prototype.actuate = function () {
@@ -149,7 +179,7 @@ GameManager.prototype.move = function (direction) {
           self.score += merged.value;
 
           // The mighty 2048 tile
-          if (merged.value === 2048) self.won = true;
+          if (merged.value === 0.5) self.won = true;
         } else {
           self.moveTile(tile, positions.farthest);
         }
