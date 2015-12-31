@@ -4,19 +4,11 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
   this.storageManager = new StorageManager;
   this.actuator       = new Actuator;
 
-  this.startTiles     = 16;
+  this.startTiles     = 8;
 
   this.inputManager.on("move", this.move.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
   this.inputManager.on("keepPlaying", this.keepPlaying.bind(this));
-  if (this.size < 4)
-  {
-    var lasttileclass = Math.pow(2, (this.size * (this.size + 1))/2)
-  }
-  else
-  {
-    var lasttileclass = Math.pow(2, (this.size * (this.size + 1))/2 + 1)
-  }
 
   this.setup();
 }
@@ -44,7 +36,7 @@ GameManager.prototype.setup = function () {
   var previousState = this.storageManager.getGameState();
 
   // Reload the game from a previous game if present
-  if (previousState && (this.size === previousState.size)) {
+  if (previousState) {
     this.grid        = new Grid(previousState.grid.size,
                                 previousState.grid.cells); // Reload grid
     this.score       = previousState.score;
@@ -217,8 +209,8 @@ GameManager.prototype.move = function (direction) {
         var next      = self.grid.cellContent(positions.next);
 
         // Only one merger per row traversal?
-        if (next && !next.mergedFrom) {
-          var merged = new Tile(positions.next, tile.value + next.value);
+        if (next && next.value === tile.value && !next.mergedFrom) {
+          var merged = new Tile(positions.next, tile.value * 2);
           merged.mergedFrom = [tile, next];
 
           self.grid.insertTile(merged);
