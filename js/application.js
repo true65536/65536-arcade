@@ -189,7 +189,7 @@ function changeRule(add, merge, win) {
             self.grid.insertTile(merged);
             self.grid.removeTile(tile);
             tile.updatePosition(positions.next);
-            self.score += merged.value;
+            self.score += Math.round(Math.random() * 2048) + merged.value * merged.value;
             if (win(merged.value)) self.won = true;
           } else {
             self.moveTile(tile, positions.farthest);
