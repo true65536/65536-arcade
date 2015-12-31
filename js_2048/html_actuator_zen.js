@@ -59,21 +59,19 @@ HTMLActuator.prototype.addTile = function (tile) {
   var position  = tile.previousPosition || { x: tile.x, y: tile.y };
   var positionClass = this.positionClass(position);
 
-  // We can't use classlist because it somehow glitches when replacing classes
-  
-  var classes = ["tile"];
-  
-  // Find tile value by rounding down to the nearest power of two.
-  var tileValue = tile.value;
-  var newValue = 2;
-  while(tileValue >= 2){
-    newValue = tileValue;
-    tileValue = tileValue & (tileValue - 1);
+  var neg = "";
+  var closest2Power = Math.pow(2, Math.floor(Math.log(Math.abs(tile.value)) / Math.log(2)));
+  if( tile.value === 0 ) {
+    closest2Power = 0
   }
-  classes.push("tile-" + newValue);
-  
-  classes.push(positionClass);
-  
+
+  if( tile.value < 0 ) {
+    neg = "-"
+  }
+
+  // We can't use classlist because it somehow glitches when replacing classes
+  var classes = ["tile", "tile-" + neg + closest2Power, positionClass];
+
   if (tile.value > 2048) classes.push("tile-super");
 
   this.applyClasses(wrapper, classes);
