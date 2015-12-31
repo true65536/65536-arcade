@@ -65,69 +65,15 @@ GameManager.prototype.addStartTiles = function () {
   }
 };
 
-// Adds a well-tempered tile in a random position
-GameManager.prototype.addEasyTile = function () {
-  if (this.grid.cellsAvailable()) {
-    var cell = this.grid.randomAvailableCell();
-
-    // Find good value
-    var values = this.grid.cellValues([
-      { x: cell.x - 1, y: cell.y },
-      { x: cell.x, y: cell.y - 1 },
-      { x: cell.x + 1, y: cell.y },
-      { x: cell.x, y: cell.y + 1 }]);
-    if (values.length == 0) {
-      values = this.grid.cellValues([
-        { x: cell.x - 1, y: cell.y - 1 },
-        { x: cell.x - 1, y: cell.y + 1 },
-        { x: cell.x + 1, y: cell.y - 1 },
-        { x: cell.x + 1, y: cell.y + 1 }]);
-    }
-    values.push(2);
-    value = values[Math.floor(Math.random() * values.length)];
-
-    var tile = new Tile(cell, value);
-    this.grid.insertTile(tile);
-  }
-};
-
 // Adds a tile in a random position
 GameManager.prototype.addRandomTile = function () {
-  if (this.grid.cellsAvailable()) {
-    var self = this;
-    var bvalue = 2147483647;
-    var bcell = this.grid.randomAvailableCell();
-
-    for (var i = 0; i < 8; i++) {
-      var cell = this.grid.randomAvailableCell();
-
-      function check(x, y, dx, dy) {
-        if (x < 0 || y < 0 || x >= self.grid.size || y >= self.grid.size) return;
-
-        if (
-          !!self.grid.cells[cell.x + x]
-          &&
-          !!self.grid.cells[cell.x + x][cell.y + y]
-        ) {
-          var tocheck = self.grid.cells[cell.x + x][cell.y + y];
-          if (Math.random() < 0.8 && tocheck.value < bvalue) {
-            bcell = cell;
-            bvalue = tocheck.value;
-          }
-        } else check(x + dx, y + dy, dx, dy);
-      }
-
-      check(-1, 0, -1, 0);
-      check(1, 0, 1, 0);
-      check(0, -1, 0, -1);
-      check(0, 1, 0, 1);
-
-      if (bvalue == 2147483647) {bvalue = Math.round(Math.random() * 10); }// Math.random() < 0.9 ? 2 : 4; }
-    }
-
-    var tile = new Tile(bcell, bvalue);
+  if (this.grid.cellsAvailable() && this.score < Infinity) {
+    var value = 2 + Math.floor(this.score / 50);
+    value = Math.min(value, Infinity - this.score);
+    var tile = new Tile(this.grid.randomAvailableCell(), value);
 
     this.grid.insertTile(tile);
+    this.score += value;
   }
 };
 
