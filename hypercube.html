@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>2048</title>
+
+  <link href="style/hypercube.css" rel="stylesheet" type="text/css">
+  <link href="style/tiles2.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+
+  <meta property="og:title" content="2048 5D game"/>
+  <meta property="og:site_name" content="2048 5D game"/>
+  <meta property="og:description" content="Join the numbers and get to the 2048 tile in 5-dimensions! Careful: this game is extremely addictive!"/>
+  <meta property="og:image" content="http://cesarkawakami.github.io/2048-5D/meta/og_image.png"/>
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">2048</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+    <p class="game-intro">Join the numbers and get the <strong>highest score</strong> in this page!</p>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Keep going</a>
+          <a class="retry-button">Try again</a>
+          <div class="score-sharing"></div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> and <strong>WASD</strong>, or <strong>swipe</strong> with one and two fingers, to move the tiles in the 5 dimensions. When two tiles with the same number touch, they <strong>merge into one!</strong>
+    </p>
+    <hr>
+    <p>
+    Click here to go back to <a href="http://theastronomer.github.io/2147483648">2147483648.</a>
+    </p>
+    <hr>
+    <p>
+    <a href="http://gabrielecirulli.github.io/2048/">Original</a> created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
+    </p>
+    <div class="sharing">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out this variant of 2048! #2048Endless #5D-Hypercube" data-url="http://theastronomer.github.io/hyeprcube.html/" data-counturl="http://huonw.github.io/2048-4D/" data-via="huon_w">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </div>
+  </div>
+
+  <script src="js_hypercube/animframe_polyfill.js"></script>
+  <script src="js_hypercube/keyboard_input_manager.js"></script>
+  <script src="js_hypercube/html_actuator.js"></script>
+  <script src="js_hypercube/grid.js"></script>
+  <script src="js_hypercube/tile.js"></script>
+  <script src="js_hypercube/local_score_manager.js"></script>
+  <script src="js_hypercube/game_manager.js"></script>
+  <script src="js_hypercube/application.js"></script>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=9681186;
+var sc_invisible=1;
+var sc_security="9c00be85";
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/9681186/0/9c00be85/0/"
+alt="web analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>
