@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>2048</title>
+
+  <link href="style/line.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta name="HandheldFriendly" content="True">
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">2048</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+    <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+          <a class="retry-button">Try again</a>
+          <div class="score-sharing"></div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row"><div class="grid-cell"></div></div>
+        <div class="grid-row"><div class="grid-cell"></div></div>
+        <div class="grid-row"><div class="grid-cell"></div></div>
+        <div class="grid-row"><div class="grid-cell"></div></div>
+        <div class="grid-row"><div class="grid-cell"></div></div>
+        <div class="grid-row"><div class="grid-cell"></div></div>
+        <div class="grid-row"><div class="grid-cell"></div></div>
+        <div class="grid-row"><div class="grid-cell"></div></div>
+        <div class="grid-row"><div class="grid-cell"></div></div>
+        <div class="grid-row"><div class="grid-cell"></div></div>
+        <div class="grid-row"><div class="grid-cell"></div></div>
+        <div class="grid-row"><div class="grid-cell"></div></div>
+        <div class="grid-row"><div class="grid-cell"></div></div>
+        <div class="grid-row"><div class="grid-cell"></div></div>
+        <div class="grid-row"><div class="grid-cell"></div></div>
+        <div class="grid-row"><div class="grid-cell"></div></div>
+        <div class="grid-row"><div class="grid-cell"></div></div>
+        <div class="grid-row"><div class="grid-cell"></div></div>
+        <div class="grid-row"><div class="grid-cell"></div></div>
+        <div class="grid-row"><div class="grid-cell"></div></div>
+        <div class="grid-row"><div class="grid-cell"></div></div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+    </p>
+    <hr>
+    <p>
+    Click here to go back to <a href="http://theastronomer.github.io/2147483648">2147483648.</a>
+    </p>
+  </div>
+
+  <script src="js_line/animframe_polyfill.js"></script>
+  <script src="js_line/keyboard_input_manager.js"></script>
+  <script src="js_line/html_actuator.js"></script>
+  <script src="js_line/grid.js"></script>
+  <script src="js_line/tile.js"></script>
+  <script src="js_line/local_score_manager.js"></script>
+  <script src="js_line/game_manager.js"></script>
+  <script src="js_line/application.js"></script>
+
+</body>
+</html>
