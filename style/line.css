@@ -366,7 +366,7 @@ hr {
     font-weight: bold;
     z-index: 10;
     font-size: 13px; }
-  .tile.tile-9 .tile-inner {
+  .tile.tile-9  {
     background: #c8e0ed;
     font-size: 50px; }
     @media screen and (max-width: 520px) {
@@ -1030,11 +1030,15 @@ here is intended for Fibonacci variant) */
   .tile.tile-8192 .tile-inner {
     color: #f9f6f2;
     background: #2db388; }
-  .tile.tile-16384 .tile-inner, 
-  .tile.tile-32768 .tile-inner, 
-  .tile.tile-65536 .tile-inner { 
+  .tile.tile-16384 .tile-inner { 
     color: #f9f6f2;
     background: #2d83b3; }
+  .tile.tile-32768 .tile-inner { 
+    color: #f9f6f2;
+    background: #2d2db3; }
+  .tile.tile-65536 .tile-inner {
+    color: #f9f6f2;
+    background: #b32db3; }
   .tile.tile-4294967296 .tile-inner {
     background: #ff7f3f;
     font-size: 8px; }
@@ -1203,14 +1207,14 @@ here is intended for Fibonacci variant) */
     background: #423d2b;
     font-size: 4.75px; }
     @media screen and (max-width: 520px) {
-      .tile.tile-144115188075855900 .tile-inner {
+      .tile.tile-144115188075855870 .tile-inner {
         font-size: 2.5px; } }
   .tile.tile-288230376151711740 .tile-inner {
     color: #f9f6f2;
     background: #ae6f3a;
 	font-size: 4.75px; }
     @media screen and (max-width: 520px) {
-      .tile.tile-288230376151711700 .tile-inner {
+      .tile.tile-288230376151711740 .tile-inner {
         font-size: 2.5px; } }
   .tile.tile-576460752303423500 .tile-inner {
     color: #f9f6f2;
@@ -2313,7 +2317,7 @@ here is intended for Fibonacci variant) */
     background: #F7CA34;
     font-size: 2px; }
     @media screen and (max-width: 520px) {
-      .tile.tile-9007199254740992 .tile-inner {
+      .tile.tile--9007199254740992 .tile-inner {
         font-size: 1px; } }
    .tile.tile--18014398509481984 .tile-inner {
     color: #f9f6f2;
@@ -2341,14 +2345,14 @@ here is intended for Fibonacci variant) */
     background: #BD9307;
     font-size: 1px; }
     @media screen and (max-width: 520px) {
-      .tile.tile--144115188075855900 .tile-inner {
+      .tile.tile--144115188075855870 .tile-inner {
         font-size: 1px; } }
   .tile.tile--288230376151711740 .tile-inner {
     color: #f9f6f2;
     background: #A48006;
 	font-size: 1px; }
     @media screen and (max-width: 520px) {
-      .tile.tile--288230376151711700 .tile-inner {
+      .tile.tile--288230376151711740 .tile-inner {
         font-size: 1px; } }
   .tile.tile--576460752303423500 .tile-inner {
     color: #f9f6f2;
