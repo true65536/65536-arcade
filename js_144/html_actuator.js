@@ -4,12 +4,10 @@ function HTMLActuator() {
   this.bestContainer    = document.querySelector(".best-container");
   this.messageContainer = document.querySelector(".game-message");
 
-  this.already_won = false;
   this.score = 0;
 }
 
 HTMLActuator.prototype.actuate = function (grid, metadata) {
-
   var self = this;
 
   window.requestAnimationFrame(function () {
@@ -26,16 +24,19 @@ HTMLActuator.prototype.actuate = function (grid, metadata) {
     self.updateScore(metadata.score);
     self.updateBestScore(metadata.bestScore);
 
-    if (metadata.terminated) {
-      if (metadata.over) {
-        self.message(false); // You lose
-      } else if (metadata.won) {
-        self.message(true); // You win!
-      }
-    }
-
+    if (metadata.over) self.message(false); // You lose
+    if (metadata.won) self.message(true); // You win!
   });
-  
+};
+
+HTMLActuator.prototype.restart = function () {
+  this.clearMessage();
+};
+
+HTMLActuator.prototype.clearContainer = function (container) {
+  while (container.firstChild) {
+    container.removeChild(container.firstChild);
+  }
 };
 
 // Continues the game (both restart and keep playing)
@@ -57,11 +58,16 @@ HTMLActuator.prototype.addTile = function (tile) {
   var position  = tile.previousPosition || { x: tile.x, y: tile.y };
   var positionClass = this.positionClass(position);
 
-  // We can't use classlist because it somehow glitches when replacing classes
-  var classes = ["tile", "tile-" + tile.value, positionClass];
+  var neg = "";
+  var closest2Power = Math.pow(2, Math.floor(Math.log(Math.abs(tile.value)) / Math.log(2)));
+  if( tile.value === 0 ) {
+    closest2Power = 0
+  }
 
-  if (tile.value == 144) self.message(true);
-  if (tile.value > 144 && tile.value % 144 == 0) classes.push("tile-super" + ("" + tile.value).length);
+  // We can't use classlist because it somehow glitches when replacing classes
+  var classes = ["tile", "tile-" + neg + closest2Power, positionClass];
+
+  if (tile.value > 2048) classes.push("tile-super");
 
   this.applyClasses(wrapper, classes);
 
@@ -115,7 +121,6 @@ HTMLActuator.prototype.updateScore = function (score) {
 
   this.scoreContainer.textContent = this.score;
 
-/*
   if (difference > 0) {
     var addition = document.createElement("div");
     addition.classList.add("score-addition");
@@ -123,8 +128,6 @@ HTMLActuator.prototype.updateScore = function (score) {
 
     this.scoreContainer.appendChild(addition);
   }
-*/
-
 };
 
 HTMLActuator.prototype.updateBestScore = function (bestScore) {
@@ -132,17 +135,11 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 };
 
 HTMLActuator.prototype.message = function (won) {
-
-  if (won && this.already_won) return false;
-
   var type    = won ? "game-won" : "game-over";
   var message = won ? "You win!" : "Game over!";
-  
-  if (won) this.already_won = true;
 
   this.messageContainer.classList.add(type);
   this.messageContainer.getElementsByTagName("p")[0].textContent = message;
-
 };
 
 HTMLActuator.prototype.clearMessage = function () {
