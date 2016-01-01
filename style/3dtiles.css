@@ -1,6 +1,7 @@
   .tile.tile-9 .cube-face {
-    background: #c8e0ed;
-    font-size: 50px; }
+    font-size: 50px; 
+    color: #f9f6f2;
+    background: #c8e0ed; }
     @media screen and (max-width: 520px) {
       .tile.tile-9 .cube-face {
         font-size: 20px; } }
@@ -132,23 +133,23 @@ here is intended for Fibonacci variant) */
         font-size: 19px; } }
 
   .tile.tile-64 .cube-face,
-  .tile.tile-48 .cube-face  {
+  .tile.tile-48 .cube-face,
+  .tile.tile-96 .cube-face  {
     font-size: 42px; 
     color: #f9f6f2;
     background: rgba(246, 94, 59, 0.5); /* #f65e3b; */
  }
     @media screen and (max-width: 520px) {
-      .tile.tile-64 .cube-face, .tile.tile-48 .cube-face  {
+      .tile.tile-64 .cube-face, .tile.tile-48 .cube-face, .tile.tile-96 .cube-face  {
         font-size: 19px; } }
 
- .tile.tile-128 .cube-face,
- .tile.tile-96 .cube-face  {
+ .tile.tile-128 .cube-face, .tile.tile-768 .cube-face  {
     color: #f9f6f2;
     background: #edcf72;
     font-size: 27px; }
     @media screen and (max-width: 520px) {
-      .tile.tile-128 .cube-face, .tile.tile-96 .cube-face  {
-        font-size: 15px; } }
+      .tile.tile-128 .cube-face, .tile.tile-768 .cube-face {
+        font-size: 15px; } } 
 
  .tile.tile-256 .cube-face,
  .tile.tile-192 .cube-face  {
@@ -168,13 +169,12 @@ here is intended for Fibonacci variant) */
       .tile.tile-512 .cube-face, .tile.tile-384 .cube-face  {
         font-size: 15px; } }
 
- .tile.tile-1024 .cube-face,
- .tile.tile-768 .cube-face  {
+ .tile.tile-1024 .cube-face  {
     color: #f9f6f2;
     background: #edc53f;
     font-size: 21px; }
     @media screen and (max-width: 520px) {
-      .tile.tile-1024 .cube-face, .tile.tile-768 .cube-face  {
+      .tile.tile-1024 .cube-face  {
         font-size: 11px; } }
 
  .tile.tile-2048 .cube-face,
@@ -204,14 +204,13 @@ here is intended for Fibonacci variant) */
       .tile.tile-8192 .cube-face, .tile.tile-6144 .cube-face  {
         font-size: 11px; } }
 
- .tile.tile-8192 .cube-face,
  .tile.tile-12288 .cube-face  {
     color: #f9f6f2;
     background: rgba(163, 73, 164, 0.7);
-    font-size: 19px; }
+    font-size: 18px; }
     @media screen and (max-width: 520px) {
-      .tile.tile-8192 .cube-face, .tile.tile-12288 .cube-face  {
-        font-size: 11px; } }
+      .tile.tile-12288 .cube-face  {
+        font-size: 9px; } }
 
  .tile.tile-16384 .cube-face,
  .tile.tile-24576 .cube-face  {
@@ -662,11 +661,15 @@ here is intended for Fibonacci variant) */
   .tile.tile-8192 .cube-face {
     color: #f9f6f2;
     background: #2db388; }
-  .tile.tile-16384 .cube-face, 
-  .tile.tile-32768 .cube-face, 
-  .tile.tile-65536 .cube-face { 
+  .tile.tile-16384 .cube-face { 
     color: #f9f6f2;
     background: #2d83b3; }
+  .tile.tile-32768 .cube-face { 
+    color: #f9f6f2;
+    background: #2d2db3; }
+  .tile.tile-65536 .cube-face {
+    color: #f9f6f2;
+    background: #b32db3; }
   .tile.tile-4294967296 .cube-face {
     background: #ff7f3f;
     font-size: 8px; }
@@ -835,14 +838,14 @@ here is intended for Fibonacci variant) */
     background: #423d2b;
     font-size: 4.75px; }
     @media screen and (max-width: 520px) {
-      .tile.tile-144115188075855900 .cube-face {
+      .tile.tile-144115188075855870 .cube-face {
         font-size: 2.5px; } }
   .tile.tile-288230376151711740 .cube-face {
     color: #f9f6f2;
     background: #ae6f3a;
 	font-size: 4.75px; }
     @media screen and (max-width: 520px) {
-      .tile.tile-288230376151711700 .cube-face {
+      .tile.tile-288230376151711740 .cube-face {
         font-size: 2.5px; } }
   .tile.tile-576460752303423500 .cube-face {
     color: #f9f6f2;
@@ -1945,7 +1948,7 @@ here is intended for Fibonacci variant) */
     background: #F7CA34;
     font-size: 2px; }
     @media screen and (max-width: 520px) {
-      .tile.tile-9007199254740992 .cube-face {
+      .tile.tile--9007199254740992 .cube-face {
         font-size: 1px; } }
    .tile.tile--18014398509481984 .cube-face {
     color: #f9f6f2;
@@ -1973,14 +1976,14 @@ here is intended for Fibonacci variant) */
     background: #BD9307;
     font-size: 1px; }
     @media screen and (max-width: 520px) {
-      .tile.tile--144115188075855900 .cube-face {
+      .tile.tile--144115188075855870 .cube-face {
         font-size: 1px; } }
   .tile.tile--288230376151711740 .cube-face {
     color: #f9f6f2;
     background: #A48006;
 	font-size: 1px; }
     @media screen and (max-width: 520px) {
-      .tile.tile--288230376151711700 .cube-face {
+      .tile.tile--288230376151711740 .cube-face {
         font-size: 1px; } }
   .tile.tile--576460752303423500 .cube-face {
     color: #f9f6f2;
@@ -2292,3 +2295,316 @@ here is intended for Fibonacci variant) */
     @media screen and (max-width: 520px) {
       .tile.tile--5559060566555523 .cube-face {
         font-size: 1px; } }
+  .tile.tile-2 .cube-face {
+    color: #776e65;
+    background: #eee4da;
+    box-shadow: 0 0 30px 10px rgba(51, 163, 255, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+  .tile.tile-4 .cube-face {
+    color: #776e65;
+    background: #d6d9db;
+    box-shadow: 0 0 30px 10px rgba(51, 163, 255, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+  .tile.tile-8 .cube-face {
+    color: #f9f6f2;
+    background: #a9c9db; }
+  .tile.tile-16 .cube-face {
+    color: #f9f6f2;
+    background: #76cada; }
+  .tile.tile-32 .cube-face {
+    color: #f9f6f2;
+    background: #98b0de; }
+  .tile.tile-64 .cube-face {
+    color: #f9f6f2;
+    background: #5999df; }
+  .tile.tile-128 .cube-face {
+    color: #f9f6f2;
+    background: #5fa6e0; }
+  .tile.tile-256 .cube-face {
+    color: #f9f6f2;
+    background: #479ce1; }
+  .tile.tile-512 .cube-face {
+    color: #f9f6f2;
+    background: #2f92e2; }
+  .tile.tile-1024 .cube-face {
+    color: #f9f6f2;
+    background: #1788e3; }
+  .tile.tile-2048 .cube-face {
+    color: #f9f6f2;
+    background: #007ee5; }
+  .tile.tile-4096 .cube-face {
+    color: #f9f6f2;
+    background: #77a136; }
+  .tile.tile-8192 .cube-face {
+    color: #f9f6f2;
+    background: #2db388; }
+  .tile.tile-16384 .cube-face {
+    color: #f9f6f2;
+    background: #2d83b3; }
+  .tile.tile-32768 .cube-face {
+    color: #f9f6f2;
+    background: #2d2db3; }
+  .tile.tile-65536 .cube-face {
+    color: #f9f6f2;
+    background: #b32db3; }
+  .tile.tile-131072 .cube-face {
+    color: #f9f6f2;
+    background: #007fff; }
+  .tile.tile-262144 .cube-face {
+    color: #f9f6f2;
+    background: #1f5f7f; }
+  .tile.tile-524288 .cube-face {
+    color: #f9f6f2;
+    background: #3f3f3f; }
+  .tile.tile-1048576 .cube-face {
+    color: #f9f6f2;
+    background: #7f7f7f; }
+  .tile.tile-2097152 .cube-face {
+    color: #f9f6f2;
+    background: #bf9f7f; }
+  .tile.tile-4194304 .cube-face {
+    color: #776e65;
+    background: #ffdfbf; }
+  .tile.tile-8388608 .cube-face {
+    color: #776e65;
+    background: #ffffdf; }
+  .tile.tile-16777216 .cube-face {
+    color: #776e65;
+    background: #ffffff; }
+  .tile.tile-33554432 .cube-face {
+    color: #f9f6f2;
+    background: #7f7fbf; }
+  .tile.tile-67108864 .cube-face {
+    color: #f9f6f2;
+    background: #00007f; }
+  .tile.tile-134217728 .cube-face {
+    color: #f9f6f2;
+    background: #003f7f; }
+  .tile.tile-268435456 .cube-face {
+    color: #f9f6f2;
+    background: #007f7f; }
+  .tile.tile-536870912 .cube-face {
+    color: #f9f6f2;
+    background: #3f3f7f; }
+  .tile.tile-1073741824 .cube-face {
+    color: #f9f6f2;
+    background: #7f007f; }
+  .tile.tile-2147483648 .cube-face {
+    color: #f9f6f2;
+    background: rgb(237, 28, 36); }
+  .tile.tile-4294967296 .cube-face {
+    background: #ff7f3f; }
+  .tile.tile-8589934592 .cube-face {
+    background: #3fff7f; }
+  .tile.tile-17179869184 .cube-face {
+    background: #7fff3f; }
+  .tile.tile-34359738368 .cube-face {
+    background: #8fff4f; }
+  .tile.tile-68719476736 .cube-face {
+    background: #9fff6f; }
+  .tile.tile-137438953472 .cube-face {
+    background: #afff6f; }
+  .tile.tile-1 .cube-face {
+    color: #776e65;
+    background: #dddddd;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+  .tile.tile-3 .cube-face {
+    color: #776e65;
+    background: #ede0c8;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+  .tile.tile-5 .cube-face {
+    color: #f9f6f2;
+    background: #f0c9a0; }
+  .tile.tile-13 .cube-face {
+    color: #f9f6f2;
+    background: #f3a872; }
+  .tile.tile-21 .cube-face {
+    color: #f9f6f2;
+    background: #f49e6a; }
+  .tile.tile-34 .cube-face {
+    color: #f9f6f2;
+    background: #f59563; }
+  .tile.tile-55 .cube-face {
+    color: #f9f6f2;
+    background: #f58961; }
+  .tile.tile-89 .cube-face {
+    color: #f9f6f2;
+    background: #f67c5f; }
+  .tile.tile-144 .cube-face {
+    color: #f9f6f2;
+    background: #f65e3b; }
+  .tile.tile-233 .cube-face {
+    color: #f9f6f2;
+    background: #edcc72; }
+  .tile.tile-377 .cube-face {
+    color: #f9f6f2;
+    background: #edcc61; }
+  .tile.tile-610 .cube-face {
+    color: #f9f6f2;
+    background: #edc850; }
+  .tile.tile-987 .cube-face {
+    color: #f9f6f2;
+    background: #edc53f; }
+  .tile.tile-1597 .cube-face {
+    color: #f9f6f2;
+    background: #edc22e; }
+  .tile.tile-2584 .cube-face {
+    color: #f9f6f2;
+    background: #edc22e; }
+  .tile.tile-4181 .cube-face {
+    color: #f9f6f2;
+    background: #DDED2E; }
+  .tile.tile-6765 .cube-face {
+    color: #f9f6f2;
+    background: #B7ED2E; }
+  .tile.tile-10946 .cube-face {
+    color: #f9f6f2;
+    background: #6EED2E; }
+  .tile.tile-17711 .cube-face {
+    color: #f9f6f2;
+    background: #2EEDA1; }
+  .tile.tile-28657 .cube-face {
+    color: #776e65;
+    background: #2eedbd; }
+  .tile.tile-46368 .cube-face {
+    color: #776e65;
+    background: #2eeded; }
+  .tile.tile-75025 .cube-face {
+    color: #776e65;
+    background: #2ebded; }
+  .tile.tile-6 .cube-face {
+    color: #f9f6f2;
+    background: #f0c189; }
+  .tile.tile-9 .cube-face {
+    color: #776e65;
+    background: #bcd7de; }
+  .tile.tile-12 .cube-face {
+    color: #f9f6f2;
+    background: #da768f; }
+  .tile.tile-24 .cube-face {
+    color: #f9f6f2;
+    background: #f60563; }
+  .tile.tile-48 .cube-face {
+    color: #f9f6f2;
+    background: #f67c5f; }
+  .tile.tile-96 .cube-face {
+    color: #f9f6f2;
+    background: #f65e3b; }
+  .tile.tile-192 .cube-face {
+    color: #f9f6f2;
+    background: #edcf72; }
+  .tile.tile-384 .cube-face {
+    color: #f9f6f2;
+    background: #edcc61; }
+  .tile.tile-768 .cube-face {
+    color: #f9f6f2;
+    background: #edc850; }
+  .tile.tile-1536 .cube-face {
+    color: #f9f6f2;
+    background: #edc53f; }
+  .tile.tile-3072 .cube-face {
+    color: #f9f6f2;
+    background: #edc22e; }
+  .tile.tile-6144 .cube-face {
+    color: #f9f6f2;
+    background: #ebb914; }
+  .tile.tile-12288 .cube-face {
+    color: #f9f6f2;
+    background: #d3a612; }
+  .tile.tile-24576 .cube-face {
+    color: #f9f6f2;
+    background: #bc9410; }
+  .tile.tile-49152 .cube-face {
+    color: #f9f6f2;
+    background: #a4810e; }
+  .tile.tile-98304 .cube-face {
+    color: #f9f6f2;
+    background: #8d6f0c; }
+  .tile.tile-7 .cube-face {
+    color: #776e65;
+    background: #bcd7de; }
+  .tile.tile-11 .cube-face {
+    color: #f9f6f2;
+    background: #f3a975; }
+  .tile.tile-18 .cube-face {
+    color: #f9f6f2;
+    background: #f49866; }
+  .tile.tile-29 .cube-face {
+    color: #f9f6f2;
+    background: #f59765; }
+  .tile.tile-47 .cube-face {
+    color: #f9f6f2;
+    background: #f68c62; }
+  .tile.tile-76 .cube-face {
+    color: #f9f6f2;
+    background: #f65e3b; }
+  .tile.tile-123 .cube-face {
+    color: #f9f6f2;
+    background: #72cfed; }
+  .tile.tile-199 .cube-face {
+    color: #f9f6f2;
+    background: #61cced; }
+  .tile.tile-322 .cube-face {
+    color: #f9f6f2;
+    background: #50c8ed; }
+  .tile.tile-521 .cube-face {
+    color: #f9f6f2;
+    background: #3fc5ed; }
+  .tile.tile-843 .cube-face {
+    color: #f2f6f9;
+    background: #2ec2ed; }
+  .tile.tile-1364 .cube-face {
+    color: #f9f6f2;
+    background: #14baeb; }
+  .tile.tile-2207 .cube-face {
+    color: #f9f6f2;
+    background: #12a8d3; }
+  .tile.tile-3571 .cube-face {
+    color: #f9f6f2;
+    background: #1095bc; }
+  .tile.tile-5778 .cube-face {
+    color: #f9f6f2;
+    background: #0e83a4; }
+  .tile.tile-9349 .cube-face {
+    color: #f9f6f2;
+    background: #0c708d; }
+  .tile.tile-15127 .cube-face {
+    color: #f9f6f2;
+    background: #bc9410; }
+  .tile.tile-24476 .cube-face {
+    color: #f9f6f2;
+    background: #da6709; }
+  .tile.tile-39603 .cube-face {
+    color: #f9f6f2;
+    background: #de6208; }
+  .tile.tile-64079 .cube-face {
+    color: #f9f6f2;
+    background: #ff3000; }
+  .tile.tile-27 .cube-face {
+    color: #f9f6f2;
+    background: #ca96c3; }
+  .tile.tile-81 .cube-face {
+    color: #f9f6f2;
+    background: #83aec1; }
+  .tile.tile-243 .cube-face {
+    color: #f9f6f2;
+    background: #ae7ca9; }
+  .tile.tile-729 .cube-face {
+    color: #f9f6f2;
+    background: #6dcdb5; }
+  .tile.tile-2187 .cube-face {
+    color: #f9f6f2;
+    background: #72cfed; }
+  .tile.tile-6561 .cube-face {
+    color: #f9f6f2;
+    background: #61cced; }
+  .tile.tile-19683 .cube-face {
+    color: #f9f6f2;
+    background: #50c8ed; }
+  .tile.tile-59049 .cube-face {
+    color: #f9f6f2;
+    background: #3fc5ed; }
+  .tile.tile-177147 .cube-face {
+    color: #f9f6f2;
+    background: #2ec2ed; }
+  .tile.tile-531441 .cube-face {
+    color: #f9f6f2;
+    background: #14b9eb; }
