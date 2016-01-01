@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" manifest="cache.appcache">
 <head>
   <meta charset="utf-8">
   <title>2187</title>
@@ -8,11 +8,20 @@
   <link href="style/tiles.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone, retina -->
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="format-detection" content="telephone=no" />
+
+  <meta property="og:title" content="2048 Endless game"/>
+  <meta property="og:site_name" content="2048 Endless game"/>
+  <meta property="og:description" content="Just join the numbers and get high score in this page! Careful: this game is extremely addictive!"/>
+  <meta property="og:image" content="http://gabrielecirulli.github.io/2048/meta/og_image.png"/>
 </head>
 <body>
   <div class="container">
@@ -23,14 +32,19 @@
         <div class="best-container">0</div>
       </div>
     </div>
-    <p class="game-intro">Just join the numbers and get the highest score in this page!
+
+    <div class="above-game">
+      <p class="game-intro">Just join the numbers and get the highest score in this page!</p>
+      <a class="restart-button">Play again</a>
+    </div>
 
     <div class="game-container">
       <div class="game-message">
         <p></p>
         <div class="lower">
-          <a class="keep-playing-button">Keep going</a>
-          <a class="retry-button">Try again</a>
+	        <a class="keep-playing-button">Keep playing</a>
+          <a class="retry-button">Play again</a>
+          <div class="score-sharing"></div>
         </div>
       </div>
 
@@ -71,10 +85,6 @@
     </p>
     <hr>
     <p>
-      Can you reach <strong>2187, 6561, and 19683 tiles?</strong> If you like <strong>this game</strong>, <a href="https://github.com/TheAstronomer/2147483648/">click here!</a>
-    </p>
-    <hr>
-    <p>
     <strong class="important">Note:</strong> This site is <strong>NOT</strong> the official version of 2048. All other apps are derivatives and fakes, and should be used with caution.
     </p>
     <hr>
@@ -95,7 +105,7 @@
   <script>
   var Goal = 0.5
   window.requestAnimationFrame(function () {
-  new GameManager(5, KeyboardInputManager, HTMLActuator, LocalStorageManager);
+  new GameManager(4, KeyboardInputManager, HTMLActuator, LocalStorageManager);
   });
   </script>
 
