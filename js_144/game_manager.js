@@ -118,7 +118,7 @@ GameManager.prototype.addRandomTile = function () {
     }
 
     var tile = new Tile(bcell, bvalue);
-    this.score += Math.floor(Math.random() * 2048) + merged.value * merged.value;
+    this.score += Math.floor(Math.random() * 2048);
     this.grid.insertTile(tile);
   }
 };
