@@ -1,6 +1,3 @@
----
----
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,7 +12,7 @@
   <div class="container">
     <header>
       <h1>ALL THE 2048</h1>
-      <p>A list of 2048 variants currently out there!</p>
+      <p>An updated list of all the 2048 variants out there! (in no particular order)</p>
       <div class="social-buttons">
         <a href="https://twitter.com/share" class="twitter-share-button" data-text="ALL THE 2048S EVER!!!" data-via="assafgelber" data-hashtags="2048game">Tweet</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
@@ -32,17 +29,697 @@
     </header>
     <section>
       <ul class="variants-list">
-        {% for variant in site.data.variants %}
+        
         <li class="variant">
-          <a href="{{ variant.url }}"><strong>{{ variant.name }}</strong></a>
-          by {{ variant.author }}
+          <a href="http://gabrielecirulli.github.io/2048/"><strong>Original</strong></a>
+          by Gabriele Cirulli
         </li>
-        {% endfor %}
+        
+        <li class="variant">
+          <a href="http://ov3y.github.io/2048-AI/"><strong>2048 AI</strong></a>
+          by Matt Overlan
+        </li>
+        
+        <li class="variant">
+          <a href="http://joppi.github.io/2048-3D/"><strong>2048-3D</strong></a>
+          by Michal Opler
+        </li>
+        
+        <li class="variant">
+          <a href="http://huonw.github.io/2048-4D/"><strong>2048-4D</strong></a>
+          by Huon Wilson
+        </li>
+        
+        <li class="variant">
+          <a href="http://cesarkawakami.github.io/2048-5D/"><strong>2048-5D</strong></a>
+          by Cesar Kawakami
+        </li>
+        
+        <li class="variant">
+          <a href="http://prat0318.github.io/2048-tetris/"><strong>2048 Tetris</strong></a>
+          by Prateek Agarwal
+        </li>
+        
+        <li class="variant">
+          <a href="http://emils.github.io/2048-multiplayer/"><strong>2048-Multiplayer</strong></a>
+          by Emil Stolarsky
+        </li>
+        
+        <li class="variant">
+          <a href="http://rudradevbasak.github.io/16384_hex/"><strong>Hex 16384</strong></a>
+          by Rudradev Basak
+        </li>
+        
+        <li class="variant">
+          <a href="http://jonastermeau.com/files/others/2048%5E0/"><strong>2048^0</strong></a>
+          by Jonas Termeau
+        </li>
+        
+        <li class="variant">
+          <a href="http://quaxio.com/2048/"><strong>2048-undo</strong></a>
+          by Alok Menghrajani
+        </li>
+        
+        <li class="variant">
+          <a href="http://milrivel.github.io/LHC/"><strong>LHC (2048 For Physicists)</strong></a>
+          by milrivel
+        </li>
+        
+        <li class="variant">
+          <a href="http://jffry.github.io/2048-Meta/"><strong>2048 Meta</strong></a>
+          by Jeffrey Stanton
+        </li>
+        
+        <li class="variant">
+          <a href="http://amschrader.github.io/2048/"><strong>Pokemon 2048</strong></a>
+          by Allyson Schrader
+        </li>
+        
+        <li class="variant">
+          <a href="http://doge2048.com"><strong>Doge 2048</strong></a>
+          by Jason LaFerrera
+        </li>
+        
+        <li class="variant">
+          <a href="http://hczhcz.github.io/Flappy-2048/"><strong>Flappy 2048</strong></a>
+          by hcz
+        </li>
+        
+        <li class="variant">
+          <a href="http://jmfork.github.io/2048/"><strong>Deterministic 2048</strong></a>
+          by jmfork
+        </li>
+        
+        <li class="variant">
+          <a href="http://t2.technion.ac.il/~s7395779/"><strong>11</strong></a>
+          by Elazar Gershuni
+        </li>
+        
+        <li class="variant">
+          <a href="http://hgentry.github.io/81/"><strong>243</strong></a>
+          by Harrison Gentry
+        </li>
+        
+        <li class="variant">
+          <a href="http://hgentry.github.io/1/"><strong>1</strong></a>
+          by Harrison Gentry
+        </li>
+        
+        <li class="variant">
+          <a href="http://hgentry.github.io/204div/"><strong>204div</strong></a>
+          by Harrison Gentry
+        </li>
+        
+        <li class="variant">
+          <a href="http://hgentry.github.io/-512/"><strong>-512</strong></a>
+          by Harrison Gentry
+        </li>
+        
+        <li class="variant">
+          <a href="http://chenglou.github.io/flappy-2048-side-by-side/"><strong>Flappy 2048 Side-By-Side</strong></a>
+          by Cheng Lou
+        </li>
+        
+        <li class="variant">
+          <a href="https://dropbox2048.site44.com/"><strong>Dropbox 2048</strong></a>
+          by Dropbox
+        </li>
+        
+        <li class="variant">
+          <a href="http://git.io/2048dbz"><strong>2048DBZ</strong></a>
+          by Gonzalo Gluzman & Matias Garcia Isaia
+        </li>
+        
+        <li class="variant">
+          <a href="https://sphere.chronosempire.org.uk/~HEx/8402/"><strong>8402</strong></a>
+          by Tom Hargreaves
+        </li>
+        
+        <li class="variant">
+          <a href="https://glyphobet.github.io/zero/"><strong>zero</strong></a>
+          by Matt Chisholm
+        </li>
+        
+        <li class="variant">
+          <a href="http://benfb.github.io/fb2048"><strong>fb2048</strong></a>
+          by Ben Bailey
+        </li>
+        
+        <li class="variant">
+          <a href="http://www.csie.ntu.edu.tw/~b01902112/8192/"><strong>8192</strong></a>
+          by JamesQAQ
+        </li>
+        
+        <li class="variant">
+          <a href="http://www.csie.ntu.edu.tw/~b01902112/65536/"><strong>65536</strong></a>
+          by JamesQAQ
+        </li>
+        
+        <li class="variant">
+          <a href="http://www.csie.ntu.edu.tw/~b01902112/9007199254740992/"><strong>9007199254740992</strong></a>
+          by JamesQAQ
+        </li>
+        
+        <li class="variant">
+          <a href="http://wegnerdesign.com/2048/"><strong>2(048)</strong></a>
+          by Joe Wegner
+        </li>
+        
+        <li class="variant">
+          <a href="http://saming.fr/p/2048"><strong>2048</strong></a>
+          by Saming
+        </li>
+        
+        <li class="variant">
+          <a href="http://joezeng.com/projects/games/144"><strong>144</strong></a>
+          by Joe Zeng
+        </li>
+        
+        <li class="variant">
+          <a href="http://jatekos101.github.io/20euros/"><strong>20 Euro</strong></a>
+          by jatekos101
+        </li>
+        
+        <li class="variant">
+          <a href="http://www.matimenkes.com/2048/justinbieber/"><strong>2048 - Justin Bieber</strong></a>
+          by Mati Menkes
+        </li>
+        
+        <li class="variant">
+          <a href="http://duarteduarte.tk/2048/"><strong>2048 - A Mostly Wrong History of Programming Languages</strong></a>
+          by Duarte Duarte & JP Dias
+        </li>
+        
+        <li class="variant">
+          <a href="http://la-oui.ch/troll2048/"><strong>troll2048</strong></a>
+          by J2R2
+        </li>
+        
+        <li class="variant">
+          <a href="http://uhyohyo.net/quantum2048/"><strong>Quantum 2048</strong></a>
+          by uhyo
+        </li>
+        
+        <li class="variant">
+          <a href="https://chrome.google.com/webstore/detail/cosmos-2048/ojkbpohgdnlijekgdnadeaohlbbbijeg"><strong>Cosmos 2048 (Chrome Extension)</strong></a>
+          by Agadeta Games
+        </li>
+        
+        <li class="variant">
+          <a href="http://la-oui.ch/lulz2048/"><strong>lulz2048</strong></a>
+          by J2R2
+        </li>
+        
+        <li class="variant">
+          <a href="http://mattleblanc.github.io/LHC/"><strong>LHC (2048 for creating a HIGGS BOSON)</strong></a>
+          by mattleblanc
+        </li>
+        
+        <li class="variant">
+          <a href="http://darkstar112358.github.io/anti-2048/"><strong>anti-2048</strong></a>
+          by darkstar112358
+        </li>
+        
+        <li class="variant">
+          <a href="http://www.oeilpouroeil.fr/opo48/"><strong>OPO48</strong></a>
+          by Oeil pour Oeil
+        </li>
+        
+        <li class="variant">
+          <a href="http://dweymouth.github.io/divideit"><strong>Divide It!</strong></a>
+          by Drew Weymouth
+        </li>
+        
+        <li class="variant">
+          <a href="http://www.ajnas.in/one/"><strong>One</strong></a>
+          by Ajnas Kt
+        </li>
+        
+        <li class="variant">
+          <a href="http://la-oui.ch/syn2048/"><strong>syn2048</strong></a>
+          by J2R2
+        </li>
+        
+        <li class="variant">
+          <a href="http://diamondtrader.citroon.com/"><strong>Play with Diamonds (for people who don't like numbers)</strong></a>
+          by Jrmgx
+        </li>
+        
+        <li class="variant">
+          <a href="http://tinyurl.com/paw2048"><strong>PAW 2048</strong></a>
+          by cestsupersympa
+        </li>
+        
+        <li class="variant">
+          <a href="http://2048game.org/simpson/"><strong>Simpsons 2048</strong></a>
+          by Amit Surti
+        </li>
+        
+        <li class="variant">
+          <a href="http://www.b4rm4n.com/shots/"><strong>SH0TS!</strong></a>
+          by B4RM4N
+        </li>
+        
+        <li class="variant">
+          <a href="http://hczhcz.github.io/Racing-2048/"><strong>Racing 2048</strong></a>
+          by hcz
+        </li>
+        
+        <li class="variant">
+          <a href="http://hczhcz.github.io/2048/"><strong>Upside Down 2048</strong></a>
+          by hcz
+        </li>
+        
+        <li class="variant">
+          <a href="http://hczhcz.github.io/2048/20ez/"><strong>Easy 2048</strong></a>
+          by hcz
+        </li>
+        
+        <li class="variant">
+          <a href="http://www.twitch.tv/twitchplayswebgames"><strong>Twitch Plays 2048</strong></a>
+          by Twitch
+        </li>
+        
+        <li class="variant">
+          <a href="http://mcsdwvl.github.io/to11/"><strong>to11 - puzzle 2048</strong></a>
+          by Matthew Vassilakos
+        </li>
+        
+        <li class="variant">
+          <a href="http://1338h4x.github.io/2-2-4/"><strong>Yet Another 2048 Variant</strong></a>
+          by 1338h4x
+        </li>
+        
+        <li class="variant">
+          <a href="http://suki.ipb.ac.rs/11/"><strong>11 Game</strong></a>
+          by Milovan Suvakov
+        </li>
+        
+        <li class="variant">
+          <a href="http://2048alphabet.com"><strong>2048 Alphabet</strong></a>
+          by Misho M. Petkovic
+        </li>
+        
+        <li class="variant">
+          <a href="http://vladimirmandaric.github.io/DIAGONAL2048/2048-master/index.html"><strong>Diagonal 2048</strong></a>
+          by Vladimir Mandaric
+        </li>
+        
+        <li class="variant">
+          <a href="http://blanboom.org/2048/"><strong>Mg</strong></a>
+          by Blanboom
+        </li>
+        
+        <li class="variant">
+          <a href="http://2048alphabet.com/hiragana/"><strong>2048 Hiragana</strong></a>
+          by Misho M. Petkovic
+        </li>
+        
+        <li class="variant">
+          <a href="http://2048alphabet.com/katakana/"><strong>2048 Katakana</strong></a>
+          by Misho M. Petkovic
+        </li>
+        
+        <li class="variant">
+          <a href="http://games.usvsth3m.com/2048/complex-function-2048-edition/"><strong>Complex function edition 2048</strong></a>
+          by Mikael Mayer
+        </li>
+        
+        <li class="variant">
+          <a href="http://kiokokun.github.io/gh-pages/"><strong>2048 Law Edition</strong></a>
+          by Zach Hastings
+        </li>
+        
+        <li class="variant">
+          <a href="http://egansoft.github.io/2048hack/"><strong>2048 Hack Version</strong></a>
+          by Egansoft
+        </li>
+        
+        <li class="variant">
+          <a href="http://simos.github.io/2048/"><strong>2048 Greek Numerals</strong></a>
+          by Simos Xenitellis
+        </li>
+        
+        <li class="variant">
+          <a href="http://games.usvsth3m.com/2048/roman-numerals-edition-33/"><strong>2048: Roman numerals edition</strong></a>
+          by Daniel Barber
+        </li>
+        
+        <li class="variant">
+          <a href="http://www.voxcatch.fr/2048WWE"><strong>WWE Edition</strong></a>
+          by Darren Fog
+        </li>
+        
+        <li class="variant">
+          <a href="http://bennettfeely.com/air2048"><strong>Air2048</strong></a>
+          by Bennett Feely
+        </li>
+        
+        <li class="variant">
+          <a href="http://0x0800.github.io/2048-STARWARS/"><strong>Star Wars</strong></a>
+          by 2048
+        </li>
+        
+        <li class="variant">
+          <a href="http://0x0800.github.io/2048-ARMY/"><strong>Army</strong></a>
+          by 2048
+        </li>
+        
+        <li class="variant">
+          <a href="http://0x0800.github.io/2048-CUPCAKES/"><strong>Cupcakes</strong></a>
+          by 2048
+        </li>
+        
+        <li class="variant">
+          <a href="http://0x0800.github.io/2048-TIFFANY/"><strong>Tiffany</strong></a>
+          by 2048
+        </li>
+        
+        <li class="variant">
+          <a href="http://0x0800.github.io/2048-SUPERHEELS/"><strong>Super Heels</strong></a>
+          by 2048
+        </li>
+        
+        <li class="variant">
+          <a href="http://2048game.org/flappy/"><strong>Flappy Thirds</strong></a>
+          by Nakshatra
+        </li>
+        
+        <li class="variant">
+          <a href="https://campmesh.github.io/2048/"><strong>Help Ted!</strong></a>
+          by Vaibhav Gupta
+        </li>
+        
+        <li class="variant">
+          <a href="http://aarextiaokhiao.github.io/Aarex2048"><strong>2048Endless</strong></a>
+          by Aarex Tiaokhiao
+        </li>
+        
+        <li class="variant">
+          <a href="http://gagikm.github.io/Finals2048/"><strong>Finals 2048</strong></a>
+          by Gagikm
+        </li>
+        
+        <li class="variant">
+          <a href="http://jmhummel.github.io/1597/"><strong>1597</strong></a>
+          by jmhummel
+        </li>
+        
+        <li class="variant">
+          <a href="http://cozmic72.github.io/987/"><strong>987</strong></a>
+          by cosmic72
+        </li>
+        
+        <li class="variant">
+          <a href="http://themoreyouknow.github.io/div/"><strong>DIV</strong></a>
+          by themoreyouknow
+        </li>
+        
+        <li class="variant">
+          <a href="http://alexfink.github.io/dive/"><strong>DIVE</strong></a>
+          by alexfink
+        </li>
+        
+        <li class="variant">
+          <a href="http://frankh.github.io/2048/"><strong>2048 +-*/</strong></a>
+          by frankh
+        </li>
+        
+        <li class="variant">
+          <a href="http://jefemagril.github.io/0/"><strong>0</strong></a>
+          by Jeff Magill
+        </li>
+        
+        <li class="variant">
+          <a href="http://cantorion.org/2048"><strong>Musical 2048</strong></a>
+          by Cantorion
+        </li>
+        
+        <li class="variant">
+          <a href="http://games.usvsth3m.com/2048-doctor-who-edition/"><strong>Doctor Who Edition</strong></a>
+          by usvsth3m
+        </li>
+        
+        <li class="variant">
+          <a href="http://games.usvsth3m.com/2048/led-zeppelin-edition-10/"><strong>Led Zeppelin 2048</strong></a>
+          by cheesecake_assassin
+        </li>
+        
+        <li class="variant">
+          <a href="http://games.usvsth3m.com/2048/rihanna-edition-18/"><strong>Rihanna Edition</strong></a>
+          by Emma S
+        </li>
+        
+        <li class="variant">
+          <a href="http://apps.microsoft.com/windows/app/2048/7e8bc864-2ee7-437e-8f75-106f1eb4d802"><strong>2048 for Windows 8</strong></a>
+          by Peter Vrenken
+        </li>
+        
+        <li class="variant">
+          <a href="http://2048alphabet.com/azbuka/"><strong>2048 Azbuka</strong></a>
+          by Misho M. Petkovic
+        </li>
+        
+        <li class="variant">
+          <a href="http://jamesdonnelly.github.io/Isotopic256/"><strong>isotpic 256</strong></a>
+          by James Donnelly
+        </li>
+        
+        <li class="variant">
+          <a href="http://louhuang.com/2048-numberwang/"><strong>2048 Numberwang</strong></a>
+          by Lou Huang
+        </li>
+        
+        <li class="variant">
+          <a href="http://cyberzhg.github.io/2048/"><strong>2147483648</strong></a>
+          by Zhao Hanguang
+        </li>
+        
+        <li class="variant">
+          <a href="http://logarithmic-flappy-2048.ajf.me/"><strong>Logarithmic Flappy 2048</strong></a>
+          by ajf
+        </li>
+        
+        <li class="variant">
+          <a href="http://phorque.github.io/4/"><strong>4</strong></a>
+          by Victor Goya
+        </li>
+        
+        <li class="variant">
+          <a href="http://aj-r.github.io/Evil-2048/"><strong>Evil 2048</strong></a>
+          by AJ Richardson
+        </li>
+        
+        <li class="variant">
+          <a href="http://games.usvsth3m.com/2048/2048-2048-edition/"><strong>2048 2048 2048</strong></a>
+          by Stingclaw
+        </li>
+        
+        <li class="variant">
+          <a href="http://matthewbauer.github.io/2048i/"><strong>2048i</strong></a>
+          by Matthew Bauer
+        </li>
+        
+        <li class="variant">
+          <a href="http://turbomaze.github.io/2048-Study/"><strong>2048 Study Tool</strong></a>
+          by Anthony Liu
+        </li>
+        
+        <li class="variant">
+          <a href="http://wasting-ti.me/2048+2048/"><strong>2048 + 2048</strong></a>
+          by Nicolas Hurtubise
+        </li>
+        
+        <li class="variant">
+          <a href="http://games.usvsth3m.com/2048/-edition-12318/"><strong>Japanese version</strong></a>
+          by Superfoo
+        </li>
+        
+        <li class="variant">
+          <a href="http://games.usvsth3m.com/2048/1-edition-2637/"><strong>1</strong></a>
+          by Superfoo
+        </li>
+        
+        <li class="variant">
+          <a href="http://brandonevans.org/2048-sendgrid/"><strong>2048-SendGrid</strong></a>
+          by Brandon Evans
+        </li>
+        
+        <li class="variant">
+          <a href="http://1024game.org"><strong>1024 Game</strong></a>
+          by M. Petkovic
+        </li>
+        
+        <li class="variant">
+          <a href="http://kshitij-banerjee.github.io/Cubiks-2048/"><strong>Cubik's 2048</strong></a>
+          by Kshitij Banerjee
+        </li>
+        
+        <li class="variant">
+          <a href="http://games.usvsth3m.com/2048/minecraft-edition-1125/"><strong>Minecraft 2048</strong></a>
+          by total2048
+        </li>
+        
+        <li class="variant">
+          <a href="http://p6v.6j.sl.pt/"><strong>Undress 2048 (NSFW)</strong></a>
+          by 2048undress
+        </li>
+        
+        <li class="variant">
+          <a href="http://www.romaincousin.fr/2048/"><strong>Animated 2048</strong></a>
+          by Romain Cousin
+        </li>
+        
+        <li class="variant">
+          <a href="http://games.usvsth3m.com/2048/powerpuff-edition-2/"><strong>Powerpuff 2048</strong></a>
+          by Dominiqe McCaskill
+        </li>
+        
+        <li class="variant">
+          <a href="http://games.usvsth3m.com/2048/mlp--edition-8/"><strong>MLP 2048</strong></a>
+          by Dominiqe McCaskill
+        </li>
+        
+        <li class="variant">
+          <a href="http://n-at.github.io/obstacle-2048"><strong>Obstacle 2048</strong></a>
+          by Alexey Nurgaliev
+        </li>
+        
+        <li class="variant">
+          <a href="http://games.usvsth3m.com/2048/dogs-edition-22/"><strong>Dogs 2048</strong></a>
+          by Daniel Barber
+        </li>
+        
+        <li class="variant">
+          <a href="http://games.usvsth3m.com/2048/pacmandigdug-edition/"><strong>Pacman 2048</strong></a>
+          by Daniel Barber
+        </li>
+        
+        <li class="variant">
+          <a href="http://jamesdonnelly.github.io/Isotopic256/"><strong>Isotopic 2048</strong></a>
+          by James Donnelly
+        </li>
+        
+        <li class="variant">
+          <a href="http://2048.wiity.net/"><strong>2048 in French</strong></a>
+          by wiity.net
+        </li>
+        
+        <li class="variant">
+          <a href="http://games.usvsth3m.com/2048/minecraft-edition-837/"><strong>Minecraft 2048</strong></a>
+          by coddyer18
+        </li>
+        
+        <li class="variant">
+          <a href="http://games.usvsth3m.com/2048/hundley-edition/"><strong>2048 Hundley Edition</strong></a>
+          by WandoHD
+        </li>
+        
+        <li class="variant">
+          <a href="http://danharel.github.io/2048----Zelda-Edition/"><strong>Zelda 2048</strong></a>
+          by Dan Harel
+        </li>
+        
+        <li class="variant">
+          <a href="http://p80.4x.sl.pt"><strong>2048 Undress Ian Somerhalder</strong></a>
+          by 2048undress
+        </li>
+        
+        <li class="variant">
+          <a href="http://2048.kaivoslab.com/"><strong>2048x5</strong></a>
+          by Kaivo Anastetiks
+        </li>
+        
+        <li class="variant">
+          <a href="http://2048.kaivoslab.com/bysix/"><strong>2048x6</strong></a>
+          by Kaivo Anastetiks
+        </li>
+        
+        <li class="variant">
+          <a href="http://games.usvsth3m.com/2048/super-mario-edition-87/"><strong>Super Mario Edition</strong></a>
+          by MinerGamez
+        </li>
+        
+        <li class="variant">
+          <a href="http://games.usvsth3m.com/2048/beastie-boys-edition-edition/"><strong>Beastie Boys Edition Edition</strong></a>
+          by MinerGamez
+        </li>
+        
+        <li class="variant">
+          <a href="http://www.kongregate.com/games/random_strangers/511-game"><strong>511 Game</strong></a>
+          by Arek Paterek
+        </li>
+        
+        <li class="variant">
+          <a href="http://random-strangers.com/2048analyze"><strong>2048 Analyze</strong></a>
+          by Arek Paterek
+        </li>
+        
+        <li class="variant">
+          <a href="http://random-strangers.com/smart2048"><strong>Smart 2048</strong></a>
+          by Arek Paterek
+        </li>
+        
+        <li class="variant">
+          <a href="http://games.usvsth3m.com/2048/sonic-the-hedgehog-edition/"><strong>Sonic the Hedgehog Edition</strong></a>
+          by nyannah
+        </li>
+        
+        <li class="variant">
+          <a href="http://games.usvsth3m.com/2048/zelda-edition-5/"><strong>Zelda 2048</strong></a>
+          by Triforce
+        </li>
+        
+        <li class="variant">
+          <a href="http://games.usvsth3m.com/2048/money-edition-114/"><strong>Money Edition</strong></a>
+          by MinerGamez
+        </li>
+        
+        <li class="variant">
+          <a href="http://games.usvsth3m.com/2048/nintendo-edition-48/"><strong>Nintendo Edition</strong></a>
+          by MinerGamez
+        </li>
+        
+        <li class="variant">
+          <a href="http://games.usvsth3m.com/2048/violet-edition-6/"><strong>Violet Edition</strong></a>
+          by MinerGamez
+        </li>
+        
+        <li class="variant">
+          <a href="http://mblan.github.io/joc2048/"><strong>JOC Wines Edition</strong></a>
+          by m blan
+        </li>
+        
+        <li class="variant">
+          <a href="http://aarextiaokhiao.github.io/Aarex2048/size5.html"><strong>65536 Endless</strong></a>
+          by Aarex Tiaokhiao
+        </li>
+        
+        <li class="variant">
+          <a href="http://aarextiaokhiao.github.io/Aarex2048/4194304.html"><strong>4194304</strong></a>
+          by Aarex Tiaokhiao
+        </li>
+        
+        <li class="variant">
+          <a href="http://aarextiaokhiao.github.io/Aarex2048/size6.html"><strong>4194304 Endless</strong></a>
+          by Aarex Tiaokhiao
+        </li>
+        
+        <li class="variant">
+          <a href="http://aarextiaokhiao.github.io/Aarex2048/fibonacci.html"><strong>2584</strong></a>
+          by Aarex Tiaokhiao
+        </li>
+        
+        <li class="variant">
+          <a href="http://aarextiaokhiao.github.io/Aarex2048/classic.html"><strong>1024 (Browser)</strong></a>
+          by Aarex Tiaokhiao
+        </li>
+        
       </ul>
     </section>
     <footer>
       <p class="contributing">
-        To add your own, <a href="http://github.com/TheAstronomer/2147483648">fork on github on variants.yml</a>, add your own variant and open a pull request.
+        To add your own, <a href="https://github.com/TheAstronomer/2147483648">fork on GitHub</a>, add your own variant on variants.yml and open a pull request.
       </p>
       <hr />
       <p class="credit">
