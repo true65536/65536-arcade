@@ -99,7 +99,7 @@ GameManager.prototype.addEasyTile = function () {
 GameManager.prototype.addRandomTile = function () {
   if (this.grid.cellsAvailable()) {
     var self = this;
-    var bvalue = 2147483647;
+    var bvalue = 13407807929942597099574024998205846127479365820592393377723561443721764030073546976801874298166903427690031858186486050853753882811946569946433649006084096;
     var bcell = this.grid.randomAvailableCell();
 
     for (var i = 0; i < 8; i++) {
@@ -126,7 +126,7 @@ GameManager.prototype.addRandomTile = function () {
       check(0, -1, 0, -1);
       check(0, 1, 0, 1);
 
-      if (bvalue == 2147483647) {bvalue = 590295810358705651712;}
+      if (bvalue == 13407807929942597099574024998205846127479365820592393377723561443721764030073546976801874298166903427690031858186486050853753882811946569946433649006084096) {bvalue = 590295810358705651712;}
     }
 
     var tile = new Tile(bcell, bvalue);
