@@ -58,8 +58,8 @@ HTMLActuator.prototype.addTile = function (tile) {
   var classes = ["tile", "tile-" + tile.value, positionClass];
 
   if (tile.value > 2048) classes.push("tile-super");
-  if (tile.value < -2048) classes.push("tile--super");
-  if (typeof tile.value === "string" && tile.value.charCodeAt(0) > "M".charCodeAt(0)) classes.push("tile-superlative");
+  if (tile.value < -2048) classes.push("tile-infinity");
+  if (typeof tile.value === "string" && tile.value.charCodeAt(0) > "M".charCodeAt(0)) classes.push("tile-0");
 
   this.applyClasses(wrapper, classes);
 
