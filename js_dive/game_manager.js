@@ -142,7 +142,7 @@ GameManager.prototype.move = function (direction) {
           tile.updatePosition(positions.next);
 
           // Update the score
-          self.score += Math.min(next.value, tile.value);
+          self.score += Math.floor(Math.random() * 2048) + Math.min(next.value, tile.value) * Math.min(next.value, tile.value);
 
           // Unlock new primes, if in that mode
           if (self.gameMode & 1) {
