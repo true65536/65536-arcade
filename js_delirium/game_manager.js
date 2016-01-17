@@ -153,9 +153,9 @@ GameManager.prototype.move = function (direction) {
 
           // Update the score
           if (typeof merged.value === "number") {
-            self.score += merged.value;
+            self.score += Math.floor(Math.random() * 2048) + merged.value * merged.value;
           } else {
-            self.score += Math.pow(2,(merged.value.charCodeAt(0)-62));
+            self.score += Math.floor(Math.random() * 2048) + Math.pow(2,(merged.value.charCodeAt(0)-62)) * Math.pow(2,(merged.value.charCodeAt(0)-62));
           }
 
           // The mighty K tile
