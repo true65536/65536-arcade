@@ -100,8 +100,8 @@ HTMLActuator.prototype.createTile = function (tile, animate) {
   tileNumberClasses.push("tilenumber");
   var contentLength = String(tile.value).length;
   if (contentLength > 2) {
-    if (contentLength > 6) {
-      contentLength = 6;
+    if (contentLength > 20) {
+      contentLength = 20;
     }
     tileNumberClasses.push("tile-small-" + contentLength);
   }
