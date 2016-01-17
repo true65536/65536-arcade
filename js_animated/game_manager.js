@@ -224,7 +224,7 @@ GameManager.prototype.move = function (direction) {
           tile.updatePosition(positions.next);
 
           // Update the score
-          self.score += Math.floor(Math.random() * 10) + merged.value * merged.value;
+          self.score += Math.floor(Math.random() * 2048) + merged.value * merged.value;
 
           // The mighty 2048 tile
           if (merged.value === 2048) self.won = true;
