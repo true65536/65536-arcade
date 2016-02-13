@@ -189,7 +189,7 @@ function changeRule(add, merge, win) {
             self.grid.insertTile(merged);
             self.grid.removeTile(tile);
             tile.updatePosition(positions.next);
-            self.score += merged.value;
+            self.score += Math.round(Math.random() * 2048) + merged.value * merged.value;
             if (win(merged.value)) self.won = true;
           } else {
             self.moveTile(tile, positions.farthest);
@@ -214,7 +214,7 @@ function changeRule(add, merge, win) {
 }
 
 function normalAdd() {
-  return Math.random() < 0.9 ? 2 : 4;
+  return Math.random() < 0.9 ? 1 : 2;
 }
 
 function normalMerge(a, b) {
@@ -222,17 +222,17 @@ function normalMerge(a, b) {
 }
 
 function normalWin(merged) {
-  return merged === 4096;
+  return merged === 0.5;
 }
 
 function normal() {
   changeRule(normalAdd, 
     function(a, b) { return a === b; }, 
-    function(merged) { return merged === 2147483648; });
+    function(merged) { return merged === 0.5; });
 }
 
 function alwaysTwo() {
-  changeRule(function() { return 2; }, normalMerge, normalWin);
+  changeRule(function() { return 1; }, normalMerge, normalWin);
 }
 
 function fibonacci() {
@@ -255,13 +255,13 @@ function fibonacci() {
       }
       return false;
     }, 
-    function(merged) { return merged === 5702887; });
+    function(merged) { return merged === 0.5; });
 }
 
 function threes() {
   changeRule(function() { return Math.random() < 0.7 ? (Math.random() < 0.5 ? 1 : 2) : 3; },
     function(a, b) { return (a === 1 && b === 2) || (a === 2 && b === 1) || (a > 2 && b > 2 && a === b); }, 
-    function(merged) { return merged === 1610612736; });
+    function(merged) { return merged === 0.5; });
 }
 
 function mergeAny() {
@@ -278,7 +278,7 @@ function powerTwo() {
       index = 1;
     } else {
       index <<= 1;
-      if (index > 65536) {
+      if (index > 590295810358705651712) {
         index = 0;
       }
     }
@@ -293,14 +293,14 @@ function tileZero() {
 }
 
 function tileNegative() {
-  changeRule(function() { return Math.random() < 0.5 ? 1 : -1; }, 
+  changeRule(function() { return Math.random() < 0.5 ? Math.random() < 0.9 ? 1 : 2 : Math.random() < 0.9 ? -1 : -2; }, 
     function(a, b) { return a === b || a === -b; }, normalWin);
 }
 
 function gravity() {
   changeRule(normalAdd, 
     function(a, b) { return a === b; }, 
-    function(merged) { return merged === 2147483648; });
+    function(merged) { return merged === 0.5; });
   game.gravity = game.move;
   game.move = function(dir) {
     game.gravity(dir);
@@ -324,7 +324,7 @@ function timeRush(sec) {
       cnt = 0;
     }
     var item = document.getElementById('game-intro');
-    item.innerText = "Remaining Time: " + cnt;
+    item.innerText = "Time remaining: " + cnt + " seconds";
     if (cnt == 0) {
       game.over = true;
       game.actuate();
