@@ -38,6 +38,9 @@ window.requestAnimationFrame(function () {
   case "fibonacci":
     fibonacci();
     break;
+  case "lucas":
+    lucas();
+    break;
   case "threes":
     threes();
     break;
@@ -247,6 +250,29 @@ function fibonacci() {
     b = c;
   }
   changeRule(function() { return 1; },
+    function(a, b) {
+      for (var i = 0; i < fib.length; ++i) {
+        if (a + b === fib[i]) {
+          return true;
+        }
+      }
+      return false;
+    }, 
+    function(merged) { return merged === 0.5; });
+}
+
+function lucas() {
+  var fib = new Array();
+  var a = 2, b = 1;
+  fib.push(a);
+  fib.push(b);
+  while (a + b <= 2147483648) {
+    var c = a + b;
+    fib.push(c);
+    a = b;
+    b = c;
+  }
+  changeRule(function() { return Math.random() < 0.8 ? 1 : 2; },
     function(a, b) {
       for (var i = 0; i < fib.length; ++i) {
         if (a + b === fib[i]) {
