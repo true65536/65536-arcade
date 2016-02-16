@@ -106,27 +106,6 @@ function corner() {
   }
 }
 
-function gravity() {
-  if (game == null || typeof(game) === "undefined") {
-    return;
-  }
-  var item = document.getElementById('tile-container');
-  if (item.innerHTML == last) {
-    if (++cnt > 0) {
-      dir = 1 - dir;
-      cnt = 0;
-    }
-  }
-  last = item.innerHTML;
-  if (0 === dir) {
-    game.move(0);
-    setTimeout(function() {game.move(3)}, 20);
-  } else {
-    game.move(0);
-    setTimeout(function() {game.move(2)}, 20);
-  }
-}
-
 function swing() {
   if (game == null || typeof(game) === "undefined") {
     return;
