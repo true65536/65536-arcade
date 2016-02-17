@@ -249,7 +249,7 @@ function fibonacci() {
     a = b;
     b = c;
   }
-  changeRule(function() { return 1; },
+  changeRule(function() { return Math.random() < 0.9 ? 1 : 2; },
     function(a, b) {
       for (var i = 0; i < fib.length; ++i) {
         if (a + b === fib[i]) {
