@@ -11,7 +11,7 @@ Motion graphics created by [Romain Cousin](http://www.romaincousin.fr/), and des
 
 ### Battery saving techiques:
 This game contains high graphic images (GIF and PNG files) which are very large and could drain your battery fast.
-If you have a computer or a laptop, no worries. :smile
+If you have a computer or a laptop, no worries. :smile:
 
 Plei dat gaem [rite heer.](http://rawgit.com/TheAstronomer/2147483648/master/index.html)
 
