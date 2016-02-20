@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FINALS</title>
+
+  <link href="style/animated2048.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="http://www.romaincousin.fr/2048/favicon.gif">
+  <link rel="apple-touch-icon" href="http://www.romaincousin.fr/2048/meta/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta name="Description" content="Play the famous 2048 game with colored animated tiles! Add the same numbers to reach the 2048 animation!">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="fb:app_id" content="248687261848668" />
+	<meta property="fb:admins" content="1407921180" />
+	<meta property="og:title" content="2048 - Animated edition" />
+	<meta property="og:description" content="Play the famous 2048 game with colored animated tiles!" />
+	<meta property="og:url" content="http://www.romaincousin.fr/2048/" />
+	<meta property="og:image" content="http://www.romaincousin.fr/2048/img/fb-2048-animated-edition-romain-cousin.png" />
+  
+</head>
+<body>
+	<div class="container">
+		<div class="heading">
+			<h1 class="title"><img src="http://www.romaincousin.fr/2048/img/2048-animated-edition.gif" alt="2048 - Animated edition" /></h1>
+		  
+			<div class="new-game-scores">
+				<a class="restart-button">new game</a>
+				<div class="scores-container">
+					
+					<div class="best">
+						<div class="score-best-title">best</div>
+						<div class="best-container">0</div>
+					</div>
+					
+					<div class="score">
+						<div class="score-best-title">score</div>
+						<div class="score-container">0</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="game-container">
+				<div class="game-message">
+					  <a class="keep-playing-button"></a>
+					  <a class="retry-button"></a>
+				</div>
+
+				<div class="grid-container">
+					<div class="grid-row">
+					  <div class="grid-cell"></div>
+					  <div class="grid-cell"></div>
+					  <div class="grid-cell"></div>
+					  <div class="grid-cell"></div>
+					</div>
+					<div class="grid-row">
+					  <div class="grid-cell"></div>
+					  <div class="grid-cell"></div>
+					  <div class="grid-cell"></div>
+					  <div class="grid-cell"></div>
+					</div>
+					<div class="grid-row">
+					  <div class="grid-cell"></div>
+					  <div class="grid-cell"></div>
+					  <div class="grid-cell"></div>
+					  <div class="grid-cell"></div>
+					</div>
+					<div class="grid-row">
+					  <div class="grid-cell"></div>
+					  <div class="grid-cell"></div>
+					  <div class="grid-cell"></div>
+					  <div class="grid-cell"></div>
+					</div>
+				</div>
+
+				<div class="tile-container"></div>
+			</div>
+
+			<p class="game-explanation">
+				<img src="http://www.romaincousin.fr/2048/img/keyboard.gif" alt="2048 - animated edition" />
+				<span class="important">The rules have<br />been <strong>switched</strong>!</span>
+				<span class="important">Try to make <strong>game over</strong>!</span>
+			</p>
+			<img src="http://www.romaincousin.fr/2048/img/waves.gif" alt="" />
+		
+			<div class="game-credits">
+				<ul class="social">
+					<li class="social-twitter"><a href="https://twitter.com/RomainCousin" alt="Twitter" target="_blank"></a></li>
+					<li class="social-facebook"><a href="http://www.facebook.com/pages/Romain-Cousin-cr%C3%A9ation-graphique/145991888755373" alt="Facebook" target="_blank"></a></li>
+					<li class="social-behance"><a href="https://www.behance.net/romaincousin" alt="Behance" target="_blank"></a></li>
+					<li class="social-vimeo"><a href="https://vimeo.com/romaincousin" alt="Vimeo" target="_blank"></a></li>
+				</ul>
+				<p>
+					Motion graphics created by <a href="http://www.romaincousin.fr" target="_blank">Romain Cousin</a>.
+					Project forked by <a href="http://www.github.com/TheAstronomer" target="_blank">Noel Cendana (aka TheAstronomer)</a>.
+					<br /><br />	
+					Based on the open source project <a href="http://gabrielecirulli.github.io/2048/" target="_blank">2048</a> by Gabriele Cirulli.<br />
+					Similar to <a href="http://asherv.com/threes/" target="_blank">Threes</a> by Asher Vollmer & Greg Wohlwend.
+					Click here to go back to <a href="http://theastronomer.github.io/2147483648/">2147483648.</a>
+					    </p> 
+				</p>
+			</div>
+		</div>
+	</div>
+
+<script src="js_animated/bind_polyfill.js"></script>
+<script src="js_animated/classlist_polyfill.js"></script>
+<script src="js_animated/animframe_polyfill.js"></script>
+<script src="js_animated/keyboard_input_manager.js"></script>
+<script src="js_animated/html_actuator.js"></script>
+<script src="js_animated/grid.js"></script>
+<script src="js_animated/tile.js"></script>
+<script src="js_animated/local_storage_manager.js"></script>
+<script src="js_animated/game_manager_inverted.js"></script>
+<script src="js_animated/application.js"></script>
+  
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	var pluginUrl = 
+	'//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+	_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+	_gaq.push(['_setAccount', 'UA-17855812-2']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+<div id="preload"></div>
+  
+</body>
+</html>
