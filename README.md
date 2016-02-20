@@ -9,6 +9,10 @@ This site is a clone of [2147483648](https://cyberzhg.github.io/2048/) by CyberZ
 
 Motion graphics created by [Romain Cousin](http://www.romaincousin.fr/), and design contributions by [Allen Knutson](https://plus.google.com/+AllenKnutson) and [Vynce Montgomery](https://plus.google.com/+VynceMontgomery).
 
+### Battery saving techiques:
+This game contains high graphic images (GIF and PNG files) which are very large and could drain your battery fast.
+If you have a computer or a laptop, no worries. :smile
+
 Plei dat gaem [rite heer.](http://rawgit.com/TheAstronomer/2147483648/master/index.html)
 
 You can find and follow me on Github [right here.](https://github.com/theastronomer)
