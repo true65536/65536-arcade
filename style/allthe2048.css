@@ -1,9 +1,9 @@
-@import url(fonts/clear-sans.css);
+@import url(fonts.css);
 
 html, body {
   margin: 0;
   padding: 0;
-  background: #000000;
+  background: #57407c;
   color: #ffffff;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px; 
@@ -31,7 +31,7 @@ p {
 }
 
 a {
-  color: #7f7f7f;
+  color: white;
   font-weight: bold;
   text-decoration: underline;
 }
@@ -46,67 +46,82 @@ hr {
 .variants-list {
   margin-top: 40px;
   padding: 15px;
-  background: #bbada0;
+  background: #57407c;
   border-radius: 6px;
 }
 
 .variant {
   list-style: none;
   margin-bottom: 15px;
+  border-radius: 10px; 
   padding: 15px;
-  background: #eee4da;
+  background: #57407c;
 }
 
 .variant:last-child {
     margin-bottom: 0;
 }
 
-/* Team Turais */
-.variant:nth-child(4n+1) {
-  color: #f9f6f2;
-  background: #edc22e;
-  box-shadow: 0 0 30px 10px rgba(243, 215, 116, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-}
-.variant:nth-child(4n+1) a {
-  color: #f9f6f2;
+.variant:nth-child(10n) {
+    background: #57407c url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/1024.gif');
+    background-size: cover; 
 }
 
-/* Team Polaris */
-.variant:nth-child(4n+2) {
-  color: #f9f6f2;
-  background: #123dd1;
-  box-shadow: 0 0 30px 10px rgba(18, 61, 209, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-}
-.variant:nth-child(4n+2) a {
-  color: #f9f6f2;
+.variant:nth-child(10n+1) {
+	background: #41c9b8 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/2.gif');
+    background-size: cover; 
 }
 
-/* Team Sirius */
-.variant:nth-child(4n+3) {
-  color: #f9f6f2;
-  background: #ff273b;
-  box-shadow: 0 0 30px 10px rgba(255, 39, 59, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-}
-.variant:nth-child(4n+3) a {
-  color: #f9f6f2;
+.variant:nth-child(10n+2) {
+    background: #00b1a0 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/4.gif');
+    background-size: cover; 
 }
 
-/* Team Spica */
-.variant:nth-child(4n) {
-  color: #f9f6f2;
-  background: #307f30;
-  box-shadow: 0 0 30px 10px rgba(48,127,48, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+.variant:nth-child(10n+3) {
+    background: #ed5471 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/8.gif'); 
+    background-size: cover; 
 }
-.variant:nth-child(4n) a {
-  color: #f9f6f2;
+
+.variant:nth-child(10n+4) {
+    background: #d23769 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/16.gif'); 
+    background-size: cover; 
+}
+
+.variant:nth-child(10n+5) {
+    background: #b11562 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/32.gif'); 
+    background-size: cover; 
+}
+
+.variant:nth-child(10n+6) {
+    background: #9e025d url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/64.gif'); 
+    background-size: cover; 
+}
+
+.variant:nth-child(10n+7) {
+    background: #ffb33c url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/128.gif');
+    background-size: cover; 
+}
+
+.variant:nth-child(10n+8) {
+    background: #f68731 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/256.gif');
+    background-size: cover; 
+}
+
+.variant:nth-child(10n+9) {
+    background: #e85938 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/512.gif');
+    background-size: cover; 
+}
+
+.variant a {
+  color: white;
 }
 
 .contributing {
     margin-top: 50px;
 }
 
-.adsense {
-  margin-top: 20px;
+.paypal-donate {
+  display: inline-block;
 }
 
 @media screen and (max-width: 640px) {
