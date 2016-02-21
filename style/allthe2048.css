@@ -56,60 +56,95 @@ hr {
   border-radius: 10px; 
   padding: 15px;
   background: #57407c;
+  -webkit-transition:	color .3s ease, background-color .3s ease;
+  -moz-transition:		color .3s ease, background-color .3s ease;
+  -o-transition:		color .3s ease, background-color .3s ease;
+  transition:			color .3s ease, background-color .3s ease;
+
+  -webkit-transform:	translate3d(0, 0, 0);
+  -moz-transform:		translate3d(0, 0, 0);
+  -o-transform:			translate3d(0, 0, 0);
+  -transform:			translate3d(0, 0, 0);  
 }
 
 .variant:last-child {
     margin-bottom: 0;
 }
 
-.variant:nth-child(10n) {
-    background: #57407c url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/1024.gif');
-    background-size: cover; 
+.variant:hover {
+    background: #3d2963;
 }
 
 .variant:nth-child(10n+1) {
-	background: #41c9b8 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/2.gif');
-    background-size: cover; 
+	background: #41c9b8;
+}
+
+.variant:nth-child(10n+1):hover {
+	background: #506c8f;
 }
 
 .variant:nth-child(10n+2) {
-    background: #00b1a0 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/4.gif');
-    background-size: cover; 
+    background: #00b1a0;
+}
+
+.variant:nth-child(10n+2):hover {
+    background: #087074;
 }
 
 .variant:nth-child(10n+3) {
-    background: #ed5471 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/8.gif'); 
-    background-size: cover; 
+    background: #ed5471; 
+}
+
+.variant:nth-child(10n+3):hover {
+    background: #9a4977; 
 }
 
 .variant:nth-child(10n+4) {
-    background: #d23769 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/16.gif'); 
-    background-size: cover; 
+    background: #d23769; 
+}
+
+.variant:nth-child(10n+4):hover {
+    background: #db6c8e; 
 }
 
 .variant:nth-child(10n+5) {
-    background: #b11562 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/32.gif'); 
-    background-size: cover; 
+    background: #b11562; 
 }
 
+.variant:nth-child(10n+5):hover {
+    background: #e84e6f; 
+} 
+
 .variant:nth-child(10n+6) {
-    background: #9e025d url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/64.gif'); 
-    background-size: cover; 
+    background: #9e025d; 
+}
+
+.variant:nth-child(10n+6):hover {
+    background: #ce3767; 
 }
 
 .variant:nth-child(10n+7) {
-    background: #ffb33c url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/128.gif');
-    background-size: cover; 
+    background: #ffb33c;
+}
+
+.variant:nth-child(10n+7):hover {
+    background: #b0845b;
 }
 
 .variant:nth-child(10n+8) {
-    background: #f68731 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/256.gif');
-    background-size: cover; 
+    background: #f68731;
+}
+
+.variant:nth-child(10n+8):hover {
+    background: #df542f;
 }
 
 .variant:nth-child(10n+9) {
-    background: #e85938 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/512.gif');
-    background-size: cover; 
+    background: #e85938;
+}
+
+.variant:nth-child(10n+9):hover {
+    background: #9c4d5c;
 }
 
 .variant a {
