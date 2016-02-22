@@ -337,6 +337,20 @@ function gravity() {
   game.restart();
 }
 
+function troll() {
+  changeRule(normalAdd, 
+    function(a, b) { return a === b; }, 
+    function(merged) { return merged === 0.5; });
+  game.gravity = game.move;
+  game.move = function(dir) {
+    game.gravity(dir);
+    game.gravity(Math.floor(Math.random() * 4));
+  };
+  game.inputManager.events["move"] = [];
+  game.inputManager.on("move", game.move.bind(game));
+  game.restart();
+}
+
 function timeRush(sec) {
   stopMovement();
   var autos = document.getElementsByName('automove');
