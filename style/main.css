@@ -4476,15 +4476,16 @@ hr {
     font-weight: bold;
     z-index: 10;
     font-size: 20px; }
-
   .tile.tile-X .tile-inner {
     color: #f9f6f2;
+    /*box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.15);*/
     background: #f65e3b; }
 
   .tile.tile-super .tile-inner {
-    background: #8f7a66; 
-    font-size: 20px; }
+    color: #f9f6f2;
+    font-size: 30px; }
   .tile.tile-remove .tile-inner {
+    box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.4), inset 0 0 0 1px rgba(255, 255, 255, 0.2);
   }
   .tile.tile-danger .tile-inner {
     color: #f65e3b;
@@ -8119,6 +8120,8 @@ here is intended for Fibonacci variant) */
   .tile.tile-531441 .tile-inner {
     color: #f9f6f2;
     background: #14b9eb; }
+  .tile.tile-1 .tile-inner {
+    background: #eee4da; }
   .tile.tile-2 .tile-inner {
     background: #f6e4ca; }
   .tile.tile-4 .tile-inner {
