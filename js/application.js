@@ -59,6 +59,9 @@ window.requestAnimationFrame(function () {
   case "gravity":
     gravity();
     break;
+  case "troll":
+    troll();
+    break;
   default:
     normal();
     break;
@@ -331,6 +334,20 @@ function gravity() {
   game.move = function(dir) {
     game.gravity(dir);
     game.gravity(2);
+  };
+  game.inputManager.events["move"] = [];
+  game.inputManager.on("move", game.move.bind(game));
+  game.restart();
+}
+
+function troll() {
+  changeRule(normalAdd, 
+    function(a, b) { return a === b; }, 
+    function(merged) { return merged === 0.5; });
+  game.gravity = game.move;
+  game.move = function(dir) {
+    game.gravity(dir);
+    game.gravity(Math.floor(Math.random() * 4));
   };
   game.inputManager.events["move"] = [];
   game.inputManager.on("move", game.move.bind(game));
