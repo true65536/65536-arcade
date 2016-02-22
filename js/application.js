@@ -59,6 +59,9 @@ window.requestAnimationFrame(function () {
   case "gravity":
     gravity();
     break;
+  case "troll":
+    troll();
+    break;
   default:
     normal();
     break;
