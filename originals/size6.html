@@ -1,40 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" manifest="cache.appcache">
 <head>
   <meta charset="utf-8">
-  <title>2048*2048</title>
+  <title>4194304</title>
 
   <link href="style/special/old6x6.css" rel="stylesheet" type="text/css">
   <link href="style/special/oldtiles.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="format-detection" content="telephone=no" />
 
-  <meta property="og:title" content="2048 game"/>
-  <meta property="og:site_name" content="2048 game"/>
-  <meta property="og:description" content="Join the numbers and get to the 2048 tile! Careful: this game is extremely addictive!"/>
+  <meta property="og:title" content="4194304 Endless game"/>
+  <meta property="og:site_name" content="4194304 Endless game"/>
+  <meta property="og:description" content="Just join the numbers to get high score in this page! Careful: this game is extremely addictive!"/>
   <meta property="og:image" content="http://gabrielecirulli.github.io/2048/meta/og_image.png"/>
 </head>
 <body>
   <div class="container">
     <div class="heading">
-      <h1 class="title">2<span id="autoplay1" method="37,38,37,38,37,38,38,39,39,38,39,38,37,37,38,39,38">0</span>48*2<span id="autoplay2" method="37,38,39,40">0</span>48</h1>
+      <h1 class="title">4194304</h1>
       <div class="scores-container">
         <div class="score-container">0</div>
         <div class="best-container">0</div>
       </div>
     </div>
-    <p class="game-intro">Join the numbers and get to the <strong>4194304 tile!</strong></p>
+
+    <div class="above-game">
+      <p class="game-intro">Just join the numbers to get the highest score in this page!</p>
+      <a class="restart-button">Play again</a>
+    </div>
 
     <div class="game-container">
       <div class="game-message">
         <p></p>
         <div class="lower">
-          <a class="retry-button">Try again</a>
+	        <a class="keep-playing-button">Keep playing</a>
+          <a class="retry-button">Play again</a>
           <div class="score-sharing"></div>
         </div>
       </div>
@@ -70,14 +77,6 @@
           <div class="grid-cell"></div>
           <div class="grid-cell"></div>
           <div class="grid-cell"></div>
-          <div class="grid-cell"></div>       
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
           <div class="grid-cell"></div>
         </div>
         <div class="grid-row">
@@ -86,7 +85,15 @@
           <div class="grid-cell"></div>
           <div class="grid-cell"></div>
           <div class="grid-cell"></div>
-          <div class="grid-cell"></div>       
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
         </div>
       </div>
 
@@ -100,67 +107,28 @@
     </p>
     <hr>
     <p>
-        <strong class="important">Note:</strong> This site is the official version of 2048*2048. You can play it on your phone via <a href="http://msiq.github.io/2048x2048/">http://msiq.github.io/2048x2048/.</a>
-    </p>
-    <strong class="important">Another Note:</strong> This site is cloned from 2048. You can play the original 2048 on your phone via <a href="http://git.io/2048">http://git.io/2048.</a> And they say, All other apps or sites are derivatives or fakes, and should be used with caution.
+      Can you reach <strong>4194304, 8388608, and 16777216 tiles?</strong>
     </p>
     <hr>
     <p>
-    Altered by <a href="https://github.com/msiq" target="_blank">Shahid</a> based on <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli's</a> 2048 based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
+    Click here to go back to <a href="http://theastronomer.github.io/2147483648">2147483648.</a>
     </p>
-    <div class="sharing">
-      <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out 2048, a game where you join numbers to score high! #2048game" data-via="gabrielecirulli">Tweet</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-      <form class="pp-donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="NVNPJLTBZ8AME">
-        <button name="submit"><img src="meta/icon_pp.svg">Donate</button>
-        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-      </form>
-
-      <span class="btc-donate">
-        <a href="bitcoin:1Ec6onfsQmoP9kkL3zkpB6c5sA4PVcXU2i">
-          <img src="meta/icon_bitcoin.svg">Donate BTC
-        </a>
-        <span class="address"><code>1Ec6onfsQmoP9kkL3zkpB6c5sA4PVcXU2i</code></span>
-      </span>
-
-    </div>
   </div>
-  
-  <script src="js_6x6/jquery-1.11.0.min.js"></script>
-  <script src="js_6x6/animframe_polyfill.js"></script>
-  <script src="js_6x6/keyboard_input_manager.js"></script>
-  <script src="js_6x6/html_actuator.js"></script>
-  <script src="js_6x6/grid.js"></script>
-  <script src="js_6x6/tile.js"></script>
-  <script src="js_6x6/local_score_manager.js"></script>
-  <script src="js_6x6/game_manager.js"></script>
-  <script src="js_6x6/application.js"></script>
-  <script type="text/javascript">
 
-    $( function(){
-		var refreshIntervalId;
-		//var keys = Array(37,38,37,38,37,38,38,39,39,38,39,38,37,37,38,39,38);
-		$('#autoplay1, #autoplay2').click(function(){
-			var keys = $(this).attr('method').split(',');
-			if (refreshIntervalId) {
-				clearInterval(refreshIntervalId);
-				refreshIntervalId=0;
-			} else {
-				refreshIntervalId = setInterval(function(){					
-					for(var i=0;i<=keys.length;i++){
-						e =  $.Event('keydown');
-						e.which = keys[i];
-						$("body").trigger(e);				
-					}
-					},50);
-			}
-		});
-	});
-
-  
+  <script src="js_2048/bind_polyfill.js"></script>
+  <script src="js_2048/classlist_polyfill.js"></script>
+  <script src="js_2048/animframe_polyfill.js"></script>
+  <script src="js_2048/keyboard_input_manager.js"></script>
+  <script src="js_2048/html_actuator.js"></script>
+  <script src="js_2048/grid.js"></script>
+  <script src="js_2048/tile.js"></script>
+  <script src="js_2048/local_storage_manager.js"></script>
+  <script src="js_2048/game_manager.js"></script>
+  <script>
+  var Goal = 1
+  window.requestAnimationFrame(function () {
+  new GameManager(6, KeyboardInputManager, HTMLActuator, LocalStorageManager);
+  });
   </script>
 
   <script>
