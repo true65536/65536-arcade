@@ -167,9 +167,17 @@
         font-size: 8px; } }
    .tile.tile-1147267 .tile-inner {
     color: #f9f6f2;
-    background: #bc9410;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.79556), inset 0 0 0 1px rgba(255, 255, 255, 0.8);
+    background: #c99999;
+    box-shadow: 0 0 30px 10px rgba(201, 153, 153, 0.79556), inset 0 0 0 1px rgba(255, 255, 255, 0.8);
     font-size: 23px; }
     @media screen and (max-width: 480px) {
       .tile.tile-1147267 .tile-inner {
+        font-size: 5px; } }
+   .tile.tile-1856317 .tile-inner {
+    color: #f9f6f2;
+    background: #c37093;
+    box-shadow: 0 0 30px 10px rgba(195, 112, 147, 0.79556), inset 0 0 0 1px rgba(255, 255, 255, 0.8);
+    font-size: 23px; }
+    @media screen and (max-width: 480px) {
+      .tile.tile-1856317 .tile-inner {
         font-size: 5px; } }
