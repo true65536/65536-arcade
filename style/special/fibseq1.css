@@ -56,7 +56,7 @@
   .tile.tile-1361 .tile-inner {
     color: #f9f6f2;
     background: #edb000;
-    box-shadow: 0 0 30px 10px rgba(237, 176, 0, 0.6), inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 30px 10px rgba(237, 176, 0, 0.6), inset 0 0 0 1px rgba(255, 255, 255, 0.4);
     font-size: 35px; }
     @media screen and (max-width: 480px) {
       .tile.tile-1361 .tile-inner {
