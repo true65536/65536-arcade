@@ -7,7 +7,7 @@ Check Gabriele Cirulli's official 2048 on the [Play Store](https://play.google.c
 ## Disclaimer
 This site is a clone of [2147483648](https://cyberzhg.github.io/2048/) by CyberZHG, which was originally based on Gabriele Cirulli's [2048](https://gabrielecirulli.github.io/2048/), which is based on [1024](https://play.google.com/store/apps/details?id=com.veewo.a1024), and conceptually similar to [Threes](https://asherv.com/threes/).
 
-Play 2147483648 [right here.](theastronomer.github.io/2147483648/)
+Play 2147483648 [right here.](http://theastronomer.github.io/2147483648/)
 
 You can find and follow me on Github [right here.](https://github.com/theastronomer)
 
