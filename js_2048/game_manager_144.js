@@ -9,14 +9,6 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
   this.inputManager.on("move", this.move.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
   this.inputManager.on("keepPlaying", this.keepPlaying.bind(this));
-  if (this.size < 4)
-  {
-    var lasttileclass = Math.pow(2, (this.size * (this.size + 1))/2)
-  }
-  else
-  {
-    var lasttileclass = Math.pow(2, (this.size * (this.size + 1))/2 + 1)
-  }
 
   this.setup();
 }
@@ -73,98 +65,69 @@ GameManager.prototype.addStartTiles = function () {
   }
 };
 
-// Adds a tile in (hopefully) the worst position possible
-GameManager.prototype.addTile = function () {
+// Adds a well-tempered tile in a random position
+GameManager.prototype.addEasyTile = function () {
   if (this.grid.cellsAvailable()) {
-    // var value = Math.random() < 0.9 ? 2 : 4;
-    // var tile = new Tile(this.grid.randomAvailableCell(), value);
-    // Strategy: place the new tile along the edge of the last direction the player pressed.
-    // This forces the player to press a different direction.
-    // Also, place the new tile next to the largest number possible.
-    var vector = this.getVector(this.lastDirection);
-    // Flip the direction
-    vector.x *= -1;
-    vector.y *= -1;
+    var cell = this.grid.randomAvailableCell();
 
-    // Build an array next available cells in the direction specified.
-    var cellOptions = [];
-    for (var i = 0; i < this.size; i++) {
-      for (var j = 0; j < this.size; j++) {
-        var cell = {x: 0, y: 0};
-        if (vector.x == 1)
-          cell.x = j;
-        else if (vector.x == -1)
-          cell.x = this.size - j - 1;
-        else
-          cell.x = i;
-        if (vector.y == 1)
-          cell.y = j;
-        else if (vector.y == -1)
-          cell.y = this.size - j - 1;
-        else
-          cell.y = i;
-
-        if (this.grid.cellAvailable(cell)) {
-          cellOptions.push(cell);
-          break;
-        }
-      }
+    // Find good value
+    var values = this.grid.cellValues([
+      { x: cell.x - 1, y: cell.y },
+      { x: cell.x, y: cell.y - 1 },
+      { x: cell.x + 1, y: cell.y },
+      { x: cell.x, y: cell.y + 1 }]);
+    if (values.length == 0) {
+      values = this.grid.cellValues([
+        { x: cell.x - 1, y: cell.y - 1 },
+        { x: cell.x - 1, y: cell.y + 1 },
+        { x: cell.x + 1, y: cell.y - 1 },
+        { x: cell.x + 1, y: cell.y + 1 }]);
     }
-    // Find the available cell with the best score
-    var bestScore = 0;
-    var bestInvalidScore = 0;
-    var winners = [];
-    var invalidWinner = null;
-    //var maxTileValue = Math.pow(2, Math.min(this.size * this.size, 32));
-    for (i = 0; i < cellOptions.length; i++) {
-      // Look at the surrounding cells
-      //var minValue = maxTileValue;
-      var score = 0;
-      var valid_2 = true;
-      var valid_4 = true;
-      var scored = false;
-      for (var direction = 0; direction < 4; direction++) {
-        var adjVector = this.getVector(direction);
-        var adjCell = {
-          x: cellOptions[i].x + adjVector.x,
-          y: cellOptions[i].y + adjVector.y
-        };
-        var adjTile = this.grid.cellContent(adjCell);
-        if (adjTile) {
-          score = Math.max(score, adjTile.value);
-          scored = true;
-          if (adjTile.value == 1)
-            valid_2 = false;
-          else if (adjTile.value == 2)
-            valid_4 = false;
-        }
-      }
-      if (!scored) {
-        score = 0;
-      }
-      var valid = valid_2 || valid_4;
-      if (score >= bestScore) {
-        if (valid) {
-          if (score > bestScore) {
-            winners = [];
-            bestScore = score;
+    values.push(2);
+    value = values[Math.floor(Math.random() * values.length)];
+
+    var tile = new Tile(cell, value);
+    this.grid.insertTile(tile);
+  }
+};
+
+// Adds a tile in a random position
+GameManager.prototype.addRandomTile = function () {
+  if (this.grid.cellsAvailable()) {
+    var self = this;
+    var bvalue = 13407807929942597099574024998205846127479365820592393377723561443721764030073546976801874298166903427690031858186486050853753882811946569946433649006084096;
+    var bcell = this.grid.randomAvailableCell();
+
+    for (var i = 0; i < 8; i++) {
+      var cell = this.grid.randomAvailableCell();
+
+      function check(x, y, dx, dy) {
+        if (x < 0 || y < 0 || x >= self.grid.size || y >= self.grid.size) return;
+
+        if (
+          !!self.grid.cells[cell.x + x]
+          &&
+          !!self.grid.cells[cell.x + x][cell.y + y]
+        ) {
+          var tocheck = self.grid.cells[cell.x + x][cell.y + y];
+          if (Math.random() < 0.8 && tocheck.value < bvalue) {
+            bcell = cell;
+            bvalue = tocheck.value;
           }
-          winners.push(new Tile(cellOptions[i], valid_2 ? 1 : 2));
-        } else if (winners.length == 0 && score >= bestInvalidScore) { // Invalid but no winner yet
-          invalidWinner = new Tile(cellOptions[i], 2);
-          bestInvalidScore = score;
-        }
+        } else check(x + dx, y + dy, dx, dy);
       }
+
+      check(-1, 0, -1, 0);
+      check(1, 0, 1, 0);
+      check(0, -1, 0, -1);
+      check(0, 1, 0, 1);
+
+      if (bvalue == 13407807929942597099574024998205846127479365820592393377723561443721764030073546976801874298166903427690031858186486050853753882811946569946433649006084096) {bvalue = Math.random() < 0.5 ? Math.random() < 0.9 ? 1 : 2 : Math.random() < 0.9 ? -1 : -2;}
     }
-    if (winners.length) {
-      var winnerIndex = Math.floor(Math.random() * winners.length);
-      //var value = (adjacent4 || bestScore != 2 ? 2 : 4);
-      //var tile = new Tile(winners[winnerIndex], value);
-      //this.grid.insertTile(tile);
-      this.grid.insertTile(winners[winnerIndex]);
-    } else {
-      this.grid.insertTile(invalidWinner);
-    }
+
+    var tile = new Tile(bcell, bvalue);
+
+    this.grid.insertTile(tile);
   }
 };
 
@@ -246,12 +209,15 @@ GameManager.prototype.move = function (direction) {
         var next      = self.grid.cellContent(positions.next);
 
         // Only one merger per row traversal?
-        if (next && next.value === tile.value && !next.mergedFrom) {
-          var merged = new Tile(positions.next, tile.value * 2);
-          merged.mergedFrom = [tile, next];
-
-          self.grid.insertTile(merged);
-          self.grid.removeTile(tile);
+        if (next && ((next.mergedValue === null && next.value === tile.value) || next.mergedValue === tile.value)) {
+		      // keep merging identical tiles
+	
+		      var merged = new Tile(positions.next, tile.value + next.value);
+		      merged.mergedValue = tile.value;
+		      merged.mergedFrom = [next, tile];
+		  
+		      self.grid.insertTile(merged);
+		      self.grid.removeTile(tile);
 
           // Converge the two tiles' positions
           tile.updatePosition(positions.next);
