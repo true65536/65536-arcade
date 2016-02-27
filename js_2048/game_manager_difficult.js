@@ -1,66 +1,49 @@
-function GameManager(size, InputManager, Actuator, StorageManager) {
-  this.size           = size; // Size of the grid
-  this.inputManager   = new InputManager;
-  this.storageManager = new StorageManager;
-  this.actuator       = new Actuator;
+function GameManager(size, InputManager, Actuator, ScoreManager) {
+  this.size         = size; // Size of the grid
+  this.inputManager = new InputManager;
+  this.scoreManager = new ScoreManager;
+  this.actuator     = new Actuator;
 
-  this.startTiles     = 2;
+  this.startTiles   = 2;
 
   this.inputManager.on("move", this.move.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
   this.inputManager.on("keepPlaying", this.keepPlaying.bind(this));
-  if (this.size < 4)
-  {
-    var lasttileclass = Math.pow(2, (this.size * (this.size + 1))/2)
-  }
-  else
-  {
-    var lasttileclass = Math.pow(2, (this.size * (this.size + 1))/2 + 1)
-  }
 
   this.setup();
 }
 
 // Restart the game
 GameManager.prototype.restart = function () {
-  this.storageManager.clearGameState();
-  this.actuator.continueGame(); // Clear the game won/lost message
+  this.actuator.continue();
   this.setup();
 };
 
-// Keep playing after winning (allows going over 2048)
+// Keep playing after winning
 GameManager.prototype.keepPlaying = function () {
   this.keepPlaying = true;
-  this.actuator.continueGame(); // Clear the game won/lost message
+  this.actuator.continue();
 };
 
-// Return true if the game is lost, or has won and the user hasn't kept playing
 GameManager.prototype.isGameTerminated = function () {
-  return this.over || (this.won && !this.keepPlaying);
+  if (this.over || (this.won && !this.keepPlaying)) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 // Set up the game
 GameManager.prototype.setup = function () {
-  var previousState = this.storageManager.getGameState();
+  this.grid        = new Grid(this.size);
 
-  // Reload the game from a previous game if present
-  if (previousState && (this.size === previousState.size)) {
-    this.grid        = new Grid(previousState.grid.size,
-                                previousState.grid.cells); // Reload grid
-    this.score       = previousState.score;
-    this.over        = previousState.over;
-    this.won         = previousState.won;
-    this.keepPlaying = previousState.keepPlaying;
-  } else {
-    this.grid        = new Grid(this.size);
-    this.score       = 0;
-    this.over        = false;
-    this.won         = false;
-    this.keepPlaying = false;
+  this.score       = 0;
+  this.over        = false;
+  this.won         = false;
+  this.keepPlaying = false;
 
-    // Add the initial tiles
-    this.addStartTiles();
-  }
+  // Add the initial tiles
+  this.addStartTiles();
 
   // Update the actuator
   this.actuate();
@@ -88,7 +71,7 @@ GameManager.prototype.addRandomTile = function () {
         value = "B";
     } else { // random if close to zero
       value = (Math.abs(sum) < 40) ? (Math.floor(Math.random()*2)*2 -1) : - sum / Math.abs(sum);
-      value *= (Math.random() < 0.9) ? 1 : 2;
+      value *= (Math.random() < 0.9) ? 2 : 4;
     }
 
 
@@ -100,36 +83,18 @@ GameManager.prototype.addRandomTile = function () {
 
 // Sends the updated grid to the actuator
 GameManager.prototype.actuate = function () {
-  if (this.storageManager.getBestScore() < this.score) {
-    this.storageManager.setBestScore(this.score);
-  }
-
-  // Clear the state when the game is over (game over only, not win)
-  if (this.over) {
-    this.storageManager.clearGameState();
-  } else {
-    this.storageManager.setGameState(this.serialize());
+  if (this.scoreManager.get() < this.score) {
+    this.scoreManager.set(this.score);
   }
 
   this.actuator.actuate(this.grid, {
     score:      this.score,
     over:       this.over,
     won:        this.won,
-    bestScore:  this.storageManager.getBestScore(),
+    bestScore:  this.scoreManager.get(),
     terminated: this.isGameTerminated()
   });
 
-};
-
-// Represent the current game as an object
-GameManager.prototype.serialize = function () {
-  return {
-    grid:        this.grid.serialize(),
-    score:       this.score,
-    over:        this.over,
-    won:         this.won,
-    keepPlaying: this.keepPlaying
-  };
 };
 
 // Save all tile positions and remove merger info
@@ -188,13 +153,13 @@ GameManager.prototype.move = function (direction) {
 
           // Update the score
           if (typeof merged.value === "number") {
-            self.score += Math.round(Math.random() * 2048) + merged.value * merged.value;
+            self.score += merged.value;
           } else {
-            self.score += Math.round(Math.random() * 2048) + Math.pow(2,(merged.value.charCodeAt(0)-62)) * Math.pow(2,(merged.value.charCodeAt(0)-62));
+            self.score += Math.pow(2,(merged.value.charCodeAt(0)-62));
           }
 
           // The mighty K tile
-          if (merged.value === Goal) self.won = true;
+          if (merged.value === "K") self.won = true;
         } else if (next && next.value === -tile.value && !next.mergedFrom) { // merge inverses
           var n = Math.log(Math.abs(next.value))/Math.LN2;
           var s = String.fromCharCode(64+n);
@@ -210,7 +175,7 @@ GameManager.prototype.move = function (direction) {
           self.score += Math.pow(2,(merged.value.charCodeAt(0)-62));
 
           // TODO wincheck?
-          if (merged.value === Goal) self.won = true;
+          if (merged.value === "K") self.won = true;
         } else {
           self.moveTile(tile, positions.farthest);
         }
@@ -237,10 +202,10 @@ GameManager.prototype.move = function (direction) {
 GameManager.prototype.getVector = function (direction) {
   // Vectors representing tile movement
   var map = {
-    0: { x: 0,  y: -1 }, // Up
-    1: { x: 1,  y: 0 },  // Right
-    2: { x: 0,  y: 1 },  // Down
-    3: { x: -1, y: 0 }   // Left
+    0: { x: 0,  y: -1 }, // up
+    1: { x: 1,  y: 0 },  // right
+    2: { x: 0,  y: 1 },  // down
+    3: { x: -1, y: 0 }   // left
   };
 
   return map[direction];
@@ -287,7 +252,6 @@ GameManager.prototype.tileMatchesAvailable = function () {
   var self = this;
 
   var tile;
-
   for (var x = 0; x < this.size; x++) {
     for (var y = 0; y < this.size; y++) {
       tile = this.grid.cellContent({ x: x, y: y });
@@ -299,7 +263,7 @@ GameManager.prototype.tileMatchesAvailable = function () {
 
           var other  = self.grid.cellContent(cell);
 
-          if (other && other.value === tile.value) {
+          if (other && other.value === tile.value || other && other.value === -tile.value) {
             return true; // These two tiles can be merged
           }
         }
