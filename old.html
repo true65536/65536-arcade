@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Play 2048</title>
+
+  <link href="style/old.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="meta/icon.png">
+  <link rel="apple-touch-startup-image" href="meta/startup640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
+  <link rel="apple-touch-startup-image" href="meta/startup640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone, retina -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+<style type="text/css">
+body,td,th {
+	color: #657878;
+}
+body {
+	margin-top: 0px;
+	background-color: #ffffff;
+	font-size: 18px;
+}
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-34468407-23', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  <script src="js/BindPolyfill.js"></script>
+  <script src="js/ClasslistPolyfill.js"></script>
+  <script src="js/AnimframePolyfill.js"></script>
+  <script src="js/KeyboardInputManager.js"></script>
+  <script src="js/HtmlActuator.js"></script>
+  <script src="js/Grid.js"></script>
+  <script src="js/Tile.js"></script>
+  <script src="js/LocalStorageManager.js"></script>
+  <script src="js/GameManager.js"></script>
+  <script src="js/Application.js"></script>
+
+</head>
+<body onLoad="this.restart()">
+<div class="header">
+<center>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- iPlay2048-728x90 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-6135628011557982"
+     data-ad-slot="2129936348"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center>
+</div>
+<div style="clear:both"></div>
+  <div class="container">
+    <div class="heading">
+    
+      <h1 class="title">iPlay2048.com</h1>
+      <div style="clear:both"></div>
+      <p class="game-intro">Combine two of the same numbers together using the arrow keys</strong></p>
+      <div style="clear:both"></div>
+    <div class="above-game">
+      <a href="http://www.iplay2048.com" class="restart-button">New Game</a>
+	<div style="clear:both"></div>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+    </div>
+	<div style="clear:both"></div>
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Keep going</a>
+          <a href="http://www.iplay2048.com" class="retry-button">Try again</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+    </p>
+  </div>
+<div class="header">
+<center>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- iPlay2048-728x90 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-6135628011557982"
+     data-ad-slot="2129936348"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center>
+<div class="lowiconnav">
+	<div class="iconbox">
+    	<a href="http://www.halloween2048.com">
+        	<h2>Halloween 2048</h2>
+            <img src="images/Halloween2048Ico.jpg" alt="Halloween 2048" width="133" height="99" border="0">
+        </a>
+    </div>
+	<div class="iconbox">
+    	<a href="http://www.christmas2048.com">
+        	<h2>Christmas 2048</h2>
+            <img src="images/Christmas2048Ico.jpg" alt="Christmas 2048" width="133" height="99" border="0">
+        </a>
+    </div>
+	<div class="iconbox">
+    	<a href="http://www.coffee2048.com">
+        	<h2>Coffee 2048</h2>
+            <img src="images/Coffee2048Ico.jpg" alt="Coffee 2048" width="133" height="99" border="0">
+        </a>
+    </div>
+	<div class="iconbox">
+    	<a href="http://www.valentine2048.com">
+        	<h2>Valentine 2048</h2>
+            <img src="images/Valentine2048Ico.jpg" alt="Valentine 2048" width="133" height="99" border="0">
+        </a>
+    </div>
+	<div class="iconbox">
+   	  <a href="http://www.isolitairegames.com">
+   	  <h2>Solitaire</h2>
+          <img src="images/KlondikeSolitaireIcon.jpg" alt="Solitaire" width="133" height="99" border="0">
+      </a>
+    </div>
+	<div class="iconbox">
+   	  <a href="http://www.mahjonggmahjongg.com">
+   	  <h2>Mahjongg</h2>
+          <img src="images/MahjonggIcon.jpg" alt="Mahjongg" width="133" height="99" border="0">
+      </a>
+    </div>
+	<div class="iconbox">
+   	  <a href="http://www.isudokugames.com/">
+   	  <h2>Sudoku</h2>
+          <img src="images/SudokuIcon.jpg" alt="Sudoku" width="133" height="100" border="0">
+      </a>
+    </div>
+	<div class="iconbox">
+   	  <a href="http://www.wordsearch1.com">
+   	  <h2>Word Search</h2>
+          <img src="images/WordSearchIcon.jpg" alt="Word Search" width="133" height="99" border="0">
+      </a>
+    </div>
+	<div class="iconbox">
+   	  <a href="http://www.imathgame.com">
+   	  <h2>Math Game</h2>
+          <img src="images/MathGameIcon.jpg" alt="Math Game" width="133" height="100" border="0">
+      </a>
+    </div>
+	<div class="iconbox">
+   	  <a href="http://www.mahjongwords.com">
+   	  <h2>Word Mahjong</h2>
+          <img src="images/WordMahjongIcon.jpg" alt="Math Game" width="133" height="100" border="0">
+      </a>
+    </div>
+</div>
+
+</div>
+<div style="clear:both"></div>
+<center>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- iPlay2048-728x90 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-6135628011557982"
+     data-ad-slot="2129936348"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center>
+<div class="copyright">© <a href="http://www.battlelinegames.com">BattleLine Games LLC.</a></div>
+
+</body>
+</html>
