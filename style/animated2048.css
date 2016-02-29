@@ -7,6 +7,36 @@ html, body {
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 15px; }
 
+@font-face {
+    font-family: "Clear Sans";
+    src: url("ClearSans-Light-webfont.eot");
+    src: url("ClearSans-Light-webfont.eot?#iefix") format("embedded-opentype"),
+         url("ClearSans-Light-webfont.svg#clear_sans_lightregular") format("svg"),
+         url("ClearSans-Light-webfont.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Clear Sans";
+    src: url("ClearSans-Regular-webfont.eot");
+    src: url("ClearSans-Regular-webfont.eot?#iefix") format("embedded-opentype"),
+         url("ClearSans-Regular-webfont.svg#clear_sansregular") format("svg"),
+         url("ClearSans-Regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Clear Sans";
+    src: url("ClearSans-Bold-webfont.eot");
+    src: url("ClearSans-Bold-webfont.eot?#iefix") format("embedded-opentype"),
+         url("ClearSans-Bold-webfont.svg#clear_sansbold") format("svg"),
+         url("ClearSans-Bold-webfont.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
 body {
   margin: 40px 0; }
 
@@ -2600,7 +2630,7 @@ hr {
     box-shadow: 0 0 30px 10px rgba(63, 21, 38, 1), inset 0 0 0 1px rgba(0, 0, 0, 0.33333);
     font-size: 9px; }
     @media screen and (max-width: 520px) {
-      .tile.tile--144115188075855900 .tile-inner {
+      .tile.tile--144115188075855870 .tile-inner {
         font-size: 4px; } }
   .tile.tile--288230376151711740 .tile-inner {
     color: #f9f6f2;
@@ -2624,7 +2654,7 @@ hr {
     box-shadow: 0 0 30px 10px rgba(122, 80, 237, 1), inset 0 0 0 1px rgba(0, 0, 0, 0.33333);
 	font-size: 9px; }
     @media screen and (max-width: 520px) {
-      .tile.tile--288230376151711700 .tile-inner {
+      .tile.tile--288230376151711740 .tile-inner {
         font-size: 4px; } }
   .tile.tile--576460752303423500 .tile-inner {
     color: #f9f6f2;
@@ -2891,7 +2921,7 @@ hr {
     font-size: 1px; }
     @media screen and (max-width: 520px) {
       .tile.tile--590295810358705700000 .tile-inner {
-        font-size: 1px; } }  
+        font-size: 1px; } }
 /* Fibonacci Number Sequence
 This list does not include negative Fibonacci numbers because they only work on positive integers */
   /*
@@ -2910,6 +2940,20 @@ This list does not include negative Fibonacci numbers because they only work on 
     digits long and above, and bigger than the 
     Fibonacci number 17711.
   */
+  .tile.tile-1 .tile-inner {
+    color: #ffffff;
+    background: #00e4da; 
+    background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
+    background-size: 200% auto;
+    background-position: -100% 0%; }
+  .tile.tile-2 .tile-inner {
+    color: transparent; 
+	background: #41c9b8 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/2.gif');
+    background-size: cover; 
+  	box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+	@media screen and (max-width: 520px) {
+      .tile.tile-2 .tile-inner {
+        background: #41c9b8 url('http://www.romaincousin.fr/2048/img/2_small.gif'); } }
   .tile.tile-3 .tile-inner {
     color: #ffffff;
     background: #00dcb0; 
@@ -2922,6 +2966,13 @@ This list does not include negative Fibonacci numbers because they only work on 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
     background-position: -100% -500%; }
+  .tile.tile-8 .tile-inner {
+    color: transparent; 
+    background: #ed5471 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/8.gif'); 
+    background-size: cover; }
+	@media screen and (max-width: 520px) {
+      .tile.tile-8 .tile-inner {
+        background: #ed5471 url('http://www.romaincousin.fr/2048/img/8_small.gif'); } }
   .tile.tile-13 .tile-inner {
     color: #f9f6f2;
     background: #bf0000; 
@@ -3958,7 +4009,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     -webkit-background-size:107px 107px; /* override value for shitty webkit */
     
     background-position:0 0, 53.5px 0, 53.5px -53.5px, 0px 53.5px;
-    box-shadow: 0 0 30px 10px rgba(242, 223, 104, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(242, 223, 104, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
     font-size: 10px; }
     @media screen and (max-width: 520px) {
       .tile.tile-308061521170129 .tile-inner {
@@ -4143,6 +4194,12 @@ This list does not include negative Fibonacci numbers because they only work on 
     This checkerboard pattern is only for tile values
     that are 10 digits long and above.
   */
+  .tile.tile-1 .tile-inner {
+    color: #ffffff;
+    background: #00e4da; 
+    background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
+    background-size: 200% auto;
+    background-position: -100% 0%; }
   .tile.tile-9 .tile-inner {
     color: #ffffff;
     background: #00AB75; 
@@ -4673,6 +4730,12 @@ This list does not include negative Fibonacci numbers because they only work on 
     @media screen and (max-width: 520px) {
       .tile.tile-5559060566555523 .tile-inner {
         font-size: 4px; } }
+  .tile.tile--1 .tile-inner {
+    color: #f9f6f2;
+    background: #121f37; 
+    background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
+    background-size: 100% auto;
+    background-position: 0% -50%; }
   .tile.tile--3 .tile-inner {
     color: #f9f6f2;
     background: #231a10; 
@@ -5221,6 +5284,26 @@ This list does not include negative Fibonacci numbers because they only work on 
     This checkerboard pattern is only for tile values
     that are 10 digits long and above.
   */
+  .tile.tile-1 .tile-inner {
+    color: #ffffff;
+    background: #00e4da; 
+    background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
+    background-size: 200% auto;
+    background-position: -100% 0%; }
+  .tile.tile-2 .tile-inner {
+    color: transparent; 
+	background: #41c9b8 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/2.gif');
+    background-size: cover; 
+  	box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+	@media screen and (max-width: 520px) {
+      .tile.tile-2 .tile-inner {
+        background: #41c9b8 url('http://www.romaincousin.fr/2048/img/2_small.gif'); } }
+  .tile.tile-3 .tile-inner {
+    color: #ffffff;
+    background: #00dcb0; 
+    background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
+    background-size: 200% auto;
+    background-position: -100% -300%; }
   .tile.tile-6 .tile-inner {
     color: #ffffff;
     background: #00c189; 
@@ -6056,6 +6139,24 @@ This list does not include negative Fibonacci numbers because they only work on 
     @media screen and (max-width: 520px) {
       .tile.tile-6755399441055744 .tile-inner {
         font-size: 5px; } }
+  .tile.tile--1 .tile-inner {
+    color: #f9f6f2;
+    background: #121f37; 
+    background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
+    background-size: 100% auto;
+    background-position: 0% -50%; }
+  .tile.tile--2 .tile-inner {
+    color: #f9f6f2;
+    background: #004020; 
+    background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
+    background-size: 100% auto;
+    background-position: 0% -100%; }
+  .tile.tile--3 .tile-inner {
+    color: #f9f6f2;
+    background: #231a10; 
+    background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
+    background-size: 100% auto;
+    background-position: 0% -150%; }
   .tile.tile--6 .tile-inner {
     color: #f9f6f2;
     background: #121f37; 
@@ -6908,6 +7009,34 @@ This is does not include negative Lucas numbers because they only work on positi
     digits long and above, and bigger than the
     Lucas number 9349.
   */
+  .tile.tile-1 .tile-inner {
+    color: #ffffff;
+    background: #00e4da; 
+    background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
+    background-size: 200% auto;
+    background-position: -100% 0%; }
+  .tile.tile-2 .tile-inner {
+    color: transparent; 
+	background: #41c9b8 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/2.gif');
+    background-size: cover; 
+  	box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+	@media screen and (max-width: 520px) {
+      .tile.tile-2 .tile-inner {
+        background: #41c9b8 url('http://www.romaincousin.fr/2048/img/2_small.gif'); } }
+  .tile.tile-3 .tile-inner {
+    color: #ffffff;
+    background: #00dcb0; 
+    background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
+    background-size: 200% auto;
+    background-position: -100% -300%; }
+  .tile.tile-4 .tile-inner {
+    color: transparent; 
+    background: #00b1a0 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/4.gif');
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); 
+    background-size: cover; }
+	@media screen and (max-width: 520px) {
+      .tile.tile-4 .tile-inner {
+        background: #00b1a0 url('http://www.romaincousin.fr/2048/img/4_small.gif'); } }
   .tile.tile-7 .tile-inner {
     color: #ffffff;
     background: #00b986; 
@@ -7005,7 +7134,7 @@ This is does not include negative Lucas numbers because they only work on positi
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
     background-position: 0% -5900%; 
-    box-shadow: 0 0 30px 10px rgba(241, 239, 48, 0.66666), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
+    box-shadow: 0 0 30px 10px rgba(241, 239, 48, 0.66666), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
       .tile.tile-1364 .tile-inner {
@@ -7016,7 +7145,7 @@ This is does not include negative Lucas numbers because they only work on positi
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
     background-position: 0% -5800%; 
-    box-shadow: 0 0 30px 10px rgba(239, 211, 47, 0.77777), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
+    box-shadow: 0 0 30px 10px rgba(239, 211, 47, 0.77777), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
       .tile.tile-2207 .tile-inner {
@@ -7027,7 +7156,7 @@ This is does not include negative Lucas numbers because they only work on positi
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
     background-position: 0% -5700%; 
-    box-shadow: 0 0 30px 10px rgba(237, 194, 46, 0.88888), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
+    box-shadow: 0 0 30px 10px rgba(237, 194, 46, 0.88888), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
       .tile.tile-3571 .tile-inner {
@@ -7038,7 +7167,7 @@ This is does not include negative Lucas numbers because they only work on positi
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
     background-position: 0% -5600%; 
-    box-shadow: 0 0 30px 10px rgba(1, 176, 240, 0.99999), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
+    box-shadow: 0 0 30px 10px rgba(1, 176, 240, 0.99999), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
       .tile.tile-5778 .tile-inner {
@@ -7703,7 +7832,7 @@ This is does not include negative Lucas numbers because they only work on positi
       .tile.tile-2139295485799 .tile-inner {
         font-size: 6px; } }
   .tile.tile-3461452808002 .tile-inner {
-    color: #9DB5B2;
+    color: #eda9a6;
     background: #315C2B; 
     background-image:
       -moz-linear-gradient(45deg, #386831 25%, transparent 25%),
@@ -7826,22 +7955,22 @@ This is does not include negative Lucas numbers because they only work on positi
     color: #394F49;
     background: #eda384;
     background-image:
-      -moz-linear-gradient(45deg, #eda384 25%, transparent 25%),
-      -moz-linear-gradient(-45deg, #eda384 25%, transparent 25%),
-      -moz-linear-gradient(45deg, transparent 75%, #eda384 75%),
-      -moz-linear-gradient(-45deg, transparent 75%, #eda384 75%);
+      -moz-linear-gradient(45deg, #e9926d 25%, transparent 25%),
+      -moz-linear-gradient(-45deg, #e9926d 25%, transparent 25%),
+      -moz-linear-gradient(45deg, transparent 75%, #e9926d 75%),
+      -moz-linear-gradient(-45deg, transparent 75%, #e9926d 75%);
     background-image:
-      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, #eda384), color-stop(.25, transparent)),
-      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, #eda384), color-stop(.25, transparent)),
-      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.75, transparent), color-stop(.75, #eda384)),
-      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.75, transparent), color-stop(.75, #eda384));
+      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, #e9926d), color-stop(.25, transparent)),
+      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, #e9926d), color-stop(.25, transparent)),
+      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.75, transparent), color-stop(.75, #e9926d)),
+      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.75, transparent), color-stop(.75, #e9926d));
 
     -moz-background-size:107px 107px;
     background-size:107px 107px;
     -webkit-background-size:107px 107px; /* override value for shitty webkit */
     
     background-position:0 0, 53.5px 0, 53.5px -53.5px, 0px 53.5px;
-    box-shadow: 0 0 30px 10px rgba(219, 153, 90, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(237, 163, 132, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
     font-size: 11px; }
     @media screen and (max-width: 520px) {
       .tile.tile-38388099893011 .tile-inner {
@@ -8125,28 +8254,28 @@ div#preload {
 				url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/256.gif')no-repeat,
 				url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/512.gif')no-repeat,
 				url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/1024.gif')no-repeat,
-				url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/2048.gif')no-repeat,
-                url('http://alexfink.github.io/dive/tileoverlays/sprite.png')no-repeat,
-				url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/game-over.gif')no-repeat; }
+				url('http://romaincousin.fr/2048/img/2048.gif')no-repeat,
+				url('http://alexfink.github.io/dive/tileoverlays/sprite.png')no-repeat,
+				url('http://romaincousin.fr/2048/img/game-over.gif')no-repeat; }
 
 @media screen and (max-width: 520px) {
 div#preload {
 	width: 1px;
 	height: 1px;
 	display: none;
-	background: url('http://www.romaincousin.fr/2048/img/2_small.gif')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/4_small.gif')no-repeat, 
-				url('http://www.romaincousin.fr/2048/img/8_small.gif')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/16_small.gif')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/32_small.gif')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/64_small.gif')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/128_small.gif')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/256_small.gif')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/512_small.gif')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/1024_small.gif')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/2048_small.gif')no-repeat,
-                url('http://alexfink.github.io/dive/tileoverlays/sprite.png')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/game-over.gif')no-repeat; } }
+	background: url('http://romaincousin.fr/2048/img/2_small.gif')no-repeat,
+				url('http://romaincousin.fr/2048/img/4_small.gif')no-repeat, 
+				url('http://romaincousin.fr/2048/img/8_small.gif')no-repeat,
+				url('http://romaincousin.fr/2048/img/16_small.gif')no-repeat,
+				url('http://romaincousin.fr/2048/img/32_small.gif')no-repeat,
+				url('http://romaincousin.fr/2048/img/64_small.gif')no-repeat,
+				url('http://romaincousin.fr/2048/img/128_small.gif')no-repeat,
+				url('http://romaincousin.fr/2048/img/256_small.gif')no-repeat,
+				url('http://romaincousin.fr/2048/img/512_small.gif')no-repeat,
+				url('http://romaincousin.fr/2048/img/1024_small.gif')no-repeat,
+				url('http://romaincousin.fr/2048/img/2048.gif')no-repeat,
+				url('http://alexfink.github.io/dive/tileoverlays/sprite.png')no-repeat,
+				url('http://romaincousin.fr/2048/img/game-over.gif')no-repeat; } }
 
 @-webkit-keyframes appear {
   0% {
