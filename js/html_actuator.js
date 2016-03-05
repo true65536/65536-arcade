@@ -16,7 +16,7 @@ HTMLActuator.prototype.actuate = function (grid, metadata) {
     grid.cells.forEach(function (column) {
       column.forEach(function (cell) {
         if (cell) {
-          self.addTile(cell);
+          self.addTile(cell, false);
         }
       });
     });
@@ -57,10 +57,12 @@ HTMLActuator.prototype.addTile = function (tile, vanish) {
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
     if (vanish && (tile.value >= 0.5)) {
-      /* Another animation */
+      /* I am a 4 or larger who joined with another to form something
+         bigger. I want to be in my final position at the end of the
+         main transition, and vanish. */
       window.requestAnimationFrame(function () {
         classes[2] = self.positionClass({ x: tile.x, y: tile.y });
-        classes.push("tile-removed");
+        classes.push("tile-vanish");
         self.applyClasses(wrapper, classes); // Update the position
       });
     } else {
