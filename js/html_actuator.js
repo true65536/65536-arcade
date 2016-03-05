@@ -39,7 +39,7 @@ HTMLActuator.prototype.clearContainer = function (container) {
   }
 };
 
-HTMLActuator.prototype.addTile = function (tile) {
+HTMLActuator.prototype.addTile = function (tile, vanish) {
   var self = this;
 
   var wrapper   = document.createElement("div");
@@ -56,17 +56,26 @@ HTMLActuator.prototype.addTile = function (tile) {
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
-    window.requestAnimationFrame(function () {
-      classes[2] = self.positionClass({ x: tile.x, y: tile.y });
-      self.applyClasses(wrapper, classes); // Update the position
-    });
+    if (vanish && (tile.value >= 0.5)) {
+      /* Another animation */
+      window.requestAnimationFrame(function () {
+        classes[2] = self.positionClass({ x: tile.x, y: tile.y });
+        classes.push("tile-removed");
+        self.applyClasses(wrapper, classes); // Update the position
+      });
+    } else {
+      window.requestAnimationFrame(function () {
+        classes[2] = self.positionClass({ x: tile.x, y: tile.y });
+        self.applyClasses(wrapper, classes); // Update the position
+      });
+    }
   } else if (tile.mergedFrom) {
     classes.push("tile-merged");
     this.applyClasses(wrapper, classes);
 
     // Render the tiles that merged
     tile.mergedFrom.forEach(function (merged) {
-      self.addTile(merged);
+      self.addTile(merged, true);
     });
   } else {
     classes.push("tile-new");
