@@ -1,0 +1,12 @@
+<svg version="1.1" width="58" height="58" viewBox="-1 -1 58 58" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <radialGradient id="grad_1" cx="0.4932" cy="0.5047999999999999" r="0.65884">
+      <stop offset="0" stop-color="#000000" stop-opacity="1"/>
+      <stop offset="1" stop-color="#FF9400" stop-opacity="1"/>
+    </radialGradient>
+  </defs>
+  <!-- Exported by Scratch - http://scratch.mit.edu/ -->
+  <image id="ID0.9490520362742245" width="112" height="112" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAAyklEQVR42u3VgQkAIAhFQT+4/8q2REHRvRE81K6qKT1bGwFAAdQ2wBkv8eaS2EAnVAAFUAABCqAAAhRAARRAgAIogAIIUAAFUAABCqAACiBAARRAAQQogAIogAAFUAABCqAACiBAARRAAQQogAIogAAFUAAFEKAACqAAAhRAAQQogAIogAAFUAAFEKAACqAAAhRAARRAgAIogAIIUAAFUAABCqAAAhRAARRAgAIogAIIUAAFUAABCqAACiBAAdRhwCSmYgMFUAB/aAEr0AXDEVDaHAAAAC10RVh0U29mdHdhcmUAYnkuYmxvb2RkeS5jcnlwdG8uaW1hZ2UuUE5HMjRFbmNvZGVyqAZ/7gAAAABJRU5ErkJggg==" transform="matrix(0.5, 0, 0, 0.5, 0, 0)"/>
+  <path id="ID0.459000775590539" fill="url(#grad_1)" stroke="none" d="M 214 154 L 266 154 L 266 206 L 214 206 L 214 154 Z " transform="matrix(1.019230842590332, 0, 0, 1, -216.55, -152)"/>
+  <text id="ID0.9316261052154005" fill="#FFFFFF" x="236.25" y="211.25" text-anchor="start" font-family="Donegal" font-size="22" transform="matrix(1.6404011249542236, 0, 0, 1.6404011249542236, 4, 3.4)">32</text>
+</svg>
