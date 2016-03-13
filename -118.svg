@@ -1,0 +1,12 @@
+<svg version="1.1" width="214" height="214" viewBox="-1 -1 214 214" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="grad_1" y2="1">
+      <stop offset="0" stop-color="#7F00FF" stop-opacity="1"/>
+      <stop offset="1" stop-color="#FF00BF" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+  <!-- Exported by Scratch - http://scratch.mit.edu/ -->
+  <path id="ID0.5347804008051753" fill="url(#grad_1)" stroke="#000000" stroke-width="2" d="M 115.500 75 L 326 75 L 326 285.500 L 115.500 285.500 L 115.500 75 Z " transform="matrix(1, 0, 0, 1, -114.5, -73.5)"/>
+  <path id="ID0.06670036958530545" fill="#000000" stroke="none" d="M 135 170.750 L 345.250 170.750 L 345.250 196 L 135 196 L 135 170.750 Z " transform="matrix(1, 0, 0, 1, -134, -73)"/>
+  <text id="ID0.955439031124115" fill="#FF00BF" x="56" y="231.25" text-anchor="start" font-family="Helvetica" font-size="22" transform="matrix(0.735003650188446, 0, 0, 0.8566877245903015, 1.4, 98.6)">36,893,488,147,419,103,232</text>
+</svg>
