@@ -186,7 +186,7 @@ hr {
 
 /* line 154, main.scss */
 .container {
-    width: 1955px;
+    width: 1947px;
     margin: 0 auto;
 }
 
@@ -241,8 +241,8 @@ hr {
     touch-action: none;
     background: #bdc3c7;
     border-radius: 0px;
-    width: 1955px;
-    height: 1955px;
+    width: 1947px;
+    height: 1947px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
