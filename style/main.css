@@ -37,6 +37,17 @@ span.title-lg {
     font-size: 80px;
 }
 
+/* line 477, main.scss */
+button {
+    color: white;
+    background: #869198;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 220px;
+}
+
 @-webkit-keyframes move-up {
     /* line 61, main.scss */
     0% {
@@ -11957,6 +11968,17 @@ This is does not include negative Lucas numbers because they only work on positi
     /* line 506, main.scss */
     span.title-lg {
         font-size: 55px;
+    }
+    
+    /* line 477, main.scss */
+    button {
+        color: white;
+        background: #869198;
+        padding: 2px;
+        border-radius: 2px;
+        font-size: 20px;
+        font-weight: bold;
+        width: 220px;
     }
     
     /* line 511, main.scss */
