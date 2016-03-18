@@ -56,28 +56,13 @@ HTMLActuator.prototype.addTile = function (tile, vanish) {
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
-    if (vanish && (tile.value >= 0)) {
+    if (vanish && (tile.value >= 0.5)) {
       /* I am a 4 or larger who joined with another to form something
          bigger. I want to be in my final position at the end of the
          main transition, and vanish. */
       window.requestAnimationFrame(function () {
         classes[2] = self.positionClass({ x: tile.x, y: tile.y });
         classes.push("tile-vanish");
-        self.applyClasses(wrapper, classes); // Update the position
-      });
-    } else {
-      window.requestAnimationFrame(function () {
-        classes[2] = self.positionClass({ x: tile.x, y: tile.y });
-        self.applyClasses(wrapper, classes); // Update the position
-      });
-    }
-  } else if (vanish && (tile.value <= 0)) {
-      /* I am a 4 or larger who joined with another to form something
-         bigger. I want to be in my final position at the end of the
-         main transition, and vanish. */
-      window.requestAnimationFrame(function () {
-        classes[2] = self.positionClass({ x: tile.x, y: tile.y });
-        classes.push("tile-removed");
         self.applyClasses(wrapper, classes); // Update the position
       });
     } else {
