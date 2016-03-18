@@ -408,57 +408,87 @@ hr {
     background: #00e4da; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: -100% 0%; }
+    background-position: -100% 0%; 
+    line-height: 107px;
+    font-size: 70px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-1 .tile-inner {
+        font-size: 40px; 
+        line-height: 67.5px; } }
   .tile.tile-2 .tile-inner {
     color: transparent; 
 	background: #41c9b8 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/2.gif');
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); 
     background-size: cover; 
-  	box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+    font-size: 70px; 
+    line-height: 107px; }
 	@media screen and (max-width: 520px) {
       .tile.tile-2 .tile-inner {
+        font-size: 40px; 
+        line-height: 67.5px; 
         background: #41c9b8 url('http://www.romaincousin.fr/2048/img/2_small.gif'); } }
   .tile.tile-4 .tile-inner {
     color: transparent; 
     background: #00b1a0 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/4.gif');
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); 
+    font-size: 70px; 
+    line-height: 107px;
     background-size: cover; }
 	@media screen and (max-width: 520px) {
       .tile.tile-4 .tile-inner {
+        font-size: 40px; 
+        line-height: 67.5px; 
         background: #00b1a0 url('http://www.romaincousin.fr/2048/img/4_small.gif'); } }
   .tile.tile-8 .tile-inner {
     color: transparent; 
     background: #ed5471 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/8.gif'); 
+    font-size: 70px; 
+    line-height: 107px;
     background-size: cover; }
 	@media screen and (max-width: 520px) {
       .tile.tile-8 .tile-inner {
+        font-size: 40px; 
+        line-height: 67.5px; 
         background: #ed5471 url('http://www.romaincousin.fr/2048/img/8_small.gif'); } }
   .tile.tile-16 .tile-inner {
     color: transparent; 
     background: #d23769 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/16.gif'); 
+    font-size: 65px; 
+    line-height: 107px;
     background-size: cover; }
 	@media screen and (max-width: 520px) {
       .tile.tile-16 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; 
         background: #d23769 url('http://www.romaincousin.fr/2048/img/16_small.gif'); } }
   .tile.tile-32 .tile-inner {
     color: transparent; 
     background: #b11562 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/32.gif'); 
+    font-size: 65px; 
+    line-height: 107px;
     background-size: cover; }
 	@media screen and (max-width: 520px) {
       .tile.tile-32 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; 
         background: #b11562 url('http://www.romaincousin.fr/2048/img/32_small.gif'); } }
   .tile.tile-64 .tile-inner {
     color: transparent; 
     background: #9e025d url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/64.gif'); 
+    font-size: 65px; 
+    line-height: 107px;
     background-size: cover; }
 	@media screen and (max-width: 520px) {
       .tile.tile-64 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; 
         background: #9e025d url('http://www.romaincousin.fr/2048/img/64_small.gif'); } }
   .tile.tile-128 .tile-inner {
     color: transparent; 
     background: #ffb33c url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/128.gif');
     background-size: cover; 
     box-shadow: 0 0 30px 10px rgba(255, 179, 60, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
-    font-size: 45px; }
+    font-size: 50px; }
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-inner {
         background: #ffb33c url('http://www.romaincousin.fr/2048/img/128_small.gif'); font-size: 25px; } }
@@ -467,7 +497,7 @@ hr {
     background: #f68731 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/256.gif');
     background-size: cover; 
     box-shadow: 0 0 30px 10px rgba(246, 135, 49, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
-    font-size: 45px; }
+    font-size: 50px; }
     @media screen and (max-width: 520px) {
       .tile.tile-256 .tile-inner {
         background: #f68731 url('http://www.romaincousin.fr/2048/img/256_small.gif'); font-size: 25px; } }
@@ -476,7 +506,7 @@ hr {
     background: #e85938 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/512.gif');
     background-size: cover; 
     box-shadow: 0 0 30px 10px rgba(232, 89, 56, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
-    font-size: 45px; }
+    font-size: 50px; }
     @media screen and (max-width: 520px) {
       .tile.tile-512 .tile-inner {
         background: #e85938 url('http://www.romaincousin.fr/2048/img/512_small.gif'); font-size: 25px; } }
@@ -485,7 +515,7 @@ hr {
     background: #57407c url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/1024.gif');
     background-size: cover; 
     box-shadow: 0 0 30px 10px rgba(87, 64, 124, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
-    font-size: 35px; }
+    font-size: 37px; }
     @media screen and (max-width: 520px) {
       .tile.tile-1024 .tile-inner {
         background: #57407c url('http://www.romaincousin.fr/2048/img/1024_small.gif'); font-size: 15px; } }
@@ -1664,31 +1694,61 @@ hr {
     color: #f9f6f2;
     background: #111b25;
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
-    background-size: cover; }
+    background-size: cover; 
+    line-height: 107px;
+    font-size: 70px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-0 .tile-inner {
+        font-size: 40px; 
+        line-height: 67.5px; } }
   .tile.tile--1 .tile-inner {
     color: #f9f6f2;
     background: #121f37; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 100% auto;
-    background-position: 0% -50%; }
+    background-position: 0% -50%; 
+    line-height: 107px;
+    font-size: 65px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile--1 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; } }
   .tile.tile--2 .tile-inner {
     color: #f9f6f2;
     background: #004020; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 100% auto;
-    background-position: 0% -100%; }
+    background-position: 0% -100%; 
+    line-height: 107px;
+    font-size: 65px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile--2 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; } }
   .tile.tile--4 .tile-inner {
     color: #f9f6f2;
     background: #006020; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 100% auto;
-    background-position: 0% -150%; }
+    background-position: 0% -150%; 
+    line-height: 107px;
+    font-size: 65px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile--4 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; } }
   .tile.tile--8 .tile-inner {
     color: #f9f6f2;
     background: #008040; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 100% auto;
-    background-position: 0% -200%; }
+    background-position: 0% -200%; 
+    line-height: 107px;
+    font-size: 65px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile--8 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; } }
   .tile.tile--16 .tile-inner {
     color: #f9f6f2;
     background: #00a060; 
@@ -2945,64 +3005,120 @@ This list does not include negative Fibonacci numbers because they only work on 
     background: #00e4da; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: -100% 0%; }
+    background-position: -100% 0%; 
+    line-height: 107px;
+    font-size: 70px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-1 .tile-inner {
+        font-size: 40px; 
+        line-height: 67.5px; } }
   .tile.tile-2 .tile-inner {
     color: transparent; 
 	background: #41c9b8 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/2.gif');
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); 
     background-size: cover; 
-  	box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+    font-size: 70px; 
+    line-height: 107px; }
 	@media screen and (max-width: 520px) {
       .tile.tile-2 .tile-inner {
+        font-size: 40px; 
+        line-height: 67.5px; 
         background: #41c9b8 url('http://www.romaincousin.fr/2048/img/2_small.gif'); } }
   .tile.tile-3 .tile-inner {
     color: #ffffff;
     background: #00dcb0; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: -100% -300%; }
+    background-position: -100% -300%; 
+    line-height: 107px;
+    font-size: 70px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-3 .tile-inner {
+        font-size: 40px; 
+        line-height: 67.5px; } }
   .tile.tile-5 .tile-inner {
     color: #ffffff;
     background: #00c9a0; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: -100% -500%; }
+    background-position: -100% -500%; 
+    line-height: 107px;
+    font-size: 70px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-5 .tile-inner {
+        font-size: 40px; 
+        line-height: 67.5px; } }
   .tile.tile-8 .tile-inner {
     color: transparent; 
     background: #ed5471 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/8.gif'); 
+    font-size: 70px; 
+    line-height: 107px;
     background-size: cover; }
 	@media screen and (max-width: 520px) {
       .tile.tile-8 .tile-inner {
+        font-size: 40px; 
+        line-height: 67.5px; 
         background: #ed5471 url('http://www.romaincousin.fr/2048/img/8_small.gif'); } }
   .tile.tile-13 .tile-inner {
     color: #f9f6f2;
     background: #bf0000; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: 0% 0%; }
+    background-position: 0% 0%; 
+    line-height: 107px;
+    font-size: 65px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-13 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; } }
   .tile.tile-21 .tile-inner {
     color: #f9f6f2;
     background: #bf5f00; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: 0% -100%; }
+    background-position: 0% -100%; 
+    line-height: 107px;
+    font-size: 65px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-21 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; } }
   .tile.tile-34 .tile-inner {
     color: #f9f6f2;
     background: #bfbf00; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: 0% -200%; }
+    background-position: 0% -200%; 
+    line-height: 107px;
+    font-size: 65px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-34 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; } }
   .tile.tile-55 .tile-inner {
     color: #f9f6f2;
     background: #5fbf00; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: 0% -300%; }
+    background-position: 0% -300%; 
+    line-height: 107px;
+    font-size: 65px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-55 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; } }
   .tile.tile-89 .tile-inner {
     color: #f9f6f2;
     background: #00bf00; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: 0% -400%; }
+    background-position: 0% -400%; 
+    line-height: 107px;
+    font-size: 65px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-89 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; } }
   .tile.tile-144 .tile-inner {
     color: #f9f6f2;
     background: #00bf5f;
@@ -4199,25 +4315,61 @@ This list does not include negative Fibonacci numbers because they only work on 
     background: #00e4da; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: -100% 0%; }
+    background-position: -100% 0%; 
+    line-height: 107px;
+    font-size: 70px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-1 .tile-inner {
+        font-size: 40px; 
+        line-height: 67.5px; } }
+  .tile.tile-3 .tile-inner {
+    color: #ffffff;
+    background: #00dcb0; 
+    background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
+    background-size: 200% auto;
+    background-position: -100% -300%; 
+    line-height: 107px;
+    font-size: 70px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-3 .tile-inner {
+        font-size: 40px; 
+        line-height: 67.5px; } }
   .tile.tile-9 .tile-inner {
     color: #ffffff;
     background: #00AB75; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: -100% -900%; }
+    background-position: -100% -900%; 
+    line-height: 107px;
+    font-size: 70px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-9 .tile-inner {
+        font-size: 40px; 
+        line-height: 67.5px; } }
   .tile.tile-27 .tile-inner {
     color: #f9f6f2;
     background: #ff0047; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: 0% -300%; }
+    background-position: 0% -300%; 
+    line-height: 107px;
+    font-size: 65px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-27 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; } }
   .tile.tile-81 .tile-inner {
     color: #f9f6f2;
     background: #da255f; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: 0% -600%; }
+    background-position: 0% -600%; 
+    line-height: 107px;
+    font-size: 65px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-81 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; } }
   .tile.tile-243 .tile-inner {
     color: #f9f6f2;
     background: #ca96c3;
@@ -4735,19 +4887,37 @@ This list does not include negative Fibonacci numbers because they only work on 
     background: #121f37; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 100% auto;
-    background-position: 0% -50%; }
+    background-position: 0% -50%; 
+    line-height: 107px;
+    font-size: 65px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile--1 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; } }
   .tile.tile--3 .tile-inner {
     color: #f9f6f2;
     background: #231a10; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 100% auto;
-    background-position: 0% -150%; }
+    background-position: 0% -150%; 
+    line-height: 107px;
+    font-size: 65px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile--3 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; } }
   .tile.tile--9 .tile-inner {
     color: #f9f6f2;
     background: #4d3b19; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 100% auto;
-    background-position: 0% -300%; }
+    background-position: 0% -300%; 
+    line-height: 107px;
+    font-size: 65px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile--9 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; } }
   .tile.tile--27 .tile-inner {
     color: #f9f6f2;
     background: #b60033; 
@@ -5289,51 +5459,97 @@ This list does not include negative Fibonacci numbers because they only work on 
     background: #00e4da; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: -100% 0%; }
+    background-position: -100% 0%; 
+    line-height: 107px;
+    font-size: 70px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-1 .tile-inner {
+        font-size: 40px; 
+        line-height: 67.5px; } }
   .tile.tile-2 .tile-inner {
     color: transparent; 
 	background: #41c9b8 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/2.gif');
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); 
     background-size: cover; 
-  	box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+    font-size: 70px; 
+    line-height: 107px; }
 	@media screen and (max-width: 520px) {
       .tile.tile-2 .tile-inner {
+        font-size: 40px; 
+        line-height: 67.5px; 
         background: #41c9b8 url('http://www.romaincousin.fr/2048/img/2_small.gif'); } }
   .tile.tile-3 .tile-inner {
     color: #ffffff;
     background: #00dcb0; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: -100% -300%; }
+    background-position: -100% -300%; 
+    line-height: 107px;
+    font-size: 70px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-3 .tile-inner {
+        font-size: 40px; 
+        line-height: 67.5px; } }
   .tile.tile-6 .tile-inner {
     color: #ffffff;
     background: #00c189; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: -100% -600%; } /* Thumbert */
+    background-position: -100% -600%; 
+    line-height: 107px;
+    font-size: 70px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-6 .tile-inner {
+        font-size: 40px; 
+        line-height: 67.5px; } } /* Thumbert */
   .tile.tile-12 .tile-inner {
     color: #f9f6f2;
     background: #cc3513; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: 0% -6900%; } /* Treycee */
+    background-position: 0% -6900%; 
+    line-height: 107px;
+    font-size: 65px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-12 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; } } /* Treycee */
   .tile.tile-24 .tile-inner {
     color: #f9f6f2;
     background: #cc6f13; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: 0% -6800%; } /* Tristine */
+    background-position: 0% -6800%; 
+    line-height: 107px;
+    font-size: 65px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-24 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; } } /* Tristine */
   .tile.tile-48 .tile-inner {
     color: #f9f6f2;
     background: #cc9e13; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: 0% -6700%; } /* Torbus */
+    background-position: 0% -6700%; 
+    line-height: 107px;
+    font-size: 65px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-48 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; } } /* Torbus */
   .tile.tile-96 .tile-inner {
     color: #f9f6f2;
     background: #cccc13; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: 0% -6600%; } /* Traven */
+    background-position: 0% -6600%; 
+    line-height: 107px;
+    font-size: 65px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-96 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; } } /* Traven */
   .tile.tile-192 .tile-inner {
     color: #f9f6f2;
     background: #9ecc13;
@@ -6144,25 +6360,49 @@ This list does not include negative Fibonacci numbers because they only work on 
     background: #121f37; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 100% auto;
-    background-position: 0% -50%; }
+    background-position: 0% -50%; 
+    line-height: 107px;
+    font-size: 65px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile--1 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; } }
   .tile.tile--2 .tile-inner {
     color: #f9f6f2;
     background: #004020; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 100% auto;
-    background-position: 0% -100%; }
+    background-position: 0% -100%; 
+    line-height: 107px;
+    font-size: 65px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile--2 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; } }
   .tile.tile--3 .tile-inner {
     color: #f9f6f2;
     background: #231a10; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 100% auto;
-    background-position: 0% -150%; }
+    background-position: 0% -150%; 
+    line-height: 107px;
+    font-size: 65px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile--3 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; } }
   .tile.tile--6 .tile-inner {
     color: #f9f6f2;
     background: #121f37; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: 0% -3450%; } 
+    background-position: 0% -3450%; 
+    line-height: 107px;
+    font-size: 65px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile--6 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; } }
   .tile.tile--12 .tile-inner {
     color: #f9f6f2;
     background: #0d4e86; 
@@ -7014,65 +7254,121 @@ This is does not include negative Lucas numbers because they only work on positi
     background: #00e4da; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: -100% 0%; }
+    background-position: -100% 0%; 
+    line-height: 107px;
+    font-size: 70px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-1 .tile-inner {
+        font-size: 40px; 
+        line-height: 67.5px; } }
   .tile.tile-2 .tile-inner {
     color: transparent; 
 	background: #41c9b8 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/2.gif');
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); 
     background-size: cover; 
-  	box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+    font-size: 70px; 
+    line-height: 107px; }
 	@media screen and (max-width: 520px) {
       .tile.tile-2 .tile-inner {
+        font-size: 40px; 
+        line-height: 67.5px; 
         background: #41c9b8 url('http://www.romaincousin.fr/2048/img/2_small.gif'); } }
   .tile.tile-3 .tile-inner {
     color: #ffffff;
     background: #00dcb0; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: -100% -300%; }
+    background-position: -100% -300%; 
+    line-height: 107px;
+    font-size: 70px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-3 .tile-inner {
+        font-size: 40px; 
+        line-height: 67.5px; } }
   .tile.tile-4 .tile-inner {
     color: transparent; 
     background: #00b1a0 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/4.gif');
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); 
+    font-size: 70px; 
+    line-height: 107px;
     background-size: cover; }
 	@media screen and (max-width: 520px) {
       .tile.tile-4 .tile-inner {
+        font-size: 40px; 
+        line-height: 67.5px; 
         background: #00b1a0 url('http://www.romaincousin.fr/2048/img/4_small.gif'); } }
   .tile.tile-7 .tile-inner {
     color: #ffffff;
     background: #00b986; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: -100% -700%; }
+    background-position: -100% -700%; 
+    line-height: 107px;
+    font-size: 70px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-7 .tile-inner {
+        font-size: 40px; 
+        line-height: 67.5px; } }
   .tile.tile-11 .tile-inner {
     color: #f9f6f2;
     background: #0c288b; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: 0% -6900%; }
+    background-position: 0% -6900%; 
+    line-height: 107px;
+    font-size: 65px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-11 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; } }
   .tile.tile-18 .tile-inner {
     color: #f9f6f2;
     background: #046380; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: 0% -6800%; }
+    background-position: 0% -6800%; 
+    line-height: 107px;
+    font-size: 65px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-18 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; } }
   .tile.tile-29 .tile-inner {
     color: #f9f6f2;
     background: #08939a; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: 0% -6700%; }
+    background-position: 0% -6700%; 
+    line-height: 107px;
+    font-size: 65px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-29 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; } }
   .tile.tile-47 .tile-inner {
     color: #f9f6f2;
     background: #12a3cc; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: 0% -6600%; }
+    background-position: 0% -6600%; 
+    line-height: 107px;
+    font-size: 65px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-47 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; } }
   .tile.tile-76 .tile-inner {
     color: #f9f6f2;
     background: #16c3dd; 
     background-image: url('http://alexfink.github.io/dive/tileoverlays/sprite.png'); 
     background-size: 200% auto;
-    background-position: 0% -6500%; }
+    background-position: 0% -6500%; 
+    line-height: 107px;
+    font-size: 65px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-76 .tile-inner {
+        font-size: 35px; 
+        line-height: 67.5px; } }
   .tile.tile-123 .tile-inner {
     color: #f9f6f2;
     background: #c37093;
@@ -8240,6 +8536,126 @@ This is does not include negative Lucas numbers because they only work on positi
       .tile.tile-7639424778862807 .tile-inner {
         font-size: 4px; } }
 
+   .tile.tile-2 .tile-new .tile-inner {
+	background: #57407c url('http://romaincousin.fr/2048/img/2.gif'); }
+	@media screen and (max-width: 520px) {
+      .tile.tile-2 .tile-new .tile-inner {
+        background: #57407c url('http://romaincousin.fr/2048/img/2_small.gif'); } }
+  
+  .tile.tile-4 .tile-new .tile-inner {
+    background: #57407c url('http://romaincousin.fr/2048/img/4.gif'); }
+	@media screen and (max-width: 520px) {
+      .tile.tile-4 .tile-new .tile-inner {
+        background: #57407c url('http://romaincousin.fr/2048/img/4_small.gif'); } }
+		
+  .tile.tile-8 .tile-new .tile-inner {
+    background: #57407c url('http://romaincousin.fr/2048/img/8.gif'); }
+	@media screen and (max-width: 520px) {
+      .tile.tile-8 .tile-new .tile-inner {
+        background: #57407c url('http://romaincousin.fr/2048/img/8_small.gif'); } }
+		
+  .tile.tile-16 .tile-new .tile-inner {
+    background: #57407c url('http://romaincousin.fr/2048/img/16.gif'); }
+	@media screen and (max-width: 520px) {
+      .tile.tile-16 .tile-new .tile-inner {
+        background: #57407c url('http://romaincousin.fr/2048/img/16_small.gif'); } }
+		
+  .tile.tile-32 .tile-new .tile-inner {
+    background: #57407c url('http://romaincousin.fr/2048/img/32.gif'); }
+	@media screen and (max-width: 520px) {
+      .tile.tile-32 .tile-new .tile-inner {
+        background: #57407c url('http://romaincousin.fr/2048/img/32_small.gif'); } }
+		
+  .tile.tile-64 .tile-new .tile-inner {
+    background: #57407c url('http://romaincousin.fr/2048/img/64.gif'); }
+	@media screen and (max-width: 520px) {
+      .tile.tile-64 .tile-new .tile-inner {
+        background: #57407c url('http://romaincousin.fr/2048/img/64_small.gif'); } }
+		
+  .tile.tile-128 .tile-new .tile-inner {
+    background: #57407c url('http://romaincousin.fr/2048/img/128.gif'); }
+    @media screen and (max-width: 520px) {
+      .tile.tile-128 .tile-new .tile-inner {
+        background: #57407c url('http://romaincousin.fr/2048/img/128_small.gif'); } }
+		
+  .tile.tile-256 .tile-new .tile-inner {
+    background: #57407c url('http://romaincousin.fr/2048/img/256.gif'); }
+    @media screen and (max-width: 520px) {
+      .tile.tile-256 .tile-new .tile-inner {
+        background: #57407c url('http://romaincousin.fr/2048/img/256_small.gif'); } }
+		
+  .tile.tile-512 .tile-new .tile-inner {
+    background: #57407c url('http://romaincousin.fr/2048/img/512.gif'); }
+	@media screen and (max-width: 520px) {
+      .tile.tile-512 .tile-new .tile-inner {
+        background: #57407c url('http://romaincousin.fr/2048/img/512_small.gif'); } }
+		
+  .tile.tile-1024 .tile-new .tile-inner {
+    background: #57407c url('http://romaincousin.fr/2048/img/1024.gif'); }
+	@media screen and (max-width: 520px) {
+      .tile.tile-1024 .tile-new .tile-inner {
+        background: #57407c url('http://romaincousin.fr/2048/img/1024_small.gif'); } }
+
+   .tile.tile-2 .tile-merged .tile-inner {
+	background: #57407c url('http://romaincousin.fr/2048/img/2.gif'); }
+	@media screen and (max-width: 520px) {
+      .tile.tile-2 .tile-merged .tile-inner {
+        background: #57407c url('http://romaincousin.fr/2048/img/2_small.gif'); } }
+  
+  .tile.tile-4 .tile-merged .tile-inner {
+    background: #57407c url('http://romaincousin.fr/2048/img/4.gif'); }
+	@media screen and (max-width: 520px) {
+      .tile.tile-4 .tile-merged .tile-inner {
+        background: #57407c url('http://romaincousin.fr/2048/img/4_small.gif'); } }
+		
+  .tile.tile-8 .tile-merged .tile-inner {
+    background: #57407c url('http://romaincousin.fr/2048/img/8.gif'); }
+	@media screen and (max-width: 520px) {
+      .tile.tile-8 .tile-merged .tile-inner {
+        background: #57407c url('http://romaincousin.fr/2048/img/8_small.gif'); } }
+		
+  .tile.tile-16 .tile-merged .tile-inner {
+    background: #57407c url('http://romaincousin.fr/2048/img/16.gif'); }
+	@media screen and (max-width: 520px) {
+      .tile.tile-16 .tile-merged .tile-inner {
+        background: #57407c url('http://romaincousin.fr/2048/img/16_small.gif'); } }
+		
+  .tile.tile-32 .tile-merged .tile-inner {
+    background: #57407c url('http://romaincousin.fr/2048/img/32.gif'); }
+	@media screen and (max-width: 520px) {
+      .tile.tile-32 .tile-merged .tile-inner {
+        background: #57407c url('http://romaincousin.fr/2048/img/32_small.gif'); } }
+		
+  .tile.tile-64 .tile-merged .tile-inner {
+    background: #57407c url('http://romaincousin.fr/2048/img/64.gif'); }
+	@media screen and (max-width: 520px) {
+      .tile.tile-64 .tile-merged .tile-inner {
+        background: #57407c url('http://romaincousin.fr/2048/img/64_small.gif'); } }
+		
+  .tile.tile-128 .tile-merged .tile-inner {
+    background: #57407c url('http://romaincousin.fr/2048/img/128.gif'); }
+    @media screen and (max-width: 520px) {
+      .tile.tile-128 .tile-merged .tile-inner {
+        background: #57407c url('http://romaincousin.fr/2048/img/128_small.gif'); } }
+		
+  .tile.tile-256 .tile-merged .tile-inner {
+    background: #57407c url('http://romaincousin.fr/2048/img/256.gif'); }
+    @media screen and (max-width: 520px) {
+      .tile.tile-256 .tile-merged .tile-inner {
+        background: #57407c url('http://romaincousin.fr/2048/img/256_small.gif'); } }
+		
+  .tile.tile-512 .tile-merged .tile-inner {
+    background: #57407c url('http://romaincousin.fr/2048/img/512.gif'); }
+	@media screen and (max-width: 520px) {
+      .tile.tile-512 .tile-merged .tile-inner {
+        background: #57407c url('http://romaincousin.fr/2048/img/512_small.gif'); } }
+		
+  .tile.tile-1024 .tile-merged .tile-inner {
+    background: #57407c url('http://romaincousin.fr/2048/img/1024.gif'); }
+	@media screen and (max-width: 520px) {
+      .tile.tile-1024 .tile-merged .tile-inner {
+        background: #57407c url('http://romaincousin.fr/2048/img/1024_small.gif'); } }
+
 div#preload {
 	width: 1px;
 	height: 1px;
@@ -8254,28 +8670,38 @@ div#preload {
 				url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/256.gif')no-repeat,
 				url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/512.gif')no-repeat,
 				url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/1024.gif')no-repeat,
-				url('http://romaincousin.fr/2048/img/2048.gif')no-repeat,
+				url('http://www.romaincousin.fr/2048/img/2048.gif')no-repeat,
 				url('http://alexfink.github.io/dive/tileoverlays/sprite.png')no-repeat,
-				url('http://romaincousin.fr/2048/img/game-over.gif')no-repeat; }
+				url('http://www.romaincousin.fr/2048/img/game-over.gif')no-repeat,
+				url('http://www.romaincousin.fr/2048/img/2.gif')no-repeat, 
+				url('http://www.romaincousin.fr/2048/img/4.gif')no-repeat, 
+				url('http://www.romaincousin.fr/2048/img/8.gif')no-repeat,
+				url('http://www.romaincousin.fr/2048/img/16.gif')no-repeat,
+				url('http://www.romaincousin.fr/2048/img/32.gif')no-repeat,
+				url('http://www.romaincousin.fr/2048/img/64.gif')no-repeat,
+				url('http://www.romaincousin.fr/2048/img/128.gif')no-repeat,
+				url('http://www.romaincousin.fr/2048/img/256.gif')no-repeat,
+				url('http://www.romaincousin.fr/2048/img/512.gif')no-repeat,
+				url('http://www.romaincousin.fr/2048/img/1024.gif')no-repeat; }
 
 @media screen and (max-width: 520px) {
 div#preload {
 	width: 1px;
 	height: 1px;
 	display: none;
-	background: url('http://romaincousin.fr/2048/img/2_small.gif')no-repeat,
-				url('http://romaincousin.fr/2048/img/4_small.gif')no-repeat, 
-				url('http://romaincousin.fr/2048/img/8_small.gif')no-repeat,
-				url('http://romaincousin.fr/2048/img/16_small.gif')no-repeat,
-				url('http://romaincousin.fr/2048/img/32_small.gif')no-repeat,
-				url('http://romaincousin.fr/2048/img/64_small.gif')no-repeat,
-				url('http://romaincousin.fr/2048/img/128_small.gif')no-repeat,
-				url('http://romaincousin.fr/2048/img/256_small.gif')no-repeat,
-				url('http://romaincousin.fr/2048/img/512_small.gif')no-repeat,
-				url('http://romaincousin.fr/2048/img/1024_small.gif')no-repeat,
-				url('http://romaincousin.fr/2048/img/2048.gif')no-repeat,
+	background: url('http://www.romaincousin.fr/2048/img/2_small.gif')no-repeat,
+				url('http://www.romaincousin.fr/2048/img/4_small.gif')no-repeat, 
+				url('http://www.romaincousin.fr/2048/img/8_small.gif')no-repeat,
+				url('http://www.romaincousin.fr/2048/img/16_small.gif')no-repeat,
+				url('http://www.romaincousin.fr/2048/img/32_small.gif')no-repeat,
+				url('http://www.romaincousin.fr/2048/img/64_small.gif')no-repeat,
+				url('http://www.romaincousin.fr/2048/img/128_small.gif')no-repeat,
+				url('http://www.romaincousin.fr/2048/img/256_small.gif')no-repeat,
+				url('http://www.romaincousin.fr/2048/img/512_small.gif')no-repeat,
+				url('http://www.romaincousin.fr/2048/img/1024_small.gif')no-repeat,
+				url('http://www.romaincousin.fr/2048/img/2048.gif')no-repeat,
 				url('http://alexfink.github.io/dive/tileoverlays/sprite.png')no-repeat,
-				url('http://romaincousin.fr/2048/img/game-over.gif')no-repeat; } }
+				url('http://www.romaincousin.fr/2048/img/game-over.gif')no-repeat; } }
 
 @-webkit-keyframes appear {
   0% {
