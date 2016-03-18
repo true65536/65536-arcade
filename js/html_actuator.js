@@ -56,7 +56,7 @@ HTMLActuator.prototype.addTile = function (tile, vanish) {
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
-    if (vanish && (tile.value >= 0.5)) {
+    if (vanish && (tile.value >= +- 0)) {
       /* I am a 4 or larger who joined with another to form something
          bigger. I want to be in my final position at the end of the
          main transition, and vanish. */
