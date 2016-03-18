@@ -115,10 +115,10 @@ GameManager.prototype.moveTile = function (tile, cell) {
 
 // Move tiles on the grid in the specified direction
 GameManager.prototype.move = function (direction) {
-  // 0: up, 1: right, 2:down, 3: left
+  // 0: up, 1: right, 2: down, 3: left
   var self = this;
 
-  if (this.over || this.won) return; // Don't do anything if the game's over
+  if (this.isGameTerminated()) return; // Don't do anything if the game's over
 
   var cell, tile;
 
@@ -138,23 +138,23 @@ GameManager.prototype.move = function (direction) {
       if (tile) {
         var positions = self.findFarthestPosition(cell, vector);
         var next      = self.grid.cellContent(positions.next);
-
+		
         // Only one merger per row traversal?
-        if (next && next.value === tile.value && !next.mergedFrom) {
-          var merged = new Tile(positions.next, tile.value * 2);
-          merged.mergedFrom = [tile, next];
+        if (next && ((next.mergedValue === null && next.value === tile.value) || next.mergedValue === tile.value)) {
+		// keep merging identical tiles
+	
+		  var merged = new Tile(positions.next, tile.value + next.value);
+		  merged.mergedValue = tile.value;
+		  merged.mergedFrom = [next, tile];
+		  
+		  self.grid.insertTile(merged);
+		  self.grid.removeTile(tile);
 
-          self.grid.insertTile(merged);
-          self.grid.removeTile(tile);
-
-          // Converge the two tiles' positions
-          tile.updatePosition(positions.next);
-
-          // Update the score
-          self.score += Math.round(Math.random() * 2048) + merged.value * merged.value;
-
-          // The mighty 2048 tile
-          if (merged.value === 0.5) self.won = true;
+		  // Converge the two tiles' positions
+		  tile.updatePosition(positions.next);
+		  
+          // Update the score, but not like this 
+          // self.score += merged.value;
         } else {
           self.moveTile(tile, positions.farthest);
         }
@@ -163,6 +163,7 @@ GameManager.prototype.move = function (direction) {
           moved = true; // The tile moved from its original cell!
         }
       }
+	  
     });
   });
 
