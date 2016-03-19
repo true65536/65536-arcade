@@ -7,36 +7,6 @@ html, body {
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 15px; }
 
-@font-face {
-    font-family: "Clear Sans";
-    src: url("ClearSans-Light-webfont.eot");
-    src: url("ClearSans-Light-webfont.eot?#iefix") format("embedded-opentype"),
-         url("ClearSans-Light-webfont.svg#clear_sans_lightregular") format("svg"),
-         url("ClearSans-Light-webfont.woff") format("woff");
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Clear Sans";
-    src: url("ClearSans-Regular-webfont.eot");
-    src: url("ClearSans-Regular-webfont.eot?#iefix") format("embedded-opentype"),
-         url("ClearSans-Regular-webfont.svg#clear_sansregular") format("svg"),
-         url("ClearSans-Regular-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Clear Sans";
-    src: url("ClearSans-Bold-webfont.eot");
-    src: url("ClearSans-Bold-webfont.eot?#iefix") format("embedded-opentype"),
-         url("ClearSans-Bold-webfont.svg#clear_sansbold") format("svg"),
-         url("ClearSans-Bold-webfont.woff") format("woff");
-    font-weight: 700;
-    font-style: normal;
-}
-
 body {
   margin: 40px 0; }
 
@@ -8907,22 +8877,6 @@ li a:hover,
 li a:focus{ 
     opacity: 0; }
 
-div#preload {
-	width: 1px;
-	height: 1px;
-	display: none;
-	background: url('../img/2.gif')no-repeat,
-				url('../img/4.gif')no-repeat, 
-				url('../img/8.gif')no-repeat,
-				url('../img/16.gif')no-repeat,
-				url('../img/32.gif')no-repeat,
-				url('../img/64.gif')no-repeat,
-				url('../img/128.gif')no-repeat,
-				url('../img/256.gif')no-repeat,
-				url('../img/512.gif')no-repeat,
-				url('../img/1024.gif')no-repeat,
-				url('../img/2048.gif')no-repeat,
-				url('../img/game-over.gif')no-repeat; }
 
 				
  /*//////////// VERSION MOBILE ///////////////////////////////////////////////////*/				
@@ -9093,7 +9047,7 @@ div#preload {
     height: 57.5px;
     margin-right: 10px;
     float: left;
-    border-radius: 10px;
+    border-radius: 5px;
     background: #3d2963; }
     .grid-cell:last-child {
       margin-right: 0; }
