@@ -368,14 +368,14 @@ GameManager.prototype.dealWithRange = function() {
 	var freqComment = document.getElementById('freq-description');
 	var newFreq = parseInt(range.value); //newFreq in [0,100]
 	if (newFreq === 0) {
-		freqComment.innerHTML = 'that\'s not even studying';
+		freqComment.innerHTML = 'wot u doin\' m8';
 	} else {
 		var msgs = [
-			'noob casual',
-			'one in ten tiles',
-			'uh-oh gettin\' serious',
-			'one in four tiles',
-			'CRAM LEVEL 9000',
+			'r u srs',
+			'u scared or not',
+			'man what would happen',
+			'im scared i fail',
+			'CRAM UNTIL SIAO OREDDY',
 		];
 		var idx = Math.min(Math.floor((newFreq/100)*msgs.length), msgs.length-1);
 		freqComment.innerHTML = msgs[idx];
