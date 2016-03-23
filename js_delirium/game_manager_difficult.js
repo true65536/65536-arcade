@@ -71,7 +71,7 @@ GameManager.prototype.addRandomTile = function () {
         value = "B";
     } else { // random if close to zero
       value = (Math.abs(sum) < 40) ? (Math.floor(Math.random()*2)*2 -1) : - sum / Math.abs(sum);
-      value *= (Math.random() < 0.9) ? 1 : 2;
+      value *= (Math.random() < 0.9) ? 2 : 4;
     }
 
 
