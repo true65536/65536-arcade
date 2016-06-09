@@ -157,7 +157,6 @@ HTMLActuator.prototype.updateScore = function (score) {
     var color = 'color: rgb(' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ');'
     var styleString = left + top + color
     messageElement.setAttribute('style', styleString);
-    this.dogeSays.appendChild(messageElement);
 
     this.scoreContainer.appendChild(addition);
   }
