@@ -247,7 +247,7 @@ HTMLActuator.prototype.message = function (won) {
   this.clearContainer(this.announcer);
 
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "You're an MLG Pro!" : "You’ve just gotten rekt!";
+  var message = won ? "MLG PRO!" : "MEGA REKT!";
 
   if (typeof ga !== "undefined") {
     ga("send", "event", "game", "end", type, this.score);
