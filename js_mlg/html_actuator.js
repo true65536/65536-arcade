@@ -284,7 +284,7 @@ HTMLActuator.prototype.scoreTweetButton = function () {
 };
 
 HTMLActuator.prototype.announce = function (message) {
-  message = message || "That’s Numberwang!";
+  message = message || dogeSayings[Math.floor(Math.random() * dogeSayings.length)];
   var announce = document.createElement("p");
   announce.classList.add("announcement");
   announce.textContent = message;
