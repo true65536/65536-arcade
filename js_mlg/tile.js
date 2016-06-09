@@ -12,7 +12,7 @@ Tile.prototype.generateWangValue = function () {
   var value = this.value,
       wang  = '',
       random = Math.random(),
-      chars = 'αβγδεƒghijkmnpqrsστμνωχyzπλθ∑Δ∞1234567890';
+      chars = 'abcdefαβγδεƒghijklmnpqrsστμνωχyzπλθtuvwx∑Δ∞1234567890';
 
   wang = Math.ceil(Math.random() * (value) * 4);
 
