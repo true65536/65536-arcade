@@ -11,6 +11,9 @@ function HTMLActuator() {
 
   this.score = 0;
 }
+var dogeSayings = [ "So unfair!", "True perfection has to be imperfect", "Screw you guys I'm going home", "wat", 'Damn Son Where Did You Find This', 'Smoke Weed Everyday', '9 + 10 = 21', 'leik dis if u cri evritiem', 'MLG PRO', 'ILLUMINATI CONFIRMED', 'WOMBO COMBO HAPPY FEET', "RKO'd", 'OH BABY A TRIPLE', 'OH OH MY GOD', 'MOM GET THE CAMERA' ,'THATS RIGHT GET NOSCOPED',
+'wow', 'My Name Is Jeff', 'Do It!', 'Why You Always Lying?', 'fresh a-voca-do', 'Breakfast!', "I'm in love with the coco", 'That was legitness', 'Not to be racist or anything', 'WHAT ARE THOSE!!??' ,'3spooky5me', "get rekt m9", 'u wot m9', '360 quickscope', 'MLG', "yolo", 'swag 3 da maxx', '420 blaze it', 'such good', 'so amaze', 'many points', 'very unstoppable', 'great jorb', 'such playing', 'very good', 'points', 'very gaming', 'such player', 'concern' ,'bewildered',
+'many game', 'so good', 'very scores', 'so scoring', 'so hot right now', 'such playing', 'such matching', 'so matched', 'very matched', 'very neat' ,'such natural',]
 
 HTMLActuator.prototype.actuate = function (grid, metadata) {
   var self = this;
