@@ -146,7 +146,18 @@ HTMLActuator.prototype.updateScore = function (score) {
   if (difference > 0) {
     var addition = document.createElement("div");
     addition.classList.add("score-addition");
-    addition.textContent = _randomScore();
+    addition.textContent = "+" + difference;
+    this.scoreContainer.appendChild(addition);
+    
+    var message = dogeSayings[Math.floor(Math.random() * dogeSayings.length)]
+    var messageElement = document.createElement("p");
+    messageElement.textContent = message
+    var left = 'left:' + Math.round(Math.random() * 80) + '%;'
+    var top = 'top:' + Math.round(Math.random() * 80) + '%;'
+    var color = 'color: rgb(' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ');'
+    var styleString = left + top + color
+    messageElement.setAttribute('style', styleString);
+    this.dogeSays.appendChild(messageElement);
 
     this.scoreContainer.appendChild(addition);
   }
