@@ -9,6 +9,8 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
   this.inputManager.on("move", this.move.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
   this.inputManager.on("keepPlaying", this.keepPlaying.bind(this));
+  this.inputManager.on("rotate", this.rotate.bind(this));
+
   if (this.size < 4)
   {
     var lasttileclass = Math.pow(2, (this.size * (this.size + 1))/2)
@@ -26,6 +28,11 @@ GameManager.prototype.restart = function () {
   this.storageManager.clearGameState();
   this.actuator.continueGame(); // Clear the game won/lost message
   this.setup();
+};
+
+// Rotate the board
+GameManager.prototype.rotate = function () {
+  this.actuator.rotate();
 };
 
 // Keep playing after winning (allows going over 2048)
