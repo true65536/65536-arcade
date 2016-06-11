@@ -53,6 +53,9 @@ window.requestAnimationFrame(function () {
   case "threes":
     threes();
     break;
+  case "base3":
+    base3();
+    break;
   case "mergeAny":
     mergeAny();
     break;
