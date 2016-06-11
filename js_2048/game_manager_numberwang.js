@@ -142,6 +142,7 @@ GameManager.prototype.addRandomTile = function () {
 
     var tile = new Tile(bcell, bvalue);
 
+    tile.generateWangValue();
     this.grid.insertTile(tile);
   }
 };
