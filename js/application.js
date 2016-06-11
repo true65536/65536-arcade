@@ -4,7 +4,7 @@ function getSize() {
   if (r != null) {
     return parseInt(unescape(decodeURI(r[2])));
   }
-  return 8; 
+  return 16; 
 }
 
 function getMode() { 
@@ -34,6 +34,15 @@ window.requestAnimationFrame(function () {
   switch (mode) {
   case "alwaysTwo":
     alwaysTwo();
+    break;
+  case "classic":
+    classic();
+    break;
+  case "threeTile":
+    threeTile();
+    break;
+  case "fourTile":
+    fourTile();
     break;
   case "fibonacci":
     fibonacci();
@@ -239,6 +248,22 @@ function normal() {
 
 function alwaysTwo() {
   changeRule(function() { return 1; }, normalMerge, normalWin);
+}
+
+function classic() {
+  changeRule(function() { return Math.random() < 0.9 ? 2 : 4; }, normalMerge, normalWin);
+}
+
+function threeTile() {
+  changeRule(function() { return Math.random() < 0.9 ? (Math.random() < 0.9 ? 1 : 2) : 4; }, normalMerge, normalWin);
+}
+
+function fourTile() {
+  changeRule(function() { return Math.random() < 0.75 ? (Math.random() < 0.75 ? 1 : 2) : (Math.random() < 0.75 ? 4 : 8) }, normalMerge, normalWin);
+}
+
+function base3() {
+  changeRule(function() { return Math.random() < 0.9 ? 3 : 6; }, normalMerge, normalWin);
 }
 
 function fibonacci() {
