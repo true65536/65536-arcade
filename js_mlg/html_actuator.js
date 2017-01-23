@@ -107,8 +107,8 @@ HTMLActuator.prototype.addTile = function (tile) {
   // Fit numberwang values
   var wangLength = String(tile.wangValue).length
   if (wangLength >= 3) {
-    if (wangLength > 6) {
-      wangLength = 6;
+    if (wangLength > 20) {
+      wangLength = 20;
     }
     classes.push("tile-small-" + wangLength);
     this.applyClasses(wrapper, classes);
