@@ -1,11 +1,13 @@
 @import url(fonts/clear-sans.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
 /* line 25, main.scss */
 html, body {
     margin: 0;
     padding: 0;
     background: #fff;
     color: #5c5f76;
-    font-family: 'Clear Sans', "Helvetica Neue", Arial, sans-serif;
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Clear Sans', "Helvetica Neue", Arial, sans-serif;
     font-weight: 300;
     font-size: 18px;
 }
@@ -13,6 +15,54 @@ html, body {
 /* line 40, main.scss */
 body {
     margin: 80px 0;
+}
+
+.font-body--korean,[lang=ko_KR].primary__content li,[lang=ko_KR].primary__content p {
+    font-family: source-han-sans-korean,adobe-clean-semilight,helvetica,arial,sans-serif;
+    font-style: normal;
+    font-weight: 300
+}
+
+.font-bold--korean,[lang=ko_KR] .main-content__heading,[lang=ko_KR].primary__content h1,[lang=ko_KR].primary__content h2,[lang=ko_KR].primary__content h3,[lang=ko_KR].primary__content h4,[lang=ko_KR].primary__content h5,[lang=ko_KR].primary__content h6,[lang=ko_KR].primary__content li b,[lang=ko_KR].primary__content li strong,[lang=ko_KR].primary__content p b,[lang=ko_KR].primary__content p strong {
+    font-family: source-han-sans-korean,adobe-clean,helvetica,arial,sans-serif;
+    font-style: normal;
+    font-weight: 700
+}
+
+.font-body--japanese,[lang=ja_JP].primary__content li,[lang=ja_JP].primary__content p {
+    font-family: source-han-sans-japanese,adobe-clean-semilight,helvetica,arial,sans-serif;
+    font-style: normal;
+    font-weight: 300
+}
+
+.font-bold--japanese,[lang=ja_JP] .main-content__heading,[lang=ja_JP].primary__content h1,[lang=ja_JP].primary__content h2,[lang=ja_JP].primary__content h3,[lang=ja_JP].primary__content h4,[lang=ja_JP].primary__content h5,[lang=ja_JP].primary__content h6,[lang=ja_JP].primary__content li b,[lang=ja_JP].primary__content li strong,[lang=ja_JP].primary__content p b,[lang=ja_JP].primary__content p strong {
+    font-family: source-han-sans-japanese,adobe-clean,helvetica,arial,sans-serif;
+    font-style: normal;
+    font-weight: 700
+}
+
+.font-body--traditional,[lang=zh_TW].primary__content li,[lang=zh_TW].primary__content p {
+    font-family: source-han-sans-traditional,adobe-clean-semilight,helvetica,arial,sans-serif;
+    font-style: normal;
+    font-weight: 300
+}
+
+.font-bold--traditional,[lang=zh_TW] .main-content__heading,[lang=zh_TW].primary__content h1,[lang=zh_TW].primary__content h2,[lang=zh_TW].primary__content h3,[lang=zh_TW].primary__content h4,[lang=zh_TW].primary__content h5,[lang=zh_TW].primary__content h6,[lang=zh_TW].primary__content li b,[lang=zh_TW].primary__content li strong,[lang=zh_TW].primary__content p b,[lang=zh_TW].primary__content p strong {
+    font-family: source-han-sans-traditional,adobe-clean,helvetica,arial,sans-serif;
+    font-style: normal;
+    font-weight: 700
+}
+
+.font-body--simplified,[lang=zh_CN].primary__content li,[lang=zh_CN].primary__content p {
+    font-family: source-han-sans-simplified-c,adobe-clean-semilight,helvetica,arial,sans-serif;
+    font-style: normal;
+    font-weight: 300
+}
+
+.font-bold--simplified,[lang=zh_CN] .main-content__heading,[lang=zh_CN].primary__content h1,[lang=zh_CN].primary__content h2,[lang=zh_CN].primary__content h3,[lang=zh_CN].primary__content h4,[lang=zh_CN].primary__content h5,[lang=zh_CN].primary__content h6,[lang=zh_CN].primary__content li b,[lang=zh_CN].primary__content li strong,[lang=zh_CN].primary__content p b,[lang=zh_CN].primary__content p strong {
+    font-family: source-han-sans-simplified-c,adobe-clean,helvetica,arial,sans-serif;
+    font-style: normal;
+    font-weight: 700
 }
 
 /* line 76, helpers.scss */
