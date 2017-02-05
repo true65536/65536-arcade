@@ -1,6 +1,6 @@
 @import url(fonts/clear-sans.css);
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
+@import url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/gh-pages/css/SpoqaHanSans-kr.css);
+@import url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/gh-pages/css/SpoqaHanSans-jp.css);
 /* line 25, main.scss */
 html, body {
     margin: 0;
