@@ -396,7 +396,7 @@ hr {
       .tile.tile-2 .tile-inner {
         font-size: 40px; 
         line-height: 67.5px; 
-        background: #41c9b8 url('http://www.romaincousin.fr/2048/img/2_small.gif'); } }
+        background: #41c9b8 url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/2_small.gif'); } }
   .tile.tile-4 .tile-inner {
     color: transparent; 
     background: #00b1a0 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/4.gif');
@@ -408,7 +408,7 @@ hr {
       .tile.tile-4 .tile-inner {
         font-size: 40px; 
         line-height: 67.5px; 
-        background: #00b1a0 url('http://www.romaincousin.fr/2048/img/4_small.gif'); } }
+        background: #00b1a0 url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/4_small.gif'); } }
   .tile.tile-8 .tile-inner {
     color: transparent; 
     background: #ed5471 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/8.gif'); 
@@ -419,7 +419,7 @@ hr {
       .tile.tile-8 .tile-inner {
         font-size: 40px; 
         line-height: 67.5px; 
-        background: #ed5471 url('http://www.romaincousin.fr/2048/img/8_small.gif'); } }
+        background: #ed5471 url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/8_small.gif'); } }
   .tile.tile-16 .tile-inner {
     color: transparent; 
     background: #d23769 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/16.gif'); 
@@ -430,7 +430,7 @@ hr {
       .tile.tile-16 .tile-inner {
         font-size: 35px; 
         line-height: 67.5px; 
-        background: #d23769 url('http://www.romaincousin.fr/2048/img/16_small.gif'); } }
+        background: #d23769 url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/16_small.gif'); } }
   .tile.tile-32 .tile-inner {
     color: transparent; 
     background: #b11562 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/32.gif'); 
@@ -441,7 +441,7 @@ hr {
       .tile.tile-32 .tile-inner {
         font-size: 35px; 
         line-height: 67.5px; 
-        background: #b11562 url('http://www.romaincousin.fr/2048/img/32_small.gif'); } }
+        background: #b11562 url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/32_small.gif'); } }
   .tile.tile-64 .tile-inner {
     color: transparent; 
     background: #9e025d url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/64.gif'); 
@@ -452,7 +452,7 @@ hr {
       .tile.tile-64 .tile-inner {
         font-size: 35px; 
         line-height: 67.5px; 
-        background: #9e025d url('http://www.romaincousin.fr/2048/img/64_small.gif'); } }
+        background: #9e025d url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/64_small.gif'); } }
   .tile.tile-128 .tile-inner {
     color: transparent; 
     background: #ffb33c url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/128.gif');
@@ -461,7 +461,7 @@ hr {
     font-size: 50px; }
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-inner {
-        background: #ffb33c url('http://www.romaincousin.fr/2048/img/128_small.gif'); font-size: 25px; } }
+        background: #ffb33c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/128_small.gif'); font-size: 25px; } }
   .tile.tile-256 .tile-inner {
     color: transparent; 
     background: #f68731 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/256.gif');
@@ -470,7 +470,7 @@ hr {
     font-size: 50px; }
     @media screen and (max-width: 520px) {
       .tile.tile-256 .tile-inner {
-        background: #f68731 url('http://www.romaincousin.fr/2048/img/256_small.gif'); font-size: 25px; } }
+        background: #f68731 url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/256_small.gif'); font-size: 25px; } }
   .tile.tile-512 .tile-inner {
     color: transparent; 
     background: #e85938 url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/512.gif');
@@ -479,7 +479,7 @@ hr {
     font-size: 50px; }
     @media screen and (max-width: 520px) {
       .tile.tile-512 .tile-inner {
-        background: #e85938 url('http://www.romaincousin.fr/2048/img/512_small.gif'); font-size: 25px; } }
+        background: #e85938 url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/512_small.gif'); font-size: 25px; } }
   .tile.tile-1024 .tile-inner {
     color: transparent; 
     background: #57407c url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/1024.gif');
@@ -488,7 +488,7 @@ hr {
     font-size: 37px; }
     @media screen and (max-width: 520px) {
       .tile.tile-1024 .tile-inner {
-        background: #57407c url('http://www.romaincousin.fr/2048/img/1024_small.gif'); font-size: 15px; } }
+        background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/1024_small.gif'); font-size: 15px; } }
   .tile.tile-2048 .tile-inner {
     color: #f9f6f2;
     background: #edc22e;
@@ -2993,7 +2993,7 @@ This list does not include negative Fibonacci numbers because they only work on 
       .tile.tile-2 .tile-inner {
         font-size: 40px; 
         line-height: 67.5px; 
-        background: #41c9b8 url('http://www.romaincousin.fr/2048/img/2_small.gif'); } }
+        background: #41c9b8 url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/2_small.gif'); } }
   .tile.tile-3 .tile-inner {
     color: #ffffff;
     background: #00dcb0; 
@@ -3028,7 +3028,7 @@ This list does not include negative Fibonacci numbers because they only work on 
       .tile.tile-8 .tile-inner {
         font-size: 40px; 
         line-height: 67.5px; 
-        background: #ed5471 url('http://www.romaincousin.fr/2048/img/8_small.gif'); } }
+        background: #ed5471 url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/8_small.gif'); } }
   .tile.tile-13 .tile-inner {
     color: #f9f6f2;
     background: #bf0000; 
@@ -5447,7 +5447,7 @@ This list does not include negative Fibonacci numbers because they only work on 
       .tile.tile-2 .tile-inner {
         font-size: 40px; 
         line-height: 67.5px; 
-        background: #41c9b8 url('http://www.romaincousin.fr/2048/img/2_small.gif'); } }
+        background: #41c9b8 url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/2_small.gif'); } }
   .tile.tile-3 .tile-inner {
     color: #ffffff;
     background: #00dcb0; 
@@ -7242,7 +7242,7 @@ This is does not include negative Lucas numbers because they only work on positi
       .tile.tile-2 .tile-inner {
         font-size: 40px; 
         line-height: 67.5px; 
-        background: #41c9b8 url('http://www.romaincousin.fr/2048/img/2_small.gif'); } }
+        background: #41c9b8 url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/2_small.gif'); } }
   .tile.tile-3 .tile-inner {
     color: #ffffff;
     background: #00dcb0; 
@@ -7266,7 +7266,7 @@ This is does not include negative Lucas numbers because they only work on positi
       .tile.tile-4 .tile-inner {
         font-size: 40px; 
         line-height: 67.5px; 
-        background: #00b1a0 url('http://www.romaincousin.fr/2048/img/4_small.gif'); } }
+        background: #00b1a0 url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/4_small.gif'); } }
   .tile.tile-7 .tile-inner {
     color: #ffffff;
     background: #00b986; 
@@ -8507,124 +8507,124 @@ This is does not include negative Lucas numbers because they only work on positi
         font-size: 4px; } }
 
    .tile.tile-2 .tile-new .tile-inner {
-	background: #57407c url('http://romaincousin.fr/2048/img/2.gif'); }
+	background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/2.gif'); }
 	@media screen and (max-width: 520px) {
       .tile.tile-2 .tile-new .tile-inner {
-        background: #57407c url('http://romaincousin.fr/2048/img/2_small.gif'); } }
+        background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/2_small.gif'); } }
   
   .tile.tile-4 .tile-new .tile-inner {
-    background: #57407c url('http://romaincousin.fr/2048/img/4.gif'); }
+    background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/4.gif'); }
 	@media screen and (max-width: 520px) {
       .tile.tile-4 .tile-new .tile-inner {
-        background: #57407c url('http://romaincousin.fr/2048/img/4_small.gif'); } }
+        background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/4_small.gif'); } }
 		
   .tile.tile-8 .tile-new .tile-inner {
-    background: #57407c url('http://romaincousin.fr/2048/img/8.gif'); }
+    background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/8.gif'); }
 	@media screen and (max-width: 520px) {
       .tile.tile-8 .tile-new .tile-inner {
-        background: #57407c url('http://romaincousin.fr/2048/img/8_small.gif'); } }
+        background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/8_small.gif'); } }
 		
   .tile.tile-16 .tile-new .tile-inner {
-    background: #57407c url('http://romaincousin.fr/2048/img/16.gif'); }
+    background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/16.gif'); }
 	@media screen and (max-width: 520px) {
       .tile.tile-16 .tile-new .tile-inner {
-        background: #57407c url('http://romaincousin.fr/2048/img/16_small.gif'); } }
+        background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/16_small.gif'); } }
 		
   .tile.tile-32 .tile-new .tile-inner {
-    background: #57407c url('http://romaincousin.fr/2048/img/32.gif'); }
+    background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/32.gif'); }
 	@media screen and (max-width: 520px) {
       .tile.tile-32 .tile-new .tile-inner {
-        background: #57407c url('http://romaincousin.fr/2048/img/32_small.gif'); } }
+        background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/32_small.gif'); } }
 		
   .tile.tile-64 .tile-new .tile-inner {
-    background: #57407c url('http://romaincousin.fr/2048/img/64.gif'); }
+    background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/64.gif'); }
 	@media screen and (max-width: 520px) {
       .tile.tile-64 .tile-new .tile-inner {
-        background: #57407c url('http://romaincousin.fr/2048/img/64_small.gif'); } }
+        background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/64_small.gif'); } }
 		
   .tile.tile-128 .tile-new .tile-inner {
-    background: #57407c url('http://romaincousin.fr/2048/img/128.gif'); }
+    background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/128.gif'); }
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-new .tile-inner {
-        background: #57407c url('http://romaincousin.fr/2048/img/128_small.gif'); } }
+        background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/128_small.gif'); } }
 		
   .tile.tile-256 .tile-new .tile-inner {
-    background: #57407c url('http://romaincousin.fr/2048/img/256.gif'); }
+    background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/256.gif'); }
     @media screen and (max-width: 520px) {
       .tile.tile-256 .tile-new .tile-inner {
-        background: #57407c url('http://romaincousin.fr/2048/img/256_small.gif'); } }
+        background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/256_small.gif'); } }
 		
   .tile.tile-512 .tile-new .tile-inner {
-    background: #57407c url('http://romaincousin.fr/2048/img/512.gif'); }
+    background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/512.gif'); }
 	@media screen and (max-width: 520px) {
       .tile.tile-512 .tile-new .tile-inner {
-        background: #57407c url('http://romaincousin.fr/2048/img/512_small.gif'); } }
+        background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/512_small.gif'); } }
 		
   .tile.tile-1024 .tile-new .tile-inner {
-    background: #57407c url('http://romaincousin.fr/2048/img/1024.gif'); }
+    background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/1024.gif'); }
 	@media screen and (max-width: 520px) {
       .tile.tile-1024 .tile-new .tile-inner {
-        background: #57407c url('http://romaincousin.fr/2048/img/1024_small.gif'); } }
+        background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/1024_small.gif'); } }
 
    .tile.tile-2 .tile-merged .tile-inner {
-	background: #57407c url('http://romaincousin.fr/2048/img/2.gif'); }
+	background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/2.gif'); }
 	@media screen and (max-width: 520px) {
       .tile.tile-2 .tile-merged .tile-inner {
-        background: #57407c url('http://romaincousin.fr/2048/img/2_small.gif'); } }
+        background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/2_small.gif'); } }
   
   .tile.tile-4 .tile-merged .tile-inner {
-    background: #57407c url('http://romaincousin.fr/2048/img/4.gif'); }
+    background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/4.gif'); }
 	@media screen and (max-width: 520px) {
       .tile.tile-4 .tile-merged .tile-inner {
-        background: #57407c url('http://romaincousin.fr/2048/img/4_small.gif'); } }
+        background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/4_small.gif'); } }
 		
   .tile.tile-8 .tile-merged .tile-inner {
-    background: #57407c url('http://romaincousin.fr/2048/img/8.gif'); }
+    background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/8.gif'); }
 	@media screen and (max-width: 520px) {
       .tile.tile-8 .tile-merged .tile-inner {
-        background: #57407c url('http://romaincousin.fr/2048/img/8_small.gif'); } }
+        background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/8_small.gif'); } }
 		
   .tile.tile-16 .tile-merged .tile-inner {
-    background: #57407c url('http://romaincousin.fr/2048/img/16.gif'); }
+    background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/16.gif'); }
 	@media screen and (max-width: 520px) {
       .tile.tile-16 .tile-merged .tile-inner {
-        background: #57407c url('http://romaincousin.fr/2048/img/16_small.gif'); } }
+        background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/16_small.gif'); } }
 		
   .tile.tile-32 .tile-merged .tile-inner {
-    background: #57407c url('http://romaincousin.fr/2048/img/32.gif'); }
+    background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/32.gif'); }
 	@media screen and (max-width: 520px) {
       .tile.tile-32 .tile-merged .tile-inner {
-        background: #57407c url('http://romaincousin.fr/2048/img/32_small.gif'); } }
+        background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/32_small.gif'); } }
 		
   .tile.tile-64 .tile-merged .tile-inner {
-    background: #57407c url('http://romaincousin.fr/2048/img/64.gif'); }
+    background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/64.gif'); }
 	@media screen and (max-width: 520px) {
       .tile.tile-64 .tile-merged .tile-inner {
-        background: #57407c url('http://romaincousin.fr/2048/img/64_small.gif'); } }
+        background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/64_small.gif'); } }
 		
   .tile.tile-128 .tile-merged .tile-inner {
-    background: #57407c url('http://romaincousin.fr/2048/img/128.gif'); }
+    background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/128.gif'); }
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-merged .tile-inner {
-        background: #57407c url('http://romaincousin.fr/2048/img/128_small.gif'); } }
+        background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/128_small.gif'); } }
 		
   .tile.tile-256 .tile-merged .tile-inner {
-    background: #57407c url('http://romaincousin.fr/2048/img/256.gif'); }
+    background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/256.gif'); }
     @media screen and (max-width: 520px) {
       .tile.tile-256 .tile-merged .tile-inner {
-        background: #57407c url('http://romaincousin.fr/2048/img/256_small.gif'); } }
+        background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/256_small.gif'); } }
 		
   .tile.tile-512 .tile-merged .tile-inner {
-    background: #57407c url('http://romaincousin.fr/2048/img/512.gif'); }
+    background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/512.gif'); }
 	@media screen and (max-width: 520px) {
       .tile.tile-512 .tile-merged .tile-inner {
-        background: #57407c url('http://romaincousin.fr/2048/img/512_small.gif'); } }
+        background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/512_small.gif'); } }
 		
   .tile.tile-1024 .tile-merged .tile-inner {
-    background: #57407c url('http://romaincousin.fr/2048/img/1024.gif'); }
+    background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/1024.gif'); }
 	@media screen and (max-width: 520px) {
       .tile.tile-1024 .tile-merged .tile-inner {
-        background: #57407c url('http://romaincousin.fr/2048/img/1024_small.gif'); } }
+        background: #57407c url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/1024_small.gif'); } }
 
 div#preload {
 	width: 1px;
@@ -8640,38 +8640,38 @@ div#preload {
 				url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/256.gif')no-repeat,
 				url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/512.gif')no-repeat,
 				url('http://mdjorge.github.io/Anim2048/2048%20-%20Animated%20edition_files/1024.gif')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/2048.gif')no-repeat,
+				url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/2048.gif')no-repeat,
 				url('http://alexfink.github.io/dive/tileoverlays/sprite.png')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/game-over.gif')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/2.gif')no-repeat, 
-				url('http://www.romaincousin.fr/2048/img/4.gif')no-repeat, 
-				url('http://www.romaincousin.fr/2048/img/8.gif')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/16.gif')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/32.gif')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/64.gif')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/128.gif')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/256.gif')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/512.gif')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/1024.gif')no-repeat; }
+				url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/game-over.gif')no-repeat,
+				url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/2.gif')no-repeat, 
+				url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/4.gif')no-repeat, 
+				url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/8.gif')no-repeat,
+				url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/16.gif')no-repeat,
+				url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/32.gif')no-repeat,
+				url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/64.gif')no-repeat,
+				url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/128.gif')no-repeat,
+				url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/256.gif')no-repeat,
+				url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/512.gif')no-repeat,
+				url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/1024.gif')no-repeat; }
 
 @media screen and (max-width: 520px) {
 div#preload {
 	width: 1px;
 	height: 1px;
 	display: none;
-	background: url('http://www.romaincousin.fr/2048/img/2_small.gif')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/4_small.gif')no-repeat, 
-				url('http://www.romaincousin.fr/2048/img/8_small.gif')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/16_small.gif')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/32_small.gif')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/64_small.gif')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/128_small.gif')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/256_small.gif')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/512_small.gif')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/1024_small.gif')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/2048.gif')no-repeat,
+	background: url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/2_small.gif')no-repeat,
+				url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/4_small.gif')no-repeat, 
+				url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/8_small.gif')no-repeat,
+				url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/16_small.gif')no-repeat,
+				url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/32_small.gif')no-repeat,
+				url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/64_small.gif')no-repeat,
+				url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/128_small.gif')no-repeat,
+				url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/256_small.gif')no-repeat,
+				url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/512_small.gif')no-repeat,
+				url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/1024_small.gif')no-repeat,
+				url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/2048.gif')no-repeat,
 				url('http://alexfink.github.io/dive/tileoverlays/sprite.png')no-repeat,
-				url('http://www.romaincousin.fr/2048/img/game-over.gif')no-repeat; } }
+				url('https://raw.githubusercontent.com/TheAstronomer/2147483648/master/game-over.gif')no-repeat; } }
 
 @-webkit-keyframes appear {
   0% {
