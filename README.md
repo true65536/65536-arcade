@@ -16,6 +16,8 @@ NEW: I added 2 other clones of 2147483648 - [2147483648 - Size 32](https://rawgi
 Minor Update: Tweaked the CSS font layout for the original 2147483648 site as well as the Contemporary and Animated Edition.
 For the animated edition, changed the images of CSS URLs to this site.
 
+More tile themes will be added (Factions, and two more colors, totalling 24), and three more 2048 modes - Scratch, TPSS@30 (in commemoration of my secondary school, Tampines Secondary) and iPlay2048!
+
 ## Project work?
 I made this in my spare time, and it's hosted on GitHub, which means there are no hosting costs.
 
