@@ -7,8 +7,8 @@ html, body {
     padding: 0;
     background: #fff;
     color: #5c5f76;
-    font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", 'Clear Sans', "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Verdana, Arial, Dotum, Arial, sans-serif;
-    font-weight: 300;
+    font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", "Clear Sans", "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Hiragino Sans, "ヒラギノ角ゴシック", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", Roboto,  "Droid Sans", YuGothic, "游ゴシック", Meiryo, "メイリオ", Verdana, "ＭＳ Ｐゴシック", Dotum, Arial, Helvetica, "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
+    font-weight: 500;
     font-size: 18px;
 }
 
