@@ -80,8 +80,8 @@
 
 @font-face {
     font-family: 'Glyphicons Halflings';
-    src: url("https://spoqa.github.io/spoqa-han-sans/fonts/bootstrap/glyphicons-halflings-regular.eot");
-    src: url("https://spoqa.github.io/spoqa-han-sans/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("https://spoqa.github.io/spoqa-han-sans/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("https://spoqa.github.io/spoqa-han-sans/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("https://spoqa.github.io/spoqa-han-sans/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("https://spoqa.github.io/spoqa-han-sans/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+    src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
+    src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 
 .glyphicon {
@@ -3004,7 +3004,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
     position: absolute;
     z-index: 1070;
     display: block;
-    font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", "Clear Sans", "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Hiragino Sans, Hiragino Kaku Gothic ProN, Roboto,  "Droid Sans", YuGothic, Meiryo, Verdana, Dotum, Arial, Helvetica, "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
+    font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", "Clear Sans", "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Hiragino Sans, Hiragino Kaku Gothic ProN, Roboto, "Droid Sans", YuGothic, Meiryo, Verdana, Dotum, Arial, Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     font-size: 12px;
     font-weight: normal;
     line-height: 1.4;
@@ -3127,7 +3127,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
     display: none;
     max-width: 276px;
     padding: 1px;
-    font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", "Clear Sans", "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Hiragino Sans, Hiragino Kaku Gothic ProN, Roboto,  "Droid Sans", YuGothic, Meiryo, Verdana, Dotum, Arial, Helvetica, "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
+    font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", "Clear Sans", "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Hiragino Sans, Hiragino Kaku Gothic ProN, Roboto, "Droid Sans", YuGothic, Meiryo, Verdana, Dotum, Arial, Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     font-size: 14px;
     font-weight: normal;
     line-height: 1.42857;
@@ -3977,7 +3977,7 @@ body {
 }
 
 input, select, textarea, button {
-    font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", "Clear Sans", "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Hiragino Sans, Hiragino Kaku Gothic ProN, Roboto,  "Droid Sans", YuGothic, Meiryo, Verdana, Dotum, Arial, Helvetica, "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
+    font: 9.33333px, "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", "Clear Sans", "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Hiragino Sans, Hiragino Kaku Gothic ProN, Roboto, "Droid Sans", YuGothic, Meiryo, Verdana, Dotum, Arial, Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
 a {
@@ -5565,14 +5565,14 @@ hr:after {
 
 body {
     color: #4d5256;
-    font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", "Clear Sans", "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Hiragino Sans, Hiragino Kaku Gothic ProN, Roboto,  "Droid Sans", YuGothic, Meiryo, Verdana, Dotum, Arial, Helvetica, "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
+    font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", "Clear Sans", "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Hiragino Sans, Hiragino Kaku Gothic ProN, Roboto, "Droid Sans", YuGothic, Meiryo, Verdana, Dotum, Arial, Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     font-size: 14px;
     -webkit-font-smoothing: antialiased;
     line-height: 1.5;
 }
 
 body:lang(ja) {
-    font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", "Clear Sans", "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Hiragino Sans, Hiragino Kaku Gothic ProN, Roboto,  "Droid Sans", YuGothic, Meiryo, Verdana, Dotum, Arial, Helvetica, "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
+    font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", "Clear Sans", "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Hiragino Sans, Hiragino Kaku Gothic ProN, Roboto, "Droid Sans", YuGothic, Meiryo, Verdana, Dotum, Arial, Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     line-height: 1.6;
 }
 
@@ -6091,8 +6091,8 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 }
 
 .lt-ie9 .caret {
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://spoqa.github.io/spoqa-han-sans/asset/images/icons/caret-20px-grey-5.png', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://spoqa.github.io/spoqa-han-sans/asset/images/icons/caret-20px-grey-5.png', sizingMethod='scale')";
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../asset/images/icons/caret-20px-grey-5.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../asset/images/icons/caret-20px-grey-5.png', sizingMethod='scale')";
 }
 
 .dropdown-menu {
@@ -7367,17 +7367,17 @@ table.table .table {
 }
 
 .table > thead > tr > th.order-asc a:after {
-    content: url("https://spoqa.github.io/spoqa-han-sans/asset/images/table/sort_asc.png");
+    content: url("../asset/images/table/sort_asc.png");
 }
 
 .table > thead > tr > th.order-desc a:after {
-    content: url("https://spoqa.github.io/spoqa-han-sans/asset/images/table/sort_desc.png");
+    content: url("../asset/images/table/sort_desc.png");
 }
 
 .table > thead > tr > th.order-none a:after {
     position: absolute;
     padding-left: 4px;
-    content: url("https://spoqa.github.io/spoqa-han-sans/asset/images/table/sort_both.png");
+    content: url("../asset/images/table/sort_both.png");
 }
 
 .table > thead > tr > td.linked-cell, .table > tbody > tr > td.linked-cell, .table > tfoot > tr > td.linked-cell {
@@ -7790,8 +7790,8 @@ table { td, th { &[class*="col-"] { position: static; // Prevent border hiding i
 }
 
 .lt-ie9 .modal-confirm .modal-image.modal-image-success {
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://spoqa.github.io/spoqa-han-sans/asset/images/icons/icn-success-120px-green-0.png', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://spoqa.github.io/spoqa-han-sans/asset/images/icons/icn-success-120px-green-0.png', sizingMethod='scale')";
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../asset/images/icons/icn-success-120px-green-0.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../asset/images/icons/icn-success-120px-green-0.png', sizingMethod='scale')";
 }
 
 .modal-confirm .modal-image.modal-image-fail {
@@ -7804,8 +7804,8 @@ table { td, th { &[class*="col-"] { position: static; // Prevent border hiding i
 }
 
 .lt-ie9 .modal-confirm .modal-image.modal-image-fail {
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://spoqa.github.io/spoqa-han-sans/asset/images/icons/icn-fail-120px-red-0.png', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://spoqa.github.io/spoqa-han-sans/asset/images/icons/icn-fail-120px-red-0.png', sizingMethod='scale')";
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../asset/images/icons/icn-fail-120px-red-0.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../asset/images/icons/icn-fail-120px-red-0.png', sizingMethod='scale')";
 }
 
 .modal-confirm .modal-header {
@@ -8650,8 +8650,8 @@ table { td, th { &[class*="col-"] { position: static; // Prevent border hiding i
 }
 
 .lt-ie9 .brand-logo-wrap .brand-logo {
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://spoqa.github.io/spoqa-han-sans/asset/images/logotypes/spoqa-default.png', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://spoqa.github.io/spoqa-han-sans/asset/images/logotypes/spoqa-default.png', sizingMethod='scale')";
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../asset/images/logotypes/spoqa-default.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../asset/images/logotypes/spoqa-default.png', sizingMethod='scale')";
 }
 
 @media (max-width: 991px) {
@@ -8664,8 +8664,8 @@ table { td, th { &[class*="col-"] { position: static; // Prevent border hiding i
     }
 
     .lt-ie9 .brand-logo-wrap .brand-logo {
-        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://spoqa.github.io/spoqa-han-sans/asset/images/logotypes/spoqa-default.png', sizingMethod='scale');
-        -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://spoqa.github.io/spoqa-han-sans/asset/images/logotypes/spoqa-default.png', sizingMethod='scale')";
+        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../asset/images/logotypes/spoqa-default.png', sizingMethod='scale');
+        -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../asset/images/logotypes/spoqa-default.png', sizingMethod='scale')";
     }
 }
 
@@ -9265,7 +9265,7 @@ footer .footer-wrapper, .footer .footer-wrapper {
     display: inline-block;
     height: 20px;
     width: 20px;
-    background: url("https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/asset/images/footer/img-phone.png");
+    background: url("../../../asset/images/footer/img-phone.png");
     background-size: 20px;
     background-repeat: no-repeat;
     vertical-align: text-top;
@@ -9274,7 +9274,7 @@ footer .footer-wrapper, .footer .footer-wrapper {
 
 .lt-ie9 .info-primary a .icn-tel {
     background: none;
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/asset/images/footer/img-phone.png', sizingMethod='scale')";
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../asset/images/footer/img-phone.png', sizingMethod='scale')";
 }
 
 .info-primary a:hover, .info-primary a:focus, .info-primary a:active {
@@ -9282,13 +9282,13 @@ footer .footer-wrapper, .footer .footer-wrapper {
 }
 
 .info-primary a:hover .icn-tel, .info-primary a:focus .icn-tel, .info-primary a:active .icn-tel {
-    background: url("https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/asset/images/footer/img-phone-hover.png");
+    background: url("../../../asset/images/footer/img-phone-hover.png");
     background-size: 20px;
 }
 
 .lt-ie9 .info-primary a:hover .icn-tel, .lt-ie9 .info-primary a:focus .icn-tel, .lt-ie9 .info-primary a:active .icn-tel {
     background: none;
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/asset/images/footer/img-phone-hover.png', sizingMethod='scale')";
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../asset/images/footer/img-phone-hover.png', sizingMethod='scale')";
 }
 
 .info-default {
@@ -9321,8 +9321,8 @@ footer .footer-wrapper, .footer .footer-wrapper {
 }
 
 .lt-ie9 .corp-info .corp-logo {
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://spoqa.github.io/spoqa-han-sans/asset/images/logotypes/spoqa-grey.png', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://spoqa.github.io/spoqa-han-sans/asset/images/logotypes/spoqa-grey.png', sizingMethod='scale')";
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../asset/images/logotypes/spoqa-grey.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../asset/images/logotypes/spoqa-grey.png', sizingMethod='scale')";
 }
 
 .corp-info .corp-text {
@@ -9363,43 +9363,43 @@ footer .footer-wrapper, .footer .footer-wrapper {
 }
 
 .sns a.link-facebook {
-    background: url("https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/asset/images/footer/img-facebook.png");
+    background: url("../../../asset/images/footer/img-facebook.png");
     background-size: 30px 30px;
 }
 
 .lt-ie9 .sns a.link-facebook {
     background: none;
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/asset/images/footer/img-facebook.png', sizingMethod='scale')";
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../asset/images/footer/img-facebook.png', sizingMethod='scale')";
 }
 
 .sns a.link-facebook:hover, .sns a.link-facebook:focus, .sns a.link-facebook:active {
-    background: url("https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/asset/images/footer/img-facebook-hover.png");
+    background: url("../../../asset/images/footer/img-facebook-hover.png");
     background-size: 30px 30px;
 }
 
 .lt-ie9 .sns a.link-facebook:hover, .lt-ie9 .sns a.link-facebook:focus, .lt-ie9 .sns a.link-facebook:active {
     background: none;
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/asset/images/footer/img-facebook-hover.png', sizingMethod='scale')";
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../asset/images/footer/img-facebook-hover.png', sizingMethod='scale')";
 }
 
 .sns a.link-blog {
-    background: url("https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/asset/images/footer/img-blog.png");
+    background: url("../../../asset/images/footer/img-blog.png");
     background-size: 30px 30px;
 }
 
 .lt-ie9 .sns a.link-blog {
     background: none;
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/asset/images/footer/img-blog.png', sizingMethod='scale')";
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../asset/images/footer/img-blog.png', sizingMethod='scale')";
 }
 
 .sns a.link-blog:hover, .sns a.link-blog:focus, .sns a.link-blog:active {
-    background: url("https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/asset/images/footer/img-blog-hover.png");
+    background: url("../../../asset/images/footer/img-blog-hover.png");
     background-size: 30px 30px;
 }
 
 .lt-ie9 .sns a.link-blog:hover, .lt-ie9 .sns a.link-blog:focus, .lt-ie9 .sns a.link-blog:active {
     background: none;
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/asset/images/footer/img-blog-hover.png', sizingMethod='scale')";
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../asset/images/footer/img-blog-hover.png', sizingMethod='scale')";
 }
 
 @media (max-width: 767px) {
@@ -9448,12 +9448,12 @@ footer .footer-wrapper, .footer .footer-wrapper {
 }
 
 .footer.footer-light .info-primary a .icn-tel {
-    background: url("https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/asset/images/footer/img-phone-light.png");
+    background: url("../../../asset/images/footer/img-phone-light.png");
     background-size: 20px;
 }
 
 .footer.footer-light .info-primary a:hover .icn-tel, .footer.footer-light .info-primary a:focus .icn-tel, .footer.footer-light .info-primary a:active .icn-tel {
-    background: url("https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/asset/images/footer/img-phone-light-hover.png");
+    background: url("../../../asset/images/footer/img-phone-light-hover.png");
     background-size: 20px;
 }
 
@@ -9462,22 +9462,22 @@ footer .footer-wrapper, .footer .footer-wrapper {
 }
 
 .footer.footer-light .sns a.link-facebook {
-    background: url("https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/asset/images/footer/img-facebook-light.png");
+    background: url("../../../asset/images/footer/img-facebook-light.png");
     background-size: 30px 30px;
 }
 
 .footer.footer-light .sns a.link-facebook:hover, .footer.footer-light .sns a.link-facebook:focus, .footer.footer-light .sns a.link-facebook:active {
-    background: url("https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/asset/images/footer/img-facebook-light-hover.png");
+    background: url("../../../asset/images/footer/img-facebook-light-hover.png");
     background-size: 30px 30px;
 }
 
 .footer.footer-light .sns a.link-blog {
-    background: url("https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/asset/images/footer/img-blog-light.png");
+    background: url("../../../asset/images/footer/img-blog-light.png");
     background-size: 30px 30px;
 }
 
 .footer.footer-light .sns a.link-blog:hover, .footer.footer-light .sns a.link-blog:focus, .footer.footer-light .sns a.link-blog:active {
-    background: url("https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/https://spoqa.github.io/spoqa-han-sans/asset/images/footer/img-blog-light-hover.png");
+    background: url("../../../asset/images/footer/img-blog-light-hover.png");
     background-size: 30px 30px;
 }
 
@@ -9620,10 +9620,13 @@ footer .footer-wrapper, .footer .footer-wrapper {
     flex: 1;
     overflow: hidden;
     font-size: 14px;
-    background: url("https://spoqa.github.io/spoqa-han-sans/images/assets/dropdown_caret.svg") 110px 45% no-repeat;
+    background: url("../images/assets/dropdown_caret.svg") 110px 45% no-repeat;
 }
 
 .preview-area > .control-bar > .group.others > .control.font-family > select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    apperance: none;
     display: inline-block;
     margin: 0 12px;
     width: calc(100% + 20px);
@@ -9663,11 +9666,11 @@ footer .footer-wrapper, .footer .footer-wrapper {
 }
 
 .preview-area > input[type="text"].kr, .preview-area textarea.kr {
-    font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", "Clear Sans", "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Hiragino Sans, Hiragino Kaku Gothic ProN, Roboto,  "Droid Sans", YuGothic, Meiryo, Verdana, Dotum, Arial, Helvetica, "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
+    font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", "Clear Sans", "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Hiragino Sans, Hiragino Kaku Gothic ProN, Roboto, "Droid Sans", YuGothic, Meiryo, Verdana, Dotum, Arial, Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
 .preview-area > input[type="text"].jp, .preview-area textarea.jp {
-    font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", "Clear Sans", "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Hiragino Sans, Hiragino Kaku Gothic ProN, Roboto,  "Droid Sans", YuGothic, Meiryo, Verdana, Dotum, Arial, Helvetica, "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
+    font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", "Clear Sans", "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Hiragino Sans, Hiragino Kaku Gothic ProN, Roboto, "Droid Sans", YuGothic, Meiryo, Verdana, Dotum, Arial, Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     word-break: break-all;
 }
 
@@ -9740,7 +9743,7 @@ body {
     font-size: 18px;
     line-height: 1.6;
     color: #363a3c;
-    font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", "Clear Sans", "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Hiragino Sans, Hiragino Kaku Gothic ProN, Roboto,  "Droid Sans", YuGothic, Meiryo, Verdana, Dotum, Arial, Helvetica, "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
+    font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", "Clear Sans", "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Hiragino Sans, Hiragino Kaku Gothic ProN, Roboto, "Droid Sans", YuGothic, Meiryo, Verdana, Dotum, Arial, Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
 p, .column-title {
@@ -9898,11 +9901,12 @@ p {
 .section-header h1 {
     margin-top: 0;
     margin-bottom: 0;
+    word-break: break-all;
 }
 
 .JP-word-break {
-    word-break: break-all;
-    font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", "Clear Sans", "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Hiragino Sans, Hiragino Kaku Gothic ProN, Roboto,  "Droid Sans", YuGothic, Meiryo, Verdana, Dotum, Arial, Helvetica, "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
+    word-wrap: break-word;
+    font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", "Clear Sans", "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Hiragino Sans, Hiragino Kaku Gothic ProN, Roboto, "Droid Sans", YuGothic, Meiryo, Verdana, Dotum, Arial, Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
 .column-content a {
@@ -10087,7 +10091,7 @@ div.link-underline {
 }
 
 .tumblbug {
-    background-image: url("https://spoqa.github.io/spoqa-han-sans/images/bw/tumblbug.png");
+    background-image: url("../images/bw/tumblbug.png");
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -10095,7 +10099,7 @@ div.link-underline {
 }
 
 .tumblbug:hover {
-    background-image: url("https://spoqa.github.io/spoqa-han-sans/images/color/tumblbug.png");
+    background-image: url("../images/color/tumblbug.png");
     transition: background-image 0.5s;
 }
 
@@ -10111,7 +10115,7 @@ div.link-underline {
 }
 
 .touch .tumblbug {
-    background-image: url("https://spoqa.github.io/spoqa-han-sans/images/bw/tumblbug.png");
+    background-image: url("../images/bw/tumblbug.png");
 }
 
 .touch .tumblbug button {
@@ -10130,7 +10134,7 @@ div.link-underline {
 }
 
 .assorted-books {
-    background-image: url("https://spoqa.github.io/spoqa-han-sans/images/bw/assorted-books.png");
+    background-image: url("../images/bw/assorted-books.png");
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -10138,7 +10142,7 @@ div.link-underline {
 }
 
 .assorted-books:hover {
-    background-image: url("https://spoqa.github.io/spoqa-han-sans/images/color/assorted-books.png");
+    background-image: url("../images/color/assorted-books.png");
     transition: background-image 0.5s;
 }
 
@@ -10154,7 +10158,7 @@ div.link-underline {
 }
 
 .touch .assorted-books {
-    background-image: url("https://spoqa.github.io/spoqa-han-sans/images/bw/assorted-books.png");
+    background-image: url("../images/bw/assorted-books.png");
 }
 
 .touch .assorted-books button {
@@ -10173,7 +10177,7 @@ div.link-underline {
 }
 
 .ssup {
-    background-image: url("https://spoqa.github.io/spoqa-han-sans/images/bw/ssup.png");
+    background-image: url("../images/bw/ssup.png");
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -10181,7 +10185,7 @@ div.link-underline {
 }
 
 .ssup:hover {
-    background-image: url("https://spoqa.github.io/spoqa-han-sans/images/color/ssup.png");
+    background-image: url("../images/color/ssup.png");
     transition: background-image 0.5s;
 }
 
@@ -10197,7 +10201,7 @@ div.link-underline {
 }
 
 .touch .ssup {
-    background-image: url("https://spoqa.github.io/spoqa-han-sans/images/bw/ssup.png");
+    background-image: url("../images/bw/ssup.png");
 }
 
 .touch .ssup button {
@@ -10216,7 +10220,7 @@ div.link-underline {
 }
 
 .toss {
-    background-image: url("https://spoqa.github.io/spoqa-han-sans/images/bw/toss.png");
+    background-image: url("../images/bw/toss.png");
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -10224,7 +10228,7 @@ div.link-underline {
 }
 
 .toss:hover {
-    background-image: url("https://spoqa.github.io/spoqa-han-sans/images/color/toss.png");
+    background-image: url("../images/color/toss.png");
     transition: background-image 0.5s;
 }
 
@@ -10240,7 +10244,7 @@ div.link-underline {
 }
 
 .touch .toss {
-    background-image: url("https://spoqa.github.io/spoqa-han-sans/images/bw/toss.png");
+    background-image: url("../images/bw/toss.png");
 }
 
 .touch .toss button {
@@ -10259,7 +10263,7 @@ div.link-underline {
 }
 
 .mangoplate {
-    background-image: url("https://spoqa.github.io/spoqa-han-sans/images/bw/mangoplate.png");
+    background-image: url("../images/bw/mangoplate.png");
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -10267,7 +10271,7 @@ div.link-underline {
 }
 
 .mangoplate:hover {
-    background-image: url("https://spoqa.github.io/spoqa-han-sans/images/color/mangoplate.png");
+    background-image: url("../images/color/mangoplate.png");
     transition: background-image 0.5s;
 }
 
@@ -10283,7 +10287,7 @@ div.link-underline {
 }
 
 .touch .mangoplate {
-    background-image: url("https://spoqa.github.io/spoqa-han-sans/images/bw/mangoplate.png");
+    background-image: url("../images/bw/mangoplate.png");
 }
 
 .touch .mangoplate button {
@@ -10302,7 +10306,7 @@ div.link-underline {
 }
 
 .duiro {
-    background-image: url("https://spoqa.github.io/spoqa-han-sans/images/bw/duiro.png");
+    background-image: url("../images/bw/duiro.png");
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -10310,7 +10314,7 @@ div.link-underline {
 }
 
 .duiro:hover {
-    background-image: url("https://spoqa.github.io/spoqa-han-sans/images/color/duiro.png");
+    background-image: url("../images/color/duiro.png");
     transition: background-image 0.5s;
 }
 
@@ -10326,7 +10330,7 @@ div.link-underline {
 }
 
 .touch .duiro {
-    background-image: url("https://spoqa.github.io/spoqa-han-sans/images/bw/duiro.png");
+    background-image: url("../images/bw/duiro.png");
 }
 
 .touch .duiro button {
@@ -10345,7 +10349,7 @@ div.link-underline {
 }
 
 .coinone {
-    background-image: url("https://spoqa.github.io/spoqa-han-sans/images/bw/coinone.png");
+    background-image: url("../images/bw/coinone.png");
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -10353,7 +10357,7 @@ div.link-underline {
 }
 
 .coinone:hover {
-    background-image: url("https://spoqa.github.io/spoqa-han-sans/images/color/coinone.png");
+    background-image: url("../images/color/coinone.png");
     transition: background-image 0.5s;
 }
 
@@ -10369,7 +10373,7 @@ div.link-underline {
 }
 
 .touch .coinone {
-    background-image: url("https://spoqa.github.io/spoqa-han-sans/images/bw/coinone.png");
+    background-image: url("../images/bw/coinone.png");
 }
 
 .touch .coinone button {
@@ -10388,7 +10392,7 @@ div.link-underline {
 }
 
 .lendit {
-    background-image: url("https://spoqa.github.io/spoqa-han-sans/images/bw/lendit.png");
+    background-image: url("../images/bw/lendit.png");
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -10396,7 +10400,7 @@ div.link-underline {
 }
 
 .lendit:hover {
-    background-image: url("https://spoqa.github.io/spoqa-han-sans/images/color/lendit.png");
+    background-image: url("../images/color/lendit.png");
     transition: background-image 0.5s;
 }
 
@@ -10412,7 +10416,7 @@ div.link-underline {
 }
 
 .touch .lendit {
-    background-image: url("https://spoqa.github.io/spoqa-han-sans/images/bw/lendit.png");
+    background-image: url("../images/bw/lendit.png");
 }
 
 .touch .lendit button {
@@ -10431,7 +10435,7 @@ div.link-underline {
 }
 
 .up {
-    background-image: url("https://spoqa.github.io/spoqa-han-sans/images/bw/up.png");
+    background-image: url("../images/bw/up.png");
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -10439,7 +10443,7 @@ div.link-underline {
 }
 
 .up:hover {
-    background-image: url("https://spoqa.github.io/spoqa-han-sans/images/color/up.png");
+    background-image: url("../images/color/up.png");
     transition: background-image 0.5s;
 }
 
@@ -10455,7 +10459,7 @@ div.link-underline {
 }
 
 .touch .up {
-    background-image: url("https://spoqa.github.io/spoqa-han-sans/images/bw/up.png");
+    background-image: url("../images/bw/up.png");
 }
 
 .touch .up button {
