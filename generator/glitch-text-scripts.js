@@ -697,16 +697,28 @@ function randomizeBlock(id1, id2, isInput, copyBack, blockName, skipSpace) {
         var endRange = 8378;
     } else if (document.getElementById(blockName).value == "Hiragana") {
         var startRange = 12353;
-        var endRange = 12447;
+        var endRange = 12438;
     } else if (document.getElementById(blockName).value == "Katakana") {
-        var startRange = 12448;
-        var endRange = 12543;
+        var startRange = 12449;
+        var endRange = 12538;
     } else if (document.getElementById(blockName).value == "Bopomofo") {
         var startRange = 12549;
         var endRange = 12589;
     } else if (document.getElementById(blockName).value == "CJK") {
-        var startRange = 12800;
-        var endRange = 19893;
+        var startRange = 19968;
+        var endRange = 40959;
+    } else if (document.getElementById(blockName).value == "CJK-A") {
+        var startRange = 13312;
+        var endRange = 19903;
+    } else if (document.getElementById(blockName).value == "CJK-B to E") {
+        var startRange = 131072;
+        var endRange = 183983;
+    } else if (document.getElementById(blockName).value == "CJK Punctuation") {
+        var startRange = 12289;
+        var endRange = 12319;
+    } else if (document.getElementById(blockName).value == "Halfwidth and Fullwidth") {
+        var startRange = 65281;
+        var endRange = 65439;
     } else if (document.getElementById(blockName).value == "Broad") {
         var startRange = 33;
         var endRange = 10175;
