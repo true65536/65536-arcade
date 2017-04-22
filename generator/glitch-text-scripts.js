@@ -164,7 +164,7 @@ function randomNumFromLetter(letter) {
     } else if (/[\u30a0-\u30ff]/.test(letter)) {
         // katakana
         randomDiacritic = randomFromInterval(12441, 12442);
-    } else if (/[\u3200-\u4db5]/.test(letter)) {
+    } else if (/[\u3200-\u9fff]/.test(letter)) {
         // CJK
         randomDiacritic = randomFromInterval(12330, 12333);
     } else {
