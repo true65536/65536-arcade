@@ -706,7 +706,7 @@ function randomizeBlock(id1, id2, isInput, copyBack, blockName, skipSpace) {
         var endRange = 12589;
     } else if (document.getElementById(blockName).value == "CJK") {
         var startRange = 19968;
-        var endRange = 40959;
+        var endRange = 40917;
     } else if (document.getElementById(blockName).value == "CJK-A") {
         var startRange = 13312;
         var endRange = 19903;
