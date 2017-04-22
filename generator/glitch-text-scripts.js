@@ -646,7 +646,7 @@ function randomizeBlock(id1, id2, isInput, copyBack, blockName, skipSpace) {
         var endRange = 4351;        
     } else if (document.getElementById(blockName).value == "Hangul") {
         var startRange = 44032;
-        var endRange = 55215;
+        var endRange = 55203;
     } else if (document.getElementById(blockName).value == "Ethiopic") {
         var startRange = 4608;
         var endRange = 4988;
