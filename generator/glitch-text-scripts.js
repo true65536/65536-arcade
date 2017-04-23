@@ -1,6 +1,6 @@
 /* glitch text generator scripts, version 1.02
-by stAllio!
-last revised: february 1, 2014
+by Noel Cendana
+last revised: 23 april 2017
 
 check the following for updates, documentation, etc:
 http://animalswithinanimals.com/generator/
@@ -703,7 +703,7 @@ function randomizeBlock(id1, id2, isInput, copyBack, blockName, skipSpace) {
         var endRange = 12538;
     } else if (document.getElementById(blockName).value == "Bopomofo") {
         var startRange = 12549;
-        var endRange = 12589;
+        var endRange = 12585;
     } else if (document.getElementById(blockName).value == "CJK") {
         var startRange = 19968;
         var endRange = 40917;
