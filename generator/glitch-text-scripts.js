@@ -3,14 +3,14 @@ Created by Noel Cendana
 Last revised: 23 April 2017
 check the following for updates, documentation, etc:
 Credits to the original author of this glitch text generator stAllio!*/
-
+// This web application runs entirely on JavaScript and HTML5.
 // New version, a fork from stAllio's glitch text generator
 /* Split the CJK ideographs into five sections such that it generates glyphs from the following blocks:
 Basic CJK Ideographs, CJK Unified Ideographs Extension A, Extensions B to E, 
-SYmbols and Punctuation, and Halfwidth and Fullwidth Forms */
-/* Fixed CJk characters, as well as hiragana, katakana, bopomofo and hangul placements, such that they
+Symbols and Punctuation, and Halfwidth and Fullwidth Forms */
+/* Fixed CJK characters, as well as hiragana, katakana, bopomofo and hangul placements, such that they
 don't generate unnecessary tofu. */
-// This web application runs entirely on JavaScript and HTML5.
+// Enjoy playing with this web application!
 
 String.prototype.splice = function (idx, rem, s) {
     // inserts s at point idx in a string
