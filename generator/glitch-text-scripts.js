@@ -644,9 +644,6 @@ function randomizeBlock(id1, id2, isInput, copyBack, blockName, skipSpace) {
     } else if (document.getElementById(blockName).value == "Georgian") {
         var startRange = 4256;
         var endRange = 4351;        
-    } else if (document.getElementById(blockName).value == "Hangul") {
-        var startRange = 44032;
-        var endRange = 55203;
     } else if (document.getElementById(blockName).value == "Ethiopic") {
         var startRange = 4608;
         var endRange = 4988;
@@ -704,6 +701,9 @@ function randomizeBlock(id1, id2, isInput, copyBack, blockName, skipSpace) {
     } else if (document.getElementById(blockName).value == "Bopomofo") {
         var startRange = 12549;
         var endRange = 12585;
+    } else if (document.getElementById(blockName).value == "Hangul") {
+        var startRange = 44032;
+        var endRange = 55203;        
     } else if (document.getElementById(blockName).value == "CJK") {
         var startRange = 19968;
         var endRange = 40917;
