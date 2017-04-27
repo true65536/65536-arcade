@@ -1,9 +1,15 @@
-/* glitch text generator scripts, version 1.02
-by Noel Cendana
-last revised: 23 april 2017
+/* Glitch Text Generator Scripts | Revised version 2.0
+Created by Noel Cendana
+Last revised: 23 April 2017
 check the following for updates, documentation, etc:
-http://animalswithinanimals.com/generator/
-*/
+Credits to the original author of this glitch text generator stAllio!*/
+
+// New version, a fork from stAllio's glitch text generator
+/* Split the CJK ideographs into five sections such that it generates glyphs from the following blocks:
+Basic CJK Ideographs, CJK Unified Ideographs Extension A, Extensions B to E, 
+SYmbols and Punctuation, and Halfwidth and Fullwidth Forms */
+/* Fixed CJk characters, as well as hiragana, katakana, bopomofo and hangul placements, such that they
+don't generate unnecessary tofu. */
 
 String.prototype.splice = function (idx, rem, s) {
     // inserts s at point idx in a string
