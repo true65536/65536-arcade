@@ -242,6 +242,7 @@ h1.title, div output#output-text, div output#output-text2, div output#output-tex
     font-size: 50px;
     line-height: 0.8;
     font-weight: bold;
+    line-height: 1.25;
     margin: 0;
     display: inline-block;
     float: left;
@@ -250,6 +251,7 @@ h1.title, div output#output-text, div output#output-text2, div output#output-tex
 /* line 56, main.scss */
 span.title-lg {
     font-size: 80px;
+    line-height: 1.25;
 }
 
 /* line 477, main.scss */
