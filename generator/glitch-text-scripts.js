@@ -10,6 +10,7 @@ Basic CJK Ideographs, CJK Unified Ideographs Extension A, Extensions B to E,
 SYmbols and Punctuation, and Halfwidth and Fullwidth Forms */
 /* Fixed CJk characters, as well as hiragana, katakana, bopomofo and hangul placements, such that they
 don't generate unnecessary tofu. */
+// This web application runs entirely on JavaScript and HTML5.
 
 String.prototype.splice = function (idx, rem, s) {
     // inserts s at point idx in a string
