@@ -238,7 +238,7 @@ body {
 }
 
 /* line 48, main.scss */
-h1.title {
+h1.title, div output#output-text, div output#output-text2, div output#output-text3, div output#output-text4 {
     font-size: 50px;
     line-height: 0.8;
     font-weight: bold;
