@@ -1,0 +1,176 @@
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>glitch text scripts documentation</title>
+        <style>
+            body {
+                background-image: url('glitchtext-bg1.png');
+            }
+            .codefont {
+                font-family : "Courier New", Courier, monospace;
+            }
+            #content {
+                background-color: white;
+                width: 800px;
+                margin: auto;
+                padding: 0px 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="content">
+        <h1>glitch text scripts documentation</h1>
+
+        <p>last revised: may 31, 2015</p>
+
+        <p>In recent years, artists such as <a href="https://www.facebook.com/glitchr">Glitchr</a>
+            have helped popularize a certain style of "glitch text" that revolves around the use of
+                <a
+                href="http://www.fileformat.info/info/unicode/block/combining_diacritical_marks/index.htm"
+                >combining diacritical marks</a>. These marks are highly stackable, and stacking
+            large numbers of them can lead to interesting/unexpected results. </p>
+
+        <p>These scripts use (pseudo)random numbers to rapidly generate this type of glitch text.
+            The accompanying <a href="generator.html">HTML5 glitch text generator</a> can be used to
+            generate glitch text for copy-pasting to social media, or as an art canvas for creating
+            text art.</p>
+            
+            <p><strong>Update:</strong> for stripped-down versions of these scripts designed for online mouseovers, <a href="http://animalswithinanimals.com/generator/glitch-text-mouseover-tutorial.html">go here.</a></p>
+
+        <p>glitch-text-scripts.js currently contains three scripts for adding random diacritical
+            marks to text:</p>
+
+        <ul>
+            <li><span class="codefont">glitchText()</span> picks one character at random from the
+                source text and adds a random diacritic after it.</li>
+            <li><span class="codefont">glitchAll()</span> adds a different random diacritic after
+                every character in the source text. Note that this includes diacritics you already
+                added, so these add up fast!</li>
+            <li><span class="codefont">glitchAllSame()</span> picks one random diacritic and adds it
+                after every character in the source text. </li>
+
+        </ul>
+
+        <p>Each of these scripts takes up to four arguments:</p>
+
+        <ol>
+            <li><span class="codefont">id1</span> is the ID of the element containing the text you
+                want to glitch. This can be an &lt;input&gt; or a standard HTML element such as
+                &lt;p&gt;, &lt;a&gt;, &lt;span&gt;, etc. This argument is required.</li>
+            <li><span class="codefont">id2</span> is the ID of the element where you want to output
+                the glitched text. If this is left blank, then is is assumed that you want to
+                replace the source text with the glitched text, and id1 is used.</li>
+            <li>Pass <span class="codefont">true</span> to the <span class="codefont">isInput</span>
+                argument to tell the script that the source text is coming from an &lt;input&gt;
+                element (or I guess &lt;select&gt;). For example, my glitch text generator uses form
+                inputs like these to print to the screen in real-time. Leaving this argument blank
+                (or passing any value that doesn't resolve true) indicates that the source text is
+                coming from a standard HTML element.</li>
+            <li>Pass <span class="codefont">true</span> to the <span class="codefont"
+                    >copyBack</span> argument if you're using different source and output elements,
+                and you want the glitched text to be "copied back" into the source element and
+                replace its content. This could be important if working with form inputs, for
+                example (it's crucial to my HTML5 glitch text generator). Leaving this blank (or
+                passing any value that doesn't resolve true) means you don't want or need this.</li>
+        </ol>
+
+        <p>There are also two "precise" scripts, which allow the user to choose which diacritic to
+            use instead of picking one at random.</p>
+
+        <ul>
+            <li><span class="codefont">glitchTextPrecise()</span> picks one character at random from
+                the source text and inserts the specified diacritic after it. Functions the same as
+                    <span class="codefont">glitchText()</span> except it has two more arguments. The
+                fifth, <span class="codefont">diacritic</span>, is obviously required. This should
+                either hold a numeric value between 768 and 879 (the combining diacritics block; I
+                suppose you could send it other values if you wanted to insert some other random
+                character for some reason), or the ID of a select/input element holding a number in
+                this range. If passing an ID, then you must also pass <span class="codefont"
+                    >true</span> to the sixth argument, <span class="codefont">isInput2</span>. </li>
+            <li><span class="codefont">glitchAllPrecise()</span> inserts the specified diacritic
+                after every character in the source text. Functions the same as <span
+                    class="codefont">glitchAll()</span> except for the fifth and sixth arguments,
+                    <span class="codefont">diacritic</span> and <span class="codefont"
+                    >isInput2</span> (see previous bullet for how to use these).</li>
+        </ul>
+
+        <p>There are also "scramble" scripts that replace each character in the source text with a
+            different random character:</p>
+
+        <ul>
+            <li><span class="codefont">randomizeText()</span> replaces every character in the source
+                text with a random character. It takes the same four arguments as the glitch scripts
+                listed above.</li>
+            <li><span class="codefont">randomizeTextInRange()</span> is the same as <span
+                    class="codefont">randomizeText()</span> except it allows you to specify the
+                range of characters to be generated using the fifth and sixth arguments, <span
+                    class="codefont">startRange</span> and <span class="codefont">endRange</span>.
+                Values for these arguments must be numbers, and the numbers should represent
+                    <em>HTML entities</em> for Unicode characters. For example, the HTML entity for
+                    <a href="http://www.fileformat.info/info/unicode/char/0041/index.htm">uppercase
+                    A</a> is <span class="codefont">&amp;#65;</span>, so if you wanted to start with
+                A, you would pass the value "65" to <span class="codefont">startRange</span>.</li>
+            <li><span class="codefont">randomizeBlock()</span> is a shortcut to <span
+                    class="codefont">randomizeTextInRange()</span>. Instead of supplying specific
+                start and end values, this script allows you to supply a name for a predefined block
+                of characters. Check the source code for the full list of acceptable values.</li>
+        </ul>
+            
+            <p><strong>Update:</strong> the <code>glitchAll</code> and <code>Randomize</code> scripts have a new attribute.
+            This optional attribute (last in attribute list) is <code>skipSpace</code>; pass it <code>true</code> to make
+            these scripts recognize and skip space characters (<code>&amp;#20;</code>). This is handy for maintaining word wrap.</p>
+
+        <p>glitch-text-scripts.js also contains four helper scripts that the base scripts rely
+            upon:</p>
+
+        <ul>
+            <li>Some types of text are picky about which diacritical marks they accept, so <span
+                    class="codefont">randomNumFromLetter()</span> accepts one character as input,
+                and tries to pick a random diacritic from the appropriate range based on that
+                character. </li>
+            <li><span class="codefont">String.prototype.splice()</span> is used to insert content
+                into the middle of the string. Thanks to <a
+                    href="http://stackoverflow.com/questions/4313841/javascript-how-can-i-insert-a-string-at-a-specific-index"
+                    >stackoverflow user 113716</a> for the code.</li>
+            <li><span class="codefont">String.prototype.removeAt()</span> is used to replace
+                characters in the middle of the string.</li>
+            <li><span class="codefont">randomFromInterval()</span> is used to generate a
+                (pseudo)random number within a given range. Thanks to <a
+                    href="http://stackoverflow.com/questions/4959975/generate-random-value-between-two-numbers-in-javascript"
+                    >stackoverflow user Franscisc</a> for the code.</li>
+        </ul>
+
+        <h2>Terms of [mis]use</h2>
+
+        <p>You may use glitch text and text art that you create using the HTML5 glitch text
+            generator in any way. It's your art; I just made the tool. If you choose to publish your
+            art, it would be great if you could include a link to <a
+                href="http://animalswithinanimals.com/generator/"
+                >animalswithinanimals.com/generator/</a>. Also, I'd love it if you submitted your
+            screenshots, animated gifs, etc to the <a href="http://glitchtext.tumblr.com">glitch
+                text tumblr</a> at <a href="http://glitchtext.tumblr.com/submit"
+                >glitchtext.tumblr.com/submit</a>.</p>
+        <p>You may use the glitch text scripts in your own projects. If you do, it's better for me
+            if you upload the file to your own server than if you link to my server. You may alter
+            the scripts if your project requires it, but don't try to pass it all off as your own
+            work, because that would be a total jerk move. Also, don't try to make money off these
+            scripts without cutting me in on the deal, because that's not cool, either.</p>
+        <p>If you use the scripts in a project, it would be great if you could include a link to <a
+                href="http://animalswithinanimals.com/generator/"
+                >animalswithinanimals.com/generator/</a>. If you do something interesting with these
+            scripts or expand them in some cool way, I'd love if you let me know by emailing me at
+            stallio@animalswithinanimals.com or submitting a link to the <a
+                href="http://glitchtext.tumblr.com">glitch text tumblr</a> at <a
+                href="http://glitchtext.tumblr.com/submit">glitchtext.tumblr.com/submit</a>.</p>
+
+        <h2>Questions/comments/feedback</h2>
+
+        <p>I'm not a professional programmer and my code is probably lousy with bugs and unintended
+            errors (the bad kind, I mean). Likewise, there are probably some amazing features that I
+            could add to the scripts or the HTML5 generator that I haven't thought of. Shoot me an
+            email at stallio@animalswithinanimals.com with your comments, code suggestions,
+            questions, kudos, or other laudations. Hate mail should be sent directly to the
+            trash.</p>
+        </div>
+    </body>
+</html>

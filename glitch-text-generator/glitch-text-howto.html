@@ -1,0 +1,205 @@
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Using the glitch text generator and text art canvas</title>
+    
+    <style>
+            body {
+                background-image: url('glitchtext-bg1.png');
+            }
+            .codefont {
+                font-family : "Courier New", Courier, monospace;
+            }
+            #content {
+                background-color: white;
+                width: 800px;
+                margin: auto;
+                padding: 0px 15px;
+            }
+    </style>
+    </head>
+    <body>
+        <div id="content">
+        <h1>Using the glitch text generator and text art canvas</h1>
+        <p>last updated: December 01, 2013</p>
+        <h2>About this project</h2>
+        <p>In recent years, artists such as <a href="https://www.facebook.com/glitchr">Glitchr</a>
+            have helped popularize a certain style of "glitch text" that revolves around the use of
+                <a
+                href="http://www.fileformat.info/info/unicode/block/combining_diacritical_marks/index.htm"
+                >combining diacritical marks</a>. These marks are highly stackable, and stacking
+            large numbers of them can lead to interesting/unexpected results. </p>
+
+        <p>The <a href="generator.html">HTML5 glitch text generator</a> can be used to rapidly
+            generate this type of glitch text for copy-pasting to social media or elsewhere, and also
+            functions as a canvas for creating text art.</p>
+
+        <h2>Browser requirements/recommendations</h2>
+        <p>The <a href="http://animalswithinanimals.com/generator/generator.html">glitch text
+                generator and text art canvas</a> is built using HTML5 and JavaScript. As such, you
+            must be using a newer browser, and you must not have JavaScript disabled.</p>
+        <p>The generator uses the <a href="http://www.w3schools.com/html/html5_form_input_types.asp"
+                >HTML5 color input</a>, which is not fully supported in all browsers. Chrome and
+            Opera provide a color picker tool, where other browsers will only show a text box that
+            accepts <a href="http://www.w3schools.com/html/html_colors.asp">hex color values</a>. </p>
+        <p>Webkit browsers (Chrome and Safari) have an optimization bug that can result in artifacts
+            being left onscreen when glitch text is resized or rotated. As such, you will get the
+            more unpredictable and "glitchier" results if using one of these browsers.</p>
+        <h3>Mobile and tablet devices</h3>
+        <p><strong>iOS:</strong> Works well in Safari, particularly if you're using 
+            the <a href="generator-big.html">touch-friendly glitch text generator</a>, which has larger 
+            controls that are easier to use with a touch interface than the small controls in the baseline version.</p>
+        <p><strong>Android:</strong> Does not work in the built-in browesr. Users report it does work in other browsers like Chrome.
+        There is probably a minimum version of Android required. I don't currently know what it is :/</p>
+        <p><strong>Chrome OS:</strong> Works great in Chrome and thus <i>should</i> work on any Chrome tablets.</p>    
+        <p><strong>Other:</strong> Might or might not work on Windows phones or other OSes. If you have one, try it out and
+            let me know if/how it works.</p>
+        <h2>The controls</h2>
+        <p>The glitch text canvas can display up to four lines of glitched text, with
+            user-selectable type formatting including shadow and rotation. Each line has a size
+            control and five collapsible formatting panels: </p>
+        <ul>
+            <li>The <strong>random panel</strong> is visible by default. It contains three buttons
+                for generating random glitch text: <ul>
+                    <li>The <strong>&aacute;</strong> button adds a random diacritic to one
+                        character in the source text.</li>
+                    <li><strong>a&#771;a&#793;a&#831;</strong> adds a different random diacritic
+                        after every character in the source text (including other diacritics, so
+                        these add up fast!).</li>
+                    <li><strong>&aacute;&aacute;&aacute;</strong> picks one random diacritic and
+                        adds it after every character in the source text (including other
+                        diacritics).</li>
+                </ul>
+            </li>
+            <li>The <strong>precise panel</strong> lets the user select a diacritic and add it after
+                either one random character or every character in the source text. It is collapsed
+                by default.</li>
+            <li>The <strong>scramble panel</strong> lets you "randomize" the text by replacing every
+                character in the source text (including diacritics) with a different character. It
+                has a drop-down menu that lets you choose different character ranges: <ul>
+                    <li><strong>&#167;&#339;&#1364;</strong> generates a very broad range of
+                        characters. Output is likely to include some characters that are
+                        undisplayable on your system and may occasionally output
+                        undefined/nonexistent characters.</li>
+                    <li><strong>Latin</strong> generates only characters in the Latin script
+                        (specifically the first six Unicode blocks).</li>
+                    <li>Options <strong>Greek</strong>, <strong>Cyrillic</strong>, etc on through
+                            <strong>CJK</strong> generate characters only from that specific
+                        script.</li>
+                    <li>Options such as <strong>Letterlike</strong>, <strong>IPA</strong>,
+                            <strong>Shapes</strong>, etc generate various types of "fun"
+                        characters.</li>
+                </ul> This panel is collapsed by default.</li>
+            <li>The <strong>font panel</strong> lets the user set a font color, change the font, set
+                the text to bold and/or italics, and set whether the text is left-aligned, centered,
+                or right-aligned. It is collapsed by default.</li>
+            <li>The <strong>shadow panel</strong> has a check box to turn shadows on/off, choose the
+                shadow color, set the shadow's x/y position relative to the text, and set how blurry
+                or crisp the shadow is. It is collapsed by default.</li>
+            <li>The <strong>rotate panel</strong> has controls to rotate the output text, as well as
+                move the x/y position of the rotation axis. These controls may not work as you
+                expect &mdash; or rotated elements may end up in front of controls, making them
+                unclickable &mdash; so Recenter and Reset buttons are also provided. This panel is
+                collapsed by default.</li>
+        </ul>
+        <p>In addition to controls for choosing the number and background color, there are also
+            three buttons that affect the whole screen:</p>
+        <ul>
+            <li>The <strong>FreeFonts button</strong> changes the font on some controls to make it easier
+            to work with characters that aren't in the basic fonts:
+            <ul>
+                <li>Changes the font on the "type something" boxes to Symbola, which is great for working with Pictographs and such.</li>
+                <li>Changes the font of the "choose diacritic" drop-downs to FreeSans, so you can work with diacritics that aren't in the base fonts
+                    (like Combining Diacritical Marks for Symbols).</li>
+            </ul>
+                (You must <a href="http://shapecatcher.com/unicodefonts.html">download and install</a>
+                the Symbola and Free* fonts for this mode to work. The fonts are free, and are highly recommended.)
+            </li>
+            <li>The <strong>Redraw button</strong> redraws the entire screen. You might want to use
+                this if some of your diacritics aren't visible, or if your screen is full of glitch
+                artifacts from resizing or rotating things, and you want to clear them away.</li>
+            <li>The <strong>Hide controls button</strong> hides all controls (except for an Unhide
+                button) so that you can take prettier screenshots.</li>
+            <li>The <strong>Hide and redraw button</strong> both hides all controls and redraws the
+                screen. Click this if the Hide controls button created glitch artifacts that you
+                don't want, or if some of your diacritics aren't showing up onscreen and you want to
+                take a screenshot.</li>
+        </ul>
+        <h2>Tips for using the text art canvas</h2>
+        <p>Your experience will probably be <em>greatly</em> enhanced by installing <a
+                href="http://shapecatcher.com/unicodefonts.html">these Unicode fonts</a>.</p>
+        <p>When you add diacritics to existing text, you end up with text that is taller than the
+            "box" it's in. Diacritics outside this box may not appear onscreen right away. You can
+            force them to appear using one of the Redraw buttons, but this also clears the screen of
+            artifacts that you might want to keep. In this case, try resizing the text. </p>
+        <p>The "box" holding each line of text runs to the edge of the screen, no matter how short
+            your text is. So if you rotate any text, part of this box could end up "in front of"
+            some of the controls, making them unclickable. The rotate panel has Recenter and Reset
+            buttons, but these too can be blocked. If this happens, try resizing the text or
+            expanding/collapsing panels to move things around until you can click them.</p>
+        <p>Leaving spaces in your source text allows the text to wrap to multiple lines. This can
+            give interesting results, particularly if the font size is large. </p>
+        <p>Using Chrome or Safari adds extra glitchy behaviors that you may find desirable, due to
+            the aforementioned optimization bug. </p>
+        <p>The most diacritic-friendly fonts are Helvetica/Arial, Times, and Tahoma. Courier
+            displays diacritics but doesn't stack them vertically, instead placing them in a grid
+            that you might or might not find useful.</p>
+        <p>Empty squares/rectangles represent undisplayable characters. Choosing a different font
+            may help, but Unicode is massive, and you likely don't have fonts installed for all
+            every Unicode character, unless you installed those extra fonts. </p>
+        <p>There are different blocks of diacritical marks, and some characters are picky about
+            which ones they take: Arabic diacritics work on Latin characters, but Latin diacritics
+            don't work on Arabic letters. The buttons that generate random diacritics attempt to
+            pick the "right" type to generate, but you can deliberately try to apply the "wrong"
+            ones using the precise panel. It might work, or you might just get a bunch of empty
+            squares.</p>
+        <p>Diacritics do not stack well in all types of text. When they don't stack correctly, they
+            may appear as dotted circles, so repeatedly trying to add diacritics can result in large
+            numbers of these circles. </p>
+        <h2>Saving your work</h2>
+        <p>The glitch text generator and text art canvas does not have a "save" function, but:</p>
+        <ul>
+            <li>Glitch text can be easily copied and pasted to other environments &mdash; Facebook,
+                Tumblr, Twitter, etc all support this beautifully. If you find a site where pasting
+                glitch text doesn't seem to work (for example, Google Plus), then try using a base
+                script opther than Latin (Letterlike, IPA, and Thai are good choices) and adding
+                diacritics to that. (Usually, the problem is the font the site is using. Google Plus
+                uses its own custom font, for example. Using non-Latin characters can "trick" the
+                site into using a different font to display those characters.)</li>
+            <li>Keep work you've created using the text art canvas by <a
+                    href="http://www.take-a-screenshot.org/">taking a screenshot</a>. Then consider
+                submitting your screenshots (or gifs made using them, etc) to the <a
+                    href="http://glitchtext.tumblr.com/">glitch text tumblr</a></li>
+        </ul>
+        <h2>Terms of [mis]use</h2>
+
+        <p>You may use glitch text and text art that you create using the HTML5 glitch text
+            generator in any way. It's your art; I just made the tool. If you choose to publish your
+            art, it would be great if you could include a link to <a
+                href="http://animalswithinanimals.com/generator/"
+                >animalswithinanimals.com/generator/</a>. Also, I'd love it if you submitted your
+            screenshots, animated gifs, etc to the <a href="http://glitchtext.tumblr.com">glitch
+                text tumblr</a> at <a href="http://glitchtext.tumblr.com/submit"
+                >glitchtext.tumblr.com/submit</a>.</p>
+        <p>You may use the glitch text scripts in your own projects. If you do, it's better for me
+            if you upload the file to your own server than if you link to my server. You may alter
+            the scripts if your project requires it, but don't try to pass it all off as your own
+            work, because that would be a total jerk move. Also, don't try to make money off these
+            scripts without cutting me in on the deal, because that's not cool, either.</p>
+        <p>If you use the scripts in a project, it would be great if you could include a link to <a
+                href="http://animalswithinanimals.com/generator/"
+                >animalswithinanimals.com/generator/</a>. If you do something interesting with these
+            scripts or expand them in some cool way, I'd love if you let me know by emailing me at
+            stallio@animalswithinanimals.com or submitting a link to the <a
+                href="http://glitchtext.tumblr.com">glitch text tumblr</a> at <a
+                href="http://glitchtext.tumblr.com/submit">glitchtext.tumblr.com/submit</a>.</p>
+
+
+
+        <h2>Questions/comments/feedback</h2>
+        <p>Send your questions, comments, and suggestions to stallio@animalswithinanimals.com.
+            Tumblr users can also submit questions to the <a href="http://glitchtext.tumblr.com/"
+                >glitch text tumblr</a>.</p>
+        </div>
+    </body>
+</html>
