@@ -275,7 +275,7 @@ body
 	margin: 0 auto;
 	padding: 10px;
 	color: #333333;
-	font-family: Georgia, Serif;
+	font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", Apercu, "Interstate", "colfax-web", "Gotham SSm A", "Gotham SSm B", 'PT Sans', 'Open Sans', "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", "Clear Sans", "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Hiragino Sans, Hiragino Kaku Gothic ProN, Roboto, "Droid Sans", YuGothic, Meiryo, Verdana, Dotum, Arial, Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", 'Code2000', 'Code2003', 'Quivira', 'Symbola', 'hanamina', 'hanaminb', 'hanamin', 'HanNomGothic', 'NomKhai-Supplement', 'Han-Nom Gothic Supplement', 'Radicals Supplement', sans-serif, Serif;
 	font-size : 11pt;
 	text-align: justify;
 	line-height: 1.5em;
@@ -286,7 +286,7 @@ table
 	background: #ffffff;
 	margin: 0;
 	color: #333333;
-	font-family: Georgia, Serif;
+	font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", Apercu, "Interstate", "colfax-web", "Gotham SSm A", "Gotham SSm B", 'PT Sans', 'Open Sans', "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", "Clear Sans", "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Hiragino Sans, Hiragino Kaku Gothic ProN, Roboto, "Droid Sans", YuGothic, Meiryo, Verdana, Dotum, Arial, Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", 'Code2000', 'Code2003', 'Quivira', 'Symbola', 'hanamina', 'hanaminb', 'hanamin', 'HanNomGothic', 'NomKhai-Supplement', 'Han-Nom Gothic Supplement', 'Radicals Supplement', sans-serif, Serif;
 	font-size : 11pt;
 	text-align: left;
 	line-height: 1.5em;
@@ -894,7 +894,7 @@ body
 	margin:0 auto;
 	padding:10px;
 	color:#333333;
-	font-family: Georgia, Serif;
+	font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", Apercu, "Interstate", "colfax-web", "Gotham SSm A", "Gotham SSm B", 'PT Sans', 'Open Sans', "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", "Clear Sans", "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Hiragino Sans, Hiragino Kaku Gothic ProN, Roboto, "Droid Sans", YuGothic, Meiryo, Verdana, Dotum, Arial, Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", 'Code2000', 'Code2003', 'Quivira', 'Symbola', 'hanamina', 'hanaminb', 'hanamin', 'HanNomGothic', 'NomKhai-Supplement', 'Han-Nom Gothic Supplement', 'Radicals Supplement', sans-serif, Serif;
 	font-size : 11pt;
 	text-align: justify;
 }
