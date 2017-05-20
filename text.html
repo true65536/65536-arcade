@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" type="text/css" href="Unicode.css" />
+<script type="text/javascript" src="text.js"></script>
+<title>Unicode Text Styler</title>
+</head>
+<body>
+<!--h1 title="𝖀𝖓𝖎𝖈𝖔𝖉𝖊 𝕋𝕖𝕩𝕥 𝙎𝙩𝙮𝙡𝙚𝙧">Unicode Text Styler</h1-->
+<p class="left"><img src="UnicodeTextStyler.png" title="Unicode Text Styler" alt="&quot;Unicode Text Styler&quot; in fraktur bold, double-struck and sans-serif bold italic styles" /></p>
+
+<form name="editform" action="">
+<p><textarea id="edittext" rows="10" cols="40" autofocus="autofocus" title="Enter text to convert then press one of the buttons below (applies to selected text or all text if there is no selection)" class="large"></textarea></p>
+<p>
+	<input type="button" value="Regular" title="Convert Latin and/or Greek styled text to regular characters" onclick="OnConvert( 'Regular' )" />
+	<input type="button" value="Bold" title="Convert Latin and/or Greek uppercase and lowercase letters and digits to bold characters" onclick="OnConvert( 'Bold' )" />
+	<input type="button" value="Italic" title="Convert Latin and/or Greek uppercase and lowercase letters to italic characters" onclick="OnConvert( 'Italic' )" />
+	<input type="button" value="Bold Italic" title="Convert Latin and/or Greek uppercase and lowercase letters to bold italic characters" onclick="OnConvert( 'BoldItalic' )" />
+</p>
+<p>
+	<input type="button" value="Sans-serif" title="Convert Latin uppercase and lowercase letters and digits to sans-serif characters" onclick="OnConvert( 'SansSerif' )" />
+	<input type="button" value="Sans-serif Bold" title="Convert Latin and/or Greek uppercase and lowercase letters and digits to sans-serif bold characters" onclick="OnConvert( 'SansSerifBold' )" />
+	<input type="button" value="Sans-serif Italic" title="Convert Latin uppercase and lowercase letters to sans-serif italic characters" onclick="OnConvert( 'SansSerifItalic' )" />
+	<input type="button" value="Sans-serif Bold Italic" title="Convert Latin and/or Greek uppercase and lowercase letters to sans-serif bold italic characters" onclick="OnConvert( 'SansSerifBoldItalic' )" />
+</p>
+<p>
+	<input type="button" value="Script" title="Convert Latin uppercase and lowercase letters to script characters" onclick="OnConvert( 'Script' )" />
+	<input type="button" value="Script Bold" title="Convert Latin uppercase and lowercase letters to script bold characters" onclick="OnConvert( 'ScriptBold' )" />
+	<input type="button" value="Fraktur" title="Convert Latin uppercase and lowercase letters to fraktur characters" onclick="OnConvert( 'Fraktur' )" />
+	<input type="button" value="Fraktur Bold" title="Convert Latin uppercase and lowercase letters to fraktur bold characters" onclick="OnConvert( 'FrakturBold' )" />
+	<input type="button" value="Double-struck" title="Convert Latin uppercase and lowercase letters and digits to double-struck characters" onclick="OnConvert( 'DoubleStruck' )" />
+	<input type="button" value="Monospace" title="Convert Latin uppercase and lowercase letters and digits to monospace characters" onclick="OnConvert( 'Monospace' )" />
+</p>
+<p>
+	<input type="button" value="Circled" title="Convert Latin uppercase and lowercase letters and digits to circled characters" onclick="OnConvert( 'Circled' )" />
+	<input type="button" value="Inverse Circled" title="Convert Latin uppercase letters and digits to inverse circled characters" onclick="OnConvert( 'InverseCircled' )" />
+	<input type="button" value="Squared" title="Convert Latin uppercase letters to squared characters" onclick="OnConvert( 'Squared' )" />
+	<input type="button" value="Inverse Squared" title="Convert Latin uppercase letters to inverse squared characters" onclick="OnConvert( 'InverseSquared' )" />
+	<input type="button" value="Parenthesized" title="Convert Latin uppercase and lowercase letters to parenthesized characters" onclick="OnConvert( 'Parenthesized' )" />
+</p>
+<p>
+	<input type="button" value="Fullwidth" title="Convert Latin characters to fullwidth characters" onclick="OnConvert( 'Fullwidth' )" />
+	<input type="button" value="Small Capitals" title="Convert Latin uppercase letters to small capital characters (not Q and X)" onclick="OnConvert( 'SmallCapitals' )" />
+	<input type="button" value="Superscript" title="Convert Latin lowercase letters and digits to superscript characters (not q)" onclick="OnConvert( 'Superscript' )" />
+	<input type="button" value="Subscript" title="Convert Latin lowercase letters and digits to subscript characters (not b, c, d, f, g, q, w, y, and z)" onclick="OnConvert( 'Subscript' )" />
+</p>
+<p>
+	<input type="button" value="Regional Indicator Symbols" title="Convert Latin uppercase letters to Regional Indicator Symbol characters (used to represent emoji flag symbols)" onclick="OnConvert( 'RegionalIndicatorSymbols' )" />
+	<input type="button" value="Tags" title="Convert Latin characters to tag characters (invisible under some operating systems and browsers)" onclick="OnConvert( 'Tags' )" />
+</p>
+<p><input type="text" id="fonttext" title="Enter exact font name to use then press the button" /> <input type="button" value="Set Font" title="Use the specified font" onclick="OnSetFont()" /></form></p>
+<br/>
+<p><b>Usage:</b> Enter text to style then press one of the buttons above.  You can apply multiple styles to different parts of the text by selecting parts of the text and pressing the required buttons (if no text is selected the style is applied to the entire text).  Depending on the style you choose, you may convert Latin and/or Greek uppercase or lowercase letters and/or the digits 0-9 (mouseover a button for an explanation of what characters the style will be applied to).  If the text is displayed as square boxes, you may apply a specified font by entering the exact font name to use into the box above and then press "Set Font".</p>
+<br/>
+<hr/>
+<p class="centre"><a href="babelmap.html" title="Javascript character map">BabelMap Online</a> | <a href="unicode.html" title="Unicode Slide Show">Unicode Slide Show</a> | <a href="whatisit.html" title="What Unicode character is this ?">What Unicode character is this ?</a></p>
+</body>
+</html>
