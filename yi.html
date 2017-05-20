@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" type="text/css" href="Unicode.css" />
+<script type="text/javascript" src="yi.js"></script>
+<title>Liangshan Yi (Nuosu) Transliteration Converter</title>
+</head>
+<body>
+<h1>Liangshan Yi (Nuosu) Transliteration Converter</h1>
+
+<table id="table3" border="0" width="100%" align="center">
+<tr>
+<td>
+<form name="editform" action="">
+<h3>Yi Syllables</h3>
+<p><textarea id="edittextsyllables" rows="10" cols="100" title="Enter Unicode Yi syllables to convert to Yi romanization"></textarea></p>
+<p><input id="convertbutton1" type="button" value="Convert Yi Syllables to Romanization" title="Convert Unicode Yi syllables to Yi romanization" onclick="OnConvertToPinyin()" /></p>
+<br/>
+
+<h3>Yi Romanization</h3>
+<p><textarea id="edittextpinyin" rows="10" cols="100" title="Enter Yi romanization to convert to Unicode Yi syllables"></textarea></p>
+<p><input id="convertbutton2" type="button" value="Convert Yi Romanization to Syllables" title="Convert Yi romanization to Unicode Yi syllables" onclick="OnConvertToSyllables()" /></p>
+</form>
+</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<p class="centre"><a href="babelmap.html" title="Javascript character map">BabelMap Online</a> | <a href="unicode.html" title="Unicode Slide Show">Unicode Slide Show</a></p>
+</body>
+</html>
