@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" type="text/css" href="Unicode.css" />
+<script type="text/javascript" src="unicode.js"></script>
+<title>What Unicode character is this ?</title>
+</head>
+<body onload="InitialiseConversion()" onunload="FinaliseConversion()">
+<h1>What Unicode character is this ?</h1>
+<br/>
+
+<table id="table3" border="0" width="100%" align="center">
+<tr>
+<td>
+<form name="editform" action="">
+<p>
+Enter character or text to identify: 
+<input id="edittextin" type="text" style="width:500px;" autofocus="autofocus" title="Enter character or string of characters to convert" />
+<input id="convertbutton" type="button" value="Identify" title="Show the code points and character names for the specified characters" onclick="OnConvertCharactersToNames()" />
+</p>
+</form>
+<p><textarea id="edittextout" rows="24" cols="100" class="small serif"></textarea></p>
+</td>
+</tr>
+</table>
+<br/>
+<h3>Notes</h3>
+<ul>
+<li>Supports all 128,172 named characters defined in <a target="_blank" href="http://www.unicode.org/versions/Unicode9.0.0/" title="Unicode 9.0.0">Unicode 9.0</a> (released June 2016).</li>
+<li>For each character, its hexadecimal code point value is prefixed U+, followed by the official character name, with any abbreviation in square brackets.  For characters which do not have a defined character name (i.e. control characters, private use characters, unpaired surrogates, and noncharacters), the code point label is given in angle brackets in place of the name (e.g. &lt;control-0009&gt; for the tab character).  For control characters, the corresponding name given in ISO/IEC 6429:1992 is given in parentheses.  For a very few characters with incorrect names, the formal character name alias listed in <a href="http://unicode.org/Public/UNIDATA/NameAliases.txt" title="Unicode Character Database : Name Aliases">NameAliases.txt</a> is noted in parentheses following the character name.  Where available, informative aliases listed in the Unicode code charts are appended in braces.</li>
+<li>For Tangut ideographs, the algorithmic character name is followed in parentheses by the identifying source reference for the character in <a href="http://unicode.org/Public/UNIDATA/TangutSources.txt" title="Unicode Character Database : Tangut Sources">TangutSources.txt</a>.  Where available, the simple (and sometimes misleading or incomplete) English meaning of the character given in the English index to Lǐ Fànwén's 李範文 <i>Tangut-Chinese Dictionary</i> 夏漢字典 (rev. ed., 2008) is appended in braces.</li>
+<li>For Egyptian hieroglyphs, a description of the glyph is appended in braces.  Most of the glyph descriptions are derived (with some minor modifications) from the sign-list in Alan Gardiner's <i>Egyptian Grammar</i> (3rd ed., 1957).  The descriptions for characters not included in Gardiner's sign-list are gratefully adapted from <a href="https://mjn.host.cs.st-andrews.ac.uk/" title="Mark-Jan Nederhof">Mark-Jan Nederhof's</a> <a href="https://mjn.host.cs.st-andrews.ac.uk/egyptian/unicode/tablemain.html" title="The 1071 hieroglyphs from Unicode 5.2">The 1071 hieroglyphs from Unicode 5.2</a>.</li>
+<li>For CJK compatibility ideographs, the algorithmic character name is followed by the variation sequence mapping for the corresponding CJK unified ideograph.</li>
+<li>For CJK unified ideographs, only the algorithmic character name is currently given, but additional information may be provided in the future.</li>
+<li>You may specify the Unicode character or characters to convert in the url to this page with the "convert" parameter (e.g. <a href="http://www.babelstone.co.uk/Unicode/whatisit.html?convert=☃" class="code">http://www.babelstone.co.uk/Unicode/whatisit.html?convert=☃</a>).  However, some browsers do not support supra-BMP characters in the url parameters, so you may have  to escape supra-BMP characters as two surrogates in order to work on all browsers (e.g. <a href="http://www.babelstone.co.uk/​Unicode/​whatisit.html?​convert=🤦" class="code">http://www.babelstone.co.uk/Unicode/whatisit.html?convert=🤦</a> can be escaped as <a href="http://www.babelstone.co.uk/​Unicode/​whatisit.html?​convert=%uD83E%uDD26" class="code">http://www.babelstone.co.uk/​Unicode/​whatisit.html?​convert=%uD83E%uDD26</a>).</li>
+</ul>
+<br/>
+<hr/>
+<p class="centre"><a href="babelmap.html" title="Javascript character map">BabelMap Online</a> | <a href="unicode.html" title="Unicode Slide Show">Unicode Slide Show</a> | <a href="text.html" title="Convert Latin and/or Greek text to styled text">Unicode Text Styler</a></p>
+</body>
+</html>
