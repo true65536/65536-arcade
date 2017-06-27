@@ -3,17 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
-<link rel="stylesheet" typ<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="Content-Script-Type" content="text/javascript" />
 <link rel="stylesheet" type="text/css" href="Unicode.css" />
-<script type="text/javascript" src="unicode61.js"></script>
-<title>Unicode 6.1 Slide Show</title>
+<script type="text/javascript" src="unicode62.js"></script>
+<title>Unicode 6.2 Slide Show</title>
 </head>
 <body onload="Initialise()" onunload="Finalise()">
-<h1>Unicode 6.1 Slide Show</h1>
+<h1>Unicode 6.2 Slide Show</h1>
 <p align="center" id="stats"></p>
 <table id="table1" align="center" border="0">
 <tr>
@@ -63,11 +58,11 @@
 </table>
 <br/>
 <form class="centre" name="dropdown" action="">
-<input type="button" value="Load Unicode Version" title="Load Unicode Slide Show that supports a particular version of Unicode" onclick="JavaScript : if ( document.dropdown.versionlist.selectedIndex != 1 ) { window.location.href = document.dropdown.versionlist.options[document.dropdown.versionlist.selectedIndex].value; }" />
+<input type="button" value="Load Unicode Version" title="Load Unicode Slide Show that supports a particular version of Unicode" onclick="JavaScript : if ( document.dropdown.versionlist.selectedIndex != 2 ) { window.location.href = document.dropdown.versionlist.options[document.dropdown.versionlist.selectedIndex].value; }" />
 <select name="versionlist" title="Select version of Unicode">
 <option value="unicode60.html">Unicode 6.0</option>
-<option value="unicode61.html" selected="selected">Unicode 6.1</option>
-<option value="unicode62.html">Unicode 6.2</option>
+<option value="unicode61.html">Unicode 6.1</option>
+<option value="unicode62.html" selected="selected">Unicode 6.2</option>
 <option value="unicode63.html">Unicode 6.3</option>
 <option value="unicode70.html">Unicode 7.0</option>
 <option value="unicode80.html">Unicode 8.0</option>
@@ -82,74 +77,3 @@
 </body>
 </html>
 
-e="text/css" href="Unicode.css" />
-<script type="text/javascript" src="unicode61.js"></script>
-<title>Unicode 6.1 Slide Show</title>
-</head>
-<body onload="Initialise()" onunload="Finalise()">
-<h1>Unicode 6.1 Slide Show</h1>
-<p align="center" id="stats"></p>
-<table id="table1" align="center" border="0">
-<tr>
-<td><form name="startform" action=""><input id="startbutton" type="button" value="Start" onclick="OnStartStopButton()" /></form></td>
-<td><form name="pauseform" action=""><input id="pausebutton" type="button" value="Pause" onclick="OnPauseResume()" /></form></td>
-<td><form name="skipform" action=""><input id="skipbutton" type="button" value="Skip Block" title="Skip to the net block" onclick="OnSkipBlock()" /></form></td>
-<td><form name="randomform" action=""><input id="randombutton" type="button" value="Random Character" title="Display a random character" onclick="OnRandomCharacter()" /></form></td>
-</tr>
-</table>
-<table id="table2" align="center" border="0">
-<tr><td align="center"><span id="numb"></span></td></tr>
-<tr><td align="center" style="height:200px;"><span id="char" style="font-family: Serif; font-size: '24pt'; color: gray;"></span></td></tr>
-<tr><td align="center"><span id="plane"></span></td></tr>
-<tr><td align="center"><span id="block"></span></td></tr>
-<tr><td align="center"><span id="name"></span></td></tr>
-</table>
-<hr/>
-<table id="table3" align="center" border="0">
-<tr>
-<td colspan="2">First Block</td>
-<td colspan="2">Last Block</td>
-</tr>
-<tr>
-<td colspan="2"><form name="startform" action=""><select id="startblock"><option/></select></form></td>
-<td colspan="2"><form name="endform" action=""><select id="endblock"><option/></select></form></td>
-</tr>
-<tr>
-<td>Speed</td>
-<td>Font Size</td>
-<td>Font Colour</td>
-<td>Background Colour</td>
-</tr>
-<tr>
-<td><form name="displayspeedform" action=""><select id="displayspeed" onchange="OnNewSpeed()"><option/></select></form></td>
-<td><form name="fontsizeform" action=""><select id="fontsize" onchange="OnNewSize()"><option/></select></form></td>
-<td><form name="fontcolourform" action=""><select id="fontcolour" onchange="OnNewFontColour()"><option/></select></form></td>
-<td><form name="backcolourform" action=""><select id="backcolour" onchange="OnNewBackColour()"><option/></select></form></td>
-</tr>
-<tr>
-<td><form name="randform" action=""><input id="randomcheck" type="checkbox" title="Check to display random characters when the &quot;Start&quot; button is pushed" onclick="OnCheckRandomCharacters()" />Random Characters</form></td>
-<td><form name="fontform" action=""><input id="fontcheck" type="checkbox" title="Leave unchecked to let the browser choose what fonts to use" onclick="OnCustomFonts()" />Use <a href="FontList.html">Custom Fonts</a></form></td>
-<td colspan="2"><form name="gotoform" action=""><input id="gotobutton" type="button" value="Go To U+" title="Find character by hexadecimal codepoint value" onclick="OnGotoButton()" /> <input id="gototext" type="text" style="width:75px;" title="Enter hexadecimal code point value of character to go to" /></form></td>
-</tr>
-<tr>
-<td colspan="4"><form name="searchform" action=""><input id="searchbutton" type="button" value="Search For" title="Search for character by name" onclick="OnSearchButton()" /> <input id="searchtext" type="text" style="width:400px;" title="Enter character name to search for" /> <input id="searchcheck" type="checkbox" title="Check to only match the exact character name" />Exact Name</form></td>
-</tr>
-</table>
-<br/>
-<form class="centre" name="dropdown" action="">
-<input type="button" value="Load Unicode Version" title="Load Unicode Slide Show that supports a particular version of Unicode" onclick="JavaScript : if ( document.dropdown.versionlist.selectedIndex != 1 ) { window.location.href = document.dropdown.versionlist.options[document.dropdown.versionlist.selectedIndex].value; }" />
-<select name="versionlist" title="Select version of Unicode">
-<option value="unicode60.html">Unicode 6.0</option>
-<option value="unicode61.html" selected="selected">Unicode 6.1</option>
-<option value="unicode62.html">Unicode 6.2</option>
-<option value="unicode63.html">Unicode 6.3</option>
-<option value="unicode70.html">Unicode 7.0</option>
-<option value="unicode80.html">Unicode 8.0</option>
-</select>
-</form>
-<br/>
-<hr/>
-<p class="centre"><a href="babelmap.html" title="Javascript character map">BabelMap Online</a> | <a href="whatisit.html" title="What Unicode character is this ?">What Unicode character is this ?</a></p>
-<p class="centre"><a href="../Cookies.html" target="_blank">Cookies Policy</a></p>
-</body>
-</html>
