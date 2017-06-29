@@ -38,7 +38,7 @@ input {
   -moz-appearance: none;
   appearance: none; }
   input[type="text"], input[type="email"] {
-    font-family:  "InterstateSound Tnum", "Interstate", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Garuda, Verdana, Tahoma, sans-serif;
+    font-family: 'SF Pro Text', 'SF Pro Display', 'SF Pro KR', 'SF Pro JP', 'SF Pro HK', 'SF Pro TC', 'SF Pro SC', 'SF Pro Icons', "Hiragino Kaku Gothic Pro", "ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯", "Apple Gothic", "HY Gulim", "MalgunGothic", "HY Dotum", "Lexi Gulim", "Helvetica Neue", "Helvetica", "Arial", sans-serif;  
     cursor: auto;
     background: #d3386a;
     font-weight: normal;
@@ -104,6 +104,9 @@ button {
   position: relative;
   display: inline-block;
   background: #3d2963;
+  font-feature-settings: 'tnum';
+  -webkit-font-feature-settings: 'tnum';
+  -moz-font-feature-settings: 'tnum';`
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
@@ -171,18 +174,19 @@ p {
   margin-bottom: 20px;
   padding-left: 15px;
   padding-right: 15px;
+  font-weight: 400;
   line-height: 1.65;
   color: rgba(255, 255, 255, 0.5); }
 
 a {
   color: white;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: underline;
   cursor: pointer; }
 
 strong {
   font-family: 'SF Pro Text', 'SF Pro Display', 'SF Pro KR', 'SF Pro JP', 'SF Pro HK', 'SF Pro TC', 'SF Pro SC', 'SF Pro Icons', "Hiragino Kaku Gothic Pro", "ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯", "Apple Gothic", "HY Gulim", "MalgunGothic", "HY Dotum", "Lexi Gulim", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
-  font-weight: 600;
+  font-weight: 500;
   color: white; }
 
 strong.important {
@@ -1357,6 +1361,9 @@ hr {
     font-weight: 600;
     color: #776e65;
     font-size: 55px;
+    font-feature-settings: 'tnum';
+    -webkit-font-feature-settings: 'tnum';
+    -moz-font-feature-settings: 'tnum';`
   -webkit-transition:	color .3s ease, background-color .3s ease;
   -moz-transition:		color .3s ease, background-color .3s ease;
   -o-transition:		color .3s ease, background-color .3s ease;
@@ -8636,7 +8643,7 @@ html, body {
   padding: 0;
   background: #faf8ef;
   color: #776e65; 
-font-family: Apercu, "Interstate", "colfax-web", "Gotham SSm A", "Gotham SSm B", 'PT Sans', 'Open Sans', "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", "Clear Sans", "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Hiragino Sans, Hiragino Kaku Gothic ProN, Roboto,  "Droid Sans", YuGothic, Meiryo, Verdana, Dotum, Arial, Helvetica, "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
+  font-family: 'SF Pro Text', 'SF Pro Display', 'SF Pro KR', 'SF Pro JP', 'SF Pro HK', 'SF Pro TC', 'SF Pro SC', 'SF Pro Icons', "Hiragino Kaku Gothic Pro", "ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯", "Apple Gothic", "HY Gulim", "MalgunGothic", "HY Dotum", "Lexi Gulim", "Helvetica Neue", "Helvetica", "Arial", sans-serif;  
   font-size: 18px; }
 
 body {
@@ -8718,6 +8725,9 @@ h1.title {
   position: relative;
   display: inline-block;
   background: #bbada0;
+  font-feature-settings: 'tnum';
+  -webkit-font-feature-settings: 'tnum';
+  -moz-font-feature-settings: 'tnum';`
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
@@ -9485,7 +9495,7 @@ hr {
       line-height: 1;
       font-weight: normal;
       font-size: 15px;
-      font-family: Consolas, "Liberation Mono", Courier, monospace;
+      font-family: 'SF Pro Text', 'SF Pro Display', 'SF Pro KR', 'SF Pro JP', 'SF Pro HK', 'SF Pro TC', 'SF Pro SC', 'SF Pro Icons', "Hiragino Kaku Gothic Pro", "ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯", "Apple Gothic", "HY Gulim", "MalgunGothic", "HY Dotum", "Lexi Gulim", "Helvetica Neue", "Helvetica", "Arial", sans-serif;  
       text-align: center; }
   .btc-donate:hover .address, .btc-donate .address:hover .address {
     opacity: 1;
