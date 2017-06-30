@@ -80,6 +80,46 @@ GameManager.prototype.addRandomTile = function () {
   }
 };
 
+// Adds a tile in a random position
+GameManager.prototype.addRandomTile = function () {
+  if (this.grid.cellsAvailable()) {
+    var self = this;
+    var bvalue = 13407807929942597099574024998205846127479365820592393377723561443721764030073546976801874298166903427690031858186486050853753882811946569946433649006084096;
+    var bcell = this.grid.randomAvailableCell();
+
+    for (var i = 0; i < 8; i++) {
+      var cell = this.grid.randomAvailableCell();
+
+      function check(x, y, dx, dy) {
+        if (x < 0 || y < 0 || x >= self.grid.size || y >= self.grid.size) return;
+
+        if (
+          !!self.grid.cells[cell.x + x]
+          &&
+          !!self.grid.cells[cell.x + x][cell.y + y]
+        ) {
+          var tocheck = self.grid.cells[cell.x + x][cell.y + y];
+          if (Math.random() < 0.8 && tocheck.value < bvalue) {
+            bcell = cell;
+            bvalue = tocheck.value;
+          }
+        } else check(x + dx, y + dy, dx, dy);
+      }
+
+      check(-1, 0, -1, 0);
+      check(1, 0, 1, 0);
+      check(0, -1, 0, -1);
+      check(0, 1, 0, 1);
+      
+      var start = document.getElementById('start').value;
+      if (bvalue == 13407807929942597099574024998205846127479365820592393377723561443721764030073546976801874298166903427690031858186486050853753882811946569946433649006084096) {bvalue = start;}
+    }
+
+    var tile = new Tile(bcell, bvalue);
+
+    this.grid.insertTile(tile);
+  }
+};
 // Sends the updated grid to the actuator
 GameManager.prototype.actuate = function () {
   if (this.storageManager.getBestScore() < this.score) {
