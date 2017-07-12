@@ -725,8 +725,8 @@ function randomizeBlock(id1, id2, isInput, copyBack, blockName, skipSpace) {
         var startRange = 65281;
         var endRange = 65439;
     } else if (document.getElementById(blockName).value == "Broad") {
-        var startRange = 33;
-        var endRange = 10175;
+        var startRange = 0;
+        var endRange = 196607;
     } else if (document.getElementById(blockName).value == "Shapes") {
         var startRange = 9472;
         var endRange = 9727;
