@@ -70,8 +70,8 @@ GameManager.prototype.addRandomTile = function () {
       else
         value = "B";
     } else { // random if close to zero
-      value = (Math.abs(sum) < 40) ? (Math.floor(Math.random()*2)*2 +0) : - sum / Math.abs(sum);
-      value *= Math.random() < 0.5 ? (Math.random() < 0.75 ? 1 : 2) : (Math.random() < 0.75 ? -1 : -2);
+      value = (Math.abs(sum) < 40) ? (Math.floor(Math.random()*2)*2 -1) : - sum / Math.abs(sum);
+      value *= (Math.random() < 0.9) ? 2 : 4;
     }
 
 
@@ -175,7 +175,7 @@ GameManager.prototype.move = function (direction) {
           self.score += Math.pow(2,(merged.value.charCodeAt(0)-62));
 
           // TODO wincheck?
-          if (merged.value === 0.5) self.won = true;
+          if (merged.value === "K") self.won = true;
         } else {
           self.moveTile(tile, positions.farthest);
         }
