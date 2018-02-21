@@ -209,7 +209,7 @@ GameManager.prototype.move = function (direction) {
           tile.updatePosition(positions.next);
 
           // Update the score
-          self.score += merged.value;
+          self.score += merged.value * merged.value + " kJ/mol";
 
           // The mighty 2048 tile
           if (merged.value === 2048) self.won = true;
