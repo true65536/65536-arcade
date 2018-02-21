@@ -1,4 +1,8 @@
+  @media screen and (max-width: 520px) {
   .tile .tile-inner {
+    font-size: 35px; } }
+
+.tile .tile-inner {
     color: #f9f6f2;
     border-radius: 3px;
     background: #eee4da;
@@ -546,6 +550,4 @@
     color: #f9f6f2;
     background: #3000D0; }        
 
-@media screen and (max-width: 520px) {
-  .tile .tile-inner {
-    font-size: 35px; } }
+
