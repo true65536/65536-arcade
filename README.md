@@ -18,6 +18,7 @@ Minor Update: Added 2048 Chemistry variants, in which two adjacent tiles with th
 <p align="center">
   <img src="https://fthmb.tqn.com/QJPs_vpN9_23LkcNla1IAXDyzrc=/768x0/filters:no_upscale()/SmallPeriodicTableBW-56a12cb45f9b58b7d0bcc89e.png" alt="Periodic Table goes here"/>
 </p>
+
 The 4 new elements discovered 2 years ago are: Nihonium and symbol Nh, for the element 113,
 Moscovium and symbol Mc, for the element 115,
 Tennessine and symbol Ts, for the element 117, and.
