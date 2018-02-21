@@ -10,7 +10,7 @@ function start_auto_move(){
 function auto_move(){
 	if ( auto_move_flag === false )
 		return;
-	var direction = Math.floor( Math.random() * 4 );
+	var direction = Math.floor( Math.random() * 3 );
 	GM.move( direction );
 	setTimeout( "auto_move()", auto_move_time );
 }
