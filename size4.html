@@ -4,10 +4,12 @@
   <meta charset="utf-8">
   <title>2048</title>
 
-  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link href="style/size4.css" rel="stylesheet" type="text/css">
   <link href="style/tiles.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone, retina -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
@@ -16,9 +18,9 @@
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
   <meta name="format-detection" content="telephone=no" />
 
-  <meta property="og:title" content="2048 game"/>
-  <meta property="og:site_name" content="2048 game"/>
-  <meta property="og:description" content="Join the numbers and get to the 2048 tile! Careful: this game is extremely addictive!"/>
+  <meta property="og:title" content="2048 Endless game"/>
+  <meta property="og:site_name" content="2048 Endless game"/>
+  <meta property="og:description" content="Just join the numbers and get high score in this page! Careful: this game is extremely addictive!"/>
   <meta property="og:image" content="http://gabrielecirulli.github.io/2048/meta/og_image.png"/>
 </head>
 <body>
@@ -32,7 +34,7 @@
     </div>
 
     <div class="above-game">
-      <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
+      <p class="game-intro">Just join the numbers and get the highest score in this page!</p>
       <a class="restart-button">Play again</a>
     </div>
 
@@ -83,21 +85,29 @@
     </p>
     <hr>
     <p>
-    Click here for <a href="http://aarextiaokhiao.github.io/Aarex2048/list.html">the list.</a>
+      Can you reach <strong>2048, 4096, and 8192 tiles?</strong> If you like <strong>this game</strong>, <a href="https://github.com/TheAstronomer/2147483648/">click here!</a>
+    </p>
+    <hr>
+    <p>
+    <strong class="important">Note:</strong> This site is <strong>NOT</strong> the official version of 2048. All other apps are derivatives and fakes, and should be used with caution.
+    </p>
+    <hr>
+    <p>
+    Click here to go back to <a href="http://theastronomer.github.io/2147483648/">2147483648.</a>
     </p>
   </div>
 
-  <script src="js/bind_polyfill.js"></script>
-  <script src="js/classlist_polyfill.js"></script>
-  <script src="js/animframe_polyfill.js"></script>
-  <script src="js/keyboard_input_manager.js"></script>
-  <script src="js/html_actuator.js"></script>
-  <script src="js/grid.js"></script>
-  <script src="js/tile.js"></script>
-  <script src="js/local_storage_manager.js"></script>
-  <script src="js/game_manager.js"></script>
+  <script src="js_2048/bind_polyfill.js"></script>
+  <script src="js_2048/classlist_polyfill.js"></script>
+  <script src="js_2048/animframe_polyfill.js"></script>
+  <script src="js_2048/keyboard_input_manager.js"></script>
+  <script src="js_2048/html_actuator.js"></script>
+  <script src="js_2048/grid.js"></script>
+  <script src="js_2048/tile.js"></script>
+  <script src="js_2048/local_storage_manager.js"></script>
+  <script src="js_2048/game_manager.js"></script>
   <script>
-  var Goal = 2048
+  var Goal = Infinity
   window.requestAnimationFrame(function () {
   new GameManager(4, KeyboardInputManager, HTMLActuator, LocalStorageManager);
   });
