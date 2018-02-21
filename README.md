@@ -13,8 +13,15 @@ You can find and follow me on Github [right here.](https://github.com/theastrono
 
 NEW: I added 2 other clones of 2147483648 - [2147483648 - Size 32](https://rawgit.com/TheAstronomer/2147483648/size32/index.html) and [2147483648 - Animated Edition](https://rawgit.com/TheAstronomer/2147483648/master/index.html). The first one can support grid sizes up to 32x32, and the second one has cooler designs and animated tiles! I also added Lucas numbers (2, 1, 3, 4, 7, 11, 18, 29, 47, 76...) and Troll mode (moves in random directions whenever you make a move) to the game and it is available on all 2147483648 sites. The game has been modified for endless gameplay too!
 
-Minor Update: Tweaked the CSS font layout for the original 2147483648 site as well as the Contemporary and Animated Edition.
-For the animated edition, changed the images of CSS URLs to this site.
+Minor Update: Added 2048 Chemistry variants, in which two adjacent tiles with the same element can merge to form a tile of the next element. For example, two Selenium (Se) tiles can merge to form a Bromine (Br) tile.
+
+<p align="center">
+  <img src="https://fthmb.tqn.com/QJPs_vpN9_23LkcNla1IAXDyzrc=/768x0/filters:no_upscale()/SmallPeriodicTableBW-56a12cb45f9b58b7d0bcc89e.png" alt="Periodic Table goes here"/>
+</p>
+The 4 new elements discovered 2 years ago are: Nihonium and symbol Nh, for the element 113,
+Moscovium and symbol Mc, for the element 115,
+Tennessine and symbol Ts, for the element 117, and.
+Oganesson and symbol Og, for the element 118.
 
 More tile themes will be added (Divergent Factions/Pokemon Go Teams, and two more colors, totalling 24), and three more 2048 modes - Scratch, TPSS@30 (in commemoration of my secondary school, Tampines Secondary) and iPlay2048!
 
