@@ -6086,7 +6086,7 @@ This list does not include negative Fibonacci numbers because they only work on 
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
     .tile.tile-1836311903 .tile-inner {
-        font-size: 25px;
+        font-size: 7px;
     }
 }
 /* line 368, main.scss */
@@ -6116,7 +6116,7 @@ This list does not include negative Fibonacci numbers because they only work on 
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
     .tile.tile-2971215073 .tile-inner {
-        font-size: 25px;
+        font-size: 7px;
     }
 }
 /* line 368, main.scss */
@@ -6141,12 +6141,12 @@ This list does not include negative Fibonacci numbers because they only work on 
     
     background-position: 0 0, 53.5px 0, 53.5px -53.5px, 0px 53.5px;
     font-size: 15px;
-    box-shadow: 0 0 30px 10px rgba(8, 164, 189, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(89, 77, 69, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
     .tile.tile-4807526976 .tile-inner {
-        font-size: 25px;
+        font-size: 7px;
     }
 }
 /* line 368, main.scss */
@@ -6176,7 +6176,7 @@ This list does not include negative Fibonacci numbers because they only work on 
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
     .tile.tile-7778742049 .tile-inner {
-        font-size: 15px;
+        font-size: 7px;
     }
 }
 /* line 368, main.scss */
