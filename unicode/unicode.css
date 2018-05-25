@@ -141,9 +141,252 @@ html, body {
     padding: 0;
     background: #fff;
     color: #5c5f76;
-    font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", Apercu, "Interstate", "colfax-web", "Gotham SSm A", "Gotham SSm B", 'PT Sans', 'Open Sans', "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", "Clear Sans", "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Hiragino Sans, Hiragino Kaku Gothic ProN, Roboto, "Droid Sans", YuGothic, Meiryo, Verdana, Dotum, Arial, Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", 'Code2000', 'Code2003', 'Quivira', 'Symbola', 'hanamina', 'hanaminb', 'hanamin', 'HanNomGothic', 'NomKhai-Supplement', 'Han-Nom Gothic Supplement', 'Radicals Supplement', sans-serif;
+    font-family: 'finlandica', 'Fira Sans', "Roboto", "Source Sans Pro", "Spoqa Han Sans", "Spoqa Han Sans JP", Apercu, "Interstate", "colfax-web", "Gotham SSm A", "Gotham SSm B", 'PT Sans', 'Open Sans', "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", "Clear Sans", "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Hiragino Sans, Hiragino Kaku Gothic ProN, Roboto, "Droid Sans", YuGothic, Meiryo, Verdana, Dotum, Arial, Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", 'Code2000', 'Code2003', 'Quivira', 'Symbola', 'hanamina', 'hanaminb', 'hanamin', 'HanNomGothic', 'NomKhai-Supplement', 'Han-Nom Gothic Supplement', 'Radicals Supplement', sans-serif;
+    font-size: 18px; }
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Hair.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Hair.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-Hair.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-Hair.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-Hair.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-HairItalic.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-HairItalic.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-HairItalic.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-HairItalic.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-HairItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-UltraLight.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-UltraLight.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-UltraLight.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-UltraLight.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-UltraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-UltraLightItalic.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-UltraLightItalic.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-UltraLightItalic.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-UltraLightItalic.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-UltraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Light.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Light.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-Light.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-Light.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-LightItalic.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-LightItalic.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-LightItalic.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-LightItalic.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Regular.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Regular.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-Regular.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-Regular.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Italic.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Italic.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-Italic.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-Italic.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Medium.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Medium.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-Medium.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-Medium.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-Medium.ttf') format('truetype');
     font-weight: 500;
-    font-size: 18px;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-MediumItalic.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-MediumItalic.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-MediumItalic.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-MediumItalic.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-SemiBold.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-SemiBold.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-SemiBold.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-SemiBold.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-SemiBoldItalic.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-SemiBoldItalic.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-SemiBoldItalic.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-SemiBoldItalic.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Bold.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Bold.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-Bold.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-Bold.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-BoldItalic.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-BoldItalic.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-BoldItalic.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-BoldItalic.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-ExtraBold.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-ExtraBold.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-ExtraBold.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-ExtraBold.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-ExtraBoldItalic.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-ExtraBoldItalic.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-ExtraBoldItalic.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-ExtraBoldItalic.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Heavy.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Heavy.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-Heavy.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-Heavy.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-HeavyItalic.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-HeavyItalic.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-HeavyItalic.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-HeavyItalic.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+@font-face{
+    font-family: 'Fira Mono';
+    src: url('http://mozilla.github.io/Fira/eot/FiraMono-Regular.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraMono-Regular.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraMono-Regular.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraMono-Regular.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraMono-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Mono';
+    src: url('http://mozilla.github.io/Fira/eot/FiraMono-Bold.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraMono-Bold.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraMono-Bold.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraMono-Bold.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraMono-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'finlandica';
+    src: url('https://theastronomer.github.io/2147483648/style/fonts/finlandica-bold.eot');
+    src: url('https://theastronomer.github.io/2147483648/style/fonts/finlandica-bold.eot?#iefix') format('embedded-opentype'),
+         url('https://theastronomer.github.io/2147483648/style/fonts/finlandica-bold.woff2') format('woff2'),
+         url('https://theastronomer.github.io/2147483648/style/fonts/finlandica-bold.woff') format('woff'),
+         url('https://theastronomer.github.io/2147483648/style/fonts/finlandica-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'finlandica';
+    src: url('https://theastronomer.github.io/2147483648/style/fonts/finlandica-regular.eot');
+    src: url('https://theastronomer.github.io/2147483648/style/fonts/finlandica-regular.eot?#iefix') format('embedded-opentype'),
+         url('https://theastronomer.github.io/2147483648/style/fonts/finlandica-regular.woff2') format('woff2'),
+         url('https://theastronomer.github.io/2147483648/style/fonts/finlandica-regular.woff') format('woff'),
+         url('https://theastronomer.github.io/2147483648/style/fonts/finlandica-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 /* line 40, main.scss */
@@ -2590,75 +2833,74 @@ hr {
 .tile.tile-O .tile-inner {
     color: #f9f6f2;
     background: #9800D0;
-    box-shadow: 0 0 30px 10px rgba(152, 0, 208, 0.88889), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(152, 0, 208, 0.99999), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
 /* line 418, main.scss */
 .tile.tile-P .tile-inner {
     color: #f9f6f2;
     background: #D0009F;
-    box-shadow: 0 0 30px 10px rgba(208, 0, 159, 0.88889), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(208, 0, 159, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
 /* line 418, main.scss */
 .tile.tile-Q .tile-inner {
     color: #f9f6f2;
     background: #D00037;
-    box-shadow: 0 0 30px 10px rgba(208, 0, 55, 0.88889), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(208, 0, 55, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
 /* line 418, main.scss */
 .tile.tile-R .tile-inner {
     color: #f9f6f2;
     background: #D03000;
-    box-shadow: 0 0 30px 10px rgba(208, 48, 0, 0.88889), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(208, 48, 0, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
 /* line 418, main.scss */
 .tile.tile-S .tile-inner {
     color: #f9f6f2;
     background: #D09800;
-    box-shadow: 0 0 30px 10px rgba(208, 152, 0, 0.88889), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(208, 152, 0, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
 /* line 418, main.scss */
 .tile.tile-T .tile-inner {
     color: #f9f6f2;
     background: #9FD000;
-    box-shadow: 0 0 30px 10px rgba(159, 208, 0, 0.88889), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(159, 208, 0, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
 /* line 418, main.scss */
 .tile.tile-U .tile-inner {
     color: #f9f6f2;
     background: #37D000;
-    box-shadow: 0 0 30px 10px rgba(55, 208, 0, 0.88889), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(55, 208, 0, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
 /* line 418, main.scss */
 .tile.tile-V .tile-inner {
     color: #f9f6f2;
     background: #00D030;
-    box-shadow: 0 0 30px 10px rgba(0, 208, 48, 0.88889), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(0, 208, 48, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
 /* line 418, main.scss */
 .tile.tile-W .tile-inner {
     color: #f9f6f2;
     background: #00D098;
-    box-shadow: 0 0 30px 10px rgba(0, 208, 152, 0.88889), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(0, 208, 152, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
 /* line 418, main.scss */
 .tile.tile-X .tile-inner {
     color: #f9f6f2;
     background: #009FD0;
-    box-shadow: 0 0 30px 10px rgba(0, 159, 208, 0.88889), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(0, 159, 208, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
 /* line 418, main.scss */
 .tile.tile-Y .tile-inner {
     color: #f9f6f2;
     background: #0037D0;
-    box-shadow: 0 0 30px 10px rgba(0, 55, 208, 0.88889), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(0, 55, 208, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
 /* line 418, main.scss */
 .tile.tile-Z .tile-inner {
     color: #f9f6f2;
-    background: #0037D0;
-    box-shadow: 0 0 30px 10px rgba(0, 55, 208, 0.88889), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    background: #0000D0;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 208, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
-
 /* Powers of 2 - Contemporary Edition */
 /*
     The background color is the upper-left/
@@ -5751,7 +5993,6 @@ hr {
         font-size: 1px;
     }
 }
-
 /* Fibonacci Number Sequence - Contemporary Edition
 This list does not include negative Fibonacci numbers because they only work on positive integers */
 /*
@@ -6306,7 +6547,7 @@ This list does not include negative Fibonacci numbers because they only work on 
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
     .tile.tile-1836311903 .tile-inner {
-        font-size: 25px;
+        font-size: 7px;
     }
 }
 /* line 368, main.scss */
@@ -6336,7 +6577,7 @@ This list does not include negative Fibonacci numbers because they only work on 
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
     .tile.tile-2971215073 .tile-inner {
-        font-size: 25px;
+        font-size: 7px;
     }
 }
 /* line 368, main.scss */
@@ -6361,12 +6602,12 @@ This list does not include negative Fibonacci numbers because they only work on 
     
     background-position: 0 0, 53.5px 0, 53.5px -53.5px, 0px 53.5px;
     font-size: 15px;
-    box-shadow: 0 0 30px 10px rgba(8, 164, 189, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(89, 77, 69, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
     .tile.tile-4807526976 .tile-inner {
-        font-size: 25px;
+        font-size: 7px;
     }
 }
 /* line 368, main.scss */
@@ -6396,7 +6637,7 @@ This list does not include negative Fibonacci numbers because they only work on 
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
     .tile.tile-7778742049 .tile-inner {
-        font-size: 15px;
+        font-size: 7px;
     }
 }
 /* line 368, main.scss */
@@ -7269,7 +7510,6 @@ This list does not include negative Fibonacci numbers because they only work on 
         font-size: 5px;
     }
 }
-
 /* Powers of 3 - Contemporary Edition */
 /*
     The background color is the upper-left/
@@ -8592,7 +8832,6 @@ This list does not include negative Fibonacci numbers because they only work on 
         font-size: 4px;
     }
 }
-
 /* Threes - Contemporary Edition */
 /*
     The background color is the upper-left/
@@ -10664,7 +10903,6 @@ I
         font-size: 5px;
     }
 }
-
 /* Lucas Number Sequence - Contemporary Edition
 This is does not include negative Lucas numbers because they only work on positive integers */
 /*
