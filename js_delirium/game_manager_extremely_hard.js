@@ -188,13 +188,14 @@ GameManager.prototype.move = function (direction) {
             self.score += Math.pow(2,(merged.value.charCodeAt(0)-62));
           }
 
-          // The mighty K tile
-          if (merged.value === "K") self.won = true;
+          // The mighty Infinity tile
+         
+          if (merged.value === " ") self.won = true;
         } else if (next && next.value === -tile.value && !next.mergedFrom) { // merge inverses
           var n = Math.log(Math.abs(next.value))/Math.LN2;
           var s = String.fromCharCode(64+n);
           var merged = new Tile(positions.next, s);
-          merged.mergedFrom = [tile, next];
+          merged.mergedFrom = [tile, next]; // " " = U+0000 SPACE
 
           self.grid.insertTile(merged);
           self.grid.removeTile(tile);
