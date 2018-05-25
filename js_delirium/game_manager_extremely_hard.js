@@ -4,11 +4,19 @@ function GameManager(size, InputManager, Actuator, ScoreManager) {
   this.scoreManager = new ScoreManager;
   this.actuator     = new Actuator;
 
-  this.startTiles   = 2;
+  this.startTiles   = 8;
 
   this.inputManager.on("move", this.move.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
   this.inputManager.on("keepPlaying", this.keepPlaying.bind(this));
+  if (this.size < 4)
+  {
+    var lasttileclass = Math.pow(2, (this.size * (this.size + 1))/2)
+  }
+  else
+  {
+    var lasttileclass = Math.pow(2, (this.size * (this.size + 1))/2 + 1)
+  }
 
   this.setup();
 }
