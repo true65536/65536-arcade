@@ -2740,11 +2740,22 @@ hr {
     }
 }
 /* line 418, main.scss */
+.tile.tile-Infinity .tile-inner {
+    color: black;
+    background: white;
+    font-size: 30px;
+}
+@media screen and (max-width: 520px) {
+    /* line 418, main.scss */
+    .tile.tile-Infinity .tile-inner {
+        font-size: 10px;
+    }
+}
+/* line 418, main.scss */
 .tile.tile-superlative .tile-inner {
     color: #f9f6f2;
     background: #3000D0;
 }
-
 /* line 418, main.scss */
 .tile.tile-A .tile-inner {
     color: #320023;
@@ -6066,7 +6077,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #00bf5f;
     box-shadow: 0 0 30px 10px rgba(0, 191, 95, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -6079,7 +6090,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #00bfbf;
     box-shadow: 0 0 30px 10px rgba(0, 191, 191, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -6092,7 +6103,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #005fbf;
     box-shadow: 0 0 30px 10px rgba(0, 95, 191, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -6105,7 +6116,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #0000bf;
     box-shadow: 0 0 30px 10px rgba(0, 0, 191, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -6118,7 +6129,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #5f00bf;
     box-shadow: 0 0 30px 10px rgba(95, 0, 191, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -6131,7 +6142,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #0000df;
     box-shadow: 0 0 30px 10px rgba(0, 0, 223, 0.66667), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 37px;
+    font-size: 35px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -6144,7 +6155,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #000066;
     box-shadow: 0 0 30px 10px rgba(0, 0, 102, 0.77778), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 37px;
+    font-size: 35px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -6157,7 +6168,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #ff00ff;
     box-shadow: 0 0 30px 10px rgba(255, 0, 255, 0.88889), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 37px;
+    font-size: 35px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -6170,7 +6181,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #7f007f;
     box-shadow: 0 0 30px 10px rgba(127, 0, 127, 0.99999), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 37px;
+    font-size: 35px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -8185,7 +8196,7 @@ This list does not include negative Fibonacci numbers because they only work on 
 /* line 368, main.scss */
 .tile.tile--3 .tile-inner {
     color: #320023;
-    background: #FFE7FF;
+    background: #eee4d3;
 }
 /* line 368, main.scss */
 .tile.tile--9 .tile-inner {
@@ -8889,7 +8900,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #9ecc13;
     box-shadow: 0 0 30px 10px rgba(158, 204, 19, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -8902,7 +8913,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #6fcc13;
     box-shadow: 0 0 30px 10px rgba(111, 204, 19, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -8915,7 +8926,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #41cc13;
     box-shadow: 0 0 30px 10px rgba(65, 204, 19, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -8928,7 +8939,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #13cc13;
     box-shadow: 0 0 30px 10px rgba(19, 204, 19, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
-    font-size: 37px;
+    font-size: 35px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -8941,7 +8952,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #13cc41;
     box-shadow: 0 0 30px 10px rgba(19, 204, 65, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 37px;
+    font-size: 35px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -8954,7 +8965,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #13cc6f;
     box-shadow: 0 0 30px 10px rgba(19, 204, 111, 0.66667), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 37px;
+    font-size: 35px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -9886,7 +9897,7 @@ This list does not include negative Fibonacci numbers because they only work on 
 /* line 368, main.scss */
 .tile.tile--3 .tile-inner {
     color: #320023;
-    background: #FFE7FF;
+    background: #eee4d3;
 }
 /* line 368, main.scss */
 .tile.tile--6 .tile-inner {
@@ -9918,7 +9929,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #edcf72;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -9931,7 +9942,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #edcc61;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -9944,7 +9955,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #edc850;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -9957,7 +9968,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #edc53f;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
-    font-size: 37px;
+    font-size: 35px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -9970,7 +9981,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #edc22e;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 37px;
+    font-size: 35px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -9983,7 +9994,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #ebb914;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.66667), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 37px;
+    font-size: 35px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -10008,7 +10019,7 @@ This list does not include negative Fibonacci numbers because they only work on 
 .tile.tile--24576 .tile-inner {
     color: #f9f6f2;
     background: #0c298d;
-    box-shadow: 0 0 30px 10px rgba(119, 219, 28, 0.88889), inset 0 0 0 1px rgba(0, 0, 0, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(12, 41, 141, 0.88889), inset 0 0 0 1px rgba(0, 0, 0, 0.33333);
     font-size: 30px;
 }
 @media screen and (max-width: 520px) {
@@ -10137,8 +10148,8 @@ This list does not include negative Fibonacci numbers because they only work on 
 /* line 368, main.scss */
 .tile.tile--25165824 .tile-inner {
     color: #f9f6f2;
-    background: #091e5d;
-    box-shadow: 0 0 30px 10px #091e5d, inset 0 0 0 1px rgba(0, 0, 0, 0.33333);
+    background: #0a2268;
+    box-shadow: 0 0 30px 10px #0a2268, inset 0 0 0 1px rgba(0, 0, 0, 0.33333);
     font-size: 18px;
 }
 @media screen and (max-width: 520px) {
@@ -10976,7 +10987,7 @@ This is does not include negative Lucas numbers because they only work on positi
     color: #f9f6f2;
     background: #c37093;
     box-shadow: 0 0 30px 10px rgba(195, 112, 147, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -10989,7 +11000,7 @@ This is does not include negative Lucas numbers because they only work on positi
     color: #f9f6f2;
     background: #c99999;
     box-shadow: 0 0 30px 10px rgba(201, 153, 153, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -11001,7 +11012,7 @@ This is does not include negative Lucas numbers because they only work on positi
 .tile.tile-322 .tile-inner {
     background: #c4d390;
     box-shadow: 0 0 30px 10px rgba(196, 211, 144, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -11013,7 +11024,7 @@ This is does not include negative Lucas numbers because they only work on positi
 .tile.tile-521 .tile-inner {
     background: #c2d370;
     box-shadow: 0 0 30px 10px rgba(194, 211, 112, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -11025,7 +11036,7 @@ This is does not include negative Lucas numbers because they only work on positi
 .tile.tile-843 .tile-inner {
     background: #e2e450;
     box-shadow: 0 0 30px 10px rgba(226, 228, 80, 0.55555), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
