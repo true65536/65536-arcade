@@ -141,9 +141,384 @@ html, body {
     padding: 0;
     background: #fff;
     color: #5c5f76;
-    font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", Apercu, "Interstate", "colfax-web", "Gotham SSm A", "Gotham SSm B", 'PT Sans', 'Open Sans', "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", "Clear Sans", "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Hiragino Sans, Hiragino Kaku Gothic ProN, Roboto, "Droid Sans", YuGothic, Meiryo, Verdana, Dotum, Arial, Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", 'Code2000', 'Code2003', 'Quivira', 'Symbola', 'hanamina', 'hanaminb', 'hanamin', 'HanNomGothic', 'NomKhai-Supplement', 'Han-Nom Gothic Supplement', 'Radicals Supplement', sans-serif;
+    font-family: 'finlandica', 'Roboto', 'Fira Sans', "Source Sans Pro", "Spoqa Han Sans", "Spoqa Han Sans JP", Apercu, "Interstate", "colfax-web", "Gotham SSm A", "Gotham SSm B", 'PT Sans', 'Open Sans', "Spoqa Han Sans", "Spoqa Han Sans JP", "Source Sans Pro", "Clear Sans", "Helvetica Neue", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Hiragino Sans, Hiragino Kaku Gothic ProN, Roboto, "Droid Sans", YuGothic, Meiryo, Verdana, Dotum, Arial, Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", 'Code2000', 'Code2003', 'Quivira', 'Symbola', 'hanamina', 'hanaminb', 'hanamin', 'HanNomGothic', 'NomKhai-Supplement', 'Han-Nom Gothic Supplement', 'Radicals Supplement', sans-serif;
+    font-size: 18px; }
+
+@font-face{
+    font-family: 'Roboto';
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Thin.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Thin.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Thin.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Thin.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-ThinItalic.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-ThinItalic.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-ThinItalic.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-ThinItalic.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Light.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Light.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Light.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Light.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-LightItalic.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-LightItalic.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-LightItalic.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-LightItalic.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Regular.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Regular.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Regular.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Regular.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Italic.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Italic.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Italic.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Italic.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Medium.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Medium.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Medium.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Medium.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-MediumItalic.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-MediumItalic.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-MediumItalic.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-MediumItalic.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Bold.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Bold.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Bold.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Bold.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Bold.woff') format('woff');
     font-weight: 700;
-    font-size: 18px;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-BoldItalic.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-BoldItalic.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-BoldItalic.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-BoldItalic.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Black.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Black.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Black.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Black.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-BlackItalic.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-BlackItalic.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-BlackItalic.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-BlackItalic.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Hair.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Hair.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-Hair.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-Hair.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-Hair.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-HairItalic.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-HairItalic.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-HairItalic.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-HairItalic.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-HairItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-UltraLight.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-UltraLight.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-UltraLight.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-UltraLight.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-UltraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-UltraLightItalic.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-UltraLightItalic.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-UltraLightItalic.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-UltraLightItalic.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-UltraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Light.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Light.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-Light.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-Light.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-LightItalic.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-LightItalic.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-LightItalic.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-LightItalic.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Regular.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Regular.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-Regular.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-Regular.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Italic.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Italic.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-Italic.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-Italic.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Medium.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Medium.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-Medium.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-Medium.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-MediumItalic.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-MediumItalic.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-MediumItalic.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-MediumItalic.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-SemiBold.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-SemiBold.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-SemiBold.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-SemiBold.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-SemiBoldItalic.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-SemiBoldItalic.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-SemiBoldItalic.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-SemiBoldItalic.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Bold.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Bold.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-Bold.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-Bold.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-BoldItalic.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-BoldItalic.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-BoldItalic.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-BoldItalic.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-ExtraBold.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-ExtraBold.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-ExtraBold.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-ExtraBold.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-ExtraBoldItalic.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-ExtraBoldItalic.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-ExtraBoldItalic.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-ExtraBoldItalic.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Heavy.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-Heavy.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-Heavy.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-Heavy.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-HeavyItalic.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraSans-HeavyItalic.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraSans-HeavyItalic.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraSans-HeavyItalic.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraSans-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+@font-face{
+    font-family: 'Fira Mono';
+    src: url('http://mozilla.github.io/Fira/eot/FiraMono-Regular.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraMono-Regular.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraMono-Regular.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraMono-Regular.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraMono-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Mono';
+    src: url('http://mozilla.github.io/Fira/eot/FiraMono-Bold.eot');
+    src: url('http://mozilla.github.io/Fira/eot/FiraMono-Bold.eot') format('embedded-opentype'),
+         url('http://mozilla.github.io/Fira/woff2/FiraMono-Bold.woff2') format('woff2'),
+         url('http://mozilla.github.io/Fira/woff/FiraMono-Bold.woff') format('woff'),
+         url('http://mozilla.github.io/Fira/ttf/FiraMono-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'finlandica';
+    src: url('https://theastronomer.github.io/2147483648/style/fonts/finlandica-bold.eot');
+    src: url('https://theastronomer.github.io/2147483648/style/fonts/finlandica-bold.eot?#iefix') format('embedded-opentype'),
+         url('https://theastronomer.github.io/2147483648/style/fonts/finlandica-bold.woff2') format('woff2'),
+         url('https://theastronomer.github.io/2147483648/style/fonts/finlandica-bold.woff') format('woff'),
+         url('https://theastronomer.github.io/2147483648/style/fonts/finlandica-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'finlandica';
+    src: url('https://theastronomer.github.io/2147483648/style/fonts/finlandica-regular.eot');
+    src: url('https://theastronomer.github.io/2147483648/style/fonts/finlandica-regular.eot?#iefix') format('embedded-opentype'),
+         url('https://theastronomer.github.io/2147483648/style/fonts/finlandica-regular.woff2') format('woff2'),
+         url('https://theastronomer.github.io/2147483648/style/fonts/finlandica-regular.woff') format('woff'),
+         url('https://theastronomer.github.io/2147483648/style/fonts/finlandica-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 /* line 40, main.scss */
@@ -2497,11 +2872,22 @@ hr {
     }
 }
 /* line 418, main.scss */
+.tile.tile-Infinity .tile-inner {
+    color: black;
+    background: white;
+    font-size: 30px;
+}
+@media screen and (max-width: 520px) {
+    /* line 418, main.scss */
+    .tile.tile-Infinity .tile-inner {
+        font-size: 10px;
+    }
+}
+/* line 418, main.scss */
 .tile.tile-superlative .tile-inner {
     color: #f9f6f2;
     background: #3000D0;
 }
-
 /* line 418, main.scss */
 .tile.tile-A .tile-inner {
     color: #320023;
@@ -2590,75 +2976,74 @@ hr {
 .tile.tile-O .tile-inner {
     color: #f9f6f2;
     background: #9800D0;
-    box-shadow: 0 0 30px 10px rgba(152, 0, 208, 0.88889), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(152, 0, 208, 0.99999), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
 /* line 418, main.scss */
 .tile.tile-P .tile-inner {
     color: #f9f6f2;
     background: #D0009F;
-    box-shadow: 0 0 30px 10px rgba(208, 0, 159, 0.88889), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(208, 0, 159, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
 /* line 418, main.scss */
 .tile.tile-Q .tile-inner {
     color: #f9f6f2;
     background: #D00037;
-    box-shadow: 0 0 30px 10px rgba(208, 0, 55, 0.88889), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(208, 0, 55, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
 /* line 418, main.scss */
 .tile.tile-R .tile-inner {
     color: #f9f6f2;
     background: #D03000;
-    box-shadow: 0 0 30px 10px rgba(208, 48, 0, 0.88889), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(208, 48, 0, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
 /* line 418, main.scss */
 .tile.tile-S .tile-inner {
     color: #f9f6f2;
     background: #D09800;
-    box-shadow: 0 0 30px 10px rgba(208, 152, 0, 0.88889), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(208, 152, 0, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
 /* line 418, main.scss */
 .tile.tile-T .tile-inner {
     color: #f9f6f2;
     background: #9FD000;
-    box-shadow: 0 0 30px 10px rgba(159, 208, 0, 0.88889), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(159, 208, 0, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
 /* line 418, main.scss */
 .tile.tile-U .tile-inner {
     color: #f9f6f2;
     background: #37D000;
-    box-shadow: 0 0 30px 10px rgba(55, 208, 0, 0.88889), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(55, 208, 0, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
 /* line 418, main.scss */
 .tile.tile-V .tile-inner {
     color: #f9f6f2;
     background: #00D030;
-    box-shadow: 0 0 30px 10px rgba(0, 208, 48, 0.88889), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(0, 208, 48, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
 /* line 418, main.scss */
 .tile.tile-W .tile-inner {
     color: #f9f6f2;
     background: #00D098;
-    box-shadow: 0 0 30px 10px rgba(0, 208, 152, 0.88889), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(0, 208, 152, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
 /* line 418, main.scss */
 .tile.tile-X .tile-inner {
     color: #f9f6f2;
     background: #009FD0;
-    box-shadow: 0 0 30px 10px rgba(0, 159, 208, 0.88889), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(0, 159, 208, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
 /* line 418, main.scss */
 .tile.tile-Y .tile-inner {
     color: #f9f6f2;
     background: #0037D0;
-    box-shadow: 0 0 30px 10px rgba(0, 55, 208, 0.88889), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(0, 55, 208, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
 /* line 418, main.scss */
 .tile.tile-Z .tile-inner {
     color: #f9f6f2;
-    background: #0037D0;
-    box-shadow: 0 0 30px 10px rgba(0, 55, 208, 0.88889), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    background: #0000D0;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 208, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
-
 /* Powers of 2 - Contemporary Edition */
 /*
     The background color is the upper-left/
@@ -5751,7 +6136,6 @@ hr {
         font-size: 1px;
     }
 }
-
 /* Fibonacci Number Sequence - Contemporary Edition
 This list does not include negative Fibonacci numbers because they only work on positive integers */
 /*
@@ -5825,7 +6209,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #00bf5f;
     box-shadow: 0 0 30px 10px rgba(0, 191, 95, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -5838,7 +6222,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #00bfbf;
     box-shadow: 0 0 30px 10px rgba(0, 191, 191, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -5851,7 +6235,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #005fbf;
     box-shadow: 0 0 30px 10px rgba(0, 95, 191, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -5864,7 +6248,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #0000bf;
     box-shadow: 0 0 30px 10px rgba(0, 0, 191, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -5877,7 +6261,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #5f00bf;
     box-shadow: 0 0 30px 10px rgba(95, 0, 191, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -5890,7 +6274,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #0000df;
     box-shadow: 0 0 30px 10px rgba(0, 0, 223, 0.66667), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 37px;
+    font-size: 35px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -5903,7 +6287,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #000066;
     box-shadow: 0 0 30px 10px rgba(0, 0, 102, 0.77778), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 37px;
+    font-size: 35px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -5916,7 +6300,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #ff00ff;
     box-shadow: 0 0 30px 10px rgba(255, 0, 255, 0.88889), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 37px;
+    font-size: 35px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -5929,7 +6313,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #7f007f;
     box-shadow: 0 0 30px 10px rgba(127, 0, 127, 0.99999), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 37px;
+    font-size: 35px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -6306,7 +6690,7 @@ This list does not include negative Fibonacci numbers because they only work on 
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
     .tile.tile-1836311903 .tile-inner {
-        font-size: 25px;
+        font-size: 7px;
     }
 }
 /* line 368, main.scss */
@@ -6336,7 +6720,7 @@ This list does not include negative Fibonacci numbers because they only work on 
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
     .tile.tile-2971215073 .tile-inner {
-        font-size: 25px;
+        font-size: 7px;
     }
 }
 /* line 368, main.scss */
@@ -6361,12 +6745,12 @@ This list does not include negative Fibonacci numbers because they only work on 
     
     background-position: 0 0, 53.5px 0, 53.5px -53.5px, 0px 53.5px;
     font-size: 15px;
-    box-shadow: 0 0 30px 10px rgba(8, 164, 189, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(89, 77, 69, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
     .tile.tile-4807526976 .tile-inner {
-        font-size: 25px;
+        font-size: 7px;
     }
 }
 /* line 368, main.scss */
@@ -6396,7 +6780,7 @@ This list does not include negative Fibonacci numbers because they only work on 
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
     .tile.tile-7778742049 .tile-inner {
-        font-size: 15px;
+        font-size: 7px;
     }
 }
 /* line 368, main.scss */
@@ -7269,7 +7653,6 @@ This list does not include negative Fibonacci numbers because they only work on 
         font-size: 5px;
     }
 }
-
 /* Powers of 3 - Contemporary Edition */
 /*
     The background color is the upper-left/
@@ -7945,7 +8328,7 @@ This list does not include negative Fibonacci numbers because they only work on 
 /* line 368, main.scss */
 .tile.tile--3 .tile-inner {
     color: #320023;
-    background: #FFE7FF;
+    background: #eee4d3;
 }
 /* line 368, main.scss */
 .tile.tile--9 .tile-inner {
@@ -8592,7 +8975,6 @@ This list does not include negative Fibonacci numbers because they only work on 
         font-size: 4px;
     }
 }
-
 /* Threes - Contemporary Edition */
 /*
     The background color is the upper-left/
@@ -8650,7 +9032,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #9ecc13;
     box-shadow: 0 0 30px 10px rgba(158, 204, 19, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -8663,7 +9045,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #6fcc13;
     box-shadow: 0 0 30px 10px rgba(111, 204, 19, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -8676,7 +9058,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #41cc13;
     box-shadow: 0 0 30px 10px rgba(65, 204, 19, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -8689,7 +9071,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #13cc13;
     box-shadow: 0 0 30px 10px rgba(19, 204, 19, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
-    font-size: 37px;
+    font-size: 35px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -8702,7 +9084,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #13cc41;
     box-shadow: 0 0 30px 10px rgba(19, 204, 65, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 37px;
+    font-size: 35px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -8715,7 +9097,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #13cc6f;
     box-shadow: 0 0 30px 10px rgba(19, 204, 111, 0.66667), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 37px;
+    font-size: 35px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -9647,7 +10029,7 @@ This list does not include negative Fibonacci numbers because they only work on 
 /* line 368, main.scss */
 .tile.tile--3 .tile-inner {
     color: #320023;
-    background: #FFE7FF;
+    background: #eee4d3;
 }
 /* line 368, main.scss */
 .tile.tile--6 .tile-inner {
@@ -9679,7 +10061,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #edcf72;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -9692,7 +10074,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #edcc61;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -9705,7 +10087,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #edc850;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -9718,7 +10100,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #edc53f;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
-    font-size: 37px;
+    font-size: 35px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -9731,7 +10113,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #edc22e;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 37px;
+    font-size: 35px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -9744,7 +10126,7 @@ This list does not include negative Fibonacci numbers because they only work on 
     color: #f9f6f2;
     background: #ebb914;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.66667), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 37px;
+    font-size: 35px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -9769,7 +10151,7 @@ This list does not include negative Fibonacci numbers because they only work on 
 .tile.tile--24576 .tile-inner {
     color: #f9f6f2;
     background: #0c298d;
-    box-shadow: 0 0 30px 10px rgba(119, 219, 28, 0.88889), inset 0 0 0 1px rgba(0, 0, 0, 0.33333);
+    box-shadow: 0 0 30px 10px rgba(12, 41, 141, 0.88889), inset 0 0 0 1px rgba(0, 0, 0, 0.33333);
     font-size: 30px;
 }
 @media screen and (max-width: 520px) {
@@ -9898,8 +10280,8 @@ This list does not include negative Fibonacci numbers because they only work on 
 /* line 368, main.scss */
 .tile.tile--25165824 .tile-inner {
     color: #f9f6f2;
-    background: #091e5d;
-    box-shadow: 0 0 30px 10px #091e5d, inset 0 0 0 1px rgba(0, 0, 0, 0.33333);
+    background: #0a2268;
+    box-shadow: 0 0 30px 10px #0a2268, inset 0 0 0 1px rgba(0, 0, 0, 0.33333);
     font-size: 18px;
 }
 @media screen and (max-width: 520px) {
@@ -10664,7 +11046,6 @@ I
         font-size: 5px;
     }
 }
-
 /* Lucas Number Sequence - Contemporary Edition
 This is does not include negative Lucas numbers because they only work on positive integers */
 /*
@@ -10738,7 +11119,7 @@ This is does not include negative Lucas numbers because they only work on positi
     color: #f9f6f2;
     background: #c37093;
     box-shadow: 0 0 30px 10px rgba(195, 112, 147, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -10751,7 +11132,7 @@ This is does not include negative Lucas numbers because they only work on positi
     color: #f9f6f2;
     background: #c99999;
     box-shadow: 0 0 30px 10px rgba(201, 153, 153, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -10763,7 +11144,7 @@ This is does not include negative Lucas numbers because they only work on positi
 .tile.tile-322 .tile-inner {
     background: #c4d390;
     box-shadow: 0 0 30px 10px rgba(196, 211, 144, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -10775,7 +11156,7 @@ This is does not include negative Lucas numbers because they only work on positi
 .tile.tile-521 .tile-inner {
     background: #c2d370;
     box-shadow: 0 0 30px 10px rgba(194, 211, 112, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
@@ -10787,7 +11168,7 @@ This is does not include negative Lucas numbers because they only work on positi
 .tile.tile-843 .tile-inner {
     background: #e2e450;
     box-shadow: 0 0 30px 10px rgba(226, 228, 80, 0.55555), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 50px;
+    font-size: 45px;
 }
 @media screen and (max-width: 520px) {
     /* line 368, main.scss */
