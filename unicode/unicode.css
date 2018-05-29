@@ -2884,9 +2884,27 @@ hr {
     }
 }
 /* line 418, main.scss */
+.tile.tile--Infinity .tile-inner {
+    color: #11ff11;
+    background: #000000;
+    font-size: 20px;
+}
+@media screen and (max-width: 520px) {
+    /* line 418, main.scss */
+    .tile.tile--Infinity .tile-inner {
+        font-size: 10px;
+    }
+}
+/* line 418, main.scss */
 .tile.tile-superlative .tile-inner {
     color: #f9f6f2;
     background: #3000D0;
+}
+/* line 418, main.scss */
+.tile.tile-NaN .tile-inner {
+    color: #000000;
+    background: #11ff11;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0);
 }
 /* line 418, main.scss */
 .tile.tile-A .tile-inner {
