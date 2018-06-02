@@ -87,7 +87,7 @@ GameManager.prototype.addRandomTile = function () {
 
   // Let the following terms:
   var sum = this.grid.sum(); // more like dis.gred.soom()
-  var myArray = [2, 3];
+  var myArray = [2, 3, -2, -3, 4, 6, -4, -6, 0];
   var dynamic = 50 - Math.abs(sum/3);
   var rand = myArray[Math.floor(Math.random() * myArray.length)];
 
@@ -98,7 +98,7 @@ GameManager.prototype.addRandomTile = function () {
 
   // Goes with the normal tile spawns. 2048 + Threes! 'Cause why not!
   var dumb = Math.random() < 0.5 ? (Math.random() < 0.5 ? 
-  (Math.random() < 0.9 ? 2*Math.pow(2,0) :2*Math.pow(2,1)) : 
+  (Math.random() < 0.9 ? 2*Math.pow(2,0) : 2*Math.pow(2,1)) : 
   (Math.random() < 0.9 ? -2*Math.pow(2,0) : -2*Math.pow(2,1))) :
   (Math.random() < 0.5 ? (Math.random() < 0.9 ? 3*Math.pow(2,0) : 3*Math.pow(2,1)) : 
   (Math.random() < 0.9 ? -3*Math.pow(2,0) : -3*Math.pow(2,1)));
@@ -108,10 +108,11 @@ GameManager.prototype.addRandomTile = function () {
   (Math.floor(Math.random()*2)*2 -0) : 
   - sum / Math.abs(sum);
 
+  // spawns tiles on board
   if (this.grid.cellsAvailable()) {
     var self = this;
-    var value = Infinity;
-    var cell = this.grid.randomAvailableCell();
+    var bvalue = sum;
+    var bcell = this.grid.randomAvailableCell();
 
     for (var i = 0; i < 8; i++) {
       var cell = this.grid.randomAvailableCell();
@@ -125,9 +126,9 @@ GameManager.prototype.addRandomTile = function () {
           !!self.grid.cells[cell.x + x][cell.y + y]
         ) {
           var tocheck = self.grid.cells[cell.x + x][cell.y + y];
-          if (Math.random() < 0.8 && tocheck.value < value) {
-            cell = cell;
-            value = tocheck.value;
+          if (Math.random() < 0.8 && tocheck.value < bvalue) {
+            bcell = cell;
+            bvalue = tocheck.value;
           }
         } else check(x + dx, y + dy, dx, dy);
       }
@@ -137,12 +138,11 @@ GameManager.prototype.addRandomTile = function () {
       check(0, -1, 0, -1);
       check(0, 1, 0, 1);
 
-      if (value == Infinity)
-      {value = Math.random() < 0.5 ? 2 : 3;}
+      if (bvalue == sum) {bvalue = Math.random() < 0.5 ? 2 : 3;}
     }
 
-    var tile = new Tile(cell, Math.random() < dynamic ? (Math.random() < 0.5 ? value : -value) : 
-    (Math.random() < dynamic ? smart : (Math.random < 0.9 ? dumb : zero)));
+    var tile = new Tile(cell, Math.random() < 0.1 ? (Math.random() < 0.5 ? bvalue : -bvalue) : 
+    (Math.random() < dynamic ? smart : (Math.random < 0.5 ? dumb : rand)));
 
     this.grid.insertTile(tile);
   }
@@ -242,7 +242,7 @@ GameManager.prototype.move = function (direction) {
           self.score += Math.pow(2,(merged.value.charCodeAt(0)-62));
 
           // TODO wincheck?
-          if (merged.value === "K") self.won = true;
+          if (merged.value === " ") self.won = true;
         } else {
           self.moveTile(tile, positions.farthest);
         }
