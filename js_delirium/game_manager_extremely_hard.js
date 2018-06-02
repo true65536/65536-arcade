@@ -84,7 +84,6 @@ GameManager.prototype.addEasyTile = function () {
 
 // Adds a tile in a random position
 GameManager.prototype.addRandomTile = function () {
-  // choose kind of cell based on current sum of tiles
 
   // Let the following terms:
   var sum = this.grid.sum(); // more like dis.gred.soom()
@@ -93,12 +92,9 @@ GameManager.prototype.addRandomTile = function () {
   var rand = myArray[Math.floor(Math.random() * myArray.length)];
 
   // Smart generation of numbered and lettered tiles.
-  var smart = Math.random() < 0.5 ? (
-  Math.random() < 0.5 ? 2*Math.floor(rand * Math.pow(2, 
-  (Math.floor(Math.random() * sum/10)))) : -2*Math.floor(rand * 
-  Math.pow(2, (Math.floor(Math.random() * sum/10))))) : (Math.random() < 0.9 ? 
+  var smart = Math.random() < 0.9 ? 
   String.fromCharCode(65 + Math.abs(Math.floor(Math.random() * sum/10))) : 
-  String.fromCharCode(65 + Math.abs(Math.floor(Math.random() * sum/10)))); 
+  String.fromCharCode(65 + Math.abs(Math.floor(Math.random() * sum/10)));
 
   // Goes with the normal tile spawns. 2048 + Threes! 'Cause why not!
   var dumb = Math.random() < 0.5 ? (Math.random() < 0.5 ? 
@@ -112,20 +108,41 @@ GameManager.prototype.addRandomTile = function () {
   (Math.floor(Math.random()*2)*2 -0) : 
   - sum / Math.abs(sum);
 
-  // actual grid spawning
   if (this.grid.cellsAvailable()) {
-    // if close to zero
-    if (Math.random() < dynamic) { // shifts between Duel Phase and Field Phase
-      if (Math.random() < 0.1) // Duel Phase
-        var value = Math.random() < 0.5 ? smart : dumb;
-      else
-        value = Math.random() < 0.1 ? smart : dumb;
-    } else { // random if close to zero // Field Phase
-      value = zero;
-      value *= Math.random() < 0.9 ? smart : dumb;
+    var self = this;
+    var value = Infinity;
+    var cell = this.grid.randomAvailableCell();
+
+    for (var i = 0; i < 8; i++) {
+      var cell = this.grid.randomAvailableCell();
+
+      function check(x, y, dx, dy) {
+        if (x < 0 || y < 0 || x >= self.grid.size || y >= self.grid.size) return;
+
+        if (
+          !!self.grid.cells[cell.x + x]
+          &&
+          !!self.grid.cells[cell.x + x][cell.y + y]
+        ) {
+          var tocheck = self.grid.cells[cell.x + x][cell.y + y];
+          if (Math.random() < 0.8 && tocheck.value < value) {
+            cell = cell;
+            value = tocheck.value;
+          }
+        } else check(x + dx, y + dy, dx, dy);
+      }
+
+      check(-1, 0, -1, 0);
+      check(1, 0, 1, 0);
+      check(0, -1, 0, -1);
+      check(0, 1, 0, 1);
+
+      if (value == Infinity)
+      {value = Math.random() < 0.5 ? 2 : 3;}
     }
 
-    var tile = new Tile(this.grid.randomAvailableCell(), value);
+    var tile = new Tile(cell, Math.random() < dynamic ? (Math.random() < 0.5 ? value : -value) : 
+    (Math.random() < dynamic ? smart : (Math.random < 0.9 ? dumb : zero)));
 
     this.grid.insertTile(tile);
   }
@@ -191,8 +208,7 @@ GameManager.prototype.move = function (direction) {
         var next      = self.grid.cellContent(positions.next);
 
         if (next && next.value === tile.value && !next.mergedFrom) {
-          var newVal = (typeof tile.value === 'number') ? tile.value * 2 : 
-          String.fromCharCode(tile.value.charCodeAt(0) + 1);
+          var newVal = (typeof tile.value === 'number') ? tile.value * 2 : String.fromCharCode(tile.value.charCodeAt(0) + 1);
           var merged = new Tile(positions.next, newVal);
           merged.mergedFrom = [tile, next];
 
@@ -204,18 +220,18 @@ GameManager.prototype.move = function (direction) {
 
           // Update the score
           if (typeof merged.value === "number") {
-            self.score += merged.value;
+            self.score += Math.floor(Math.random() * 2048) + merged.value * merged.value;
           } else {
-            self.score += Math.pow(2,(merged.value.charCodeAt(0)-62));
+            self.score += Math.floor(Math.random() * 2048) + Math.pow(2,(merged.value.charCodeAt(0)-62)) * Math.pow(2,(merged.value.charCodeAt(0)-62));
           }
 
-          // The mighty Threes/2048/Unicode tile        
-          if (merged.value === " ") self.won = true;
+          // The mighty K tile
+          if (merged.value === 0.5) self.won = true;
         } else if (next && next.value === -tile.value && !next.mergedFrom) { // merge inverses
           var n = Math.log(Math.abs(next.value))/Math.LN2;
           var s = String.fromCharCode(64+n);
           var merged = new Tile(positions.next, s);
-          merged.mergedFrom = [tile, next]; // " " = U+0000 SPACE
+          merged.mergedFrom = [tile, next];
 
           self.grid.insertTile(merged);
           self.grid.removeTile(tile);
@@ -226,7 +242,7 @@ GameManager.prototype.move = function (direction) {
           self.score += Math.pow(2,(merged.value.charCodeAt(0)-62));
 
           // TODO wincheck?
-          if (merged.value === 0.5) self.won = true;
+          if (merged.value === "K") self.won = true;
         } else {
           self.moveTile(tile, positions.farthest);
         }
