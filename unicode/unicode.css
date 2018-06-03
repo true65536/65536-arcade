@@ -4738,7 +4738,8 @@ hr {
     font-size: 35px;
 }
 @media screen and (max-width: 520px) {
-    tile.tile--8192 .tile-inner {
+    /* line 368, main.scss */
+    .tile.tile--8192 .tile-inner {
         font-size: 15px;
     }
 }
