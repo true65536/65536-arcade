@@ -141,7 +141,7 @@ GameManager.prototype.addRandomTile = function () {
       if (bvalue == sum) {bvalue = Math.random() < 0.5 ? 2 : 3;}
     }
 
-    var tile = new Tile(cell, Math.random() < 0.1 ? (Math.random() < 0.5 ? bvalue : -bvalue) : 
+    var tile = new Tile(cell, Math.random() < 0.5 ? (Math.random() < 0.5 ? bvalue : -bvalue) : 
     (Math.random() < dynamic ? smart : (Math.random < 0.5 ? dumb : rand)));
 
     this.grid.insertTile(tile);
