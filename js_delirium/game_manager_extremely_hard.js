@@ -85,7 +85,7 @@ GameManager.prototype.addEasyTile = function () {
 // Adds a tile in a random position
 GameManager.prototype.addRandomTile = function () {
 
-  // Let the following terms:
+  // Define the following terms:
   var sum = this.grid.sum(); // more like dis.gred.soom()
   var myArray = [2, 3, -2, -3, 4, 6, -4, -6, 0];
   var dynamic = 50 - Math.abs(sum/3);
@@ -108,7 +108,7 @@ GameManager.prototype.addRandomTile = function () {
   (Math.floor(Math.random()*2)*2 -0) : 
   - sum / Math.abs(sum);
 
-  // spawns tiles on board
+  // Spawns smart numbered tiles on the grid.
   if (this.grid.cellsAvailable()) {
     var self = this;
     var bvalue = sum;
@@ -143,8 +143,9 @@ GameManager.prototype.addRandomTile = function () {
 
     var tile = new Tile(cell, Math.random() < 0.5 ? (Math.random() < 0.5 ? bvalue : -bvalue) : 
     (Math.random() < dynamic ? smart : (Math.random < 0.5 ? dumb : rand)));
-
-    this.grid.insertTile(tile);
+    // Half of the time the smart spawner kicks in, otherwise, a letter or number spawn kicks in.
+    this.score += sum; // Adds sum of all elements of the grid to the score. Deducts if negative.
+    this.grid.insertTile(tile); // Inserts tile in grid.
   }
 };
 
