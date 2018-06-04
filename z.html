@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Z</title>
+  <title>Z to Infinity / 2048 Meets Unicode</title>
 
   <link href="style/size16.css" rel="stylesheet" type="text/css">
   <link href="unicode/unicode.css" rel="stylesheet" type="text/css">
@@ -17,13 +17,13 @@
 <body>
   <div class="container">
     <div class="heading">
-      <h1 class="title">Z</h1>
+      <h1 class="title">Z to Infinity</h1>
       <div class="scores-container">
         <div class="score-container">0</div>
         <div class="best-container">0</div>
       </div>
     </div>
-    <p class="game-intro">Join the numbers and get the <strong>highest score</strong> in this page!</p>
+    <p class="game-intro">Join the numbers and get the <strong>highest score</strong> in this page! For a challenge, try to reach the <strong>U+10FFFF tile!</strong></p>
 
     <div class="game-container">
       <div class="game-message">
@@ -335,15 +335,14 @@
     </p>
     <hr>
     <p class="game-explanation">
-      When two positive or negative tiles collide with themselves, they form a tile with twice its value.
+      When two tiles with the same value collide, they merge into one. Two neutral zero tiles will merge together to form one 0 tile, and would just occupy a space on the grid without merging.
     </p>
     <p class="game-explanation">
-      When two positive and negative tiles collide with one another, they form a lettered tile.
+      When two tiles with the same absolute value collide, they merge into one to form a Unicode character on the logarithmic scale, starting with A (Unicode character #65, or 0041.). i.e. 2 and -2 (2¹) 3 and -3 (1.5×2¹) will merge to form A, regardless of the base number.
     </p>
     <hr>
     <p>
-   When two tiles with the same letter touch, they <strong>merge into one
-   tile with letter incremented by 1! AA -> B, BB -> C, CC -> D etc.</strong> <br>
+      When two Unicode characters of the same kind touch they <strong>merge into a tile with the next Unicode character!</strong> For a challenge, try to beat the game by going to 10FFFF!
     </p>
     <hr>
     <p>
