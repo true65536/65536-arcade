@@ -75,7 +75,7 @@ GameManager.prototype.addStartTiles = function () {
 
 // Adds a well-tempered tile in a random position
   // Define the following terms:
-  var sum = this.score(); // more like dis.gred.soom()
+  var sum = Math.round(Math.random() * 1000); // more like dis.gred.soom()
   var myArray = [2, 3, -2, -3, 4, 6, -4, -6, 5, 10, -5, -10, 0];
   var dynamic = 50 - Math.abs(sum/3);
   var rand = myArray[Math.floor(Math.random() * myArray.length)];
