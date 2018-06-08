@@ -1,19 +1,36 @@
-function Grid(size) {
+function Grid(size, previousState) {
   this.size = size;
-  this.cells = [];
-
-  this.build();
+  this.cells = previousState ? this.fromState(previousState) : this.empty();
 }
 
 // Build a grid of the specified size
-Grid.prototype.build = function () {
+Grid.prototype.empty = function () {
+  var cells = [];
+
   for (var x = 0; x < this.size; x++) {
-    var row = this.cells[x] = [];
+    var row = cells[x] = [];
 
     for (var y = 0; y < this.size; y++) {
       row.push(null);
     }
   }
+
+  return cells;
+};
+
+Grid.prototype.fromState = function (state) {
+  var cells = [];
+
+  for (var x = 0; x < this.size; x++) {
+    var row = cells[x] = [];
+
+    for (var y = 0; y < this.size; y++) {
+      var tile = state[x][y];
+      row.push(tile ? new Tile(tile.position, tile.value) : null);
+    }
+  }
+
+  return cells;
 };
 
 // Find the first available random position
@@ -82,16 +99,19 @@ Grid.prototype.withinBounds = function (position) {
          position.y >= 0 && position.y < this.size;
 };
 
-Grid.prototype.sum = function () {
-  var sum = 0;
+Grid.prototype.serialize = function () {
+  var cellState = [];
+
   for (var x = 0; x < this.size; x++) {
+    var row = cellState[x] = [];
+
     for (var y = 0; y < this.size; y++) {
-      var val = this.cells[x][y] && this.cells[x][y].value;
-      sum += (typeof val == "number") ? val : 0;
+      row.push(this.cells[x][y] ? this.cells[x][y].serialize() : null);
     }
   }
-  if (isNaN(sum)) {
-    sum = this.score;
-  }
-  return sum;
-}
+
+  return {
+    size: this.size,
+    cells: cellState
+  };
+};
