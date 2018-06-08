@@ -74,33 +74,8 @@ GameManager.prototype.addStartTiles = function () {
 };
 
 // Adds a well-tempered tile in a random position
-GameManager.prototype.addEasyTile = function () {
-  if (this.grid.cellsAvailable()) {
-    var cell = this.grid.randomAvailableCell();
-
-    // Find good value
-    var values = this.grid.cellValues([
-      { x: cell.x - 1, y: cell.y },
-      { x: cell.x, y: cell.y - 1 },
-      { x: cell.x + 1, y: cell.y },
-      { x: cell.x, y: cell.y + 1 }]);
-    if (values.length == 0) {
-      values = this.grid.cellValues([
-        { x: cell.x - 1, y: cell.y - 1 },
-        { x: cell.x - 1, y: cell.y + 1 },
-        { x: cell.x + 1, y: cell.y - 1 },
-        { x: cell.x + 1, y: cell.y + 1 }]);
-    }
-    values.push(2);
-    value = values[Math.floor(Math.random() * values.length)];
-
-    var tile = new Tile(cell, value);
-    this.grid.insertTile(tile);
-  }
-};
-
   // Define the following terms:
-  var sum = this.score(); // more like dis.gred.soom()
+  var sum = Math.floor(Math.random() * 1000) ; // more like dis.gred.soom()
   var myArray = [2, 3, -2, -3, 4, 6, -4, -6, 5, 10, -5, -10, 0];
   var dynamic = 50 - Math.abs(sum/3);
   var rand = myArray[Math.floor(Math.random() * myArray.length)];
@@ -161,7 +136,7 @@ GameManager.prototype.addEasyTile = function () {
     this.score += sum; // Adds sum of all elements of the grid to the score. Deducts if negative.
     this.grid.insertTile(tile); // Inserts tile in grid.
   }
-  ;
+};
 
 // Sends the updated grid to the actuator
 GameManager.prototype.actuate = function () {
@@ -212,6 +187,21 @@ GameManager.prototype.moveTile = function (tile, cell) {
   this.grid.cells[tile.x][tile.y] = null;
   this.grid.cells[cell.x][cell.y] = tile;
   tile.updatePosition(cell);
+};
+
+// Calculates whether two items are close enough to be merged
+GameManager.prototype.closeEnough = function (x, y) {
+	var maxAllowanceRatio = .5;
+	
+	var difference = x - y;
+	var maxAllowance = Math.max(Math.abs(x), Math.abs(y)) * maxAllowanceRatio;
+	if (maxAllowance < 1.1) {
+		maxAllowance = 1.1;
+	}
+	
+	var winForCheaters = (x + y) === 0;
+	
+	return winForCheaters || Math.abs(difference) < maxAllowance;
 };
 
 // Move tiles on the grid in the specified direction
@@ -286,7 +276,7 @@ GameManager.prototype.move = function (direction) {
       }
     });
   });
-
+  
   if (moved) {
     this.addRandomTile();
 
