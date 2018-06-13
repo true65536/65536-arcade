@@ -186,7 +186,7 @@ GameManager.prototype.moveTile = function (tile, cell) {
 // Compares factors of tiles. Quick maths.
 GameManager.prototype.div = function (next, cur) {
   if ((next % cur === 0) || (cur % next === 0))
-    return next + cur
+    return next + cur;
 };
 
 // Calculates whether two items are close enough to be merged
