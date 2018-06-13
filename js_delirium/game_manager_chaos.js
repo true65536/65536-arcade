@@ -4,7 +4,7 @@ function GameManager(size, InputManager, Actuator, ScoreManager) {
   this.scoreManager = new ScoreManager;
   this.actuator     = new Actuator;
 
-  this.startTiles   = 2;
+  this.startTiles   = 256;
 
   this.inputManager.on("move", this.move.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
@@ -87,7 +87,7 @@ GameManager.prototype.addRandomTile = function () {
 
   // Define the following terms:
   var sum = this.grid.sum(); // more like dis.gred.soom()
-  var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+  var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   var dynamic = 40 - Math.abs(sum/3);
   var rand = myArray[Math.floor(Math.random() * myArray.length)];
 
@@ -141,10 +141,17 @@ GameManager.prototype.addRandomTile = function () {
       if (bvalue == sum) {bvalue = rand;}
     }
 
-    var tile = new Tile(cell, Math.random() < 0.5 ? (Math.random() < 0.5 ? bvalue : -bvalue) : 
+    var tile = new Tile(bcell, Math.random() < dynamic ? (Math.random() < 0.5 ? bvalue : -bvalue) : 
     (Math.random() < dynamic ? smart : dumb));
     // Half of the time the smart spawner kicks in, otherwise, a letter or number spawn kicks in.
     this.score += sum; // Adds sum of all elements of the grid to the score. Deducts if negative.
+    this.grid.insertTile(tile);
+    this.grid.insertTile(tile);
+    this.grid.insertTile(tile);
+    this.grid.insertTile(tile);
+    this.grid.insertTile(tile);
+    this.grid.insertTile(tile);
+    this.grid.insertTile(tile);
     this.grid.insertTile(tile); // Inserts tile in grid.
   }
 };
