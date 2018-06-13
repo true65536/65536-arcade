@@ -86,10 +86,10 @@ GameManager.prototype.addEasyTile = function () {
 GameManager.prototype.addRandomTile = function () {
 
   // Define the following terms:
-  var sum = this.grid.sum(); // more like dis.gred.soom()
+  var sum = this.score; // Relies on the score instead of the sum.
   var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   var dynamic = 40 - Math.abs(sum/3);
-  var rand = myArray[Math.floor(Math.random() * myArray.length)];
+  var rand = Math.round(Math.random() * 10);
 
   // Smart generation of numbered and lettered tiles.
   var smart = Math.random() < 0.9 ? 
@@ -107,6 +107,27 @@ GameManager.prototype.addRandomTile = function () {
   var zero = (Math.abs(sum) < 40) ? 
   (Math.floor(Math.random()*2)*2 -0) : 
   - sum / Math.abs(sum);
+
+  var score = Math.round(Math.random() * sum);
+  var dynamic1 = 40 - Math.abs(score/3);
+  var rand1 = Math.round(Math.random() * 10);
+
+  // Smart generation of numbered and lettered tiles.
+  var smart1 = Math.random() < 0.9 ? 
+  String.fromCharCode(65 + Math.abs(Math.floor(Math.random() * score/10))) : 
+  String.fromCharCode(65 + Math.abs(Math.floor(Math.random() * score/10)));
+
+  // Goes with the normal tile spawns. 2048 + Threes! 'Cause why not!
+  var dumb1 = Math.random() < 0.5 ? (Math.random() < 0.5 ? 
+  (Math.random() < 0.9 ? rand1*Math.pow(2,0) : rand1*Math.pow(2,1)) : 
+  (Math.random() < 0.9 ? -rand1*Math.pow(2,0) : -rand1*Math.pow(2,1))) :
+  (Math.random() < 0.5 ? (Math.random() < 0.9 ? rand1*Math.pow(2,0) : rand1*Math.pow(2,1)) : 
+  (Math.random() < 0.9 ? -rand1*Math.pow(2,0) : -rand1*Math.pow(2,1)));
+
+  // This function spawns zero tiles that merge with one another.
+  var zero = (Math.abs(score) < 40) ? 
+  (Math.floor(Math.random()*2)*2 -0) : 
+  - score / Math.abs(score);
 
   // Spawns smart numbered tiles on the grid.
   if (this.grid.cellsAvailable()) {
@@ -141,17 +162,15 @@ GameManager.prototype.addRandomTile = function () {
       if (bvalue == sum) {bvalue = rand;}
     }
 
-    var tile = new Tile(bcell, Math.random() < dynamic ? (Math.random() < 0.5 ? bvalue : -bvalue) : 
-    (Math.random() < dynamic ? smart : dumb));
+    var random = Math.random() < dynamic ? (Math.random() < 0.5 ? bvalue : -bvalue) : 
+    (Math.random() < dynamic ? smart : dumb)
+    var random1 = Math.random() < dynamic1 ? (Math.random() < 0.5 ? bvalue : -bvalue) : 
+    (Math.random() < dynamic1 ? smart1 : dumb1)
+    var bval = Math.random() < dynamic ? random : random1;
+    
+    var tile = new Tile(bcell, bval);
     // Half of the time the smart spawner kicks in, otherwise, a letter or number spawn kicks in.
-    this.score += sum; // Adds sum of all elements of the grid to the score. Deducts if negative.
-    this.grid.insertTile(tile);
-    this.grid.insertTile(tile);
-    this.grid.insertTile(tile);
-    this.grid.insertTile(tile);
-    this.grid.insertTile(tile);
-    this.grid.insertTile(tile);
-    this.grid.insertTile(tile);
+  //this.score += sum; // Adds sum of all elements of the grid to the score. Deducts if negative.
     this.grid.insertTile(tile); // Inserts tile in grid.
   }
 };
@@ -189,7 +208,7 @@ GameManager.prototype.moveTile = function (tile, cell) {
   tile.updatePosition(cell);
 };
 
-/* Merging algorithm */
+/* This merging algorithm is rigged. */
 // Compares factors of tiles. Quick maths.
 GameManager.prototype.div = function (next, cur) {
   if ((next % cur === 0) || (cur % next === 0))
@@ -296,6 +315,13 @@ GameManager.prototype.move = function (direction) {
   });
 
   if (moved) {
+    this.addRandomTile();
+    this.addRandomTile();
+    this.addRandomTile();
+    this.addRandomTile();
+    this.addRandomTile();
+    this.addRandomTile();
+    this.addRandomTile();
     this.addRandomTile();
 
     if (!this.movesAvailable()) {
