@@ -4,7 +4,7 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
   this.storageManager = new StorageManager;
   this.actuator       = new Actuator;
 
-  this.startTiles     = 2;
+  this.startTiles     = 256;
 
   this.inputManager.on("move", this.move.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
@@ -104,9 +104,9 @@ GameManager.prototype.addRandomTile = function () {
 
   // Define the following terms:
   var sum = this.score; // Relies on the score instead of the sum.
-  var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  var myArray = [1, 2];
   var dynamic = 40 - Math.abs(sum/3);
-  var rand = Math.round(Math.random() * 10);
+  var rand = myArray[Math.floor(Math.random() * myArray.length)];
 
   // Smart generation of numbered and lettered tiles.
   var smart = Math.random() < 0.9 ? 
@@ -127,7 +127,7 @@ GameManager.prototype.addRandomTile = function () {
 
   var score = Math.round(Math.random() * sum);
   var dynamic1 = 40 - Math.abs(score/3);
-  var rand1 = Math.round(Math.random() * 10);
+  var rand1 = myArray[Math.floor(Math.random() * myArray.length)];
 
   // Smart generation of numbered and lettered tiles.
   var smart1 = Math.random() < 0.9 ? 
