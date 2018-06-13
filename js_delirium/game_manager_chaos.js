@@ -319,12 +319,7 @@ GameManager.prototype.move = function (direction) {
     this.addRandomTile(); this.addRandomTile(); this.addRandomTile(); this.addRandomTile();
     this.addRandomTile(); this.addRandomTile(); this.addRandomTile(); this.addRandomTile();
     this.addRandomTile(); this.addRandomTile(); this.addRandomTile(); this.addRandomTile();
-    this.addRandomTile(); this.addRandomTile(); this.addRandomTile(); this.addRandomTile();
-    this.addRandomTile(); this.addRandomTile(); this.addRandomTile(); this.addRandomTile();
-    this.addRandomTile(); this.addRandomTile(); this.addRandomTile(); this.addRandomTile();
-    this.addRandomTile(); this.addRandomTile(); this.addRandomTile(); this.addRandomTile();
-
-
+	  
     if (!this.movesAvailable()) {
       this.over = true; // Game over!
     }
