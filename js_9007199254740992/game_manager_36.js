@@ -1,14 +1,15 @@
-function GameManager(size, InputManager, Actuator, StorageManager) {
-  this.size           = size; // Size of the grid
-  this.inputManager   = new InputManager;
-  this.storageManager = new StorageManager;
-  this.actuator       = new Actuator;
+function GameManager(size, InputManager, Actuator, ScoreManager) {
+  this.size         = size; // Size of the grid
+  this.inputManager = new InputManager;
+  this.scoreManager = new ScoreManager;
+  this.actuator     = new Actuator;
 
-  this.startTiles     = 256;
+  this.startTiles   = 256;
 
   this.inputManager.on("move", this.move.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
   this.inputManager.on("keepPlaying", this.keepPlaying.bind(this));
+
   if (this.size < 4)
   {
     var lasttileclass = Math.pow(2, (this.size * (this.size + 1))/2)
@@ -104,9 +105,9 @@ GameManager.prototype.addRandomTile = function () {
 
   // Define the following terms:
   var sum = this.score; // Relies on the score instead of the sum.
-  var myArray = [1, 2];
+  var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   var dynamic = 40 - Math.abs(sum/3);
-  var rand = myArray[Math.floor(Math.random() * myArray.length)];
+  var rand = Math.round(Math.random() * 10);
 
   // Smart generation of numbered and lettered tiles.
   var smart = Math.random() < 0.9 ? 
@@ -127,7 +128,7 @@ GameManager.prototype.addRandomTile = function () {
 
   var score = Math.round(Math.random() * sum);
   var dynamic1 = 40 - Math.abs(score/3);
-  var rand1 = myArray[Math.floor(Math.random() * myArray.length)];
+  var rand1 = Math.round(Math.random() * 10);
 
   // Smart generation of numbered and lettered tiles.
   var smart1 = Math.random() < 0.9 ? 
@@ -194,36 +195,18 @@ GameManager.prototype.addRandomTile = function () {
 
 // Sends the updated grid to the actuator
 GameManager.prototype.actuate = function () {
-  if (this.storageManager.getBestScore() < this.score) {
-    this.storageManager.setBestScore(this.score);
-  }
-
-  // Clear the state when the game is over (game over only, not win)
-  if (this.over) {
-    this.storageManager.clearGameState();
-  } else {
-    this.storageManager.setGameState(this.serialize());
+  if (this.scoreManager.get() < this.score) {
+    this.scoreManager.set(this.score);
   }
 
   this.actuator.actuate(this.grid, {
     score:      this.score,
     over:       this.over,
     won:        this.won,
-    bestScore:  this.storageManager.getBestScore(),
+    bestScore:  this.scoreManager.get(),
     terminated: this.isGameTerminated()
   });
 
-};
-
-// Represent the current game as an object
-GameManager.prototype.serialize = function () {
-  return {
-    grid:        this.grid.serialize(),
-    score:       this.score,
-    over:        this.over,
-    won:         this.won,
-    keepPlaying: this.keepPlaying
-  };
 };
 
 // Save all tile positions and remove merger info
@@ -276,7 +259,7 @@ GameManager.prototype.closeEnough = function (x, y) {
 
 // Move tiles on the grid in the specified direction
 GameManager.prototype.move = function (direction) {
-  // 0: up, 1: right, 2: down, 3: left
+  // 0: up, 1: right, 2:down, 3: left
   var self = this;
 
   if (this.isGameTerminated()) return; // Don't do anything if the game's over
@@ -352,7 +335,9 @@ GameManager.prototype.move = function (direction) {
   if (moved) {
     this.addRandomTile(); this.addRandomTile(); this.addRandomTile(); this.addRandomTile();
     this.addRandomTile(); this.addRandomTile(); this.addRandomTile(); this.addRandomTile();
-
+    this.addRandomTile(); this.addRandomTile(); this.addRandomTile(); this.addRandomTile();
+    this.addRandomTile(); this.addRandomTile(); this.addRandomTile(); this.addRandomTile();
+	  
     if (!this.movesAvailable()) {
       this.over = true; // Game over!
     }
@@ -365,10 +350,10 @@ GameManager.prototype.move = function (direction) {
 GameManager.prototype.getVector = function (direction) {
   // Vectors representing tile movement
   var map = {
-    0: { x: 0,  y: -1 }, // Up
-    1: { x: 1,  y: 0 },  // Right
-    2: { x: 0,  y: 1 },  // Down
-    3: { x: -1, y: 0 }   // Left
+    0: { x: 0,  y: -1 }, // up
+    1: { x: 1,  y: 0 },  // right
+    2: { x: 0,  y: 1 },  // down
+    3: { x: -1, y: 0 }   // left
   };
 
   return map[direction];
@@ -415,7 +400,6 @@ GameManager.prototype.tileMatchesAvailable = function () {
   var self = this;
 
   var tile;
-
   for (var x = 0; x < this.size; x++) {
     for (var y = 0; y < this.size; y++) {
       tile = this.grid.cellContent({ x: x, y: y });
@@ -427,7 +411,7 @@ GameManager.prototype.tileMatchesAvailable = function () {
 
           var other  = self.grid.cellContent(cell);
 
-          if (other && other.value === tile.value) {
+          if (other && other.value === tile.value || other && other.value === -tile.value) {
             return true; // These two tiles can be merged
           }
         }
