@@ -88,7 +88,7 @@ GameManager.prototype.addRandomTile = function () {
   // Define the following terms:
   var sum = this.grid.sum(); // more like dis.gred.soom()
   var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-  var dynamic = 50 - Math.abs(sum/3);
+  var dynamic = 40 - Math.abs(sum/3);
   var rand = myArray[Math.floor(Math.random() * myArray.length)];
 
   // Smart generation of numbered and lettered tiles.
@@ -182,6 +182,33 @@ GameManager.prototype.moveTile = function (tile, cell) {
   tile.updatePosition(cell);
 };
 
+/* Merging algorithm */
+// Compares factors of tiles. Quick maths.
+GameManager.prototype.div = function (next, cur) {
+  if ((next % cur === 0) || (cur % next === 0))
+    return next + cur
+};
+
+// Generates a random Fibonacci sequence
+GameManager.prototype.testFib = function(value) {
+
+  var sum = this.grid.sum();
+  var val1 = Math.round(Math.random() * sum)
+  var val2 = Math.round(Math.random() * sum)
+  var fib = [val1, val2]
+
+  while (value > fib[fib.length-1]) {
+    fib.push(fib[fib.length-1] + fib[fib.length-2])
+  }
+  
+  for (var i = 0; i<fib.length && value>=fib[i]; i++) {
+    if (value === fib[i]) {
+      return true;
+    }
+  }
+  return false;
+};
+
 // Calculates whether two items are close enough to be merged
 GameManager.prototype.closeEnough = function (x, y) {
 
@@ -233,7 +260,8 @@ GameManager.prototype.move = function (direction) {
         var next      = self.grid.cellContent(positions.next);
         
         // The most seemingly complex, but still easy, 2048 game on the planet.
-        if (next && self.closeEnough(next.value, tile.value) && !next.mergedFrom) {
+        if (next && (self.closeEnough(next.value, tile.value) || self.testFib(next.value, tile.value) ||
+          self.div(next.value, tile.value) || next.value === tile.value) && !next.mergedFrom) {
           var newVal = (typeof tile.value === 'number') ? tile.value + next.value : String.fromCharCode(tile.value.charCodeAt(0) + 1);
           var merged = new Tile(positions.next, newVal);
           merged.mergedFrom = [tile, next];
@@ -253,7 +281,8 @@ GameManager.prototype.move = function (direction) {
 
           // The mighty K tile
           if (merged.value === 0.5) self.won = true;
-        } else if (next && self.closeEnough(next.value, -tile.value) && !next.mergedFrom) { // merge inverses
+        } else if (next && (self.closeEnough(next.value, -tile.value) || self.div(next.value, -tile.value) 
+          || next.value === -tile.value) && !next.mergedFrom) { // merge inverses
           var n = Math.log(Math.abs(next.value))/Math.LN2;
           var s = String.fromCharCode(64+n);
           var merged = new Tile(positions.next, s);
