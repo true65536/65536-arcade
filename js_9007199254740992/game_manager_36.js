@@ -74,11 +74,39 @@ GameManager.prototype.addStartTiles = function () {
 };
 
 // Adds a well-tempered tile in a random position
+GameManager.prototype.addEasyTile = function () {
+  if (this.grid.cellsAvailable()) {
+    var cell = this.grid.randomAvailableCell();
+
+    // Find good value
+    var values = this.grid.cellValues([
+      { x: cell.x - 1, y: cell.y },
+      { x: cell.x, y: cell.y - 1 },
+      { x: cell.x + 1, y: cell.y },
+      { x: cell.x, y: cell.y + 1 }]);
+    if (values.length == 0) {
+      values = this.grid.cellValues([
+        { x: cell.x - 1, y: cell.y - 1 },
+        { x: cell.x - 1, y: cell.y + 1 },
+        { x: cell.x + 1, y: cell.y - 1 },
+        { x: cell.x + 1, y: cell.y + 1 }]);
+    }
+    values.push(2);
+    value = values[Math.floor(Math.random() * values.length)];
+
+    var tile = new Tile(cell, value);
+    this.grid.insertTile(tile);
+  }
+};
+
+// Adds a tile in a random position
+GameManager.prototype.addRandomTile = function () {
+
   // Define the following terms:
-  var sum = Math.round(Math.random() * 1000); // more like dis.gred.soom()
-  var myArray = [2, 3, -2, -3, 4, 6, -4, -6, 5, 10, -5, -10, 0];
-  var dynamic = 50 - Math.abs(sum/3);
-  var rand = myArray[Math.floor(Math.random() * myArray.length)];
+  var sum = this.score; // Relies on the score instead of the sum.
+  var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  var dynamic = 40 - Math.abs(sum/3);
+  var rand = Math.round(Math.random() * 10);
 
   // Smart generation of numbered and lettered tiles.
   var smart = Math.random() < 0.9 ? 
@@ -96,6 +124,27 @@ GameManager.prototype.addStartTiles = function () {
   var zero = (Math.abs(sum) < 40) ? 
   (Math.floor(Math.random()*2)*2 -0) : 
   - sum / Math.abs(sum);
+
+  var score = Math.round(Math.random() * sum);
+  var dynamic1 = 40 - Math.abs(score/3);
+  var rand1 = Math.round(Math.random() * 10);
+
+  // Smart generation of numbered and lettered tiles.
+  var smart1 = Math.random() < 0.9 ? 
+  String.fromCharCode(65 + Math.abs(Math.floor(Math.random() * score/10))) : 
+  String.fromCharCode(65 + Math.abs(Math.floor(Math.random() * score/10)));
+
+  // Goes with the normal tile spawns. 2048 + Threes! 'Cause why not!
+  var dumb1 = Math.random() < 0.5 ? (Math.random() < 0.5 ? 
+  (Math.random() < 0.9 ? rand1*Math.pow(2,0) : rand1*Math.pow(2,1)) : 
+  (Math.random() < 0.9 ? -rand1*Math.pow(2,0) : -rand1*Math.pow(2,1))) :
+  (Math.random() < 0.5 ? (Math.random() < 0.9 ? rand1*Math.pow(2,0) : rand1*Math.pow(2,1)) : 
+  (Math.random() < 0.9 ? -rand1*Math.pow(2,0) : -rand1*Math.pow(2,1)));
+
+  // This function spawns zero tiles that merge with one another.
+  var zero = (Math.abs(score) < 40) ? 
+  (Math.floor(Math.random()*2)*2 -0) : 
+  - score / Math.abs(score);
 
   // Spawns smart numbered tiles on the grid.
   if (this.grid.cellsAvailable()) {
@@ -127,13 +176,18 @@ GameManager.prototype.addStartTiles = function () {
       check(0, -1, 0, -1);
       check(0, 1, 0, 1);
 
-      if (bvalue == sum) {bvalue = Math.random() < 1/3 ? 2 : Math.random() < .5 ? 3 : 5;}
+      if (bvalue == sum) {bvalue = rand;}
     }
 
-    var tile = new Tile(cell, Math.random() < 0.5 ? (Math.random() < 0.5 ? bvalue : -bvalue) : 
-    (Math.random() < dynamic ? smart : (Math.random < 0.5 ? dumb : rand)));
+    var random = Math.random() < dynamic ? (Math.random() < 0.5 ? bvalue : -bvalue) : 
+    (Math.random() < dynamic ? smart : dumb)
+    var random1 = Math.random() < dynamic1 ? (Math.random() < 0.5 ? bvalue : -bvalue) : 
+    (Math.random() < dynamic1 ? smart1 : dumb1)
+    var bval = Math.random() < dynamic ? random : random1;
+    
+    var tile = new Tile(bcell, bval);
     // Half of the time the smart spawner kicks in, otherwise, a letter or number spawn kicks in.
-    this.score += sum; // Adds sum of all elements of the grid to the score. Deducts if negative.
+  //this.score += sum; // Adds sum of all elements of the grid to the score. Deducts if negative.
     this.grid.insertTile(tile); // Inserts tile in grid.
   }
 };
@@ -189,19 +243,35 @@ GameManager.prototype.moveTile = function (tile, cell) {
   tile.updatePosition(cell);
 };
 
+/* This merging algorithm is rigged. */
+// Compares factors of tiles. Quick maths.
+GameManager.prototype.div = function (next, cur) {
+  if ((next % cur === 0) || (cur % next === 0))
+    return next + cur;
+};
+
 // Calculates whether two items are close enough to be merged
 GameManager.prototype.closeEnough = function (x, y) {
-	var maxAllowanceRatio = .5;
-	
+
+	var maxAllowanceRatio = Math.random() * 1;
+	/* Ratios randomise between 0 and 1 such that:
+    0: It merges with ANY value, to form a tile with their sum, i.e. zen,
+    0 < x < 1: Fibonacci-like game, two tiles of different values merge,
+    ratio tends to golden ratio, phi,
+    1: Two tiles with the same value can still merge to form one tile, 
+    i.e. original 2048, or threes, or etc.*/
+
 	var difference = x - y;
 	var maxAllowance = Math.max(Math.abs(x), Math.abs(y)) * maxAllowanceRatio;
 	if (maxAllowance < 1.1) {
 		maxAllowance = 1.1;
 	}
-	
+
 	var winForCheaters = (x + y) === 0;
+	// get rekt scrubz. this game is buffed.
 	
 	return winForCheaters || Math.abs(difference) < maxAllowance;
+	// wtg is dis | srsly guis dis is a no vulgar survur (wat da greap)
 };
 
 // Move tiles on the grid in the specified direction
@@ -229,9 +299,10 @@ GameManager.prototype.move = function (direction) {
       if (tile) {
         var positions = self.findFarthestPosition(cell, vector);
         var next      = self.grid.cellContent(positions.next);
-
-        if (next && next.value === tile.value && !next.mergedFrom) {
-          var newVal = (typeof tile.value === 'number') ? tile.value * 2 : String.fromCharCode(tile.value.charCodeAt(0) + 1);
+        
+        // The most seemingly complex, but still easy, 2048 game on the planet.
+        if (next && (self.closeEnough(next.value, tile.value) || self.div(next.value, tile.value) || next.value === tile.value) && !next.mergedFrom) {
+          var newVal = (typeof tile.value === 'number') ? tile.value + next.value : String.fromCharCode(tile.value.charCodeAt(0) + 1);
           var merged = new Tile(positions.next, newVal);
           merged.mergedFrom = [tile, next];
 
@@ -250,7 +321,8 @@ GameManager.prototype.move = function (direction) {
 
           // The mighty K tile
           if (merged.value === 0.5) self.won = true;
-        } else if (next && next.value === -tile.value && !next.mergedFrom) { // merge inverses
+        } else if (next && (self.closeEnough(next.value, -tile.value) || self.div(next.value, -tile.value) || next.value === -tile.value) && !next.mergedFrom) { 
+          // i.e. merge inverses
           var n = Math.log(Math.abs(next.value))/Math.LN2;
           var s = String.fromCharCode(64+n);
           var merged = new Tile(positions.next, s);
@@ -276,7 +348,7 @@ GameManager.prototype.move = function (direction) {
       }
     });
   });
-  
+
   if (moved) {
     this.addRandomTile();
 
