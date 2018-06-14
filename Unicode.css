@@ -146,429 +146,429 @@ html, body {
 
 @font-face{
     font-family: 'SF Mono';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Thin.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Thin.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Thin.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Thin.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Thin.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Thin.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Thin.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Thin.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Thin.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Thin.woff') format('woff');
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'SF Mono';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-ThinItalic.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-ThinItalic.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-ThinItalic.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-ThinItalic.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-ThinItalic.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-ThinItalic.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-ThinItalic.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-ThinItalic.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-ThinItalic.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-ThinItalic.woff') format('woff');
     font-weight: 200;
     font-style: italic;
 }
 
 @font-face{
     font-family: 'SF Mono';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Regular.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Regular.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Regular.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Regular.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Regular.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Regular.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Regular.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Regular.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Regular.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Regular.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'SF Mono';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-RegularItalic.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-RegularItalic.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-RegularItalic.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-RegularItalic.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-RegularItalic.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-RegularItalic.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-RegularItalic.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-RegularItalic.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-RegularItalic.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-RegularItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face{
     font-family: 'SF Mono';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Medium.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Medium.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Medium.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Medium.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Medium.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Medium.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Medium.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Medium.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Medium.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Medium.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'SF Mono';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-MediumItalic.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-MediumItalic.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-MediumItalic.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-MediumItalic.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-MediumItalic.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-MediumItalic.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-MediumItalic.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-MediumItalic.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-MediumItalic.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-MediumItalic.woff') format('woff');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face{
     font-family: 'SF Mono';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Semibold.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Semibold.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Semibold.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Semibold.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Semibold.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Semibold.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Semibold.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Semibold.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Semibold.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Semibold.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'SF Mono';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-SemiboldItalic.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-SemiboldItalic.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-SemiboldItalic.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-SemiboldItalic.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-SemiboldItalic.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-SemiboldItalic.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-SemiboldItalic.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-SemiboldItalic.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-SemiboldItalic.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-SemiboldItalic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face{
     font-family: 'SF Mono';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Bold.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Bold.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Bold.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Bold.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Bold.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Bold.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Bold.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Bold.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Bold.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Bold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'SF Mono';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-BoldItalic.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-BoldItalic.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-BoldItalic.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-BoldItalic.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-BoldItalic.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-BoldItalic.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-BoldItalic.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-BoldItalic.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-BoldItalic.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-BoldItalic.woff') format('woff');
     font-weight: 600;
     font-style: italic;
 }
 
 @font-face{
     font-family: 'SF Mono';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Heavy.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Heavy.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Heavy.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Heavy.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-Heavy.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Bold.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Bold.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Bold.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Bold.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'SF Mono';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-HeavyItalic.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-HeavyItalic.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-HeavyItalic.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-HeavyItalic.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/SFMono-HeavyItalic.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-BoldItalic.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-BoldItalic.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-BoldItalic.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-BoldItalic.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-BoldItalic.woff') format('woff');
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face{
     font-family: 'Fira Code';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/FiraCode-Light.eot');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/FiraCode-Light.eot') format('embedded-opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/FiraCode-Light.woff2') format('woff2'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/FiraCode-Light.woff') format('woff'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/FiraCode-Light.ttf') format('truetype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/FiraCode-Light.eot');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/FiraCode-Light.eot') format('embedded-opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/FiraCode-Light.woff2') format('woff2'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/FiraCode-Light.woff') format('woff'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/FiraCode-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Fira Code';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/FiraCode-Regular.eot');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/FiraCode-Regular.eot') format('embedded-opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/FiraCode-Regular.woff2') format('woff2'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/FiraCode-Regular.woff') format('woff'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/FiraCode-Regular.ttf') format('truetype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/FiraCode-Regular.eot');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/FiraCode-Regular.eot') format('embedded-opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/FiraCode-Regular.woff2') format('woff2'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/FiraCode-Regular.woff') format('woff'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/FiraCode-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Fira Code';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/FiraCode-Retina.eot');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/FiraCode-Retina.eot') format('embedded-opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/FiraCode-Retina.woff2') format('woff2'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/FiraCode-Retina.woff') format('woff'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/FiraCode-Retina.ttf') format('truetype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/FiraCode-Retina.eot');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/FiraCode-Retina.eot') format('embedded-opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/FiraCode-Retina.woff2') format('woff2'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/FiraCode-Retina.woff') format('woff'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/FiraCode-Retina.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Fira Code';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/FiraCode-Medium.eot');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/FiraCode-Medium.eot') format('embedded-opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/FiraCode-Medium.woff2') format('woff2'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/FiraCode-Medium.woff') format('woff'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/FiraCode-Medium.ttf') format('truetype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/FiraCode-Medium.eot');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/FiraCode-Medium.eot') format('embedded-opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/FiraCode-Medium.woff2') format('woff2'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/FiraCode-Medium.woff') format('woff'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/FiraCode-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Fira Code';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/FiraCode-Bold.eot');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/FiraCode-Bold.eot') format('embedded-opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/FiraCode-Bold.woff2') format('woff2'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/FiraCode-Bold.woff') format('woff'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/FiraCode-Bold.ttf') format('truetype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/FiraCode-Bold.eot');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/FiraCode-Bold.eot') format('embedded-opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/FiraCode-Bold.woff2') format('woff2'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/FiraCode-Bold.woff') format('woff'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/FiraCode-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Roboto Mono';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Thin.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Thin.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Thin.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Thin.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Thin.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Thin.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Thin.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Thin.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Thin.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Thin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Roboto Mono';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-ThinItalic.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-ThinItalic.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-ThinItalic.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-ThinItalic.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-ThinItalic.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-ThinItalic.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-ThinItalic.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-ThinItalic.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-ThinItalic.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-ThinItalic.woff') format('woff');
     font-weight: 100;
     font-style: italic;
 }
 
 @font-face{
     font-family: 'Roboto Mono';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Light.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Light.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Light.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Light.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Light.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Light.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Light.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Light.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Light.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Roboto Mono';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-LightItalic.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-LightItalic.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-LightItalic.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-LightItalic.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-LightItalic.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-LightItalic.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-LightItalic.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-LightItalic.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-LightItalic.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-LightItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face{
     font-family: 'Roboto Mono';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Regular.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Regular.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Regular.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Regular.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Regular.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Regular.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Regular.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Regular.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Regular.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Roboto Mono';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Italic.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Italic.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Italic.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Italic.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Italic.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Italic.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Italic.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Italic.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Italic.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Italic.woff') format('woff');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face{
     font-family: 'Roboto Mono';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Medium.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Medium.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Medium.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Medium.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Medium.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Medium.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Medium.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Medium.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Medium.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Roboto Mono';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-MediumItalic.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-MediumItalic.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-MediumItalic.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-MediumItalic.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-MediumItalic.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-MediumItalic.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-MediumItalic.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-MediumItalic.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-MediumItalic.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-MediumItalic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face{
     font-family: 'Roboto Mono';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Bold.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Bold.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Bold.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Bold.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-Bold.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Bold.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Bold.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Bold.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Bold.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Roboto Mono';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-BoldItalic.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-BoldItalic.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-BoldItalic.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-BoldItalic.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/RobotoMono-BoldItalic.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-BoldItalic.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-BoldItalic.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-BoldItalic.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-BoldItalic.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/RobotoMono-BoldItalic.woff') format('woff');
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face{
     font-family: 'Roboto';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Thin.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Thin.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Thin.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Thin.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Thin.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Thin.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Thin.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Thin.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Thin.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Thin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Roboto';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-ThinItalic.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-ThinItalic.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-ThinItalic.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-ThinItalic.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-ThinItalic.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-ThinItalic.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-ThinItalic.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-ThinItalic.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-ThinItalic.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-ThinItalic.woff') format('woff');
     font-weight: 100;
     font-style: italic;
 }
 
 @font-face{
     font-family: 'Roboto';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Light.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Light.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Light.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Light.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Light.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Light.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Light.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Light.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Light.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Roboto';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-LightItalic.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-LightItalic.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-LightItalic.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-LightItalic.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-LightItalic.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-LightItalic.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-LightItalic.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-LightItalic.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-LightItalic.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-LightItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face{
     font-family: 'Roboto';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Regular.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Regular.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Regular.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Regular.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Regular.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Regular.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Regular.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Regular.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Regular.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Roboto';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Italic.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Italic.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Italic.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Italic.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Italic.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Italic.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Italic.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Italic.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Italic.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Italic.woff') format('woff');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face{
     font-family: 'Roboto';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Medium.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Medium.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Medium.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Medium.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Medium.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Medium.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Medium.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Medium.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Medium.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Roboto';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-MediumItalic.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-MediumItalic.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-MediumItalic.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-MediumItalic.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-MediumItalic.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-MediumItalic.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-MediumItalic.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-MediumItalic.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-MediumItalic.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-MediumItalic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face{
     font-family: 'Roboto';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Bold.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Bold.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Bold.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Bold.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Bold.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Bold.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Bold.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Bold.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Bold.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Roboto';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-BoldItalic.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-BoldItalic.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-BoldItalic.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-BoldItalic.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-BoldItalic.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-BoldItalic.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-BoldItalic.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-BoldItalic.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-BoldItalic.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-BoldItalic.woff') format('woff');
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face{
     font-family: 'Roboto';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Black.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Black.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Black.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Black.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-Black.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Black.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Black.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Black.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Black.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Roboto';
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-BlackItalic.eot') format('embedded-opentype');
-    src: url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-BlackItalic.otf') format('opentype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-BlackItalic.svg') format('svg'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-BlackItalic.ttf') format('truetype'),
-         url('https://theastronomer.github.io/2147483648/style/fonts/Roboto-BlackItalic.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-BlackItalic.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-BlackItalic.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-BlackItalic.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-BlackItalic.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/Roboto-BlackItalic.woff') format('woff');
     font-weight: 900;
     font-style: italic;
 }
@@ -15265,7 +15265,7 @@ I /* line 368, main.scss */
     font-size: 35px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 520px) {
     .tile.tile-6757 .tile-inner {
         font-size: 15px;
     }
@@ -21004,6 +21004,558 @@ I /* line 368, main.scss */
     background: #111b25;
 }
 
+/* .tile.tile-1 .tile-inner {
+    background: rgb(136, 136, 136);
+}
+
+.tile.tile-2 .tile-inner {
+    background: rgb(132, 155, 155);
+}
+
+.tile.tile-3 .tile-inner {
+    background: rgb(200, 126, 250);
+}
+
+.tile.tile-4 .tile-inner {
+    background: rgb(130, 171, 0);
+}
+
+.tile.tile-5 .tile-inner {
+    background: rgb(195, 138, 138);
+}
+
+.tile.tile-6 .tile-inner {
+    background: rgb(47, 47, 47);
+}
+
+.tile.tile-7 .tile-inner {
+    background: rgb(48, 79, 247);
+}
+
+.tile.tile-8 .tile-inner {
+    background: rgb(255, 13, 13);
+}
+
+.tile.tile-9 .tile-inner {
+    background: rgb(109, 171, 60);
+} */ 
+
+.tile.tile-10 .tile-inner {
+    background: rgb(123, 156, 168);
+}
+
+/*.tile.tile-11 .tile-inner {
+    background: rgb(171, 92, 242);
+}
+
+.tile.tile-12 .tile-inner {
+    background: rgb(97, 180, 0);
+}
+
+.tile.tile-13 .tile-inner {
+    background: rgb(167, 145, 145);
+} */
+
+.tile.tile-14 .tile-inner {
+    background: rgb(176, 146, 118);
+}
+
+.tile.tile-15 .tile-inner {
+    background: rgb(255, 128, 0);
+}
+
+/* .tile.tile-16 .tile-inner {
+    background: rgb(195, 149, 23);
+} */
+
+.tile.tile-17 .tile-inner {
+    background: rgb(29, 197, 29);
+}
+
+/* .tile.tile-18 .tile-inner {
+    background: rgb(99, 162, 176);
+} */
+
+.tile.tile-19 .tile-inner {
+    background: rgb(143, 64, 212);
+}
+
+.tile.tile-20 .tile-inner {
+    background: rgb(47, 195, 0);
+}
+
+/* .tile.tile-21 .tile-inner {
+    background: rgb(150, 150, 150);
+} */
+
+.tile.tile-22 .tile-inner {
+    background: rgb(148, 150, 154);
+}
+
+.tile.tile-23 .tile-inner {
+    background: rgb(150, 150, 154);
+}
+
+/* .tile.tile-24 .tile-inner {
+    background: rgb(135, 150, 195);
+} */
+
+.tile.tile-25 .tile-inner {
+    background: rgb(156, 122, 199);
+}
+
+.tile.tile-26 .tile-inner {
+    background: rgb(224, 102, 51);
+}
+
+/* .tile.tile-27 .tile-inner {
+    background: rgb(219, 130, 147);
+} */
+
+.tile.tile-28 .tile-inner {
+    background: rgb(69, 182, 69);
+}
+
+/* .tile.tile-29 .tile-inner {
+    background: rgb(199, 128, 51);
+} */
+
+.tile.tile-30 .tile-inner {
+    background: rgb(125, 128, 176);
+}
+
+.tile.tile-31 .tile-inner {
+    background: rgb(189, 140, 140);
+}
+
+/* .tile.tile-32 .tile-inner {
+    background: rgb(102, 143, 143);
+} */
+
+.tile.tile-33 .tile-inner {
+    background: rgb(189, 128, 227);
+}
+
+/* .tile.tile-34 .tile-inner {
+    background: rgb(226, 143, 0);
+} */
+
+.tile.tile-35 .tile-inner {
+    background: rgb(166, 41, 41);
+}
+
+.tile.tile-36 .tile-inner {
+    background: rgb(83, 166, 188);
+}
+
+.tile.tile-37 .tile-inner {
+    background: rgb(112, 46, 176);
+}
+
+.tile.tile-38 .tile-inner {
+    background: rgb(0, 208, 0);
+}
+
+.tile.tile-39 .tile-inner {
+    background: rgb(95, 164, 164);
+}
+
+.tile.tile-40 .tile-inner {
+    background: rgb(107, 162, 162);
+}
+
+.tile.tile-41 .tile-inner {
+    background: rgb(97, 164, 169);
+}
+
+.tile.tile-42 .tile-inner {
+    background: rgb(78, 169, 169);
+}
+
+.tile.tile-43 .tile-inner {
+    background: rgb(59, 158, 158);
+}
+
+.tile.tile-44 .tile-inner {
+    background: rgb(36, 143, 143);
+}
+
+.tile.tile-45 .tile-inner {
+    background: rgb(10, 125, 140);
+}
+
+.tile.tile-46 .tile-inner {
+    background: rgb(0, 105, 133);
+}
+
+/* .tile.tile-47 .tile-inner {
+    background: rgb(128, 128, 128);
+}
+
+.tile.tile-48 .tile-inner {
+    background: rgb(174, 148, 98);
+} */ 
+
+.tile.tile-49 .tile-inner {
+    background: rgb(166, 117, 115);
+}
+
+.tile.tile-50 .tile-inner {
+    background: rgb(102, 128, 128);
+}
+
+.tile.tile-51 .tile-inner {
+    background: rgb(158, 99, 181);
+}
+
+.tile.tile-52 .tile-inner {
+    background: rgb(212, 122, 0);
+}
+
+.tile.tile-53 .tile-inner {
+    background: rgb(148, 0, 148);
+}
+
+.tile.tile-54 .tile-inner {
+    background: rgb(66, 158, 176);
+}
+
+/* .tile.tile-55 .tile-inner {
+    background: rgb(87, 23, 143);
+} */
+
+.tile.tile-56 .tile-inner {
+    background: rgb(0, 201, 0);
+}
+
+.tile.tile-57 .tile-inner {
+    background: rgb(87, 164, 197);
+}
+
+.tile.tile-58 .tile-inner {
+    background: rgb(152, 152, 119);
+}
+
+.tile.tile-59 .tile-inner {
+    background: rgb(134, 157, 123);
+}
+
+.tile.tile-60 .tile-inner {
+    background: rgb(125, 160, 125);
+}
+
+.tile.tile-61 .tile-inner {
+    background: rgb(105, 165, 129);
+}
+
+.tile.tile-62 .tile-inner {
+    background: rgb(94, 168, 131);
+}
+
+.tile.tile-63 .tile-inner {
+    background: rgb(67, 176, 137);
+}
+
+/* .tile.tile-64 .tile-inner {
+    background: rgb(49, 180, 141);
+} */
+
+.tile.tile-65 .tile-inner {
+    background: rgb(35, 184, 144);
+}
+
+.tile.tile-66 .tile-inner {
+    background: rgb(23, 187, 146);
+}
+
+.tile.tile-67 .tile-inner {
+    background: rgb(0, 197, 120)
+}
+
+.tile.tile-68 .tile-inner {
+    background: rgb(0, 199, 101);
+}
+
+.tile.tile-69 .tile-inner {
+    background: rgb(0, 201, 78);
+}
+
+.tile.tile-70 .tile-inner {
+    background: rgb(0, 191, 56);
+}
+
+.tile.tile-71 .tile-inner {
+    background: rgb(0, 171, 36);
+}
+
+.tile.tile-72 .tile-inner {
+    background: rgb(66, 168, 220);
+}
+
+.tile.tile-73 .tile-inner {
+    background: rgb(75, 162, 249);
+}
+
+.tile.tile-74 .tile-inner {
+    background: rgb(33, 148, 214);
+}
+
+.tile.tile-75 .tile-inner {
+    background: rgb(38, 125, 171);
+}
+
+/* .tile.tile-76 .tile-inner {
+    background: rgb(38, 102, 150);
+} */
+
+.tile.tile-77 .tile-inner {
+    background: rgb(23, 84, 135);
+}
+
+.tile.tile-78 .tile-inner {
+    background: rgb(163, 163, 163);
+}
+
+.tile.tile-79 .tile-inner {
+    background: rgb(185, 152, 26);
+}
+
+.tile.tile-80 .tile-inner {
+    background: rgb(186, 186, 186);
+}
+
+/* .tile.tile-81 .tile-inner {
+    background: rgb(166, 84, 77);
+} */
+
+.tile.tile-82 .tile-inner {
+    background: rgb(87, 89, 97);
+}
+
+.tile.tile-83 .tile-inner {
+    background: rgb(158, 79, 181);
+}
+
+.tile.tile-84 .tile-inner {
+    background: rgb(171, 92, 0);
+}
+
+.tile.tile-85 .tile-inner {
+    background: rgb(117, 79, 69);
+}
+
+.tile.tile-86 .tile-inner {
+    background: rgb(66, 130, 150);
+}
+
+.tile.tile-87 .tile-inner {
+    background: rgb(66, 0, 102);
+}
+
+.tile.tile-88 .tile-inner {
+    background: rgb(0, 125, 0);
+}
+
+/* .tile.tile-89 .tile-inner {
+    background: rgb(102, 156, 228);
+} */
+
+.tile.tile-90 .tile-inner {
+    background: rgb(0, 184, 252);
+}
+
+.tile.tile-91 .tile-inner {
+    background: rgb(0, 161, 255);
+}
+
+.tile.tile-92 .tile-inner {
+    background: rgb(0, 143, 255);
+}
+
+.tile.tile-93 .tile-inner {
+    background: rgb(0, 128, 255);
+}
+
+.tile.tile-94 .tile-inner {
+    background: rgb(0, 107, 255);
+}
+
+.tile.tile-95 .tile-inner {
+    background: rgb(84, 92, 242);
+}
+
+/* .tile.tile-96 .tile-inner {
+    background: rgb(120, 92, 227);
+} */
+
+.tile.tile-97 .tile-inner {
+    background: rgb(138, 79, 227);
+}
+
+.tile.tile-98 .tile-inner {
+    background: rgb(161, 54, 212);
+}
+
+.tile.tile-99 .tile-inner {
+    background: rgb(179, 31, 212);
+}
+
+.tile.tile-100 .tile-inner {
+    background: rgb(179, 31, 186);
+}
+
+.tile.tile-101 .tile-inner {
+    background: rgb(179, 13, 166);
+}
+
+.tile.tile-102 .tile-inner {
+    background: rgb(189, 13, 135);
+}
+
+.tile.tile-103 .tile-inner {
+    background: rgb(199, 0, 102);
+}
+
+.tile.tile-104 .tile-inner {
+    background: rgb(204, 0, 89);
+}
+
+.tile.tile-105 .tile-inner {
+    background: rgb(209, 0, 79);
+}
+
+.tile.tile-106 .tile-inner {
+    background: rgb(217, 0, 69);
+}
+
+.tile.tile-107 .tile-inner {
+    background: rgb(224, 0, 56);
+}
+
+.tile.tile-108 .tile-inner {
+    background: rgb(230, 0, 46);
+}
+
+.tile.tile-109 .tile-inner {
+    background: rgb(235, 0, 38);
+}
+
+.tile.tile-110 .tile-inner {
+    background: rgb(149, 149, 160);
+}
+
+.tile.tile-111 .tile-inner {
+    background: rgb(185, 152, 26);
+}
+
+.tile.tile-112 .tile-inner {
+    background: rgb(149, 149, 169);
+}
+
+.tile.tile-113 .tile-inner {
+    background: rgb(36, 213, 20);
+}
+
+.tile.tile-114 .tile-inner {
+    background: rgb(0, 139, 19);
+}
+
+.tile.tile-115 .tile-inner {
+    background: rgb(15, 71, 15);
+}
+
+.tile.tile-116 .tile-inner {
+    background: rgb(54, 54, 54);
+}
+
+.tile.tile-117 .tile-inner {
+    background: rgb(34, 34, 34);
+}
+
+.tile.tile-118 .tile-inner {
+    background: rgb(0, 0, 0);
+}
+
+.tile.tile-119 .tile-inner {
+    background: #801638;
+}
+
+.tile.tile-120 .tile-inner {
+    background: #B60033;
+}
+
+.tile.tile-121 .tile-inner {
+    background: #046380;
+}
+
+.tile.tile-122 .tile-inner {
+    background: #08939a;
+}
+
+/* .tile.tile-123 .tile-inner {
+    background: #12a3cc;
+} */
+
+.tile.tile-124 .tile-inner {
+    background: #16c3dd;
+}
+
+.tile.tile-125 .tile-inner {
+    background: #c37093;
+}
+
+.tile.tile-126 .tile-inner {
+    background: #c99999;
+}
+
+.tile.tile-127 .tile-inner {
+    background: #ca96c3;
+}
+
+/* .tile.tile-128 .tile-inner {
+    background: #83aec1;
+} */
+
+.tile.tile-129 .tile-inner {
+    background: #ae7ca9;
+}
+
+.tile.tile-130 .tile-inner {
+    background: #6dcdb5;
+}
+
+/* .tile.tile-super .tile-inner {
+    background: #3d3d3d;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 520px) {
+    .tile.tile-super .tile-inner {
+        font-size: 10px;
+    }
+}
+
+.tile.tile--super .tile-inner {
+    background: #0F9FC9;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 520px) {
+    .tile.tile--super .tile-inner {
+        font-size: 8px;
+    }
+}
+
+.tile.tile-0 .tile-inner {
+    background: #3000D0;
+} */
+
+@media screen and (max-width: 520px) {
+    .tile .tile-inner {
+        font-size: 35px;
+    }
+} 
+
 @-webkit-keyframes appear {
     /* line 431, main.scss */
     0% {
@@ -21197,19 +21749,19 @@ I /* line 368, main.scss */
 }
 
 .tile.tile-small-3 .tile-inner {
-    font-size: 50px !important;
+    font-size: 55px !important;
 }
 
 .tile.tile-small-4 .tile-inner {
-    font-size: 40px !important;
+    font-size: 44px !important;
 }
 
 .tile.tile-small-5 .tile-inner {
-    font-size: 33.5px !important;
+    font-size: 35px !important;
 }
 
 .tile.tile-small-6 .tile-inner {
-    font-size: 27.5px !important;
+    font-size: 25px !important;
 }
 
 .tile.tile-small-7 .tile-inner {
@@ -21217,15 +21769,15 @@ I /* line 368, main.scss */
 }
 
 .tile.tile-small-8 .tile-inner {
-    font-size: 20.5px !important;
+    font-size: 18px !important;
 }
 
 .tile.tile-small-9 .tile-inner {
-    font-size: 18.5px !important;
+    font-size: 16px !important;
 }
 
 .tile.tile-small-10 .tile-inner {
-    font-size: 16.5px !important;
+    font-size: 15px !important;
 }
 
 .tile.tile-small-11 .tile-inner {
@@ -21237,35 +21789,35 @@ I /* line 368, main.scss */
 }
 
 .tile.tile-small-13 .tile-inner {
-    font-size: 12.75px !important;
+    font-size: 14px !important;
 }
 
 .tile.tile-small-14 .tile-inner {
-    font-size: 12px !important;
+    font-size: 13px !important;
 }
 
 .tile.tile-small-15 .tile-inner {
-    font-size: 11.125px !important;
+    font-size: 12px !important;
 }
 
 .tile.tile-small-16 .tile-inner {
-    font-size: 10.5px !important;
+    font-size: 11px !important;
 }
 
 .tile.tile-small-17 .tile-inner {
-    font-size: 9.875px !important;
+    font-size: 10px !important;
 }
 
 .tile.tile-small-18 .tile-inner {
-    font-size: 9.375px !important;
+    font-size: 9px !important;
 }
 
 .tile.tile-small-19 .tile-inner {
-    font-size: 8.875px !important;
+    font-size: 9px !important;
 }
 
 .tile.tile-small-20 .tile-inner {
-    font-size: 8.375px !important;
+    font-size: 9px !important;
 }
 
 @media screen and (max-width: 520px) {
@@ -21278,77 +21830,79 @@ I /* line 368, main.scss */
     }
 
     .tile.tile-small-3 .tile-inner {
-        font-size: 29px !important;
+        font-size: 30px !important;
     }
 
     .tile.tile-small-4 .tile-inner {
-        font-size: 22px !important;
+        font-size: 24px !important;
     }
 
     .tile.tile-small-5 .tile-inner {
-        font-size: 17px !important;
+        font-size: 15px !important;
     }
 
     .tile.tile-small-6 .tile-inner {
-        font-size: 14.5px !important;
+        font-size: 12px !important;
     }
 
     .tile.tile-small-7 .tile-inner {
-        font-size: 12.5px !important;
+        font-size: 10px !important;
     }
 
     .tile.tile-small-8 .tile-inner {
-        font-size: 10.75px !important;
+        font-size: 9px !important;
     }
 
     .tile.tile-small-9 .tile-inner {
-        font-size: 9.75px !important;
-    }
-
-    .tile.tile-small-10 .tile-inner {
-        font-size: 8.75px !important;
-    }
-
-    .tile.tile-small-11 .tile-inner {
         font-size: 8px !important;
     }
 
+    .tile.tile-small-10 .tile-inner {
+        font-size: 7px !important;
+    }
+
+    .tile.tile-small-11 .tile-inner {
+        font-size: 7px !important;
+    }
+
     .tile.tile-small-12 .tile-inner {
-        font-size: 7.375px !important;
+        font-size: 7px !important;
     }
 
     .tile.tile-small-13 .tile-inner {
-        font-size: 6.75px !important;
+        font-size: 6px !important;
     }
 
     .tile.tile-small-14 .tile-inner {
-        font-size: 6.25px !important;
+        font-size: 5px !important;
     }
 
     .tile.tile-small-15 .tile-inner {
-        font-size: 5.875px !important;
+        font-size: 5px !important;
     }
 
     .tile.tile-small-16 .tile-inner {
-        font-size: 5.5px !important;
+        font-size: 5px !important;
     }
 
     .tile.tile-small-17 .tile-inner {
-        font-size: 5.125px !important;
+        font-size: 4px !important;
     }
 
     .tile.tile-small-18 .tile-inner {
-        font-size: 4.875px !important;
+        font-size: 4px !important;
     }
 
     .tile.tile-small-19 .tile-inner {
-        font-size: 4.625px !important;
+        font-size: 3px !important;
     }
 
     .tile.tile-small-20 .tile-inner {
-        font-size: 4.375px !important;
+        font-size: 3px !important;
     }
 }
+
+
 
 /* line 76, helpers.scss */
 .above-game:after {
