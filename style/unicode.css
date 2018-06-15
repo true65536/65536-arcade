@@ -21749,19 +21749,19 @@ I /* line 368, main.scss */
 }
 
 .tile.tile-small-3 .tile-inner {
-    font-size: 55px !important;
+    font-size: 50px !important;
 }
 
 .tile.tile-small-4 .tile-inner {
-    font-size: 44px !important;
+    font-size: 40px !important;
 }
 
 .tile.tile-small-5 .tile-inner {
-    font-size: 35px !important;
+    font-size: 33.5px !important;
 }
 
 .tile.tile-small-6 .tile-inner {
-    font-size: 25px !important;
+    font-size: 27.5px !important;
 }
 
 .tile.tile-small-7 .tile-inner {
@@ -21769,15 +21769,15 @@ I /* line 368, main.scss */
 }
 
 .tile.tile-small-8 .tile-inner {
-    font-size: 18px !important;
+    font-size: 20.5px !important;
 }
 
 .tile.tile-small-9 .tile-inner {
-    font-size: 16px !important;
+    font-size: 18.5px !important;
 }
 
 .tile.tile-small-10 .tile-inner {
-    font-size: 15px !important;
+    font-size: 16.5px !important;
 }
 
 .tile.tile-small-11 .tile-inner {
@@ -21789,35 +21789,35 @@ I /* line 368, main.scss */
 }
 
 .tile.tile-small-13 .tile-inner {
-    font-size: 14px !important;
+    font-size: 12.75px !important;
 }
 
 .tile.tile-small-14 .tile-inner {
-    font-size: 13px !important;
-}
-
-.tile.tile-small-15 .tile-inner {
     font-size: 12px !important;
 }
 
+.tile.tile-small-15 .tile-inner {
+    font-size: 11.125px !important;
+}
+
 .tile.tile-small-16 .tile-inner {
-    font-size: 11px !important;
+    font-size: 10.5px !important;
 }
 
 .tile.tile-small-17 .tile-inner {
-    font-size: 10px !important;
+    font-size: 9.875px !important;
 }
 
 .tile.tile-small-18 .tile-inner {
-    font-size: 9px !important;
+    font-size: 9.375px !important;
 }
 
 .tile.tile-small-19 .tile-inner {
-    font-size: 9px !important;
+    font-size: 8.875px !important;
 }
 
 .tile.tile-small-20 .tile-inner {
-    font-size: 9px !important;
+    font-size: 8.375px !important;
 }
 
 @media screen and (max-width: 520px) {
@@ -21830,79 +21830,77 @@ I /* line 368, main.scss */
     }
 
     .tile.tile-small-3 .tile-inner {
-        font-size: 30px !important;
+        font-size: 29px !important;
     }
 
     .tile.tile-small-4 .tile-inner {
-        font-size: 24px !important;
+        font-size: 22px !important;
     }
 
     .tile.tile-small-5 .tile-inner {
-        font-size: 15px !important;
+        font-size: 17px !important;
     }
 
     .tile.tile-small-6 .tile-inner {
-        font-size: 12px !important;
+        font-size: 14.5px !important;
     }
 
     .tile.tile-small-7 .tile-inner {
-        font-size: 10px !important;
+        font-size: 12.5px !important;
     }
 
     .tile.tile-small-8 .tile-inner {
-        font-size: 9px !important;
+        font-size: 10.75px !important;
     }
 
     .tile.tile-small-9 .tile-inner {
-        font-size: 8px !important;
+        font-size: 9.75px !important;
     }
 
     .tile.tile-small-10 .tile-inner {
-        font-size: 7px !important;
+        font-size: 8.75px !important;
     }
 
     .tile.tile-small-11 .tile-inner {
-        font-size: 7px !important;
+        font-size: 8px !important;
     }
 
     .tile.tile-small-12 .tile-inner {
-        font-size: 7px !important;
+        font-size: 7.375px !important;
     }
 
     .tile.tile-small-13 .tile-inner {
-        font-size: 6px !important;
+        font-size: 6.75px !important;
     }
 
     .tile.tile-small-14 .tile-inner {
-        font-size: 5px !important;
+        font-size: 6.25px !important;
     }
 
     .tile.tile-small-15 .tile-inner {
-        font-size: 5px !important;
+        font-size: 5.875px !important;
     }
 
     .tile.tile-small-16 .tile-inner {
-        font-size: 5px !important;
+        font-size: 5.5px !important;
     }
 
     .tile.tile-small-17 .tile-inner {
-        font-size: 4px !important;
+        font-size: 5.125px !important;
     }
 
     .tile.tile-small-18 .tile-inner {
-        font-size: 4px !important;
+        font-size: 4.875px !important;
     }
 
     .tile.tile-small-19 .tile-inner {
-        font-size: 3px !important;
+        font-size: 4.625px !important;
     }
 
     .tile.tile-small-20 .tile-inner {
-        font-size: 3px !important;
+        font-size: 4.375px !important;
     }
 }
-
-
 
 /* line 76, helpers.scss */
 .above-game:after {
