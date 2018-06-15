@@ -256,22 +256,22 @@ html, body {
 
 @font-face{
     font-family: 'SF Mono';
-    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Bold.eot') format('embedded-opentype');
-    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Bold.otf') format('opentype'),
-         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Bold.svg') format('svg'),
-         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Bold.ttf') format('truetype'),
-         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Bold.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Heavy.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Heavy.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Heavy.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Heavy.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-Heavy.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'SF Mono';
-    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-BoldItalic.eot') format('embedded-opentype');
-    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-BoldItalic.otf') format('opentype'),
-         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-BoldItalic.svg') format('svg'),
-         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-BoldItalic.ttf') format('truetype'),
-         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-BoldItalic.woff') format('woff');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-HeavyItalic.eot') format('embedded-opentype');
+    src: url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-HeavyItalic.otf') format('opentype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-HeavyItalic.svg') format('svg'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-HeavyItalic.ttf') format('truetype'),
+         url('http://raw.githack.com/TheAstronomer/2147483648/gh-pages/style/fonts/SFMono-HeavyItalic.woff') format('woff');
     font-weight: 700;
     font-style: italic;
 }
