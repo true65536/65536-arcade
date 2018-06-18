@@ -1,14 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <link rel="stylesheet" type="text/css" href="Unicode.css" />
 <script type="text/javascript" src="unicode.js"></script>
-<title>Unicode 10.0 Slide Show</title>
+<title>Unicode 11.0 Slide Show</title>
 </head>
 <body onload="Initialise()" onunload="Finalise()">
-<h1>Unicode 10.0 Slide Show</h1>
+<h1>Unicode 11.0 Slide Show</h1>
 <p align="center" id="stats"></p>
 <table id="table1" align="center" border="0">
 <tr>
@@ -32,8 +32,8 @@
 <td colspan="2">Last Block</td>
 </tr>
 <tr>
-<td colspan="2"><form name="startform" action=""><select id="startblock"><option/></select></form></td>
-<td colspan="2"><form name="endform" action=""><select id="endblock"><option/></select></form></td>
+<td colspan="2"><form name="startform" action=""><select id="startblock"><option></option></select></form></td>
+<td colspan="2"><form name="endform" action=""><select id="endblock"><option></option></select></form></td>
 </tr>
 <tr>
 <td>Speed</td>
@@ -42,10 +42,10 @@
 <td>Background Colour</td>
 </tr>
 <tr>
-<td><form name="displayspeedform" action=""><select id="displayspeed" onchange="OnNewSpeed()"><option/></select></form></td>
-<td><form name="fontsizeform" action=""><select id="fontsize" onchange="OnNewSize()"><option/></select></form></td>
-<td><form name="fontcolourform" action=""><select id="fontcolour" onchange="OnNewFontColour()"><option/></select></form></td>
-<td><form name="backcolourform" action=""><select id="backcolour" onchange="OnNewBackColour()"><option/></select></form></td>
+<td><form name="displayspeedform" action=""><select id="displayspeed" onchange="OnNewSpeed()"><option></option></select></form></td>
+<td><form name="fontsizeform" action=""><select id="fontsize" onchange="OnNewSize()"><option></option></select></form></td>
+<td><form name="fontcolourform" action=""><select id="fontcolour" onchange="OnNewFontColour()"><option></option></select></form></td>
+<td><form name="backcolourform" action=""><select id="backcolour" onchange="OnNewBackColour()"><option></option></select></form></td>
 </tr>
 <tr>
 <td><form name="randform" action=""><input id="randomcheck" type="checkbox" title="Check to display random characters when the &quot;Start&quot; button is pushed" onclick="OnCheckRandomCharacters()" />Random Characters</form></td>
@@ -67,7 +67,8 @@
 <option value="unicode70.html">Unicode 7.0</option>
 <option value="unicode80.html">Unicode 8.0</option>
 <option value="unicode90.html">Unicode 9.0</option>
-<option value="unicode100.html" selected="selected">Unicode 10.0</option>
+<option value="unicode100.html">Unicode 10.0</option>
+<option value="unicode110.html" selected="selected">Unicode 11.0</option>
 </select>
 </form>
 <br/>
@@ -76,4 +77,3 @@
 <p class="centre"><a href="../Cookies.html" target="_blank">Cookies Policy</a></p>
 </body>
 </html>
-
