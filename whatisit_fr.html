@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" type="text/css" href="Unicode.css" />
+<script type="text/javascript" src="unicode_fr.js"></script>
+<title>De quel caractère Unicode s'agit-il ?</title>
+</head>
+<body onload="InitialiseConversion()" onunload="FinaliseConversion()">
+<h1>De quel caractère Unicode s'agit-il ?</h1>
+
+<p>Saisir un caractère ou une chaîne de caractères dans la boîte ci-dessous, appuyer ensuite sur «&nbsp;Identifier&nbsp;» pour afficher leurs noms de caractères <span title="ISO 10646 (F) est la norme ISO/CEI qui correspond à Unicode. Elle publie des noms de caractère officiels en français.">ISO 10646 (F)</span>.</p>
+<br/>
+
+<table id="table3" border="0" width="100%" align="center">
+<tr>
+<td>
+<form name="editform" action="">
+<p>
+Entrez un caractère ou un texte pour identifier:
+<input id="edittextin" type="text" style="width:400px;" autofocus="autofocus" title="Saisir un caractère ou une chaîne de caractères dont vous voulez connaître les noms ISO 10646 (F), la norme ISO/CEI qui correspond à Unicode." />
+<input id="convertbutton" type="button" value="Identifier" title="Afficher ci-dessous les noms de caractères correspondant aux caractères saisis ci-contre." onclick="OnConvertCharactersToNames()" />
+</p>
+</form>
+<textarea id="edittextout" rows="24" cols="100"></textarea>
+</td>
+</tr>
+</table>
+<br/>
+<p>Prend en charge <a target="_blank" href="http://www.unicode.org/versions/Unicode10.0.0/" title="Unicode 10.0.0">Unicode 10.0</a></p>
+<br/>
+<hr/>
+<p class="centre"><a href="babelmap_fr.html" title="Javascript character map">BabelMap Online</a> | <a href="unicode_fr.html" title="Diaporama Unicode 10.0 ">Diaporama Unicode 10.0</a></p>
+<p class="centre"><a href="../Cookies.html" target="_blank">Cookies Policy</a></p>
+</body>
+</html>
