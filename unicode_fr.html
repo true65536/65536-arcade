@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" type="text/css" href="Unicode.css" />
+<script type="text/javascript" src="unicode_fr.js"></script>
+<title>Diaporama Unicode 10.0</title>
+</head>
+<body onload="Initialise()" onunload="Finalise()">
+<h1>Diaporama Unicode 10.0</h1>
+<p align="center" id="stats"></p>
+<table id="table1" align="center" border="0">
+<tr>
+<td><form name="startform" action=""><input id="startbutton" type="button" value="Démarrer" onclick="OnStartStopButton()" /></form></td>
+<td><form name="pauseform" action=""><input id="pausebutton" type="button" value="Interrompre" onclick="OnPauseResume()" /></form></td>
+<td><form name="skipform" action=""><input id="skipbutton" type="button" value="Sauter le bloc" title="Passer au bloc suivant" onclick="OnSkipBlock()" /></form></td>
+<td><form name="randomform" action=""><input id="randombutton" type="button" value="Caractère aléatoire" title="Afficher un caractère aléatoire" onclick="OnRandomCharacter()" /></form></td>
+</tr>
+</table>
+<table id="table2" align="center" border="0">
+<tr><td align="center"><span id="numb"></span></td></tr>
+<tr><td align="center" style="height:200px;"><span id="char" style="font-family: Serif; font-size: '24pt'; color: gray;"></span></td></tr>
+<tr><td align="center"><span id="plane"></span></td></tr>
+<tr><td align="center"><span id="block"></span></td></tr>
+<tr><td align="center"><span id="name"></span></td></tr>
+</table>
+<hr/>
+<table id="table3" align="center" border="0">
+<tr>
+<td colspan="2">Premier bloc</td>
+<td colspan="2">Dernier bloc</td>
+</tr>
+<tr>
+<td colspan="2"><form name="startform" action=""><select id="startblock"><option/></select></form></td>
+<td colspan="2"><form name="endform" action=""><select id="endblock"><option/></select></form></td>
+</tr>
+
+<tr>
+<td>Vitesse</td>
+<td>Taille de la police</td>
+<td>Couleur de la police</td>
+<td>Couleur de fond</td>
+</tr>
+<tr>
+<td><form name="displayspeedform" action=""><select id="displayspeed" onchange="OnNewSpeed()"><option/></select></form></td>
+<td><form name="fontsizeform" action=""><select id="fontsize" onchange="OnNewSize()"><option/></select></form></td>
+<td><form name="fontcolourform" action=""><select id="fontcolour" onchange="OnNewFontColour()"><option/></select></form></td>
+<td><form name="backcolourform" action=""><select id="backcolour" onchange="OnNewBackColour()"><option/></select></form></td>
+</tr>
+<tr>
+<td><form name="randform" action=""><input id="randomcheck" type="checkbox" title="Cocher pour afficher des caractères aléatoires lorsque le bouton «&nbsp;Démarrer&nbsp;» est enfoncé" onclick="OnCheckRandomCharacters()" />Caractères aléatoires</form></td>
+<td><form name="fontform" action=""><input id="fontcheck" type="checkbox" title="Ne pas cocher pour laisser le navigateur choisir les polices à utiliser" onclick="OnCustomFonts()" />Utiliser <a href="FontList.html">liste personnalisée de polices</a></form></td>
+<td colspan="2"><form name="gotoform" action=""><input id="gotobutton" type="button" value="Aller à U+" title="Trouver caractère par sa valeur de point de code hexadécimal" onclick="OnGotoButton()" /> <input id="gototext" type="text" style="width:75px;" title="Saisir la valeur hexadécimale du point de code de caractère où aller" /></form></td>
+</tr>
+<tr>
+<td colspan="4"><form name="searchform" action=""><input id="searchbutton" type="button" value="Rechercher" title="Recherche un caractère par son nom" onclick="OnSearchButton()" /> <input id="searchtext" type="text" style="width:400px;" title="Saisir un nom de caractère à rechercher" /> <input id="searchcheck" type="checkbox" title="Cocher pour ne trouver que le caractère dont le nom correspond exactement" />Nom exact</form></td>
+</tr>
+</table>
+<br/>
+<hr/>
+<p class="centre"><a href="babelmap_fr.html" title="Javascript character map">BabelMap Online</a> | <a href="whatisit_fr.html" title="De quel caractère Unicode s'agit-il ?">De quel caractère Unicode s'agit-il ?</a></p>
+<p class="centre"><a href="../Cookies.html" target="_blank">Cookies Policy</a></p>
+</body>
+</html>
