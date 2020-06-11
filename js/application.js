@@ -240,7 +240,7 @@ function normalMerge(a, b) {
 }
 
 function normalWin(merged) {
-  return merged === 0.5;
+  return merged === 65536;
 }
 
 function normal() {
@@ -335,7 +335,7 @@ function powerTwo() {
       index = 1;
     } else {
       index <<= 1;
-      if (index > 590295810358705651712) {
+      if (index > 590295810358705700000) {
         index = 0;
       }
     }
